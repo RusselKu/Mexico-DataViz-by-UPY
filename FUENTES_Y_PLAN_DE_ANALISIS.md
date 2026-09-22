@@ -6,6 +6,12 @@ Este libro rector establece la narrativa de **Data Storytelling visual, entreten
 
 A diferencia de los boletines gubernamentales fríos y formales, este proyecto transforma los datos en una **historia apasionante de resiliencia, ciencia, solidaridad y adaptación comunitaria**. Guiamos al lector a través de una experiencia interactiva tipo *Scrollytelling en Embudo (Macro a Micro)* organizada en 4 Actos Principales y un Epílogo Inmersivo:
 
+> [!NOTE]
+> **Principio de Separación de Arquitectura:**
+> - **Frontend y Capa de Presentación (Storytelling):** Es la única capa que adopta el enfoque amigable, fresco, entretenido, interactivo y visualmente cautivador para el usuario final.
+> - **Backend, Pipeline ETL y Ciencia de Datos:** Conserva toda su naturaleza formal, rigurosa, estandarizada y técnicamente avanzada (limpieza de macrobases, procesamiento espacial GeoPandas/LiDAR, consultas SQL, modelos estadísticos e ingesta automatizada).
+
+
 ```mermaid
 flowchart TD
     subgraph Embudo ["Experiencia de Data Storytelling (Scrollytelling en Embudo)"]
