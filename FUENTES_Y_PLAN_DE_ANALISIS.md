@@ -1,170 +1,182 @@
 # Data Storytelling: El Viaje de la Resiliencia, la Ciencia y la Comunidad (México -> Sur -> Yucatán -> Mérida & UPY)
 
-## Resumen de la Experiencia y Narrativa Visual (Scrollytelling Funnel)
+## Resumen Ejecutivo de la Arquitectura de Visualización
 
-Este libro rector establece la narrativa de **Data Storytelling visual, entretenida, amigable y centrada en el ser humano** para el *Análisis de la Pandemia de COVID-19 y la Reconstrucción Socio-Sanitaria y Territorial*. 
+Este libro rector define la arquitectura de **Data Storytelling Interactivo** para el análisis socio-sanitario, territorial y comunitario. El proyecto adopta una estructura modular en la cual el usuario navega a través de **9 Vistas / Pestañas Temáticas de Visualización Avanzada**:
+- **7 Vistas guiadas por Fuentes de Datos Principales**, donde cada vista tiene una fuente titular protagónica enriquecida transversalmente por fuentes secundarias.
+- **2 Apartados Tecnológicos Especiales** (**LiDAR** y **Realidad Aumentada - AR**), los cuales no son fuentes de datos convencionales sino **experiencias de visualización inmersivas y volumétricas** generadas a partir de la información geoespacial, biológica y demográfica procesada en las vistas anteriores.
 
-A diferencia de los boletines gubernamentales fríos y formales, este proyecto transforma los datos en una **historia apasionante de resiliencia, ciencia, solidaridad y adaptación comunitaria**. Guiamos al lector a través de una experiencia interactiva tipo *Scrollytelling en Embudo (Macro a Micro)* organizada en 4 Actos Principales y un Epílogo Inmersivo:
+> [!IMPORTANT]
+> **Enfoque de Visualización vs. Gráficas Básicas:**
+> El proyecto no presenta simples gráficas estáticas o barras aisladas. Cada módulo es una **experiencia visual interactiva y rica** (mapas de isócronas, diagramas de Sankey dinámicos, grafos semánticos D3, mapas coropléticos interactivos, nubes de lluvia/rainclouds, modelos volumétricos LiDAR y visores WebXR en Realidad Aumentada) inmersos en un hilo de **Storytelling humano, positivo y cautivador**.
 
-> [!NOTE]
-> **Principio de Separación de Arquitectura:**
-> - **Frontend y Capa de Presentación (Storytelling):** Es la única capa que adopta el enfoque amigable, fresco, entretenido, interactivo y visualmente cautivador para el usuario final.
-> - **Backend, Pipeline ETL y Ciencia de Datos:** Conserva toda su naturaleza formal, rigurosa, estandarizada y técnicamente avanzada (limpieza de macrobases, procesamiento espacial GeoPandas/LiDAR, consultas SQL, modelos estadísticos e ingesta automatizada).
-
+---
 
 ```mermaid
 flowchart TD
-    subgraph Embudo ["Experiencia de Data Storytelling (Scrollytelling en Embudo)"]
-        A1["Acto I: El Gran Viaje de México<br><i>Desafío, Ciencia y el Pulso de una Nación</i>"]
-        A2["Acto II: El Latido del Sur<br><i>Calidez, Comunidad y Fuerza Regional</i>"]
-        A3["Acto III: Yucatán Unido<br><i>De la Costa al Mayab: Cuidado e Identidad</i>"]
-        A4["Acto IV: Nuestra Ciudad, Nuestra UPY<br><i>Mérida, Vida Universitaria y el Futuro que Construimos</i>"]
-        A5["Epílogo: La Ciencia en tus Manos<br><i>Visualización 3D y Realidad Aumentada Inmersiva</i>"]
+    subgraph Storytelling ["Arquitectura de Data Storytelling: 9 Vistas Interactivas"]
+        direction TB
+        subgraph Fuentes ["7 Vistas por Fuente de Datos Principal"]
+            V1["1. Vista INEGI<br><i>Cartografía Económica y Vulnerabilidad</i>"]
+            V2["2. Vista Datos.gob.mx<br><i>Pulso Epidemiológico y Recuperación</i>"]
+            V3["3. Vista SIEGY Yucatán<br><i>Cohesión Territorial de 106 Municipios</i>"]
+            V4["4. Vista GeoPortal Mérida<br><i>Accesibilidad Urbana y Comisarías</i>"]
+            V5["5. Vista PNT / Transparencia<br><i>Logística Hospitalaria e Insumos</i>"]
+            V6["6. Vista Web Scraping<br><i>Minería Semántica y Voz de la Prensa</i>"]
+            V7["7. Vista Self-Produced (UPY)<br><i>Voz Estudiantil y Regreso al Campus</i>"]
+        end
+        
+        subgraph Inmersivas ["2 Apartados Visuales Dedicados"]
+            V8["8. Vista LiDAR 3D<br><i>Morfología Altimétrica de Mérida</i>"]
+            V9["9. Vista Realidad Aumentada (AR)<br><i>Holograma Molecular y Maqueta Espacial</i>"]
+        end
+        
+        V1 --> V2 --> V3 --> V4 --> V5 --> V6 --> V7 --> V8 --> V9
     end
-
-    A1 --> A2 --> A3 --> A4 --> A5
 ```
 
 ---
 
-## 1. La Estructura Narrativa del Libro (Storytelling Arc)
+## 1. Matriz de las 9 Vistas de Visualización
 
-| Acto / Capítulo | Ámbito Territorial | Hilo Narrativo (Storytelling Amigable y Positivo) | Pregunta Clave de Investigación | Fuentes Principales |
-| :--- | :--- | :--- | :--- | :--- |
-| **Acto I** | **México (Nacional)** | **El Gran Viaje de México:** Cómo el país enfrentó el desafío, el papel transformador de la ciencia y el ritmo histórico de la vacunación y recuperación nacional. | ¿Cómo se movilizó México para proteger a su población y acelerar el camino hacia la recuperación? | Base Abierta DGE Salud, INEGI Censo. |
-| **Acto II** | **Zona Sur-Sureste** | **El Latido del Sur:** La calidez, resiliencia y redes comunitarias de la región Sur-Sureste (Yucatán, Q. Roo, Campeche, Tabasco, Chiapas, Oaxaca, Veracruz). | ¿Qué factores de cohesión social y respuesta regional destacaron en el Sur frente al resto del país? | DGE Salud, CONAPO, INEGI. |
-| **Acto III** | **Estado de Yucatán** | **Yucatán Unido:** El recorrido por los 106 municipios y sus 3 Jurisdicciones Sanitarias, destacando el apoyo entre el interior del estado y la zona metropolitana. | ¿De qué manera la cultura, la solidaridad y la infraestructura estatal cuidaron a las familias yucatecas? | SIEGY, Transparencia SSY, DGE Salud, Web Scraping Prensa. |
-| **Acto IV** | **Municipio de Mérida & UPY** | **Nuestra Ciudad, Nuestra UPY:** Un zoom cercano a la vida diaria en Mérida, sus colonias, comisarías, la red de atención médica y las vivencias de la comunidad universitaria UPY. | ¿Cómo vivieron los jóvenes y las familias de Mérida la adaptación digital, los nuevos hábitos y el regreso al campus? | GeoPortal Mérida, DENUE, LiDAR, Encuesta UPY (Propia), PNT. |
-| **Epílogo** | **Biología & AR 3D** | **La Ciencia en tus Manos:** Una aventura interactiva en Realidad Aumentada para tocar la ciencia a nivel molecular y explorar el relieve 3D de la ciudad. | ¿Cómo la innovación tecnológica y la biología nos permiten entender y superar fenómenos globales? | Protein Data Bank (6VXX), WebXR / Three.js. |
-
----
-
-## 2. Matriz de Fuentes de Información por Origen (Las 9 Fuentes con Enfoque Humano)
-
-Las 9 tipologías de fuentes de información se han recontextualizado para contar historias de valor humano, solidaridad y avance tecnológico:
-
-### 1. Federal (Abierto) - INEGI / DENUE (Sector Salud)
-- **Origen:** Instituto Nacional de Estadística y Geografía (INEGI).
-- **Dataset:** Directorio Nacional de Unidades Económicas (DENUE) - Sector 62 (Salud y Asistencia Social).
-- **Ángulo Narrativo:** *La Red que nos Cuida:* Mapeo visual y atractivo de la oferta médica en la región Sur y la red de protección en Mérida (hospitales, consultorios de barrio, laboratorios y farmacias de apoyo).
-- **Variables Clave:** `id`, `nom_estab`, `codigo_act`, `per_ocu`, `cve_mun` (`31050` Mérida), `latitud`, `longitud`.
-
-### 2. Federal (Abierto) - Datos.gob.mx / DGE Secretaría de Salud (Base COVID-19)
-- **Origen:** Dirección General de Epidemiología (DGE), Secretaría de Salud de México.
-- **Dataset:** Base Histórica Abierta de Salud en México.
-- **Ángulo Narrativo:** *La Curva de la Esperanza y Recuperación:* Análisis dinámico que muestra no solo la evolución de contagios, sino la alta tasa de altas médicas, velocidad de atención y superación de olas pandémicas.
-- **Variables Clave:** `FECHA_INGRESO`, `EDAD`, `SEXO`, `CLASIFICACION_FINAL`, `TIPO_PACIENTE`, `INTUBADO`, `UCI`, `DIABETES`, `HIPERTENSION`, `OBESIDAD`, `FECHA_DEF`.
-
-### 3. Estatal (Abierto) - SIEGY (Sistema de Información Estadística y Geográfica de Yucatán)
-- **Origen:** Gobierno del Estado de Yucatán / SIEGY / CEIEG.
-- **Dataset:** Indicadores Socioeconómicos, Demográficos y Capacidad de Salud Estatal.
-- **Ángulo Narrativo:** *El Abrazo de los 106 Municipios:* Evaluación de la fortaleza territorial, conectividad e indicadores de desarrollo para mostrar cómo la infraestructura de salud respaldó a los municipios del interior.
-- **Variables Clave:** `cve_municipio`, `nombre_municipio`, `poblacion_total`, `indice_marginacion`, `camas_hospitalarias`, `jurisdiccion_sanitaria`.
-
-### 4. Municipal (Abierto) - GeoPortal del Ayuntamiento de Mérida
-- **Origen:** Dirección de Tecnologías de la Información / Desarrollo Urbano, Ayuntamiento de Mérida.
-- **Dataset:** Capas Geográficas del Municipio de Mérida.
-- **Ángulo Narrativo:** *La Vida en los Barrios y Comisarías:* Delimitación interactiva de fraccionamientos y comisarías (Caucel, Komchén, Dzityá, Chablekal) mostrando puntos de vacunación, parques y espacios de esparcimiento recuperados.
-- **Variables Clave:** `cve_colonia`, `nombre_comisaria`, `tipo_equipamiento`, `geometry`.
-
-### 5. Transparencia / Solicitud Gov - Plataforma Nacional de Transparencia (PNT / Infomex)
-- **Origen:** Solicitudes de información pública dirigidas a la Secretaría de Salud de Yucatán (SSY), IMSS e ISSSTE.
-- **Dataset:** Inventario de insumos, equipamiento de protección (EPP) y capacidad hospitalaria en Mérida.
-- **Ángulo Narrativo:** *Héroes de Blanco y Logística de Cuidado:* Revelar el esfuerzo logístico masivo en los nosocomios de Mérida (Hospital O'Horán, UMAE T1 IMSS, HR ISSSTE) para dotar de insumos y salvar vidas.
-- **Variables Clave:** `fecha`, `hospital`, `camas_uci_ocupadas`, `ventiladores_en_uso`, `piezas_epp`.
-
-### 6. Web Scraping - Comunicados de Prensa Oficiales y Noticias del Sur/Yucatán
-- **Origen:** Minería de datos web en portales informativos del Sur (*Diario de Yucatán*, *Por Esto!*, *Yucatán.gob.mx*).
-- **Herramientas:** Python (BeautifulSoup, Selenium, Scrapy).
-- **Ángulo Narrativo:** *La Prensa que Informó y Unió:* Análisis de sentimiento y cronología visual de las jornadas masivas de vacunación en sedes icónicas de Mérida (Siglo XXI, Kukulcán, Villa Palmira) y noticias de aliento comunitario.
-- **Variables Clave:** `fecha_publicacion`, `titular`, `texto_comunicado`, `casos_reportados_dia`, `sedes_vacunacion`.
-
-### 7. Self-produced data - Encuesta de Salud y Percepción (UPY & Mérida)
-- **Origen:** Encuesta digital interactiva aplicada a la comunidad de la Universidad Politécnica de Yucatán (UPY) y habitantes de Mérida.
-- **Ángulo Narrativo:** *Voces Universitarias: Adaptación y Mirada al Futuro:* Historias reales de la comunidad UPY sobre hábitos saludables, adaptación al trabajo/estudio remoto, superación de secuelas y aprendizajes positivos.
-- **Variables Clave:** `edad`, `sexo`, `colonia_merida`, `contagios_covid`, `vacunas_marcas`, `secuelas_long_covid`, `evaluacion_medidas`.
-
-### 8. LiDAR / Datos Altimétricos y Espectrales - INEGI & USGS
-- **Origen:** Continuo de Elevación Digital (CEM 3.0) del INEGI y datos LiDAR urbanos de Mérida.
-- **Ángulo Narrativo:** *Mérida en 3D: La Ciudad Viva:* Exploración altimétrica moderna de la trama urbana de Mérida, asociando la densidad arquitectónica con los accesos viales a áreas verdes y centros sanitarios.
-- **Variables Clave:** Coordenadas `X`, `Y`, `Z` (Elevación), `Classification` (Terreno, Edificios), `Intensity`.
-
-### 9. AR / Realidad Aumentada & Repositorios 3D (Biología y Mapas Volumétricos)
-- **Origen:** Protein Data Bank (PDB ID: `6VXX` - Proteína Spike SARS-CoV-2) y mallas 3D geográficas.
-- **Ángulo Narrativo:** *Experiencia Inmersiva de la Ciencia:* Un viaje interactivo en Realidad Aumentada donde el lector puede proyectar en su mesa la estructura molecular de la vacuna o la maqueta 3D interactiva de su ciudad.
-- **Variables Clave:** Archivos `.pdb`, `.gltf`, `.obj`, `.usdz` para WebXR.
+| No. | Nombre de la Vista / Pestaña | Fuente de Datos Principal | Fuentes Secundarias de Apoyo | Tipo de Visualización Compleja | Eje de Storytelling |
+| :---: | :--- | :--- | :--- | :--- | :--- |
+| **1** | **Módulo INEGI** | **INEGI** (DENUE Sector 62 & Censo de Población 2020) | Datos.gob.mx, SIEGY | **Explorador Cartográfico Multiescalar con Clusters Dinámicos** | *La Red que nos Cuida:* Distribución territorial de la infraestructura de salud pública y privada frente a la concentración de población. |
+| **2** | **Módulo Datos.gob.mx** | **Datos.gob.mx** (Base DGE - Secretaría de Salud) | INEGI, PNT | **Diagrama de Sankey Dinámico + Curvas de Recuperación Temporal** | *La Curva de la Esperanza:* Flujo de atención clínica, altas médicas y superación de las olas de contagio a nivel nacional y regional. |
+| **3** | **Módulo SIEGY Yucatán** | **SIEGY** (Sistema de Información Estadística y Geográfica de Yucatán) | Datos.gob.mx, DENUE | **Radar Multidimensional & Mapa de Jurisdicciones Sanitarias** | *El Latido del Mayab:* Sinergia y apoyo mutuo entre los 106 municipios del interior del estado y la zona metropolitana. |
+| **4** | **Módulo GeoPortal Mérida** | **GeoPortal del Ayuntamiento de Mérida** (Capas SIG) | DENUE, Self-Produced Data | **Mapa de Isócronas y Accesibilidad Urbana a Pie/Transporte** | *La Ciudad de 15 Minutos:* Tiempos de traslado vecinal a centros de salud, parques y puntos de vacunación en colonias y comisarías. |
+| **5** | **Módulo Transparencia (PNT)** | **Plataforma Nacional de Transparencia (PNT / SSY)** | Datos.gob.mx, DENUE | **Raincloud Plots & Matriz de Suministro Hospitalario** | *Héroes de Blanco y Logística de Vida:* Agilidad de respuesta y distribución de insumos médicos en hospitales ancla (O'Horán, T1 IMSS). |
+| **6** | **Módulo Web Scraping** | **Web Scraping** (Prensa del Sur: Diario de Yucatán, Por Esto!, Gacetas) | Datos.gob.mx | **Red de Co-ocurrencia Semántica (D3 Force) y Análisis de Sentimiento** | *La Prensa que Informó y Unió:* Crónica visual y sentimiento comunitario durante las jornadas de vacunación masiva. |
+| **7** | **Módulo Self-Produced Data** | **Encuesta Universitaria UPY** (Levantamiento propio) | GeoPortal Mérida, DGE Salud | **Dashboard Demoscópico Interactivo & Escalas Likert Dinámicas** | *Voces Universitarias:* Adaptación al aprendizaje remoto, hábitos saludables, bienestar mental y la resiliencia en el campus UPY. |
+| **8** | **Módulo LiDAR 3D** | *Alimentado por Continuo de Elevación INEGI + LiDAR Mérida* | DENUE, GeoPortal | **Maqueta Altimétrica 3D Interactiva (Deck.gl / Three.js)** | *Mérida en Tres Dimensiones:* Relieve urbano, dosel vegetal y morfología tridimensional de la ciudad asociada a zonas de equipamiento. |
+| **9** | **Módulo Realidad Aumentada (AR)**| *Alimentado por PDB ID 6VXX + Geometrías Urbanas Mérida* | WebXR, Three.js, AR.js | **Holograma Molecular Spike & Maqueta de Mesa en AR** | *La Ciencia en tus Manos:* Proyección holográfica del complejo viral de la vacuna y mapa 3D interactivo sobre el escritorio del usuario. |
 
 ---
 
-## 3. Catálogo de Visualizaciones Amigables y Vibrantes
-
-El catálogo de visualizaciones utiliza componentes modernos, colores vibrantes y formatos de *Scrollytelling* para cautivar al lector en todo momento:
+## 2. Detalle de Cada Vista: Fuentes, Datos y Experiencia Visual
 
 ```mermaid
-sequenceDiagram
-    participant ActoI as Acto I: México en Movimiento
-    participant ActoII as Acto II: El Latido del Sur
-    participant ActoIII as Acto III: Yucatán Unido
-    participant ActoIV as Acto IV: Mérida & Comunidad UPY
-    participant AR as Epílogo: Ciencia Inmersiva AR
-
-    ActoI->>ActoII: Del Pulso Nacional a la Calidez del Sur
-    ActoII->>ActoIII: De los Estados del Sureste a la Red Municipal de Yucatán
-    ActoIII->>ActoIV: Del Mapa Estatal a las Historias de Mérida y la UPY
-    ActoIV->>AR: De la Ciudad Cotidiana al Visor 3D y Realidad Aumentada
+graph LR
+    subgraph Arquitectura_Vista ["Estructura de Cada Vista"]
+        FP["Fuente Principal (Titular de la Vista)"] --> Engine["Motor de Visualización Interactiva"]
+        FS["Fuentes Secundarias de Enriquecimiento"] --> Engine
+        Engine --> Story["Experiencia de Storytelling Humano"]
+    end
 ```
 
-### Tabla de Visualizaciones (17 Experiencias Visuales)
-
-| Acto Narrativo | No. | Tipo de Visualización | Fuentes | Tecnología | Propósito de Storytelling Amigable |
-| :--- | :---: | :--- | :--- | :--- | :--- |
-| **Acto I: México** | **1** | **Curva Interactiva del Viaje Nacional** | DGE Salud | Plotly / D3.js | Explora el avance de la respuesta sanitaria y los hitos de recuperación en el tiempo con controles interactivos. |
-| **Acto I: México** | **2** | **Mapa Ilustrativo de Coropletas México**| DGE Salud + INEGI | Folium / Mapbox | Visualización fluida con colores cálidos que destaca las regiones con mayor ritmo de vacunación y atención. |
-| **Acto II: Sur** | **3** | **Gráfico de Barras Vibrante "Fuerza del Sur"**| DGE Salud | ggplot2 / ECharts | Comparativa gráfica y colorida entre Yucatán, Q. Roo, Campeche, Tabasco, Chiapas, Oaxaca y Veracruz. |
-| **Acto II: Sur** | **4** | **Pirámide Poblacional de Recuperación** | DGE Salud + INEGI | Plotly / D3.js | Ilustración demográfica que resalta la capacidad de recuperación por grupos de edad en la región. |
-| **Acto III: Yucatán** | **5** | **Mapa Coroplético "Yucatán Solidario"** | DGE Salud + SIEGY | Folium / Leaflet | Mapa amigable e intuitivo de los 106 municipios de Yucatán, destacando los centros sanitarios de apoyo. |
-| **Acto III: Yucatán** | **6** | **Ridgeline Plot de Evolución Temporal** | DGE Salud Yucatán | ggridges (R) | Elegante gráfico de olas (joyplot) con tonos pasteles que muestra la transición a etapas de menor gravedad. |
-| **Acto III: Yucatán** | **7** | **Spider Chart de Capacidades Municipales**| SIEGY + CONAPO | Chart.js | Diagrama de radar interactivo para comparar la calidad de vida y conectividad entre municipios yucatecos. |
-| **Acto III: Yucatán** | **8** | **Heatmap Amigable de Indicadores Sociales**| SIEGY + DGE Salud | Seaborn / Plotly | Matriz de correlación clara que traduce datos complejos en descubrimientos sencillos y entretenidos. |
-| **Acto III: Yucatán** | **9** | **Red de Palabras "Noticias que Unen"** | Scraping Prensa | D3 Force / NetworkX | Grafo interactivo que muestra las palabras más esperanzadoras y frecuentes en las noticias locales. |
-| **Acto IV: Mérida** | **10** | **Mapa de Isócronas "Tiempos de Conexión"**| GeoPortal + DENUE | Geopandas / Leaflet | Mapeo interactivo de accesibilidad urbana que muestra la cercanía a centros de salud desde cualquier colonia. |
-| **Acto IV: Mérida** | **11** | **Diagrama de Sankey "Rutas de Atención"** | DGE Salud (Mérida) | D3.js / Plotly | Flujo dinámico de pacientes que ilustra la efectividad del sistema de salud y la alta tasa de recuperados. |
-| **Acto IV: Mérida** | **12** | **Treemap Interactivo de Hábitos Saludables**| DGE Salud (Mérida) | Plotly / D3.js | Mosaico visual y colorido sobre factores de prevención y estilo de vida activo en la capital yucateca. |
-| **Acto IV: Mérida** | **13** | **Raincloud Plot de Tiempos de Respuesta** | Transparencia + DGE | ggplot2 / Seaborn | Gráfico combinado (nube + gotas) que muestra la agilidad en la atención médica en las distintas instituciones. |
-| **Acto IV: Mérida** | **14** | **Gráfico Likert "El Pulso de la UPY"** | Encuesta UPY | Seaborn / Plotly | Visualización amigable de la encuesta estudiantil sobre el regreso seguro a clases y hábitos positivos. |
-| **Acto IV: Mérida** | **15** | **Maqueta Altimétrica 3D de Mérida** | LiDAR + DENUE | Three.js / Deck.gl | Modelo tridimensional interactivo de la ciudad donde los edificios se iluminan según la oferta médica. |
-| **Epílogo: AR** | **16** | **Visor Molecular en Realidad Aumentada**| PDB ID: 6VXX | Three.js / WebXR | Proyección 3D interactiva en AR para explorar la biología viral y el diseño de vacunas directo en la pantalla. |
-| **Epílogo: AR** | **17** | **Mapa Virtual 3D en Mesa (AR)** | DGE + GeoPortal | Three.js / AR.js | Experiencia inmersiva que permite colocar el mapa tridimensional de Mérida sobre cualquier superficie física. |
+### Vista 1: Módulo INEGI — Cartografía Económica y Vulnerabilidad Territorial
+- **Fuente Principal:** INEGI (Directorio Nacional de Unidades Económicas - DENUE 2020-2024, Censo de Población y Vivienda).
+- **Fuentes Complementarias:** Base Abierta de Salud (Datos.gob.mx) para cruce de demanda, SIEGY para índices de marginación.
+- **Experiencia de Visualización:** 
+  - *Mapa de Densidad y Clusterización Dinámica:* Mapeo interactivo en capas con filtrado por tipo de unidad médica (consultorios, clínicas, hospitales de alta especialidad, farmacias).
+  - *Buscador de Proximidad:* Cálculo dinámico del radio de cobertura médica por cada 10,000 habitantes.
+- **Storytelling:** *La Red que nos Cuida.* Demuestra cómo la red de infraestructura médica distribuida en la península y en Mérida fue la primera línea de contención y acompañamiento para las familias.
 
 ---
 
-## 4. Guía de Estética y Experiencia Visual (Design System)
+### Vista 2: Módulo Datos.gob.mx — El Pulso Epidemiológico y la Curva de Recuperación
+- **Fuente Principal:** Datos.gob.mx / Dirección General de Epidemiología (DGE - Secretaría de Salud Federal).
+- **Fuentes Complementarias:** INEGI (Estructura de grupos etarios), Transparencia (Capacidades de camas UCI).
+- **Experiencia de Visualización:**
+  - *Diagrama de Flujo de Pacientes (Sankey Interactivo):* Visualización dinámica que rastrea el viaje del paciente: Detección -> Tipo de Tratamiento Ambulatorio/Hospitalario -> Alta Médica Exitosa.
+  - *Línea de Tiempo Interactiva con Scrubbing:* Control deslizante para observar la aceleración de altas médicas y efectividad de los esquemas de vacunación a lo largo de las olas.
+- **Storytelling:** *La Curva de la Esperanza.* Una narrativa enfocada no en la tragedia, sino en la victoria científica, el alto porcentaje de personas recuperadas y el esfuerzo incansable del personal sanitario.
 
-Para asegurar que el reporte visual impresione desde el primer segundo, se aplicarán las siguientes reglas de diseño:
+---
 
+### Vista 3: Módulo SIEGY Yucatán — Cohesión Territorial de los 106 Municipios
+- **Fuente Principal:** SIEGY (Sistema de Información Estadística y Geográfica de Yucatán / CEIEG).
+- **Fuentes Complementarias:** Datos.gob.mx (Incidencia estatal), DENUE (Centros de salud municipales).
+- **Experiencia de Visualización:**
+  - *Radar Multidimensional (Spider Chart Interactivo):* Comparador dinámico de municipios por Jurisdicción Sanitaria (Mérida, Valladolid, Ticul), evaluando cobertura, conectividad e índice de resiliencia social.
+  - *Mapa Coroplético Bivariado:* Cruce visual entre índice de marginación y velocidad de cobertura de programas sociales y de salud.
+- **Storytelling:** *El Latido del Mayab.* Muestra cómo la solidaridad y el trabajo coordinado entre la capital yucateca y las comunidades mayahablantes del interior fortalecieron el tejido social.
+
+---
+
+### Vista 4: Módulo GeoPortal de Mérida — Accesibilidad Urbana y Vida en las Comisarías
+- **Fuente Principal:** GeoPortal del Ayuntamiento de Mérida (Dirección de Desarrollo Urbano / Catastro).
+- **Fuentes Complementarias:** DENUE (Puntos de vacunación masiva y consultorios de barrio), Self-Produced Data (Rutas de viaje).
+- **Experiencia de Visualización:**
+  - *Mapa de Isócronas Urbanas:* Visualización interactiva que traza polígonos de tiempo de traslado (5, 10, 15 y 20 minutos caminando y en transporte público) hacia parques públicos, clínicas y sedes de vacunación.
+  - *Explorador Territorial de Comisarías:* Zoom interactivo a comisarías del norte, poniente, sur y oriente (Caucel, Komchén, Dzityá, Chablekal, Cholul, Los Héroes).
+- **Storytelling:** *La Ciudad a Escala Humana.* La vivencia cotidiana de Mérida, evidenciando la importancia de los espacios públicos y la cercanía de los servicios para la calidad de vida de sus habitantes.
+
+---
+
+### Vista 5: Módulo Transparencia (PNT) — Logística Hospitalaria e Insumos Médicos
+- **Fuente Principal:** Solicitudes de Información a la SSY, IMSS e ISSSTE vía Plataforma Nacional de Transparencia (PNT / Infomex).
+- **Fuentes Complementarias:** Datos.gob.mx (Ocupación de camas UCI), DENUE (Hospitales de referencia).
+- **Experiencia de Visualización:**
+  - *Raincloud Plot Interactivo:* Nube de distribución estadística y puntos de datos individuales que comparan los tiempos de reabastecimiento y distribución de Equipos de Protección Personal (EPP).
+  - *Matriz de Dotación por Hospital:* Diagrama de calor que refleja la capacidad de respuesta logística en los principales centros hospitalarios de la región (Hospital Agustín O'Horán, Clínica T1 IMSS, Hospital Regional ISSSTE).
+- **Storytelling:** *Héroes de Blanco y Logística de Vida.* La historia invisible detrás del escenario: la sincronización logística para dotar de insumos y equipamiento a quienes estaban en la primera línea.
+
+---
+
+### Vista 6: Módulo Web Scraping — Minería Semántica y la Voz de la Prensa del Sur
+- **Fuente Principal:** Web Scraping automatizado en medios locales y comunicados gubernamentales (*Diario de Yucatán*, *Por Esto!*, boletines del Gobierno del Estado).
+- **Fuentes Complementarias:** Datos.gob.mx (Fechas clave de jornadas sanitarias).
+- **Experiencia de Visualización:**
+  - *Grafo de Red Semántica (D3.js Force-Directed Graph):* Red interactiva de nodos donde se exploran las conexiones entre conceptos clave (*solidaridad, vacunación, UPY, Siglo XXI, apertura, cuidado*).
+  - *Curva de Sentimiento Colectivo:* Análisis cronológico de polaridad textual que muestra el tránsito de la incertidumbre inicial hacia el optimismo y la reapertura comunitaria.
+- **Storytelling:** *La Prensa que Informó y Unió.* Cómo la comunicación responsable y la cobertura de los medios locales motivaron a la ciudadanía a acudir con entusiasmo a las jornadas cívicas de vacunación.
+
+---
+
+### Vista 7: Módulo Self-Produced Data — La Voz Universitaria UPY
+- **Fuente Principal:** Dataset propio generado a partir de la Encuesta Digital Estudiantil UPY y Percepción Comunitaria de Mérida.
+- **Fuentes Complementarias:** GeoPortal de Mérida (Distribución espacial de las residencias de los alumnos), Datos.gob.mx (Factores de referencia).
+- **Experiencia de Visualización:**
+  - *Dashboard Demoscópico Interactivo:* Paneles de selección dinámica con barras divergentes (Escalas Likert) que exploran hábitos de estudio, adaptación tecnológica, deporte, bienestar emocional y hábitos post-pandemia.
+  - *Mapa de Calor de Movilidad Estudiantil:* Flujos de viaje desde distintas zonas de Mérida hacia el campus de la Universidad Politécnica de Yucatán.
+- **Storytelling:** *Nuestra Universidad, Nuestro Futuro.* La mirada fresca y viva de los estudiantes de la UPY: cómo la innovación, la tecnología y el compañerismo permitieron una transición exitosa a la nueva normalidad.
+
+---
+
+### Vista 8: Apartado Especial LiDAR — Maqueta Altimétrica y Morfología 3D de Mérida
+- **Naturaleza del Módulo:** Visualización Altimétrica y Modelado Volumétrico Tridimensional.
+- **Fuentes Nutrientes:** Continuo de Elevación Digital (CEM 3.0) del INEGI + Datos LiDAR Urbanos de Mérida + Capas DENUE.
+- **Experiencia de Visualización:**
+  - *Visor 3D Interactivo de Nube de Puntos / Malla Extruida:* Modelo tridimensional de la trama urbana de Mérida con navegación libre (rotación, pitch, zoom).
+  - *Capas Temáticas Iluminadas:* Las alturas y densidades urbanas se iluminan según su cercanía a equipamiento de salud y corredores de ventilación urbana.
+- **Storytelling:** *Mérida en Tres Dimensiones.* Una experiencia estética de vanguardia que revela la topografía plana pero rica en infraestructura de la capital yucateca, uniendo datos duros con diseño espacial.
+
+---
+
+### Vista 9: Apartado Especial Realidad Aumentada (AR) — Inmersión Molecular y Proyección Espacial
+- **Naturaleza del Módulo:** Experiencia Inmersiva WebXR y Proyección Espacial de Realidad Aumentada.
+- **Fuentes Nutrientes:** Protein Data Bank (PDB ID: `6VXX` - Estructura de la Espícula de SARS-CoV-2 y diseño de vacunas de ARNm) + Modelos 3D de la UPY y Mérida.
+- **Experiencia de Visualización:**
+  - *Holograma Molecular en tu Mesa:* Proyección en Realidad Aumentada (mediante cámara del dispositivo) de la estructura de la proteína para interactuar con sus sitios de unión con rotación táctil.
+  - *Maqueta Urbana AR:* Proyección flotante en el espacio real de la maqueta territorial de Mérida y el campus UPY.
+- **Storytelling:** *La Ciencia en tus Manos.* El cierre magistral del viaje: la tecnología permite al lector tocar la ciencia a nivel atómico y contemplar su ciudad proyectada en su propio espacio físico.
+
+---
+
+## 3. Guía de Estética, Experiencia de Usuario y Componentes (Design System)
+
+Para asegurar que la entrega deslumbre visualmente al docente y a los lectores, se implementa el siguiente sistema de diseño:
+
+- **Estructura de Navegación (Tabs & Scrollytelling):**
+  - Barra de navegación superior/lateral fluida con accesos directos a las 9 Vistas.
+  - Indicador claro de **Fuente Principal Titular** e insignias de **Fuentes Complementarias**.
 - **Paleta de Colores Curada:**
-  - *Primary Accent (Esperanza y Tecnología):* Teal / Menta vibrante (`#00F2FE` -> `#4FACFE`).
-  - *Secondary Accent (Calidez y Resiliencia):* Coral cálido / Atardecer (`#FF7E5F` -> `#FEB47B`).
-  - *Background & Cards:* Modo oscuro moderno con cristalino glassmorphism (`#0F172A` con tarjetas semi-transparentes y bordes suaves).
+  - *Accent Primario (Tecnología y Esperanza):* Gradiente Cian Eléctrico a Azul Índigo (`#00F2FE` -> `#4FACFE`).
+  - *Accent Secundario (Calidez y Resiliencia):* Gradiente Coral Atardecer a Ámbar Dorado (`#FF7E5F` -> `#FEB47B`).
+  - *Fondo & Superficies:* Slate Dark (`#0F172A`) con micro-texturas y Glassmorphism (paneles translúcidos con desenfoque de fondo y bordes de 1px con brillo sutil).
 - **Tipografía:**
-  - *Titulares de Impacto:* `Outfit` / `Plus Jakarta Sans` (Geométrica, moderna y amigable).
-  - *Cuerpo de Texto:* `Inter` (Altamente legible en pantallas y dispositivos móviles).
-- **Componentes Interactivos:**
-  - Tarjetas con efecto Hover 3D, tooltips interactivos con lenguaje sencillo, contadores animados de hitos positivos y botones de exploración rápida.
+  - *Headings:* `Outfit` / `Plus Jakarta Sans` (Geométrica, moderna y de gran impacto).
+  - *Cuerpo y Datos:* `Inter` / `JetBrains Mono` para cifras y métricas clave.
 
 ---
 
-## 5. Pipeline de Procesamiento de Datos (ETL Amigable)
+## 4. Pipeline Técnico de Integración de Datos (ETL y Servicios)
 
-1. **Ingesta y Segmentación:**
-   - Descarga automatizada de datos oficiales y segmentación en 4 escalas: Nacional, Sur-Sureste, Yucatán (`31`) y Mérida (`31050`).
-2. **Armonización de Indicadores Positivos:**
-   - Transformación de conteos absolutos en porcentajes de recuperación, tiempos de respuesta y densidad relativa por cada 100k habitantes.
-3. **Optimización para la Web e Interactividad:**
-   - Compresión de mallas LiDAR y capas GeoJSON para garantización de carga ultra-rápida en cualquier navegador o dispositivo móvil.
-
----
-
-## 6. Conclusión y Compromiso de Calidad
-
-El proyecto se consolida como una **experiencia de Data Storytelling de clase mundial**: entretenida de leer, hermosa de ver, tecnológicamente avanzada y con un mensaje profundamente humano y optimista sobre la capacidad de nuestra sociedad para cuidarse y salir adelante.
+1. **Extracción y Limpieza:**
+   - Scripts modulares en Python (`scripts/etl/`) para procesar cada una de las 7 fuentes de datos y estructurarlas en formatos optimizados (`.parquet`, `.geojson`, `.json`).
+2. **Generación de Entornos 3D y Modelos AR:**
+   - Procesamiento de archivos `.las`/`.laz`/`.tif` de LiDAR hacia formatos ligeros para renderizado WebGL (Three.js / Deck.gl).
+   - Conversión de estructuras PDB a modelos `.gltf`/`.usdz` optimizados para WebXR.
+3. **Despliegue Web Interactivo:**
+   - Aplicación web responsiva con soporte táctil en móviles, tablets y monitores de alta resolución.
