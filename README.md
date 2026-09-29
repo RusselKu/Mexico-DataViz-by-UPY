@@ -5,7 +5,7 @@
 
 ## 🌟 Descripción General del Proyecto
 
-Este proyecto es una plataforma interactiva de **Data Storytelling y Visualización Avanzada de Datos** centrada en la resiliencia comunitaria, la ciencia y la respuesta territorial ante desafíos socio-sanitarios contemporáneos.
+Este proyecto es una plataforma interactiva de **Data Storytelling y Visualización Avanzada de Datos** centrada en la resiliencia comunitaria, la ciencia y la respuesta territorial ante desafíos socio-sanitarios contemporáneos en Yucatán y la UPY.
 
 A diferencia de reportes estáticos con gráficas convencionales, la plataforma se estructura en **9 Vistas / Pestañas Temáticas de Visualización Interactiva**:
 - **7 Vistas guiadas por Fuentes de Datos Principales**, donde cada vista tiene una fuente titular destacada que se enriquece de forma complementaria con las demás fuentes.
@@ -57,13 +57,37 @@ flowchart TD
 
 ---
 
-## 🎨 Principios de Diseño e Interacción
+## 🏗️ Arquitectura Modular del Código
 
-- **Visualizaciones en lugar de simples gráficas:** Uso intensivo de cartografía interactiva, grafos semánticos, diagramas de flujo multidimensionales y visores 3D/AR.
-- **Claridad de Fuentes:** Cada vista declara con prominencia su **Fuente Principal**, reconociendo también las fuentes complementarias que nutren su análisis.
-- **Storytelling Progresivo:** Hilo conductor humano y optimista que acompaña al lector desde la perspectiva macro (México y Sur) hasta el nivel micro (Mérida, colonias, la UPY y la escala molecular).
-- **Estética de Vanguardia:** Paleta de colores cálidos y tecnológicos con gradientes, soporte para modo oscuro / glassmorphism y micro-interacciones responsivas.
+El proyecto sigue una estructura limpia, escalable y desacoplada basada en módulos ES6 y hojas de estilo separadas por dominio:
+
+```
+Mexico-DataViz-by-UPY/
+├── index.html                      # Punto de entrada HTML semántico y limpio
+├── prototipo_digital.html          # Redirección de compatibilidad a index.html
+├── css/
+│   ├── style.css                   # Variables de diseño, reset, paleta y layout
+│   ├── components.css              # Header, pestañas, botones, tarjetas KPI, modal <dialog> y toasts
+│   └── visualizations.css          # Lienzos de canvas, mapa GIS SVG, visor 3D y superposiciones
+├── js/
+│   ├── data/
+│   │   └── viewsData.js            # Dataset estructurado de las 9 vistas (fuentes, KPIs, datos)
+│   ├── modules/
+│   │   ├── gisMap.js               # Renderizador de mapa cartográfico interactivo GIS
+│   │   ├── charts.js               # Controlador Chart.js (líneas, barras, radar multieje)
+│   │   ├── forceGraph.js           # Simulación de física de fuerzas para grafo semántico
+│   │   ├── threeVisuals.js         # Entorno 3D WebGL (LiDAR y AR molecular con OrbitControls)
+│   │   └── storytelling.js         # Narración por voz (Web Speech API), Auto-Tour y notificaciones
+│   └── app.js                      # Coordinador central de la aplicación y eventos del DOM
+├── FUENTES_Y_PLAN_DE_ANALISIS.md   # Metodología exhaustiva y fuentes de datos
+└── PROTOTIPO_BORRADOR_WIREFRAMES.md# Wireframes y borradores de diseño
+```
 
 ---
 
-Para más detalles sobre la metodología, variables de datasets y esquemas analíticos, consulta el documento rector: [`FUENTES_Y_PLAN_DE_ANALISIS.md`](./FUENTES_Y_PLAN_DE_ANALISIS.md).
+## 🎨 Principios de Diseño e Interacción
+- **View Transitions API:** Transiciones fluidas nativas entre vistas temáticas.
+- **Narración Auditiva:** Soporte para lectura en voz alta con Web Speech API.
+- **Interacción 3D Completa:** OrbitControls para rotar, acercar y panear las maquetas volumétricas.
+- **Storytelling Progresivo:** Hilo conductor humano y optimista desde la perspectiva macro (México y Sur) hasta el nivel micro (Mérida, colonias, la UPY y la escala molecular).
+- **Estética de Vanguardia:** Paleta con gradientes, soporte glassmorphism y micro-interacciones responsivas.
