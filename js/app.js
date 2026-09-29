@@ -35,7 +35,10 @@ window.DataStoryApp.app = (function() {
     const data = viewsData ? viewsData[step] : null;
     if (!data) return;
 
-    // Actualizar Tabs
+    // Actualizar Journey Arc Stepper
+    updateJourneyArc(data);
+
+    // Actualizar Tabs Nav
     const tabBtns = document.querySelectorAll('.tab-btn');
     tabBtns.forEach((btn, index) => {
       btn.classList.toggle('active', index + 1 === step);
@@ -47,7 +50,7 @@ window.DataStoryApp.app = (function() {
       progressBar.style.width = `${(step / 9) * 100}%`;
     }
 
-    // Banners
+    // Banners de Fuentes
     const isTech = step >= 8;
     const primaryBadge = document.getElementById('primarySourceBadge');
     if (primaryBadge) {
@@ -61,36 +64,28 @@ window.DataStoryApp.app = (function() {
         data.secondarySources.map(s => `<span class="badge-pill badge-secondary">${s}</span>`).join('');
     }
 
-    // Títulos y Storytelling
-    const vizTitle = document.getElementById('vizTitle');
+    // Títulos y Storytelling Editorial
     const storyTag = document.getElementById('storyTag');
     const storyTitle = document.getElementById('storyTitle');
+    const storyLead = document.getElementById('storyLead');
     const storyDesc = document.getElementById('storyDescription');
     const storyInsight = document.getElementById('storyInsight');
     const stepIndicator = document.getElementById('stepIndicator');
+    const vizTitle = document.getElementById('vizTitle');
 
-    if (vizTitle) vizTitle.innerHTML = `<i class="fa-solid fa-compass-drafting" style="color: var(--accent-cyan);"></i> ${data.vizTitle}`;
     if (storyTag) storyTag.innerHTML = `<i class="fa-solid fa-compass"></i> ${data.tag}`;
     if (storyTitle) storyTitle.innerHTML = data.storyTitle;
+    if (storyLead) storyLead.innerHTML = data.storyLead || "";
     if (storyDesc) storyDesc.innerHTML = data.storyDesc;
     if (storyInsight) storyInsight.innerHTML = data.insight;
     if (stepIndicator) stepIndicator.innerText = `Capítulo ${step} de 9 • ${data.tabName}`;
+    if (vizTitle) vizTitle.innerHTML = `<i class="fa-solid fa-compass-drafting" style="color: var(--accent-cyan);"></i> ${data.vizTitle}`;
 
-    // KPIs
-    const kpiContainer = document.getElementById('kpiContainer');
-    if (kpiContainer) {
-      kpiContainer.innerHTML = data.kpis.map(k => `
-        <div class="kpi-card">
-          <div class="kpi-icon" style="color: ${k.color};">
-            <i class="fa-solid ${k.icon}"></i>
-          </div>
-          <div class="kpi-info">
-            <span class="kpi-value">${k.value}</span>
-            <span class="kpi-label">${k.label}</span>
-          </div>
-        </div>
-      `).join('');
-    }
+    // Renderizar Story Beats Milestones Interactivos
+    renderStoryBeats(data.storyBeats);
+
+    // Renderizar KPIs Horizontalmente
+    renderKpis(data.kpis);
 
     // Controles Contextuales
     setupContextualControls(step);
@@ -135,6 +130,93 @@ window.DataStoryApp.app = (function() {
     if (activeBtn) {
       activeBtn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
     }
+  }
+
+  function updateJourneyArc(data) {
+    const arc1 = document.getElementById('arcPill1');
+    const arc2 = document.getElementById('arcPill2');
+    const arc3 = document.getElementById('arcPill3');
+    const arc4 = document.getElementById('arcPill4');
+
+    if (!arc1) return;
+
+    arc1.classList.toggle('active', data.number >= 1 && data.number <= 3);
+    arc2.classList.toggle('active', data.number >= 4 && data.number <= 6);
+    arc3.classList.toggle('active', data.number === 7);
+    arc4.classList.toggle('active', data.number >= 8);
+  }
+
+  function renderStoryBeats(beats) {
+    const container = document.getElementById('storyBeatsList');
+    if (!container) return;
+
+    if (!beats || beats.length === 0) {
+      container.innerHTML = '';
+      return;
+    }
+
+    container.innerHTML = beats.map((beat, idx) => `
+      <div class="story-beat-card ${idx === 0 ? 'active' : ''}" data-beat-id="${beat.id}" id="beatCard_${idx}">
+        <div class="beat-header">
+          <span class="beat-title">${beat.title}</span>
+          <span class="beat-action-pill"><i class="fa-solid fa-bullseye"></i> ${beat.actionText}</span>
+        </div>
+        <p class="beat-desc">${beat.desc}</p>
+      </div>
+    `).join('');
+
+    // Attach click triggers to beats
+    beats.forEach((beat, idx) => {
+      document.getElementById(`beatCard_${idx}`)?.addEventListener('click', () => {
+        document.querySelectorAll('.story-beat-card').forEach(c => c.classList.remove('active'));
+        document.getElementById(`beatCard_${idx}`)?.classList.add('active');
+        handleBeatTrigger(beat);
+      });
+    });
+  }
+
+  function handleBeatTrigger(beat) {
+    const gisMap = window.DataStoryApp.gisMap;
+    const charts = window.DataStoryApp.charts;
+    const viewsData = window.DataStoryApp.viewsData;
+    const storytelling = window.DataStoryApp.storytelling;
+    const threeVisuals = window.DataStoryApp.threeVisuals;
+
+    if (beat.focusNode && gisMap) {
+      gisMap.highlightNode(beat.focusNode);
+    }
+    if (beat.filterWave && charts && viewsData) {
+      if (beat.filterWave === 'wave1') filterWaveData('wave1');
+      else if (beat.filterWave === 'waveVac') filterWaveData('vac');
+      else filterWaveData('all');
+    }
+    if (typeof beat.jurisIdx === 'number') {
+      filterRadarSelection(beat.jurisIdx);
+    }
+    if (beat.id === 'beat8_1' && threeVisuals) threeVisuals.setLidarTheme('cyan');
+    if (beat.id === 'beat8_2' && threeVisuals) threeVisuals.setLidarTheme('terrain');
+    if (beat.id === 'beat9_2' && threeVisuals) threeVisuals.toggleSpikeExplosion();
+    if (beat.id === 'beat9_3' && threeVisuals) alert("Escanea este modelo en tu móvil para proyectar en Realidad Aumentada sobre tu mesa.");
+
+    if (storytelling) storytelling.showToast(`Paso seleccionado: ${beat.title}`);
+  }
+
+  function renderKpis(kpis) {
+    const container = document.getElementById('kpiContainer');
+    if (!container || !kpis) return;
+
+    container.innerHTML = kpis.map(k => `
+      <div class="kpi-block">
+        <div class="kpi-icon-box" style="color: ${k.color};">
+          <i class="fa-solid ${k.icon}"></i>
+        </div>
+        <div class="kpi-info-content">
+          <span class="kpi-main-number">${k.value}</span>
+          <span class="kpi-text-label">${k.label}</span>
+          <span class="kpi-delta-pill"><i class="fa-solid fa-arrow-trend-up"></i> ${k.delta || "Dato verificado"}</span>
+        </div>
+      </div>
+    `).join('');
   }
 
   function setupContextualControls(step) {
@@ -247,17 +329,21 @@ window.DataStoryApp.app = (function() {
     const data = viewsData ? viewsData[2] : null;
     if (!data || !charts) return;
 
-    if (mode === 'vac') {
+    if (mode === 'vac' || mode === 'waveVac') {
       data.chartData.labels = ['Ola 3 - Delta', 'Ola 4 - Ómicron (2022)', 'Fase Endémica (2023)'];
       data.chartData.datasets[0].data = [86.4, 96.8, 99.1];
       data.chartData.datasets[1].data = [88.0, 95.2, 98.0];
+    } else if (mode === 'wave1') {
+      data.chartData.labels = ['Ola 1 (2020)', 'Ola 2 (2021)'];
+      data.chartData.datasets[0].data = [74.2, 79.8];
+      data.chartData.datasets[1].data = [81.0, 83.5];
     } else {
       data.chartData.labels = ['Ola 1 (2020)', 'Ola 2 (2021)', 'Ola 3 - Delta', 'Ola 4 - Ómicron (2022)', 'Fase Endémica (2023)'];
       data.chartData.datasets[0].data = [74.2, 79.8, 86.4, 96.8, 99.1];
       data.chartData.datasets[1].data = [81.0, 83.5, 88.0, 95.2, 98.0];
     }
     charts.renderChart(data);
-    if (storytelling) storytelling.showToast(mode === 'vac' ? "Filtrado a fase post-vacunación masiva" : "Mostrando todas las olas");
+    if (storytelling) storytelling.showToast(mode === 'vac' ? "Filtrado a fase post-vacunación masiva" : "Actualizado filtro de olas");
   }
 
   function filterRadarSelection(jurisIdx) {
@@ -294,6 +380,12 @@ window.DataStoryApp.app = (function() {
   function setupAppEvents() {
     const storytelling = window.DataStoryApp.storytelling;
     const viewsData = window.DataStoryApp.viewsData;
+
+    // Journey Arc Steppers Click
+    document.getElementById('arcPill1')?.addEventListener('click', () => switchView(1));
+    document.getElementById('arcPill2')?.addEventListener('click', () => switchView(4));
+    document.getElementById('arcPill3')?.addEventListener('click', () => switchView(7));
+    document.getElementById('arcPill4')?.addEventListener('click', () => switchView(8));
 
     // Tabs navigation
     const tabBtns = document.querySelectorAll('.tab-btn');

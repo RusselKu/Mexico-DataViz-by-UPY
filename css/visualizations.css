@@ -6,6 +6,7 @@
   padding: 1.5rem;
   min-height: 580px;
   position: relative;
+  height: 100%;
 }
 
 .viz-header {
@@ -18,7 +19,7 @@
 
 .viz-title {
   font-family: var(--font-heading);
-  font-size: 1.25rem;
+  font-size: 1.22rem;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -42,9 +43,9 @@
 .viz-canvas-wrapper {
   flex: 1;
   min-height: 480px;
-  background: radial-gradient(circle at center, rgba(15, 23, 42, 0.6) 0%, rgba(6, 9, 19, 0.9) 100%);
+  background: radial-gradient(circle at center, rgba(13, 20, 38, 0.7) 0%, rgba(5, 8, 17, 0.95) 100%);
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.07);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -63,13 +64,13 @@
   flex-direction: column;
 }
 
-/* Overlay Status */
+/* Overlay Status Top-Left */
 .interactive-overlay {
   position: absolute;
   top: 14px;
   left: 14px;
   z-index: 10;
-  background: rgba(6, 9, 19, 0.85);
+  background: rgba(5, 8, 17, 0.88);
   backdrop-filter: blur(12px);
   padding: 7px 13px;
   border-radius: 8px;
@@ -96,12 +97,46 @@
   100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 242, 254, 0); }
 }
 
+/* Floating Interactive Inspector Card (Bottom-Left on Canvas) */
+.canvas-inspector-card {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 15;
+  background: rgba(13, 20, 38, 0.92);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-glow);
+  border-radius: 10px;
+  padding: 10px 14px;
+  max-width: 320px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+  pointer-events: auto;
+}
+
+.inspector-header {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.inspector-body {
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: #cbd5e1;
+}
+
 /* Floating Viewport Tools */
 .viewport-tools {
   position: absolute;
   bottom: 14px;
   right: 14px;
-  z-index: 10;
+  z-index: 15;
   display: flex;
   gap: 6px;
 }
@@ -110,7 +145,7 @@
   width: 34px;
   height: 34px;
   border-radius: 8px;
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(13, 20, 38, 0.85);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-card);
   color: #fff;
@@ -133,7 +168,7 @@
   width: 100%;
   height: 100%;
   position: relative;
-  background: #090d1a;
+  background: #060914;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -143,4 +178,13 @@
 .map-svg-layer {
   width: 100%;
   height: 100%;
+}
+
+/* Hover effects for SVG map nodes */
+.gis-map-node {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gis-map-node:hover {
+  filter: drop-shadow(0 0 10px var(--accent-cyan));
 }

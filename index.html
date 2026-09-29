@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Storytelling: El Viaje de la Resiliencia | Plataforma Interactiva de 9 Vistas • UPY</title>
+  <title>Data Storytelling: El Viaje de la Resiliencia | Plataforma Interactiva Multiescalar • UPY</title>
   <meta name="description" content="Plataforma de Data Storytelling y Visualización Avanzada de Datos sobre la resiliencia comunitaria, cartografía de salud, modelos epidemiológicos, minería de prensa, LiDAR 3D y Realidad Aumentada en Yucatán y la UPY.">
   <meta name="keywords" content="Data Storytelling, Visualización de Datos, INEGI, DENUE, DGE, SIEGY, GeoPortal Mérida, LiDAR, WebXR, AR, UPY">
 
@@ -58,12 +58,36 @@
       <button class="btn-ghost" id="btnExportData" title="Descargar datos del capítulo en formato JSON">
         <i class="fa-solid fa-download"></i> Exportar
       </button>
-      <span class="badge-pill badge-primary"><i class="fa-solid fa-layer-group"></i> 9 Vistas Integradas</span>
+      <span class="badge-pill badge-primary"><i class="fa-solid fa-layer-group"></i> 9 Capítulos</span>
     </div>
   </header>
 
-  <!-- Pestañas de Navegación de las 9 Vistas -->
-  <nav class="tabs-nav-container" aria-label="Navegación de las 9 Vistas">
+  <!-- Journey Arc Stepper (Línea de Tiempo del Storytelling) -->
+  <section class="journey-arc-nav" aria-label="Fases del Viaje de Storytelling">
+    <div style="font-size: 0.76rem; color: var(--text-dim); text-transform: uppercase; font-weight: 700; letter-spacing: 0.8px;">
+      <i class="fa-solid fa-route" style="color: var(--accent-cyan);"></i> Hilo Narrativo:
+    </div>
+    <div class="arc-steps-wrapper">
+      <button class="arc-step-pill active" id="arcPill1" title="Capítulos 1 al 3">
+        <i class="fa-solid fa-earth-americas arc-step-icon"></i> 1. Macro Territorial
+      </button>
+      <button class="arc-step-pill" id="arcPill2" title="Capítulos 4 al 6">
+        <i class="fa-solid fa-city arc-step-icon"></i> 2. Escala Urbana & Operativa
+      </button>
+      <button class="arc-step-pill" id="arcPill3" title="Capítulo 7">
+        <i class="fa-solid fa-graduation-cap arc-step-icon"></i> 3. Comunidad Universitaria UPY
+      </button>
+      <button class="arc-step-pill" id="arcPill4" title="Capítulos 8 y 9">
+        <i class="fa-solid fa-cube arc-step-icon"></i> 4. Inmersión 3D & AR
+      </button>
+    </div>
+    <div style="font-size: 0.78rem; color: var(--accent-cyan); font-weight: 600;">
+      <i class="fa-solid fa-sparkles"></i> Experiencia Guiada
+    </div>
+  </section>
+
+  <!-- Pestañas de Navegación de los 9 Capítulos -->
+  <nav class="tabs-nav-container" aria-label="Navegación de los 9 Capítulos">
     <div class="tabs-wrapper" id="tabsWrapper">
       <button class="tab-btn active">
         <span class="tab-number">1</span> <i class="fa-solid fa-map-location-dot"></i> INEGI DENUE
@@ -95,7 +119,7 @@
     </div>
   </nav>
 
-  <!-- Área Principal Dinámica -->
+  <!-- Área Principal de Storytelling & Visualización -->
   <main>
     <!-- Franja de Fuentes de Información -->
     <section class="glass-panel source-banner" id="sourceBanner">
@@ -111,10 +135,52 @@
       </div>
     </section>
 
-    <!-- Grid de Visualización y Storytelling -->
-    <div class="view-content-grid">
+    <!-- Workspace de 2 Columnas (Editorial Storytelling + Dynamic Canvas) -->
+    <div class="storytelling-workspace">
       
-      <!-- Columna Izquierda: Visualización Compleja Dinámica -->
+      <!-- Columna Izquierda: Deck Narrativo Editorial Guiado -->
+      <aside class="glass-panel story-narrative-deck">
+        <div class="story-badge-header">
+          <div class="story-tag" id="storyTag">
+            <i class="fa-solid fa-compass"></i> CAPÍTULO 1 • COBERTURA REGIONAL
+          </div>
+        </div>
+
+        <h1 class="story-title-main" id="storyTitle">
+          La Red que nos Cuida
+        </h1>
+
+        <!-- Pregunta Guía / Lead del Storytelling -->
+        <div class="story-lead-question" id="storyLead">
+          ¿Cómo se articuló la primera línea de protección de la salud en el territorio yucateco?
+        </div>
+
+        <p class="story-text-body" id="storyDescription">
+          El Directorio Nacional de Unidades Económicas (DENUE) del INEGI revela la infraestructura médica distribuida en la península. Lejos de depender únicamente de los grandes hospitales centrales, la fortaleza radicó en una densa malla de consultorios barriales y farmacias comunitarias.
+        </p>
+
+        <!-- Barra de Audio Narrador (Web Speech API) -->
+        <div class="story-audio-bar">
+          <div class="audio-info">
+            <i class="fa-solid fa-volume-high" style="color: var(--accent-cyan);"></i> Narrador del Capítulo
+          </div>
+          <button class="btn-audio-play" id="narrateBtn">
+            <i class="fa-solid fa-play" id="narrateIcon"></i> Escuchar
+          </button>
+        </div>
+
+        <!-- Pasos Guiados / Story Beats Interactivos -->
+        <div class="story-beats-container">
+          <div class="beats-heading">
+            <i class="fa-solid fa-list-check" style="color: var(--accent-cyan);"></i> Pasos Guiados de Análisis:
+          </div>
+          <div id="storyBeatsList" style="display: flex; flex-direction: column; gap: 8px;">
+            <!-- Inyectados dinámicamente por JS -->
+          </div>
+        </div>
+      </aside>
+
+      <!-- Columna Derecha: Lienzo de Visualización Interactiva -->
       <section class="glass-panel viz-container">
         <div class="viz-header">
           <div class="viz-title" id="vizTitle">
@@ -133,7 +199,7 @@
           </div>
 
           <!-- Chart.js Canvas -->
-          <canvas id="vizChart" style="max-height: 440px; width: 100%; display: block;"></canvas>
+          <canvas id="vizChart" style="max-height: 480px; width: 100%; display: block;"></canvas>
           
           <!-- Three.js 3D WebGL Canvas Container -->
           <div id="threejsContainer" style="width: 100%; height: 100%; display: none; position: absolute; top: 0; left: 0;"></div>
@@ -153,41 +219,16 @@
         </div>
       </section>
 
-      <!-- Columna Derecha: Storytelling, KPIs & Hallazgo -->
-      <aside class="glass-panel story-panel">
-        <div class="story-header-section">
-          <div class="story-tag" id="storyTag">
-            <i class="fa-solid fa-compass"></i> CAPÍTULO 1 • COBERTURA REGIONAL
-          </div>
-          <h2 class="story-card-title" id="storyTitle">
-            La Red que nos Cuida
-          </h2>
-          <p class="story-text" id="storyDescription">
-            El Directorio Nacional de Unidades Económicas del INEGI revela la amplia distribución de centros de salud, clínicas y consultorios de barrio que conformaron la primera línea de protección en la península y en el área metropolitana de Mérida.
-          </p>
+    </div>
 
-          <!-- Audio Narration Box (Web Speech API) -->
-          <div class="audio-narration-box">
-            <div class="narration-label">
-              <i class="fa-solid fa-volume-high" style="color: var(--accent-cyan);"></i> Narrador del Capítulo
-            </div>
-            <button class="btn-narrate" id="narrateBtn">
-              <i class="fa-solid fa-play" id="narrateIcon"></i> Escuchar
-            </button>
-          </div>
-        </div>
+    <!-- Fila Inferior: Métricas Clave (KPIs) con Tendencias y Hallazgo -->
+    <div class="kpis-story-row" id="kpiContainer">
+      <!-- Inyectados por JS -->
+    </div>
 
-        <!-- KPIs Dinámicos -->
-        <div class="kpi-grid" id="kpiContainer">
-          <!-- Inyectados por JS -->
-        </div>
-
-        <!-- Descubrimiento Clave -->
-        <div class="insight-card" id="storyInsight">
-          💡 <strong>Descubrimiento Clave:</strong> El 84% de las familias en Mérida se encontraban a menos de 10 minutos de un consultorio o farmacia comunitaria.
-        </div>
-      </aside>
-
+    <!-- Descubrimiento Clave / Conclusión del Capítulo -->
+    <div class="insight-banner-box" id="storyInsight">
+      💡 <strong>Descubrimiento Clave:</strong> La integración de farmacias comunitarias y consultorios de primer nivel redujo la saturación en nosocomios de tercer nivel en más de un 35%.
     </div>
   </main>
 
