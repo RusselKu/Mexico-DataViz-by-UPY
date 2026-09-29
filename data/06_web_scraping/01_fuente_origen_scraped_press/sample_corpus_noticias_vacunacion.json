@@ -1,0 +1,29 @@
+[
+  {
+    "id_articulo": "ART-YUC-001",
+    "medio": "Diario de Yucatán",
+    "fecha_publicacion": "2021-04-12",
+    "titular": "Inicia con alegría y orden la jornada de vacunación para adultos mayores en el Siglo XXI",
+    "resumen": "Miles de familias yucatecas acompañaron a sus abuelos en un ambiente de esperanza y gratitud hacia el personal de salud.",
+    "keywords": ["vacunación", "esperanza", "Siglo XXI", "solidaridad", "personal médico"],
+    "score_polaridad": 0.82
+  },
+  {
+    "id_articulo": "ART-YUC-002",
+    "medio": "Por Esto!",
+    "fecha_publicacion": "2021-06-08",
+    "titular": "Jóvenes universitarios y voluntarios de la UPY apoyan en la logística y orientación comunitaria",
+    "resumen": "Estudiantes de ingeniería y tecnología demuestran su vocación de servicio agilizando el registro y acceso.",
+    "keywords": ["UPY", "voluntarios", "juventud", "comunidad", "innovación", "solidaridad"],
+    "score_polaridad": 0.91
+  },
+  {
+    "id_articulo": "ART-YUC-003",
+    "medio": "La Jornada Maya",
+    "fecha_publicacion": "2021-09-15",
+    "titular": "Mérida reactiva su vida cultural y académica con protocolos ejemplares y optimismo ciudadano",
+    "resumen": "La corresponsabilidad entre autoridades y sociedad civil permite el retorno gradual y seguro a las aulas.",
+    "keywords": ["reactivación", "educación", "cuidado", "esperanza", "Mérida"],
+    "score_polaridad": 0.76
+  }
+]

@@ -1,0 +1,5 @@
+id_sede,nombre_sede,tipo_sede,zona_merida,latitud,longitud,capacidad_diaria_dosis
+"VAC-01","Centro de Convenciones Siglo XXI","Macrocentro Vacunación","Norte",21.0368,-89.6272,8000
+"VAC-02","Unidad Deportiva Kukulcán","Macrocentro Vacunación","Sur",20.9382,-89.6015,7500
+"VAC-03","Módulo de Salud Cholul","Módulo Comunitario","Oriente",21.0354,-89.5532,1200
+"VAC-04","Módulo Comunitario Caucel","Módulo Comunitario","Poniente",20.9991,-89.7042,1500

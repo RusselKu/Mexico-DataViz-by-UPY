@@ -1,0 +1,13 @@
+{
+  "tracking_method": "Markerless_Surface_Detection_WebXR",
+  "fallback_marker": {
+    "type": "pattern",
+    "pattern_ratio": 0.75,
+    "pattern_file": "markers/pattern-upy-marker.patt"
+  },
+  "plane_detection": {
+    "horizontal": true,
+    "vertical": false,
+    "lighting_estimation": true
+  }
+}

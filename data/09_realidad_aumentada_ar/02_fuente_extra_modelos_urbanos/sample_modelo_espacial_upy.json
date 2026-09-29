@@ -1,0 +1,11 @@
+{
+  "model_name": "Campus_UPY_3D_Hologram",
+  "format": "GLTF/GLB",
+  "scale": [0.05, 0.05, 0.05],
+  "position_offset": [0, 0, -0.5],
+  "hotspots": [
+    {"label": "Edificio A - Aulas y Laboratorio de Datos", "pos": [0.2, 0.1, -0.3]},
+    {"label": "Edificio B - Centro de Ciberseguridad y Robótica", "pos": [-0.3, 0.1, -0.2]},
+    {"label": "Explanada Central de Innovación", "pos": [0, 0.05, 0]}
+  ]
+}

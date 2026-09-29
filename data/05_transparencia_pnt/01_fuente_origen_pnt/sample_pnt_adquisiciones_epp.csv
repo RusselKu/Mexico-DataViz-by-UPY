@@ -1,0 +1,6 @@
+id_contrato,hospital_destino,tipo_insumo,cantidad_piezas,tiempo_entrega_dias,monto_mxn,cumplimiento_calidad
+"PNT-SSY-2021-089","Hospital General Dr. Agustín O'Horán","Mascarillas KN95 / N95",50000,4,750000.00,"100%"
+"PNT-IMSS-2021-112","Hospital General Regional T1 IMSS","Batas Quirúrgicas Impermeables",25000,6,420000.00,"100%"
+"PNT-ISSSTE-2021-045","Hospital Regional Mérida ISSSTE","Guantes Quirúrgicos Nitrilo",80000,3,320000.00,"100%"
+"PNT-SSY-2021-140","Hospital de Valladolid","Kits de Protección Integral EPP",12000,5,280000.00,"100%"
+"PNT-SSY-2021-165","Hospital de Ticul","Mascarillas Tricapa y Caretas",30000,4,195000.00,"100%"

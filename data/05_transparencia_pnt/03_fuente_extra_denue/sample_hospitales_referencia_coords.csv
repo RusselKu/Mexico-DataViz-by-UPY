@@ -1,0 +1,5 @@
+hospital,institucion,nivel_atencion,latitud,longitud,almacen_central_vinculado
+"Hospital General Dr. Agustín O'Horán","SSY","Tercer Nivel",20.9678,-89.6384,"Almacén Central SSY Periférico"
+"Hospital General Regional No. 1 Lic. Ignacio García Téllez (T1)","IMSS","Segundo Nivel",20.9792,-89.6052,"Almacén Delegacional IMSS"
+"Hospital Regional Mérida","ISSSTE","Tercer Nivel",20.9950,-89.6175,"Almacén Regional ISSSTE"
+"Hospital de la Amistad Corea-México","SSY","Segundo Nivel",20.9230,-89.6240,"Almacén Central SSY Periférico"

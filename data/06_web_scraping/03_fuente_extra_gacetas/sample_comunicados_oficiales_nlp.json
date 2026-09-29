@@ -1,0 +1,16 @@
+[
+  {
+    "folio": "GOB-YUC-2021-042",
+    "fecha": "2021-05-10",
+    "titulo": "Coordinación Interinstitucional garantiza avance seguro en el Plan Estatal de Vacunación",
+    "temas": ["coordinación", "salud", "municipios", "prevención"],
+    "sentimiento": 0.85
+  },
+  {
+    "folio": "GOB-YUC-2021-098",
+    "fecha": "2021-08-20",
+    "titulo": "Protocolo Retorno Seguro y Responsable a Instituciones de Educación Superior",
+    "temas": ["educación", "universidades", "innovación", "seguridad"],
+    "sentimiento": 0.88
+  }
+]

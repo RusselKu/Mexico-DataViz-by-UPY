@@ -1,0 +1,5 @@
+id_estab,nombre_establecimiento,latitud,longitud,cota_altimetrica_msnm,estrato_relieve
+"DENUE-SALUD-01","Hospital Dr. Agustín O'Horán",20.9678,-89.6384,10.2,"Plataforma Central"
+"DENUE-SALUD-02","Clínica T1 IMSS",20.9792,-89.6052,10.8,"Plataforma Oriente"
+"DENUE-SALUD-03","Centro Médico de las Américas",20.9912,-89.6150,11.5,"Zona Norte-Centro"
+"DENUE-SALUD-04","Campus Universidad Politécnica de Yucatán",21.0180,-89.7650,9.5,"Corredor Poniente"

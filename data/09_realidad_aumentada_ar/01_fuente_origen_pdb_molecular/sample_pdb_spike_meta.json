@@ -1,0 +1,13 @@
+{
+  "pdb_id": "6VXX",
+  "title": "Structure of the SARS-CoV-2 spike glycoprotein (closed state)",
+  "resolution_angstroms": 2.8,
+  "chains": ["A", "B", "C"],
+  "polymer_type": "Protein Trimer",
+  "sample_key_residues": [
+    {"residue_num": 319, "name": "LEU", "region": "RBD (Receptor-Binding Domain)", "x": 12.45, "y": -4.20, "z": 88.15},
+    {"residue_num": 320, "name": "VAL", "region": "RBD", "x": 14.10, "y": -2.85, "z": 86.40},
+    {"residue_num": 501, "name": "ASN", "region": "Key Binding Site", "x": 22.80, "y": 8.35, "z": 94.60}
+  ],
+  "webxr_mesh_url": "models/pdb_6vxx_optimized.glb"
+}

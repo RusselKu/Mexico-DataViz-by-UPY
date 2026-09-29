@@ -1,0 +1,5 @@
+fecha,hospital,ocupacion_camas_generales_pct,ocupacion_camas_uci_pct,estatus_abastecimiento
+"2021-04-15","Hospital Dr. Agustín O'Horán",74.2,68.0,"Óptimo"
+"2021-05-15","Hospital Dr. Agustín O'Horán",81.5,75.2,"Abastecido"
+"2021-06-15","Hospital General Regional T1 IMSS",79.0,72.4,"Óptimo"
+"2021-07-15","Hospital Regional Mérida ISSSTE",68.2,60.1,"Óptimo"

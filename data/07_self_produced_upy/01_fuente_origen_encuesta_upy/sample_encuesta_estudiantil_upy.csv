@@ -1,0 +1,6 @@
+id_estudiante,carrera,cuatrimestre,adaptacion_digital_1_5,bienestar_emocional_1_5,horas_sueno_promedio,dias_ejercicio,colonia_residencia,tiempo_traslado_min
+"UPY-2021-001","Ingeniería de Datos",4,5,4,7.5,4,"Ciudad Caucel",25
+"UPY-2021-002","Ingeniería Robótica",7,4,4,6.5,3,"Francisco de Montejo",35
+"UPY-2021-003","Ciberseguridad",2,5,5,8.0,5,"Altabrisa",45
+"UPY-2021-004","Ingeniería de Datos",6,4,4,7.0,3,"Los Héroes",40
+"UPY-2021-005","Sistemas Embebidos",5,5,4,7.5,4,"Centro",30

@@ -1,0 +1,5 @@
+id_encuesta,origen_colonia,destino_servicio,medio_transporte,tiempo_minutos,satisfaccion_ruta
+"MOV-01","Ciudad Caucel","Clínica Caucel","Caminando",9,"Muy Satisfecho"
+"MOV-02","Komchén","Centro de Salud","Bicicleta",7,"Satisfecho"
+"MOV-03","Cholul","Parque Principal","Caminando",4,"Muy Satisfecho"
+"MOV-04","Los Héroes","Farmacia y Consultorio","Caminando",12,"Satisfecho"

@@ -57,30 +57,53 @@ flowchart TD
 
 ---
 
+## 👥 Asignaciones del Equipo para Carga de Datos (`/data`)
+
+Cada visualización cuenta con su propia carpeta dentro de [`data/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data) dividida en **Fuente Origen** y al menos **Dos Fuentes Extras** de cruce:
+
+| Integrante | Módulos Asignados | Carpetas de Datos | Tipos de Datos Soportados |
+| :--- | :--- | :--- | :--- |
+| **Ale** | 1. INEGI DENUE<br>2. Datos.gob.mx<br>3. SIEGY Yucatán | [`data/01_inegi_denue/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/01_inegi_denue)<br>[`data/02_datos_gob/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/02_datos_gob)<br>[`data/03_siegy_yucatan/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/03_siegy_yucatan) | `CSV`, `GeoJSON`, `API REST`, `XLSX` |
+| **Russel (Russelsin)** | 4. GeoPortal Mérida<br>6. Web Scraping Prensa<br>7. Self-Produced UPY | [`data/04_geoportal_merida/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/04_geoportal_merida)<br>[`data/06_web_scraping/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/06_web_scraping)<br>[`data/07_self_produced_upy/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/07_self_produced_upy) | `GeoJSON`, `Shapefile`, `JSON`, `CSV` (Scraping & Forms) |
+| **Daniel** | 5. Transparencia PNT<br>8. LiDAR 3D<br>9. Realidad Aumentada (AR) | [`data/05_transparencia_pnt/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/05_transparencia_pnt)<br>[`data/08_lidar_3d/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/08_lidar_3d)<br>[`data/09_realidad_aumentada_ar/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/09_realidad_aumentada_ar) | `CSV`, `GeoTIFF`, `DEM/LAS`, `PDB`, `GLTF/GLB`, `JSON` |
+
+---
+
 ## 🏗️ Arquitectura Modular del Código
 
-El proyecto sigue una estructura limpia, escalable y desacoplada basada en módulos ES6 y hojas de estilo separadas por dominio:
+El proyecto sigue una estructura limpia, escalable y desacoplada basada en módulos ES6, hojas de estilo y repositorio estructurado de datos:
 
 ```
 Mexico-DataViz-by-UPY/
-├── index.html                      # Punto de entrada HTML semántico y limpio
-├── prototipo_digital.html          # Redirección de compatibilidad a index.html
+├── data/                               # Repositorio central de datasets crudos y procesados
+│   ├── 01_inegi_denue/                 # [Ale] Fuente Origen INEGI + 2 Extras (Datos.gob, SIEGY)
+│   ├── 02_datos_gob/                   # [Ale] Fuente Origen DGE + 2 Extras (INEGI Censo, PNT)
+│   ├── 03_siegy_yucatan/               # [Ale] Fuente Origen SIEGY + 2 Extras (DGE, DENUE)
+│   ├── 04_geoportal_merida/            # [Russel] Fuente Origen GeoPortal + 2 Extras (DENUE, Self-Data)
+│   ├── 05_transparencia_pnt/           # [Daniel] Fuente Origen PNT + 2 Extras (IRAG, DENUE)
+│   ├── 06_web_scraping/                # [Russel] Fuente Origen Prensa Scraped + 2 Extras (Datos.gob, Gacetas)
+│   ├── 07_self_produced_upy/           # [Russel] Fuente Origen Encuesta UPY + 2 Extras (GeoPortal, ENSANUT)
+│   ├── 08_lidar_3d/                    # [Daniel] Fuente Origen Continuo CEM + 2 Extras (Malla Urbana, DENUE)
+│   ├── 09_realidad_aumentada_ar/       # [Daniel] Fuente Origen PDB 6VXX + 2 Extras (Malla UPY, WebXR)
+│   └── README.md                       # Matriz general y guía de formatos de datos
+├── index.html                          # Punto de entrada HTML semántico y limpio
+├── prototipo_digital.html              # Redirección de compatibilidad a index.html
 ├── css/
-│   ├── style.css                   # Variables de diseño, reset, paleta y layout
-│   ├── components.css              # Header, pestañas, botones, tarjetas KPI, modal <dialog> y toasts
-│   └── visualizations.css          # Lienzos de canvas, mapa GIS SVG, visor 3D y superposiciones
+│   ├── style.css                       # Variables de diseño, reset, paleta y layout
+│   ├── components.css                  # Header, pestañas, botones, tarjetas KPI, modal <dialog> y toasts
+│   └── visualizations.css              # Lienzos de canvas, mapa GIS SVG, visor 3D y superposiciones
 ├── js/
 │   ├── data/
-│   │   └── viewsData.js            # Dataset estructurado de las 9 vistas (fuentes, KPIs, datos)
+│   │   └── viewsData.js                # Dataset estructurado de las 9 vistas (fuentes, KPIs, datos)
 │   ├── modules/
-│   │   ├── gisMap.js               # Renderizador de mapa cartográfico interactivo GIS
-│   │   ├── charts.js               # Controlador Chart.js (líneas, barras, radar multieje)
-│   │   ├── forceGraph.js           # Simulación de física de fuerzas para grafo semántico
-│   │   ├── threeVisuals.js         # Entorno 3D WebGL (LiDAR y AR molecular con OrbitControls)
-│   │   └── storytelling.js         # Narración por voz (Web Speech API), Auto-Tour y notificaciones
-│   └── app.js                      # Coordinador central de la aplicación y eventos del DOM
-├── FUENTES_Y_PLAN_DE_ANALISIS.md   # Metodología exhaustiva y fuentes de datos
-└── PROTOTIPO_BORRADOR_WIREFRAMES.md# Wireframes y borradores de diseño
+│   │   ├── gisMap.js                   # Renderizador de mapa cartográfico interactivo GIS
+│   │   ├── charts.js                   # Controlador Chart.js (líneas, barras, radar multieje)
+│   │   ├── forceGraph.js               # Simulación de física de fuerzas para grafo semántico
+│   │   ├── threeVisuals.js             # Entorno 3D WebGL (LiDAR y AR molecular con OrbitControls)
+│   │   └── storytelling.js             # Narración por voz (Web Speech API), Auto-Tour y notificaciones
+│   └── app.js                          # Coordinador central de la aplicación y eventos del DOM
+├── FUENTES_Y_PLAN_DE_ANALISIS.md       # Metodología exhaustiva y fuentes de datos
+└── PROTOTIPO_BORRADOR_WIREFRAMES.md    # Wireframes y borradores de diseño
 ```
 
 ---
@@ -91,3 +114,4 @@ Mexico-DataViz-by-UPY/
 - **Interacción 3D Completa:** OrbitControls para rotar, acercar y panear las maquetas volumétricas.
 - **Storytelling Progresivo:** Hilo conductor humano y optimista desde la perspectiva macro (México y Sur) hasta el nivel micro (Mérida, colonias, la UPY y la escala molecular).
 - **Estética de Vanguardia:** Paleta con gradientes, soporte glassmorphism y micro-interacciones responsivas.
+

@@ -1,0 +1,8 @@
+cve_mun,nom_mun,jurisdiccion_sanitaria,indice_cohesion,cobertura_salud_pct,conectividad_digital_pct,infraestructura_comunitaria_score
+"050","Mérida","Jurisdicción 1 - Mérida",88.5,94.2,78.4,92.0
+"041","Kanasín","Jurisdicción 1 - Mérida",72.1,88.4,56.2,68.5
+"096","Umán","Jurisdicción 1 - Mérida",75.3,86.1,59.0,71.0
+"102","Valladolid","Jurisdicción 2 - Valladolid",84.0,81.5,52.1,80.4
+"096","Tizimín","Jurisdicción 2 - Valladolid",79.2,79.8,48.6,76.2
+"089","Ticul","Jurisdicción 3 - Ticul",81.4,83.0,51.0,77.9
+"079","Tekax","Jurisdicción 3 - Ticul",78.0,76.5,43.2,72.1

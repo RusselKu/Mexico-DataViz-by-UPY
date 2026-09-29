@@ -1,0 +1,5 @@
+unidad_medica,institucion,camas_generales,camas_uci,ventiladores_disponibles,tasa_ocupacion_promedio_pct
+"Hospital Agustín O'Horán","SSY",340,32,28,78.5
+"Hospital General Regional T1 IMSS","IMSS",280,24,20,82.1
+"Hospital Regional Mérida ISSSTE","ISSSTE",160,16,14,71.0
+"Hospital Militar Regional de Mérida","SEDENA",60,10,10,45.0

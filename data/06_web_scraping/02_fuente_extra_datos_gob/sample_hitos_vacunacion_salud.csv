@@ -1,0 +1,6 @@
+fase_vacunacion,grupo_objetivo,fecha_inicio,dosis_meta_yucatan,dosis_alcanzadas_pct
+"Fase 1","Personal de Salud Primera Línea","2021-01-13",28000,99.2
+"Fase 2","Adultos Mayores de 60 años","2021-02-15",215000,96.4
+"Fase 3","Población de 50 a 59 años","2021-05-03",190000,94.8
+"Fase 4","Población de 40 a 49 años","2021-06-01",230000,93.1
+"Fase 5","Jóvenes de 18 a 29 años y Universitarios","2021-07-26",340000,95.5

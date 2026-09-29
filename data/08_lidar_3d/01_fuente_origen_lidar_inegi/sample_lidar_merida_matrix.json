@@ -1,0 +1,17 @@
+{
+  "dataset": "LiDAR_Merida_Topography_Sample",
+  "resolution_meters": 10,
+  "bounds": {
+    "min_lat": 20.920,
+    "max_lat": 21.060,
+    "min_lng": -89.720,
+    "max_lng": -89.540
+  },
+  "grid_points": [
+    {"x": -20, "y": 9.2, "z": -20, "intensity": 0.85, "tipo": "Terreno Natural"},
+    {"x": -10, "y": 10.1, "z": -10, "intensity": 0.92, "tipo": "Centro Histórico"},
+    {"x": 0, "y": 11.5, "z": 0, "intensity": 0.98, "tipo": "Siglo XXI / Norte"},
+    {"x": 10, "y": 12.0, "z": 10, "intensity": 0.90, "tipo": "Altabrisa"},
+    {"x": -15, "y": 9.8, "z": 15, "intensity": 0.88, "tipo": "Caucel / UPY"}
+  ]
+}

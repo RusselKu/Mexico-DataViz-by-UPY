@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "name": "malla_urbana_alturas_merida",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "EDIF-01",
+        "nombre": "Centro de Convenciones Siglo XXI",
+        "altura_metros": 18.5,
+        "pisos": 3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-89.628, 21.036],
+          [-89.626, 21.036],
+          [-89.626, 21.038],
+          [-89.628, 21.038],
+          [-89.628, 21.036]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "EDIF-02",
+        "nombre": "Hospital Agustín O'Horán",
+        "altura_metros": 15.0,
+        "pisos": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-89.639, 20.967],
+          [-89.637, 20.967],
+          [-89.637, 20.969],
+          [-89.639, 20.969],
+          [-89.639, 20.967]
+        ]]
+      }
+    }
+  ]
+}

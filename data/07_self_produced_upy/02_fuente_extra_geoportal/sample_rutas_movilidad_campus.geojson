@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "name": "rutas_movilidad_estudiantil_upy",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ruta": "Ruta Poniente Caucel - UPY",
+        "modo": "Transporte Universitario / Autobús",
+        "distancia_km": 14.2,
+        "tiempo_promedio_min": 25
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-89.7021, 20.9984],
+          [-89.7340, 21.0050],
+          [-89.7650, 21.0180]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ruta": "Ruta Periférico Norte - UPY",
+        "modo": "Automóvil / Carpool",
+        "distancia_km": 22.5,
+        "tiempo_promedio_min": 35
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-89.6272, 21.0368],
+          [-89.6950, 21.0310],
+          [-89.7650, 21.0180]
+        ]
+      }
+    }
+  ]
+}
