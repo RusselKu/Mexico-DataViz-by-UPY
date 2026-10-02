@@ -1,29 +1,84 @@
 [
   {
-    "id_articulo": "ART-YUC-001",
-    "medio": "Diario de Yucatán",
-    "fecha_publicacion": "2021-04-12",
-    "titular": "Inicia con alegría y orden la jornada de vacunación para adultos mayores en el Siglo XXI",
-    "resumen": "Miles de familias yucatecas acompañaron a sus abuelos en un ambiente de esperanza y gratitud hacia el personal de salud.",
-    "keywords": ["vacunación", "esperanza", "Siglo XXI", "solidaridad", "personal médico"],
-    "score_polaridad": 0.82
+    "id_articulo": "NOT-YUC-001",
+    "medio": "Gobierno del Estado de Yucatán (Sala de Prensa)",
+    "url": "https://www.yucatan.gob.mx/saladeprensa/ver_nota.php?id=5180",
+    "titular": "Arrancan macrocentros de vacunación en Mérida para acelerar inmunización en el Siglo XXI y Kukulcán",
+    "fecha": "2021-04-10",
+    "resumen": "El Gobierno del Estado desplegó brigadas de salud y módulos de atención masiva para atender con calidez y orden a miles de yucatecos.",
+    "keywords": [
+      "vacunación",
+      "Siglo XXI",
+      "Kukulcán",
+      "brigadas",
+      "esperanza",
+      "organización"
+    ],
+    "polaridad": 0.85
   },
   {
-    "id_articulo": "ART-YUC-002",
-    "medio": "Por Esto!",
-    "fecha_publicacion": "2021-06-08",
-    "titular": "Jóvenes universitarios y voluntarios de la UPY apoyan en la logística y orientación comunitaria",
-    "resumen": "Estudiantes de ingeniería y tecnología demuestran su vocación de servicio agilizando el registro y acceso.",
-    "keywords": ["UPY", "voluntarios", "juventud", "comunidad", "innovación", "solidaridad"],
-    "score_polaridad": 0.91
-  },
-  {
-    "id_articulo": "ART-YUC-003",
+    "id_articulo": "NOT-YUC-002",
     "medio": "La Jornada Maya",
-    "fecha_publicacion": "2021-09-15",
-    "titular": "Mérida reactiva su vida cultural y académica con protocolos ejemplares y optimismo ciudadano",
-    "resumen": "La corresponsabilidad entre autoridades y sociedad civil permite el retorno gradual y seguro a las aulas.",
-    "keywords": ["reactivación", "educación", "cuidado", "esperanza", "Mérida"],
-    "score_polaridad": 0.76
+    "url": "https://www.lajornadamaya.mx/seccion/yucatan",
+    "titular": "Jóvenes de 18 a 29 años y comunidad universitaria acuden con entusiasmo a vacunarse en Mérida",
+    "fecha": "2021-09-08",
+    "resumen": "Estudiantes y jóvenes meridanos mostraron alta responsabilidad social abarrotando las sedes de vacunación en un ambiente festivo.",
+    "keywords": [
+      "juventud",
+      "UPY",
+      "estudiantes",
+      "vacunación",
+      "solidaridad",
+      "reactivación"
+    ],
+    "polaridad": 0.92
+  },
+  {
+    "id_articulo": "NOT-YUC-003",
+    "medio": "Diario de Yucatán",
+    "url": "https://www.yucatan.com.mx/",
+    "titular": "Avanza con éxito la aplicación de refuerzos y el retorno seguro a las aulas en el poniente de Mérida",
+    "fecha": "2022-01-18",
+    "resumen": "Las instituciones de educación superior reportan balance positivo y estricta aplicación de filtros sanitarios en el regreso a clases.",
+    "keywords": [
+      "retorno a clases",
+      "universidades",
+      "educación",
+      "cuidado",
+      "Mérida Poniente"
+    ],
+    "polaridad": 0.78
+  },
+  {
+    "id_articulo": "NOT-YUC-004",
+    "medio": "Por Esto! Yucatán",
+    "url": "https://www.poresto.net/yucatan/",
+    "titular": "Reconocen labor titánica de médicos, enfermeras y voluntarios durante las jornadas de vacunación",
+    "fecha": "2021-07-22",
+    "resumen": "La sinergia entre sociedad civil, universidades y personal de primera línea permitió alcanzar cifras récord de inmunización.",
+    "keywords": [
+      "médicos",
+      "héroes de blanco",
+      "voluntarios",
+      "salud",
+      "reconocimiento"
+    ],
+    "polaridad": 0.88
+  },
+  {
+    "id_articulo": "NOT-YUC-005",
+    "medio": "Gobierno del Estado de Yucatán (Boletín SSY)",
+    "url": "https://salud.yucatan.gob.mx/",
+    "titular": "Yucatán entre los estados con mayor cobertura de vacunación y resiliencia comunitaria",
+    "fecha": "2022-03-30",
+    "resumen": "Los indicadores epidemiológicos reflejan la efectividad de las campañas coordinadas y la participación activa de los 106 municipios.",
+    "keywords": [
+      "cobertura",
+      "municipios",
+      "resiliencia",
+      "salud pública",
+      "éxito"
+    ],
+    "polaridad": 0.9
   }
 ]
