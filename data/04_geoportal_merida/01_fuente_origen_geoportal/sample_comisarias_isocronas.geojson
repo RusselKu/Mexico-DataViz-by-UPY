@@ -10,7 +10,9 @@
         "zona": "Norte",
         "poblacion": 4800,
         "tiempo_caminata_min": 15,
-        "calidad_banquetas_pct": 72.0
+        "tiempo_transporte_min": 25,
+        "calidad_banquetas_pct": 72.0,
+        "equipamiento_salud": "Centro de Salud Comunitario"
       },
       "geometry": {
         "type": "Polygon",
@@ -31,7 +33,9 @@
         "zona": "Oriente",
         "poblacion": 6200,
         "tiempo_caminata_min": 10,
-        "calidad_banquetas_pct": 78.5
+        "tiempo_transporte_min": 20,
+        "calidad_banquetas_pct": 78.5,
+        "equipamiento_salud": "Módulo Médico Cholul"
       },
       "geometry": {
         "type": "Polygon",
@@ -52,7 +56,9 @@
         "zona": "Poniente",
         "poblacion": 75000,
         "tiempo_caminata_min": 8,
-        "calidad_banquetas_pct": 85.0
+        "tiempo_transporte_min": 15,
+        "calidad_banquetas_pct": 85.0,
+        "equipamiento_salud": "Unidad de Medicina Familiar UMF 60 IMSS"
       },
       "geometry": {
         "type": "Polygon",
@@ -62,6 +68,98 @@
           [-89.695, 21.010],
           [-89.720, 21.010],
           [-89.720, 20.985]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "COM-04",
+        "nombre": "Los Héroes",
+        "zona": "Oriente",
+        "poblacion": 38000,
+        "tiempo_caminata_min": 12,
+        "tiempo_transporte_min": 22,
+        "calidad_banquetas_pct": 88.0,
+        "equipamiento_salud": "Consultorio Vecinal Los Héroes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-89.545, 20.970],
+          [-89.525, 20.970],
+          [-89.525, 20.990],
+          [-89.545, 20.990],
+          [-89.545, 20.970]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "COM-05",
+        "nombre": "Dzityá",
+        "zona": "Poniente / Norte",
+        "poblacion": 3200,
+        "tiempo_caminata_min": 14,
+        "tiempo_transporte_min": 20,
+        "calidad_banquetas_pct": 69.0,
+        "equipamiento_salud": "Dispensario Médico Dzityá"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-89.695, 21.035],
+          [-89.675, 21.035],
+          [-89.675, 21.055],
+          [-89.695, 21.055],
+          [-89.695, 21.035]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "COM-06",
+        "nombre": "San José Tzal",
+        "zona": "Sur",
+        "poblacion": 3900,
+        "tiempo_caminata_min": 18,
+        "tiempo_transporte_min": 35,
+        "calidad_banquetas_pct": 62.5,
+        "equipamiento_salud": "Centro de Salud San José Tzal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-89.660, 20.840],
+          [-89.640, 20.840],
+          [-89.640, 20.860],
+          [-89.660, 20.860],
+          [-89.660, 20.840]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "COM-07",
+        "nombre": "Chablekal",
+        "zona": "Norte",
+        "poblacion": 4100,
+        "tiempo_caminata_min": 12,
+        "tiempo_transporte_min": 25,
+        "calidad_banquetas_pct": 74.0,
+        "equipamiento_salud": "Módulo Médico Chablekal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-89.585, 21.060],
+          [-89.565, 21.060],
+          [-89.565, 21.080],
+          [-89.585, 21.080],
+          [-89.585, 21.060]
         ]]
       }
     }

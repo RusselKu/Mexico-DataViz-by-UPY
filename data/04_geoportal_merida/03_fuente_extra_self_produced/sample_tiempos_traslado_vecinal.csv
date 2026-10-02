@@ -1,5 +1,9 @@
-id_encuesta,origen_colonia,destino_servicio,medio_transporte,tiempo_minutos,satisfaccion_ruta
-"MOV-01","Ciudad Caucel","Clínica Caucel","Caminando",9,"Muy Satisfecho"
-"MOV-02","Komchén","Centro de Salud","Bicicleta",7,"Satisfecho"
-"MOV-03","Cholul","Parque Principal","Caminando",4,"Muy Satisfecho"
-"MOV-04","Los Héroes","Farmacia y Consultorio","Caminando",12,"Satisfecho"
+id_encuesta,origen_colonia,zona_merida,destino_servicio,medio_transporte,tiempo_minutos,satisfaccion_ruta
+"MOV-01","Ciudad Caucel","Poniente","Clínica Caucel / UMF 60","Caminando",9,"Muy Satisfecho"
+"MOV-02","Komchén","Norte","Centro de Salud Komchén","Bicicleta",7,"Satisfecho"
+"MOV-03","Cholul","Oriente","Módulo Médico Cholul","Caminando",5,"Muy Satisfecho"
+"MOV-04","Los Héroes","Oriente","Consultorio Vecinal Los Héroes","Caminando",12,"Satisfecho"
+"MOV-05","San José Tzal","Sur","Centro de Salud San José Tzal","Caminando",14,"Neutral"
+"MOV-06","Dzityá","Poniente / Norte","Macrocentro Siglo XXI","Va y Ven / Transporte",22,"Satisfecho"
+"MOV-07","Chablekal","Norte","Macrocentro Siglo XXI","Vehículo Propio",18,"Muy Satisfecho"
+"MOV-08","Ciudad Caucel","Poniente","Campus UPY Ucú","Va y Ven / Autobús",25,"Satisfecho"
