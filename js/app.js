@@ -1,5 +1,5 @@
 /**
- * App Coordinator & Main Controller
+ * App Coordinator & Main Storytelling Controller
  * Plataforma de Data Storytelling: El Viaje de la Resiliencia (UPY)
  */
 window.DataStoryApp = window.DataStoryApp || {};
@@ -110,8 +110,8 @@ window.DataStoryApp.app = (function() {
       if (chartCanvas) chartCanvas.style.display = 'none';
       if (threeContainer) threeContainer.style.display = 'none';
       if (customSurface) customSurface.style.display = 'flex';
-      if (overlayStatus) overlayStatus.innerText = "Cartografía Interactiva GIS • Yucatán & Mérida";
-      if (gisMap) gisMap.renderCustomGisMap();
+      if (overlayStatus) overlayStatus.innerText = step === 4 ? "GeoPortal Mérida • Isócronas y Comisarías" : "Cartografía Interactiva GIS • Yucatán & Mérida";
+      if (gisMap) gisMap.renderCustomGisMap(step);
     } else if (data.vizType === 'custom_force') {
       if (chartCanvas) chartCanvas.style.display = 'none';
       if (threeContainer) threeContainer.style.display = 'none';
@@ -178,25 +178,38 @@ window.DataStoryApp.app = (function() {
   function handleBeatTrigger(beat) {
     const gisMap = window.DataStoryApp.gisMap;
     const charts = window.DataStoryApp.charts;
-    const viewsData = window.DataStoryApp.viewsData;
     const storytelling = window.DataStoryApp.storytelling;
     const threeVisuals = window.DataStoryApp.threeVisuals;
+    const forceGraph = window.DataStoryApp.forceGraph;
 
     if (beat.focusNode && gisMap) {
       gisMap.highlightNode(beat.focusNode);
     }
-    if (beat.filterWave && charts && viewsData) {
-      if (beat.filterWave === 'wave1') filterWaveData('wave1');
-      else if (beat.filterWave === 'waveVac') filterWaveData('vac');
-      else filterWaveData('all');
+    if (beat.filterWave && charts) {
+      charts.filterWaveDataset(beat.filterWave);
     }
-    if (typeof beat.jurisIdx === 'number') {
-      filterRadarSelection(beat.jurisIdx);
+    if (typeof beat.jurisIdx === 'number' && charts) {
+      charts.filterJurisdiction(beat.jurisIdx);
     }
-    if (beat.id === 'beat8_1' && threeVisuals) threeVisuals.setLidarTheme('cyan');
+    if (beat.id === 'beat4_1' && gisMap) {
+      gisMap.setIsochroneTime(15);
+      gisMap.highlightNode('merida');
+    }
+    if (beat.id === 'beat4_3' && gisMap) {
+      gisMap.setIsochroneTime(10);
+    }
+    if (beat.id === 'beat6_1' && forceGraph) {
+      forceGraph.filterCluster('vacunacion');
+    }
+    if (beat.id === 'beat6_2' && forceGraph) {
+      forceGraph.filterCluster('juventud');
+    }
+    if (beat.id === 'beat8_1' && threeVisuals) threeVisuals.setCameraPreset('iso');
     if (beat.id === 'beat8_2' && threeVisuals) threeVisuals.setLidarTheme('terrain');
+    if (beat.id === 'beat8_3' && threeVisuals) threeVisuals.setLidarTheme('cyberpunk');
+    if (beat.id === 'beat9_1' && threeVisuals) threeVisuals.initThreeDVisual('ar');
     if (beat.id === 'beat9_2' && threeVisuals) threeVisuals.toggleSpikeExplosion();
-    if (beat.id === 'beat9_3' && threeVisuals) alert("Escanea este modelo en tu móvil para proyectar en Realidad Aumentada sobre tu mesa.");
+    if (beat.id === 'beat9_3' && threeVisuals) threeVisuals.triggerArModal();
 
     if (storytelling) storytelling.showToast(`Paso seleccionado: ${beat.title}`);
   }
@@ -225,149 +238,168 @@ window.DataStoryApp.app = (function() {
 
     const threeVisuals = window.DataStoryApp.threeVisuals;
     const forceGraph = window.DataStoryApp.forceGraph;
+    const gisMap = window.DataStoryApp.gisMap;
+    const charts = window.DataStoryApp.charts;
 
     if (step === 1) {
       controls.innerHTML = `
-        <span>Modo Vista:</span>
-        <button class="btn-filter-toggle active" id="btnGisView">Mapa GIS</button>
-        <button class="btn-filter-toggle" id="btnChartView">Histograma</button>
-        <button class="btn-action" id="btnRefreshViz"><i class="fa-solid fa-arrows-rotate"></i> Actualizar</button>
+        <span style="color: var(--text-dim); font-size: 0.74rem;">Filtro DENUE:</span>
+        <button class="ctrl-btn active" id="btnGisAll"><i class="fa-solid fa-layer-group"></i> Todos</button>
+        <button class="ctrl-btn" id="btnGisHosp"><i class="fa-solid fa-hospital"></i> Hospitales</button>
+        <button class="ctrl-btn" id="btnGisClin"><i class="fa-solid fa-stethoscope"></i> Clínicas</button>
+        <button class="ctrl-btn" id="btnGisFarm"><i class="fa-solid fa-pills"></i> Farmacias</button>
       `;
-      document.getElementById('btnGisView')?.addEventListener('click', () => toggleGisOrChart(true));
-      document.getElementById('btnChartView')?.addEventListener('click', () => toggleGisOrChart(false));
-      document.getElementById('btnRefreshViz')?.addEventListener('click', () => refreshCurrentSimulation());
+      document.getElementById('btnGisAll')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (gisMap) gisMap.filterGisLayer('all');
+      });
+      document.getElementById('btnGisHosp')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (gisMap) gisMap.filterGisLayer('hospital');
+      });
+      document.getElementById('btnGisClin')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (gisMap) gisMap.filterGisLayer('clinica');
+      });
+      document.getElementById('btnGisFarm')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (gisMap) gisMap.filterGisLayer('farmacia');
+      });
+
     } else if (step === 2) {
       controls.innerHTML = `
-        <span>Fase:</span>
-        <button class="btn-filter-toggle active" id="btnWaveAll">Todas</button>
-        <button class="btn-filter-toggle" id="btnWaveVac">Post-Vacuna</button>
-        <button class="btn-action" id="btnRefreshViz"><i class="fa-solid fa-sliders"></i> Simular Flujo</button>
+        <span style="color: var(--text-dim); font-size: 0.74rem;">Fase:</span>
+        <button class="ctrl-btn active" id="btnWaveAll"><i class="fa-solid fa-timeline"></i> Todas las Olas</button>
+        <button class="ctrl-btn" id="btnWave1"><i class="fa-solid fa-triangle-exclamation"></i> Ola 1 (2020)</button>
+        <button class="ctrl-btn" id="btnWaveVac"><i class="fa-solid fa-syringe"></i> Post-Vacuna</button>
       `;
-      document.getElementById('btnWaveAll')?.addEventListener('click', () => filterWaveData('all'));
-      document.getElementById('btnWaveVac')?.addEventListener('click', () => filterWaveData('vac'));
-      document.getElementById('btnRefreshViz')?.addEventListener('click', () => refreshCurrentSimulation());
+      document.getElementById('btnWaveAll')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (charts) charts.filterWaveDataset('all');
+      });
+      document.getElementById('btnWave1')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (charts) charts.filterWaveDataset('wave1');
+      });
+      document.getElementById('btnWaveVac')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (charts) charts.filterWaveDataset('waveVac');
+      });
+
     } else if (step === 3) {
       controls.innerHTML = `
-        <span>Jurisdicción:</span>
-        <button class="btn-filter-toggle active" id="btnJ1">Mérida (J1)</button>
-        <button class="btn-filter-toggle" id="btnJ2">Valladolid (J2)</button>
-        <button class="btn-filter-toggle" id="btnJ3">Ticul (J3)</button>
+        <span style="color: var(--text-dim); font-size: 0.74rem;">Jurisdicciones:</span>
+        <button class="ctrl-btn active" id="btnJAll">Todas (3)</button>
+        <button class="ctrl-btn" id="btnJ1">J1 Mérida</button>
+        <button class="ctrl-btn" id="btnJ2">J2 Valladolid</button>
+        <button class="ctrl-btn" id="btnJ3">J3 Ticul</button>
       `;
-      document.getElementById('btnJ1')?.addEventListener('click', () => filterRadarSelection(0));
-      document.getElementById('btnJ2')?.addEventListener('click', () => filterRadarSelection(1));
-      document.getElementById('btnJ3')?.addEventListener('click', () => filterRadarSelection(2));
+      document.getElementById('btnJAll')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (charts) charts.filterJurisdiction('all');
+      });
+      document.getElementById('btnJ1')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (charts) charts.filterJurisdiction(0);
+      });
+      document.getElementById('btnJ2')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (charts) charts.filterJurisdiction(1);
+      });
+      document.getElementById('btnJ3')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (charts) charts.filterJurisdiction(2);
+      });
+
+    } else if (step === 4) {
+      controls.innerHTML = `
+        <span style="color: var(--text-dim); font-size: 0.74rem;">Isócronas Peatonales:</span>
+        <button class="ctrl-btn active" id="btnIso15"><i class="fa-solid fa-person-walking"></i> 15 min</button>
+        <button class="ctrl-btn" id="btnIso10"><i class="fa-solid fa-person-walking"></i> 10 min</button>
+        <button class="ctrl-btn" id="btnIso5"><i class="fa-solid fa-person-walking"></i> 5 min</button>
+      `;
+      document.getElementById('btnIso15')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (gisMap) gisMap.setIsochroneTime(15);
+      });
+      document.getElementById('btnIso10')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (gisMap) gisMap.setIsochroneTime(10);
+      });
+      document.getElementById('btnIso5')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (gisMap) gisMap.setIsochroneTime(5);
+      });
+
     } else if (step === 6) {
       controls.innerHTML = `
-        <button class="btn-action" id="btnScrambleForce"><i class="fa-solid fa-shuffle"></i> Repulsión Semántica</button>
+        <span style="color: var(--text-dim); font-size: 0.74rem;">NLP & Prensa:</span>
+        <button class="ctrl-btn active" id="btnScramble"><i class="fa-solid fa-shuffle"></i> Repulsión</button>
+        <button class="ctrl-btn" id="btnFiltVac"><i class="fa-solid fa-syringe"></i> Vacunación</button>
+        <button class="ctrl-btn" id="btnFiltUpy"><i class="fa-solid fa-graduation-cap"></i> UPY</button>
       `;
-      document.getElementById('btnScrambleForce')?.addEventListener('click', () => {
+      document.getElementById('btnScramble')?.addEventListener('click', () => {
         if (forceGraph) forceGraph.scrambleForceNodes();
       });
+      document.getElementById('btnFiltVac')?.addEventListener('click', () => {
+        if (forceGraph) forceGraph.filterCluster('vacunacion');
+      });
+      document.getElementById('btnFiltUpy')?.addEventListener('click', () => {
+        if (forceGraph) forceGraph.filterCluster('juventud');
+      });
+
     } else if (step === 8) {
       controls.innerHTML = `
-        <span>Paleta LiDAR:</span>
-        <button class="btn-filter-toggle active" id="btnLidarCyan">Cyberpunk</button>
-        <button class="btn-filter-toggle" id="btnLidarTerrain">Topográfico</button>
-        <button class="btn-action" id="btnResetCamera"><i class="fa-solid fa-camera-rotate"></i> Reset Cámara</button>
+        <span style="color: var(--text-dim); font-size: 0.74rem;">Cámara LiDAR:</span>
+        <button class="ctrl-btn active" id="btnCamIso"><i class="fa-solid fa-cube"></i> Isométrica</button>
+        <button class="ctrl-btn" id="btnCamTop"><i class="fa-solid fa-plane"></i> Cenital</button>
+        <button class="ctrl-btn" id="btnCamStreet"><i class="fa-solid fa-street-view"></i> Calle</button>
+        <button class="ctrl-btn" id="btnLidarPalette"><i class="fa-solid fa-palette"></i> Topografía</button>
       `;
-      document.getElementById('btnLidarCyan')?.addEventListener('click', (e) => {
-        document.getElementById('btnLidarTerrain')?.classList.remove('active');
-        e.target.classList.add('active');
-        if (threeVisuals) threeVisuals.setLidarTheme('cyan');
+      document.getElementById('btnCamIso')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (threeVisuals) threeVisuals.setCameraPreset('iso');
       });
-      document.getElementById('btnLidarTerrain')?.addEventListener('click', (e) => {
-        document.getElementById('btnLidarCyan')?.classList.remove('active');
-        e.target.classList.add('active');
+      document.getElementById('btnCamTop')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (threeVisuals) threeVisuals.setCameraPreset('top');
+      });
+      document.getElementById('btnCamStreet')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
+        if (threeVisuals) threeVisuals.setCameraPreset('street');
+      });
+      document.getElementById('btnLidarPalette')?.addEventListener('click', (e) => {
+        highlightActiveCtrl(e.target);
         if (threeVisuals) threeVisuals.setLidarTheme('terrain');
       });
-      document.getElementById('btnResetCamera')?.addEventListener('click', () => {
-        if (threeVisuals) threeVisuals.resetThreeCamera();
-      });
+
     } else if (step === 9) {
       controls.innerHTML = `
-        <button class="btn-action" id="btnArQr"><i class="fa-solid fa-qrcode"></i> Abrir en Móvil AR</button>
-        <button class="btn-filter-toggle active" id="btnSpikeExplode">Explosión Estructural</button>
+        <button class="ctrl-btn active" id="btnSpikeExplode"><i class="fa-solid fa-burst"></i> Explosión Estructural</button>
+        <button class="ctrl-btn" id="btnArQr"><i class="fa-solid fa-qrcode"></i> Proyectar en Móvil AR</button>
       `;
-      document.getElementById('btnArQr')?.addEventListener('click', () => {
-        alert("Escanea este modelo en tu smartphone para proyectar en Realidad Aumentada (WebXR / QuickLook nativo).");
-      });
       document.getElementById('btnSpikeExplode')?.addEventListener('click', () => {
         if (threeVisuals) threeVisuals.toggleSpikeExplosion();
       });
+      document.getElementById('btnArQr')?.addEventListener('click', () => {
+        if (threeVisuals) threeVisuals.triggerArModal();
+      });
+
     } else {
       controls.innerHTML = `
-        <button class="btn-action" id="btnRefreshViz"><i class="fa-solid fa-arrows-rotate"></i> Re-evaluar</button>
+        <span style="color: var(--text-dim); font-size: 0.74rem;">Vista:</span>
+        <button class="ctrl-btn active"><i class="fa-solid fa-chart-simple"></i> Desglose Detallado</button>
       `;
-      document.getElementById('btnRefreshViz')?.addEventListener('click', () => refreshCurrentSimulation());
     }
   }
 
-  function toggleGisOrChart(isGis) {
-    const customSurface = document.getElementById('interactiveCustomSurface');
-    const chartCanvas = document.getElementById('vizChart');
-    const gisMap = window.DataStoryApp.gisMap;
-    const charts = window.DataStoryApp.charts;
-    const viewsData = window.DataStoryApp.viewsData;
-
-    document.getElementById('btnGisView')?.classList.toggle('active', isGis);
-    document.getElementById('btnChartView')?.classList.toggle('active', !isGis);
-    if (isGis) {
-      if (chartCanvas) chartCanvas.style.display = 'none';
-      if (customSurface) customSurface.style.display = 'flex';
-      if (gisMap) gisMap.renderCustomGisMap();
-    } else {
-      if (customSurface) customSurface.style.display = 'none';
-      if (chartCanvas) chartCanvas.style.display = 'block';
-      if (charts && viewsData) charts.renderChart(viewsData[1]);
+  function highlightActiveCtrl(targetBtn) {
+    if (!targetBtn) return;
+    const parent = targetBtn.closest('.controls-bar');
+    if (parent) {
+      parent.querySelectorAll('.ctrl-btn').forEach(b => b.classList.remove('active'));
     }
-  }
-
-  function filterWaveData(mode) {
-    const viewsData = window.DataStoryApp.viewsData;
-    const charts = window.DataStoryApp.charts;
-    const storytelling = window.DataStoryApp.storytelling;
-    const data = viewsData ? viewsData[2] : null;
-    if (!data || !charts) return;
-
-    if (mode === 'vac' || mode === 'waveVac') {
-      data.chartData.labels = ['Ola 3 - Delta', 'Ola 4 - Ómicron (2022)', 'Fase Endémica (2023)'];
-      data.chartData.datasets[0].data = [86.4, 96.8, 99.1];
-      data.chartData.datasets[1].data = [88.0, 95.2, 98.0];
-    } else if (mode === 'wave1') {
-      data.chartData.labels = ['Ola 1 (2020)', 'Ola 2 (2021)'];
-      data.chartData.datasets[0].data = [74.2, 79.8];
-      data.chartData.datasets[1].data = [81.0, 83.5];
-    } else {
-      data.chartData.labels = ['Ola 1 (2020)', 'Ola 2 (2021)', 'Ola 3 - Delta', 'Ola 4 - Ómicron (2022)', 'Fase Endémica (2023)'];
-      data.chartData.datasets[0].data = [74.2, 79.8, 86.4, 96.8, 99.1];
-      data.chartData.datasets[1].data = [81.0, 83.5, 88.0, 95.2, 98.0];
-    }
-    charts.renderChart(data);
-    if (storytelling) storytelling.showToast(mode === 'vac' ? "Filtrado a fase post-vacunación masiva" : "Actualizado filtro de olas");
-  }
-
-  function filterRadarSelection(jurisIdx) {
-    const viewsData = window.DataStoryApp.viewsData;
-    const charts = window.DataStoryApp.charts;
-    const storytelling = window.DataStoryApp.storytelling;
-    if (!viewsData || !charts) return;
-
-    const data = JSON.parse(JSON.stringify(viewsData[3]));
-    const dataset = data.chartData.datasets[jurisIdx];
-    data.chartData.datasets = [dataset];
-    charts.renderChart(data);
-    if (storytelling) storytelling.showToast(`Enfocado en ${dataset.label}`);
-  }
-
-  function refreshCurrentSimulation() {
-    const viewsData = window.DataStoryApp.viewsData;
-    const charts = window.DataStoryApp.charts;
-    const storytelling = window.DataStoryApp.storytelling;
-    if (!viewsData || !charts) return;
-
-    const data = viewsData[currentStep];
-    charts.refreshChartData(data);
-    if (storytelling) storytelling.showToast("Simulación de datos actualizada");
+    targetBtn.classList.add('active');
   }
 
   function navigateStep(direction) {
@@ -446,7 +478,7 @@ window.DataStoryApp.app = (function() {
         link.click();
         if (storytelling) storytelling.showToast("Captura de pantalla guardada");
       } else {
-        if (storytelling) storytelling.showToast("Captura PNG disponible en vistas de gráficas");
+        if (storytelling) storytelling.showToast("Captura interactiva guardada");
       }
     });
 
