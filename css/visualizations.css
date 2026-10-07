@@ -227,6 +227,11 @@
   font-family: var(--font-body) !important;
 }
 
+/* OpenStreetMap Dark UI Tile Filter (Sin necesidad de API keys) */
+.leaflet-tile {
+  filter: brightness(0.65) invert(1) contrast(3) hue-rotate(200deg) saturate(0.25) brightness(0.85);
+}
+
 /* Dark mode leaflet popups */
 .leaflet-popup-content-wrapper {
   background: rgba(13, 20, 38, 0.96) !important;

@@ -92,10 +92,10 @@ window.DataStoryApp.gisMap = (function() {
       maxZoom: 16
     }).setView(center, zoom);
 
-    // Tiles oscuros de alta estética (CartoDB Dark Matter)
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      subdomains: 'abcd',
-      maxZoom: 19
+    // OpenStreetMap official tiles (100% libre, sin requerir API key)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
     }).addTo(leafletMap);
 
     // Reposicionar control de zoom a esquina inferior derecha
