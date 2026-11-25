@@ -1,0 +1,2 @@
+pdb_id,title,experimental_method,resolution_angstroms,molecular_weight_kda,deposited_atom_count,deposited_polymer_monomer_count,chains,alpha_helices_count,beta_sheets_count,initial_release_date
+6VXX,Structure of the SARS-CoV-2 spike glycoprotein (closed state),ELECTRON MICROSCOPY,2.8,438.26,23694,3843,"A,B,C",63,180,2020-03-11

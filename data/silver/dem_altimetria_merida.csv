@@ -1,0 +1,401 @@
+row,col,latitud,longitud,elevacion_msnm,id_celda,estrato_relieve,cvegeo,municipio,datum_vertical
+0,0,20.88,-89.77,13.0,DEM-MID-00-00,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+0,1,20.88,-89.75737,9.0,DEM-MID-00-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+0,2,20.88,-89.74474,11.0,DEM-MID-00-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+0,3,20.88,-89.73211,8.0,DEM-MID-00-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+0,4,20.88,-89.71947,9.0,DEM-MID-00-04,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+0,5,20.88,-89.70684,12.0,DEM-MID-00-05,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+0,6,20.88,-89.69421,10.0,DEM-MID-00-06,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+0,7,20.88,-89.68158,11.0,DEM-MID-00-07,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+0,8,20.88,-89.66895,12.0,DEM-MID-00-08,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+0,9,20.88,-89.65632,10.0,DEM-MID-00-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+0,10,20.88,-89.64368,14.0,DEM-MID-00-10,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+0,11,20.88,-89.63105,10.0,DEM-MID-00-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+0,12,20.88,-89.61842,15.0,DEM-MID-00-12,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+0,13,20.88,-89.60579,12.0,DEM-MID-00-13,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+0,14,20.88,-89.59316,13.0,DEM-MID-00-14,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+0,15,20.88,-89.58053,15.0,DEM-MID-00-15,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+0,16,20.88,-89.56789,14.0,DEM-MID-00-16,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+0,17,20.88,-89.55526,11.0,DEM-MID-00-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+0,18,20.88,-89.54263,14.0,DEM-MID-00-18,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+0,19,20.88,-89.53,16.0,DEM-MID-00-19,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+1,0,20.89053,-89.77,12.0,DEM-MID-01-00,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+1,1,20.89053,-89.75737,8.0,DEM-MID-01-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+1,2,20.89053,-89.74474,10.0,DEM-MID-01-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+1,3,20.89053,-89.73211,10.0,DEM-MID-01-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+1,4,20.89053,-89.71947,10.0,DEM-MID-01-04,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+1,5,20.89053,-89.70684,11.0,DEM-MID-01-05,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+1,6,20.89053,-89.69421,13.0,DEM-MID-01-06,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+1,7,20.89053,-89.68158,12.0,DEM-MID-01-07,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+1,8,20.89053,-89.66895,9.0,DEM-MID-01-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+1,9,20.89053,-89.65632,10.0,DEM-MID-01-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+1,10,20.89053,-89.64368,9.0,DEM-MID-01-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+1,11,20.89053,-89.63105,7.0,DEM-MID-01-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+1,12,20.89053,-89.61842,10.0,DEM-MID-01-12,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+1,13,20.89053,-89.60579,14.0,DEM-MID-01-13,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+1,14,20.89053,-89.59316,12.0,DEM-MID-01-14,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+1,15,20.89053,-89.58053,12.0,DEM-MID-01-15,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+1,16,20.89053,-89.56789,15.0,DEM-MID-01-16,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+1,17,20.89053,-89.55526,14.0,DEM-MID-01-17,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+1,18,20.89053,-89.54263,14.0,DEM-MID-01-18,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+1,19,20.89053,-89.53,13.0,DEM-MID-01-19,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+2,0,20.90105,-89.77,10.0,DEM-MID-02-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+2,1,20.90105,-89.75737,12.0,DEM-MID-02-01,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+2,2,20.90105,-89.74474,12.0,DEM-MID-02-02,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+2,3,20.90105,-89.73211,11.0,DEM-MID-02-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+2,4,20.90105,-89.71947,12.0,DEM-MID-02-04,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+2,5,20.90105,-89.70684,12.0,DEM-MID-02-05,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+2,6,20.90105,-89.69421,11.0,DEM-MID-02-06,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+2,7,20.90105,-89.68158,10.0,DEM-MID-02-07,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+2,8,20.90105,-89.66895,10.0,DEM-MID-02-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+2,9,20.90105,-89.65632,10.0,DEM-MID-02-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+2,10,20.90105,-89.64368,11.0,DEM-MID-02-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+2,11,20.90105,-89.63105,12.0,DEM-MID-02-11,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+2,12,20.90105,-89.61842,11.0,DEM-MID-02-12,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+2,13,20.90105,-89.60579,11.0,DEM-MID-02-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+2,14,20.90105,-89.59316,13.0,DEM-MID-02-14,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+2,15,20.90105,-89.58053,12.0,DEM-MID-02-15,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+2,16,20.90105,-89.56789,15.0,DEM-MID-02-16,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+2,17,20.90105,-89.55526,12.0,DEM-MID-02-17,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+2,18,20.90105,-89.54263,12.0,DEM-MID-02-18,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+2,19,20.90105,-89.53,13.0,DEM-MID-02-19,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+3,0,20.91158,-89.77,12.0,DEM-MID-03-00,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+3,1,20.91158,-89.75737,10.0,DEM-MID-03-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+3,2,20.91158,-89.74474,9.0,DEM-MID-03-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+3,3,20.91158,-89.73211,14.0,DEM-MID-03-03,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+3,4,20.91158,-89.71947,8.0,DEM-MID-03-04,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+3,5,20.91158,-89.70684,11.0,DEM-MID-03-05,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+3,6,20.91158,-89.69421,12.0,DEM-MID-03-06,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+3,7,20.91158,-89.68158,10.0,DEM-MID-03-07,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+3,8,20.91158,-89.66895,11.0,DEM-MID-03-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+3,9,20.91158,-89.65632,10.0,DEM-MID-03-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+3,10,20.91158,-89.64368,11.0,DEM-MID-03-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+3,11,20.91158,-89.63105,8.0,DEM-MID-03-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+3,12,20.91158,-89.61842,13.0,DEM-MID-03-12,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+3,13,20.91158,-89.60579,12.0,DEM-MID-03-13,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+3,14,20.91158,-89.59316,13.0,DEM-MID-03-14,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+3,15,20.91158,-89.58053,11.0,DEM-MID-03-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+3,16,20.91158,-89.56789,12.0,DEM-MID-03-16,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+3,17,20.91158,-89.55526,1.0,DEM-MID-03-17,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+3,18,20.91158,-89.54263,11.0,DEM-MID-03-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+3,19,20.91158,-89.53,11.0,DEM-MID-03-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,0,20.92211,-89.77,9.0,DEM-MID-04-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,1,20.92211,-89.75737,10.0,DEM-MID-04-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,2,20.92211,-89.74474,9.0,DEM-MID-04-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,3,20.92211,-89.73211,11.0,DEM-MID-04-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,4,20.92211,-89.71947,9.0,DEM-MID-04-04,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,5,20.92211,-89.70684,9.0,DEM-MID-04-05,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,6,20.92211,-89.69421,11.0,DEM-MID-04-06,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,7,20.92211,-89.68158,11.0,DEM-MID-04-07,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,8,20.92211,-89.66895,11.0,DEM-MID-04-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,9,20.92211,-89.65632,11.0,DEM-MID-04-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,10,20.92211,-89.64368,11.0,DEM-MID-04-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,11,20.92211,-89.63105,11.0,DEM-MID-04-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,12,20.92211,-89.61842,12.0,DEM-MID-04-12,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+4,13,20.92211,-89.60579,13.0,DEM-MID-04-13,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+4,14,20.92211,-89.59316,11.0,DEM-MID-04-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,15,20.92211,-89.58053,13.0,DEM-MID-04-15,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+4,16,20.92211,-89.56789,11.0,DEM-MID-04-16,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,17,20.92211,-89.55526,12.0,DEM-MID-04-17,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+4,18,20.92211,-89.54263,11.0,DEM-MID-04-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+4,19,20.92211,-89.53,11.0,DEM-MID-04-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,0,20.93263,-89.77,9.0,DEM-MID-05-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,1,20.93263,-89.75737,10.0,DEM-MID-05-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,2,20.93263,-89.74474,8.0,DEM-MID-05-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,3,20.93263,-89.73211,12.0,DEM-MID-05-03,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+5,4,20.93263,-89.71947,11.0,DEM-MID-05-04,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,5,20.93263,-89.70684,11.0,DEM-MID-05-05,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,6,20.93263,-89.69421,11.0,DEM-MID-05-06,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,7,20.93263,-89.68158,12.0,DEM-MID-05-07,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+5,8,20.93263,-89.66895,10.0,DEM-MID-05-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,9,20.93263,-89.65632,10.0,DEM-MID-05-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,10,20.93263,-89.64368,9.0,DEM-MID-05-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,11,20.93263,-89.63105,12.0,DEM-MID-05-11,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+5,12,20.93263,-89.61842,12.0,DEM-MID-05-12,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+5,13,20.93263,-89.60579,11.0,DEM-MID-05-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,14,20.93263,-89.59316,10.0,DEM-MID-05-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,15,20.93263,-89.58053,9.0,DEM-MID-05-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,16,20.93263,-89.56789,9.0,DEM-MID-05-16,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,17,20.93263,-89.55526,11.0,DEM-MID-05-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,18,20.93263,-89.54263,7.0,DEM-MID-05-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+5,19,20.93263,-89.53,11.0,DEM-MID-05-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,0,20.94316,-89.77,12.0,DEM-MID-06-00,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+6,1,20.94316,-89.75737,9.0,DEM-MID-06-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,2,20.94316,-89.74474,10.0,DEM-MID-06-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,3,20.94316,-89.73211,10.0,DEM-MID-06-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,4,20.94316,-89.71947,12.0,DEM-MID-06-04,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+6,5,20.94316,-89.70684,10.0,DEM-MID-06-05,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,6,20.94316,-89.69421,10.0,DEM-MID-06-06,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,7,20.94316,-89.68158,4.0,DEM-MID-06-07,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+6,8,20.94316,-89.66895,11.0,DEM-MID-06-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,9,20.94316,-89.65632,13.0,DEM-MID-06-09,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+6,10,20.94316,-89.64368,11.0,DEM-MID-06-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,11,20.94316,-89.63105,11.0,DEM-MID-06-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,12,20.94316,-89.61842,11.0,DEM-MID-06-12,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,13,20.94316,-89.60579,10.0,DEM-MID-06-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,14,20.94316,-89.59316,11.0,DEM-MID-06-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,15,20.94316,-89.58053,11.0,DEM-MID-06-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,16,20.94316,-89.56789,10.0,DEM-MID-06-16,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,17,20.94316,-89.55526,10.0,DEM-MID-06-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,18,20.94316,-89.54263,9.0,DEM-MID-06-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+6,19,20.94316,-89.53,10.0,DEM-MID-06-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,0,20.95368,-89.77,9.0,DEM-MID-07-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,1,20.95368,-89.75737,10.0,DEM-MID-07-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,2,20.95368,-89.74474,11.0,DEM-MID-07-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,3,20.95368,-89.73211,11.0,DEM-MID-07-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,4,20.95368,-89.71947,9.0,DEM-MID-07-04,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,5,20.95368,-89.70684,8.0,DEM-MID-07-05,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,6,20.95368,-89.69421,11.0,DEM-MID-07-06,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,7,20.95368,-89.68158,10.0,DEM-MID-07-07,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,8,20.95368,-89.66895,5.0,DEM-MID-07-08,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+7,9,20.95368,-89.65632,10.0,DEM-MID-07-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,10,20.95368,-89.64368,9.0,DEM-MID-07-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,11,20.95368,-89.63105,11.0,DEM-MID-07-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,12,20.95368,-89.61842,10.0,DEM-MID-07-12,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,13,20.95368,-89.60579,11.0,DEM-MID-07-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,14,20.95368,-89.59316,11.0,DEM-MID-07-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,15,20.95368,-89.58053,10.0,DEM-MID-07-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,16,20.95368,-89.56789,11.0,DEM-MID-07-16,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,17,20.95368,-89.55526,10.0,DEM-MID-07-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,18,20.95368,-89.54263,9.0,DEM-MID-07-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+7,19,20.95368,-89.53,10.0,DEM-MID-07-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,0,20.96421,-89.77,10.0,DEM-MID-08-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,1,20.96421,-89.75737,9.0,DEM-MID-08-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,2,20.96421,-89.74474,11.0,DEM-MID-08-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,3,20.96421,-89.73211,11.0,DEM-MID-08-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,4,20.96421,-89.71947,11.0,DEM-MID-08-04,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,5,20.96421,-89.70684,12.0,DEM-MID-08-05,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+8,6,20.96421,-89.69421,12.0,DEM-MID-08-06,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+8,7,20.96421,-89.68158,9.0,DEM-MID-08-07,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,8,20.96421,-89.66895,8.0,DEM-MID-08-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,9,20.96421,-89.65632,11.0,DEM-MID-08-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,10,20.96421,-89.64368,11.0,DEM-MID-08-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,11,20.96421,-89.63105,12.0,DEM-MID-08-11,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+8,12,20.96421,-89.61842,13.0,DEM-MID-08-12,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+8,13,20.96421,-89.60579,10.0,DEM-MID-08-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,14,20.96421,-89.59316,11.0,DEM-MID-08-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,15,20.96421,-89.58053,11.0,DEM-MID-08-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,16,20.96421,-89.56789,10.0,DEM-MID-08-16,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,17,20.96421,-89.55526,10.0,DEM-MID-08-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,18,20.96421,-89.54263,10.0,DEM-MID-08-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+8,19,20.96421,-89.53,10.0,DEM-MID-08-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,0,20.97474,-89.77,10.0,DEM-MID-09-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,1,20.97474,-89.75737,10.0,DEM-MID-09-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,2,20.97474,-89.74474,11.0,DEM-MID-09-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,3,20.97474,-89.73211,9.0,DEM-MID-09-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,4,20.97474,-89.71947,11.0,DEM-MID-09-04,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,5,20.97474,-89.70684,13.0,DEM-MID-09-05,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+9,6,20.97474,-89.69421,10.0,DEM-MID-09-06,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,7,20.97474,-89.68158,9.0,DEM-MID-09-07,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,8,20.97474,-89.66895,9.0,DEM-MID-09-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,9,20.97474,-89.65632,10.0,DEM-MID-09-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,10,20.97474,-89.64368,10.0,DEM-MID-09-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,11,20.97474,-89.63105,10.0,DEM-MID-09-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,12,20.97474,-89.61842,12.0,DEM-MID-09-12,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+9,13,20.97474,-89.60579,11.0,DEM-MID-09-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,14,20.97474,-89.59316,8.0,DEM-MID-09-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,15,20.97474,-89.58053,10.0,DEM-MID-09-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,16,20.97474,-89.56789,10.0,DEM-MID-09-16,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,17,20.97474,-89.55526,11.0,DEM-MID-09-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,18,20.97474,-89.54263,10.0,DEM-MID-09-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+9,19,20.97474,-89.53,11.0,DEM-MID-09-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,0,20.98526,-89.77,11.0,DEM-MID-10-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,1,20.98526,-89.75737,11.0,DEM-MID-10-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,2,20.98526,-89.74474,11.0,DEM-MID-10-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,3,20.98526,-89.73211,11.0,DEM-MID-10-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,4,20.98526,-89.71947,10.0,DEM-MID-10-04,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,5,20.98526,-89.70684,9.0,DEM-MID-10-05,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,6,20.98526,-89.69421,8.0,DEM-MID-10-06,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,7,20.98526,-89.68158,8.0,DEM-MID-10-07,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,8,20.98526,-89.66895,8.0,DEM-MID-10-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,9,20.98526,-89.65632,10.0,DEM-MID-10-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,10,20.98526,-89.64368,8.0,DEM-MID-10-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,11,20.98526,-89.63105,11.0,DEM-MID-10-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,12,20.98526,-89.61842,16.0,DEM-MID-10-12,Lomerío Cárstico (>11m),31050,Mérida,EGM96 / MSL
+10,13,20.98526,-89.60579,10.0,DEM-MID-10-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,14,20.98526,-89.59316,10.0,DEM-MID-10-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,15,20.98526,-89.58053,10.0,DEM-MID-10-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,16,20.98526,-89.56789,9.0,DEM-MID-10-16,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,17,20.98526,-89.55526,10.0,DEM-MID-10-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,18,20.98526,-89.54263,8.0,DEM-MID-10-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+10,19,20.98526,-89.53,9.0,DEM-MID-10-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,0,20.99579,-89.77,11.0,DEM-MID-11-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,1,20.99579,-89.75737,10.0,DEM-MID-11-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,2,20.99579,-89.74474,10.0,DEM-MID-11-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,3,20.99579,-89.73211,11.0,DEM-MID-11-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,4,20.99579,-89.71947,9.0,DEM-MID-11-04,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,5,20.99579,-89.70684,7.0,DEM-MID-11-05,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,6,20.99579,-89.69421,7.0,DEM-MID-11-06,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,7,20.99579,-89.68158,11.0,DEM-MID-11-07,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,8,20.99579,-89.66895,7.0,DEM-MID-11-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,9,20.99579,-89.65632,8.0,DEM-MID-11-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,10,20.99579,-89.64368,10.0,DEM-MID-11-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,11,20.99579,-89.63105,9.0,DEM-MID-11-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,12,20.99579,-89.61842,11.0,DEM-MID-11-12,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,13,20.99579,-89.60579,11.0,DEM-MID-11-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,14,20.99579,-89.59316,10.0,DEM-MID-11-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,15,20.99579,-89.58053,9.0,DEM-MID-11-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,16,20.99579,-89.56789,9.0,DEM-MID-11-16,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,17,20.99579,-89.55526,11.0,DEM-MID-11-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,18,20.99579,-89.54263,9.0,DEM-MID-11-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+11,19,20.99579,-89.53,9.0,DEM-MID-11-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,0,21.00632,-89.77,9.0,DEM-MID-12-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,1,21.00632,-89.75737,9.0,DEM-MID-12-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,2,21.00632,-89.74474,9.0,DEM-MID-12-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,3,21.00632,-89.73211,9.0,DEM-MID-12-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,4,21.00632,-89.71947,7.0,DEM-MID-12-04,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,5,21.00632,-89.70684,7.0,DEM-MID-12-05,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,6,21.00632,-89.69421,6.0,DEM-MID-12-06,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+12,7,21.00632,-89.68158,8.0,DEM-MID-12-07,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,8,21.00632,-89.66895,9.0,DEM-MID-12-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,9,21.00632,-89.65632,8.0,DEM-MID-12-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,10,21.00632,-89.64368,10.0,DEM-MID-12-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,11,21.00632,-89.63105,9.0,DEM-MID-12-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,12,21.00632,-89.61842,10.0,DEM-MID-12-12,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,13,21.00632,-89.60579,10.0,DEM-MID-12-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,14,21.00632,-89.59316,10.0,DEM-MID-12-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,15,21.00632,-89.58053,9.0,DEM-MID-12-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,16,21.00632,-89.56789,11.0,DEM-MID-12-16,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,17,21.00632,-89.55526,10.0,DEM-MID-12-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,18,21.00632,-89.54263,11.0,DEM-MID-12-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+12,19,21.00632,-89.53,11.0,DEM-MID-12-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,0,21.01684,-89.77,8.0,DEM-MID-13-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,1,21.01684,-89.75737,8.0,DEM-MID-13-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,2,21.01684,-89.74474,7.0,DEM-MID-13-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,3,21.01684,-89.73211,10.0,DEM-MID-13-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,4,21.01684,-89.71947,8.0,DEM-MID-13-04,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,5,21.01684,-89.70684,8.0,DEM-MID-13-05,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,6,21.01684,-89.69421,6.0,DEM-MID-13-06,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+13,7,21.01684,-89.68158,8.0,DEM-MID-13-07,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,8,21.01684,-89.66895,6.0,DEM-MID-13-08,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+13,9,21.01684,-89.65632,7.0,DEM-MID-13-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,10,21.01684,-89.64368,8.0,DEM-MID-13-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,11,21.01684,-89.63105,9.0,DEM-MID-13-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,12,21.01684,-89.61842,10.0,DEM-MID-13-12,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,13,21.01684,-89.60579,9.0,DEM-MID-13-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,14,21.01684,-89.59316,10.0,DEM-MID-13-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,15,21.01684,-89.58053,9.0,DEM-MID-13-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,16,21.01684,-89.56789,10.0,DEM-MID-13-16,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,17,21.01684,-89.55526,10.0,DEM-MID-13-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,18,21.01684,-89.54263,10.0,DEM-MID-13-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+13,19,21.01684,-89.53,11.0,DEM-MID-13-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,0,21.02737,-89.77,8.0,DEM-MID-14-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,1,21.02737,-89.75737,7.0,DEM-MID-14-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,2,21.02737,-89.74474,6.0,DEM-MID-14-02,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+14,3,21.02737,-89.73211,8.0,DEM-MID-14-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,4,21.02737,-89.71947,6.0,DEM-MID-14-04,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+14,5,21.02737,-89.70684,6.0,DEM-MID-14-05,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+14,6,21.02737,-89.69421,7.0,DEM-MID-14-06,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,7,21.02737,-89.68158,9.0,DEM-MID-14-07,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,8,21.02737,-89.66895,7.0,DEM-MID-14-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,9,21.02737,-89.65632,7.0,DEM-MID-14-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,10,21.02737,-89.64368,7.0,DEM-MID-14-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,11,21.02737,-89.63105,8.0,DEM-MID-14-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,12,21.02737,-89.61842,10.0,DEM-MID-14-12,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,13,21.02737,-89.60579,8.0,DEM-MID-14-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,14,21.02737,-89.59316,8.0,DEM-MID-14-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,15,21.02737,-89.58053,9.0,DEM-MID-14-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,16,21.02737,-89.56789,8.0,DEM-MID-14-16,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,17,21.02737,-89.55526,9.0,DEM-MID-14-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,18,21.02737,-89.54263,10.0,DEM-MID-14-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+14,19,21.02737,-89.53,11.0,DEM-MID-14-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,0,21.03789,-89.77,7.0,DEM-MID-15-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,1,21.03789,-89.75737,7.0,DEM-MID-15-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,2,21.03789,-89.74474,6.0,DEM-MID-15-02,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+15,3,21.03789,-89.73211,7.0,DEM-MID-15-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,4,21.03789,-89.71947,6.0,DEM-MID-15-04,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+15,5,21.03789,-89.70684,7.0,DEM-MID-15-05,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,6,21.03789,-89.69421,8.0,DEM-MID-15-06,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,7,21.03789,-89.68158,9.0,DEM-MID-15-07,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,8,21.03789,-89.66895,8.0,DEM-MID-15-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,9,21.03789,-89.65632,7.0,DEM-MID-15-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,10,21.03789,-89.64368,7.0,DEM-MID-15-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,11,21.03789,-89.63105,6.0,DEM-MID-15-11,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+15,12,21.03789,-89.61842,7.0,DEM-MID-15-12,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,13,21.03789,-89.60579,7.0,DEM-MID-15-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,14,21.03789,-89.59316,9.0,DEM-MID-15-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,15,21.03789,-89.58053,8.0,DEM-MID-15-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,16,21.03789,-89.56789,8.0,DEM-MID-15-16,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,17,21.03789,-89.55526,8.0,DEM-MID-15-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,18,21.03789,-89.54263,8.0,DEM-MID-15-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+15,19,21.03789,-89.53,9.0,DEM-MID-15-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,0,21.04842,-89.77,7.0,DEM-MID-16-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,1,21.04842,-89.75737,7.0,DEM-MID-16-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,2,21.04842,-89.74474,9.0,DEM-MID-16-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,3,21.04842,-89.73211,7.0,DEM-MID-16-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,4,21.04842,-89.71947,8.0,DEM-MID-16-04,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,5,21.04842,-89.70684,7.0,DEM-MID-16-05,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,6,21.04842,-89.69421,9.0,DEM-MID-16-06,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,7,21.04842,-89.68158,7.0,DEM-MID-16-07,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,8,21.04842,-89.66895,9.0,DEM-MID-16-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,9,21.04842,-89.65632,7.0,DEM-MID-16-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,10,21.04842,-89.64368,7.0,DEM-MID-16-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,11,21.04842,-89.63105,8.0,DEM-MID-16-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,12,21.04842,-89.61842,7.0,DEM-MID-16-12,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,13,21.04842,-89.60579,8.0,DEM-MID-16-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,14,21.04842,-89.59316,8.0,DEM-MID-16-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,15,21.04842,-89.58053,6.0,DEM-MID-16-15,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+16,16,21.04842,-89.56789,8.0,DEM-MID-16-16,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,17,21.04842,-89.55526,7.0,DEM-MID-16-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,18,21.04842,-89.54263,7.0,DEM-MID-16-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+16,19,21.04842,-89.53,7.0,DEM-MID-16-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+17,0,21.05895,-89.77,9.0,DEM-MID-17-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+17,1,21.05895,-89.75737,9.0,DEM-MID-17-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+17,2,21.05895,-89.74474,8.0,DEM-MID-17-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+17,3,21.05895,-89.73211,8.0,DEM-MID-17-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+17,4,21.05895,-89.71947,8.0,DEM-MID-17-04,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+17,5,21.05895,-89.70684,7.0,DEM-MID-17-05,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+17,6,21.05895,-89.69421,7.0,DEM-MID-17-06,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+17,7,21.05895,-89.68158,5.0,DEM-MID-17-07,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+17,8,21.05895,-89.66895,5.0,DEM-MID-17-08,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+17,9,21.05895,-89.65632,6.0,DEM-MID-17-09,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+17,10,21.05895,-89.64368,6.0,DEM-MID-17-10,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+17,11,21.05895,-89.63105,9.0,DEM-MID-17-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+17,12,21.05895,-89.61842,6.0,DEM-MID-17-12,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+17,13,21.05895,-89.60579,10.0,DEM-MID-17-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+17,14,21.05895,-89.59316,6.0,DEM-MID-17-14,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+17,15,21.05895,-89.58053,8.0,DEM-MID-17-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+17,16,21.05895,-89.56789,6.0,DEM-MID-17-16,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+17,17,21.05895,-89.55526,7.0,DEM-MID-17-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+17,18,21.05895,-89.54263,10.0,DEM-MID-17-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+17,19,21.05895,-89.53,8.0,DEM-MID-17-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+18,0,21.06947,-89.77,8.0,DEM-MID-18-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+18,1,21.06947,-89.75737,5.0,DEM-MID-18-01,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+18,2,21.06947,-89.74474,8.0,DEM-MID-18-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+18,3,21.06947,-89.73211,7.0,DEM-MID-18-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+18,4,21.06947,-89.71947,5.0,DEM-MID-18-04,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+18,5,21.06947,-89.70684,6.0,DEM-MID-18-05,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+18,6,21.06947,-89.69421,6.0,DEM-MID-18-06,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+18,7,21.06947,-89.68158,6.0,DEM-MID-18-07,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+18,8,21.06947,-89.66895,6.0,DEM-MID-18-08,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+18,9,21.06947,-89.65632,6.0,DEM-MID-18-09,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+18,10,21.06947,-89.64368,8.0,DEM-MID-18-10,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+18,11,21.06947,-89.63105,7.0,DEM-MID-18-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+18,12,21.06947,-89.61842,7.0,DEM-MID-18-12,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+18,13,21.06947,-89.60579,7.0,DEM-MID-18-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+18,14,21.06947,-89.59316,8.0,DEM-MID-18-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+18,15,21.06947,-89.58053,8.0,DEM-MID-18-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+18,16,21.06947,-89.56789,9.0,DEM-MID-18-16,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+18,17,21.06947,-89.55526,9.0,DEM-MID-18-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+18,18,21.06947,-89.54263,7.0,DEM-MID-18-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+18,19,21.06947,-89.53,9.0,DEM-MID-18-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,0,21.08,-89.77,8.0,DEM-MID-19-00,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,1,21.08,-89.75737,9.0,DEM-MID-19-01,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,2,21.08,-89.74474,8.0,DEM-MID-19-02,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,3,21.08,-89.73211,7.0,DEM-MID-19-03,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,4,21.08,-89.71947,6.0,DEM-MID-19-04,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+19,5,21.08,-89.70684,8.0,DEM-MID-19-05,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,6,21.08,-89.69421,8.0,DEM-MID-19-06,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,7,21.08,-89.68158,2.0,DEM-MID-19-07,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+19,8,21.08,-89.66895,7.0,DEM-MID-19-08,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,9,21.08,-89.65632,7.0,DEM-MID-19-09,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,10,21.08,-89.64368,6.0,DEM-MID-19-10,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+19,11,21.08,-89.63105,7.0,DEM-MID-19-11,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,12,21.08,-89.61842,6.0,DEM-MID-19-12,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+19,13,21.08,-89.60579,8.0,DEM-MID-19-13,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,14,21.08,-89.59316,9.0,DEM-MID-19-14,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,15,21.08,-89.58053,7.0,DEM-MID-19-15,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,16,21.08,-89.56789,6.0,DEM-MID-19-16,Planicie Baja (<6m),31050,Mérida,EGM96 / MSL
+19,17,21.08,-89.55526,8.0,DEM-MID-19-17,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,18,21.08,-89.54263,8.0,DEM-MID-19-18,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL
+19,19,21.08,-89.53,8.0,DEM-MID-19-19,Plataforma Urbana Mérida (6-11m),31050,Mérida,EGM96 / MSL

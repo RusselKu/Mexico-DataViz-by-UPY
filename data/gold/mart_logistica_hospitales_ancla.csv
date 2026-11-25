@@ -1,0 +1,58 @@
+cvegeo,nom_mun,jurisdiccion_sanitaria,nivel_atencion,total_unidades,lat_promedio,lon_promedio
+31003,Akil,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica,1,20.267598,-89.346492
+31008,Calotmul,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica,1,21.017867,-88.177304
+31012,Cenotillo,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica,1,20.970695,-88.599222
+31015,Cuzamá,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica,1,20.758673,-89.368991
+31017,Chankom,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica,3,20.540695,-88.552158
+31019,Chemax,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital),3,20.726987,-87.846756
+31021,Chichimilá,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica,2,20.545666,-88.211902
+31022,Chikindzonot,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital),2,20.339315,-88.486449
+31024,Chumayel,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica,1,20.436692,-89.301279
+31030,Dzitás,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica,2,20.805208,-88.549827
+31030,Dzitás,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital),1,20.772573,-88.571947
+31032,Espita,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital),2,21.011929,-88.307102
+31035,Hoctún,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital),1,20.863236,-89.207766
+31036,Homún,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica,2,20.739198,-89.29127
+31038,Hunucmá,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica,2,21.09406,-89.951152
+31038,Hunucmá,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital),1,21.020979,-89.889225
+31040,Izamal,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica,1,20.941052,-88.955979
+31040,Izamal,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital),2,20.931972,-89.017406
+31041,Kanasín,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica,1,20.918873,-89.54282
+31041,Kanasín,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital),2,20.932642,-89.552763
+31042,Kantunil,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica,1,20.755712,-88.92602
+31044,Kinchil,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital),1,20.917525,-89.946572
+31045,Kopomá,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica,1,20.647411,-89.899316
+31048,Maxcanú,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital),1,20.583942,-89.997417
+31050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica,26,20.992339,-89.619164
+31050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital),41,20.978701,-89.630103
+31052,Motul,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital),2,21.102317,-89.291656
+31056,Oxkutzcab,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital),1,20.227954,-89.467749
+31058,Peto,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica,1,20.131814,-88.915334
+31060,Quintana Roo,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica,1,20.870424,-88.630044
+31063,Samahil,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital),1,20.834986,-89.975709
+31068,Sinanché,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital),1,21.225592,-89.183316
+31069,Sotuta,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital),1,20.666489,-88.939782
+31079,Tekax,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital),1,20.195202,-89.345486
+31085,Temozón,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica,4,20.870535,-88.125886
+31085,Temozón,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital),3,20.82164,-88.164558
+31087,Tetiz,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica,1,20.967217,-89.9305
+31089,Ticul,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital),2,20.397578,-89.5461
+31091,Tinum,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica,1,20.767702,-88.39112
+31091,Tinum,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital),3,20.696824,-88.58689
+31092,Tixcacalcupul,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica,1,20.303591,-88.268452
+31092,Tixcacalcupul,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital),2,20.334672,-88.31777
+31093,Tixkokob,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital),1,21.001436,-89.385846
+31096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica,4,21.14331,-88.148158
+31096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital),11,21.15623,-87.97165
+31097,Tunkás,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica,1,20.902483,-88.750734
+31099,Uayma,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica,2,20.770816,-88.317902
+31100,Ucú,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica,1,20.988775,-89.73517
+31100,Ucú,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital),1,21.033181,-89.740102
+31101,Umán,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital),1,20.874069,-89.747913
+31102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica,22,20.686898,-88.180152
+31102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital),10,20.691376,-88.207684
+31103,Xocchel,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica,1,20.833262,-89.182302
+31104,Yaxcabá,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica,2,20.682181,-88.770338
+31104,Yaxcabá,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital),2,20.529327,-88.769366
+31106,Yobaín,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica,1,21.23335,-89.120219
+31106,Yobaín,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital),1,21.234169,-89.116708

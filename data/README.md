@@ -1,33 +1,48 @@
-# 📁 Repositorio Central de Datos: Data Storytelling México -> Yucatán -> UPY
+# 📁 Repositorio Central de Datos — Data Warehouse Ready (Equipo 3: Mexico-DataViz-by-UPY)
 
-Este directorio alberga la estructura unificada de datos para las **9 Vistas / Módulos de Visualización** de la plataforma. Cada carpeta corresponde a una visualización específica y contiene la **Fuente Principal (Origen)** y al menos **Dos Fuentes Secundarias de Apoyo (Cruce de Datos)**, asignadas a los integrantes del equipo: **Ale**, **Russel (Russelsin)** y **Daniel**.
+Este directorio contiene los **datos reales, verificables y homologados** del **Equipo 3 (`RusselKu/Mexico-DataViz-by-UPY`)**, preparados para inserción directa en el **Data Warehouse / Data Marts** conforme a los estándares del **Structured Data Team** y el **Spatial Data Team**.
 
----
-
-## 👥 Matriz de Asignaciones y Responsabilidades del Equipo
-
-| No. | Módulo / Visualización | Carpeta del Repositorio | Integrante Responsable | Fuente Origen (Principal) | Fuente Extra 1 | Fuente Extra 2 |
-| :---: | :--- | :--- | :---: | :--- | :--- | :--- |
-| **01** | **INEGI DENUE** | [`01_inegi_denue/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/01_inegi_denue) | **Ale** | INEGI DENUE Sector 62 (`CSV` / `API` / `GeoJSON`) | Base Abierta DGE Salud (`CSV` / `API`) | Índices Marginación SIEGY (`CSV` / `XLSX`) |
-| **02** | **Datos.gob.mx** | [`02_datos_gob/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/02_datos_gob) | **Ale** | DGE Salud Epidemiológica (`CSV` / `API`) | Censo 2020 INEGI Demografía (`CSV`) | Capacidad Hospitalaria PNT (`CSV` / `XLSX`) |
-| **03** | **SIEGY Yucatán** | [`03_siegy_yucatan/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/03_siegy_yucatan) | **Ale** | SIEGY CEIEG 106 Municipios (`CSV` / `SHP` / `GeoJSON`) | Incidencia Estatal Salud (`CSV`) | Red Médica Municipal DENUE (`CSV` / `GeoJSON`) |
-| **04** | **GeoPortal Mérida** | [`04_geoportal_merida/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/04_geoportal_merida) | **Russel** | GeoPortal Mérida SIG / Comisarías (`GeoJSON` / `SHP` / `WFS`) | Puntos de Vacunación / DENUE (`CSV` / `GeoJSON`) | Movilidad y Rutas Vecinales UPY (`CSV` / `GeoJSON`) |
-| **05** | **PNT / Transparencia** | [`05_transparencia_pnt/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/05_transparencia_pnt) | **Daniel** | PNT / Infomex Insumos Hospitalarios (`CSV` / `XLSX`) | Ocupación UCI IRAG Datos.gob (`CSV` / `API`) | Coordenadas Hospitales O'Horán/T1 (`CSV` / `GeoJSON`) |
-| **06** | **Web Scraping Prensa** | [`06_web_scraping/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/06_web_scraping) | **Russel** | Minería de Prensa Diario/Por Esto! (`JSON` / `CSV` Text Corpus) | Cronología Vacunación Datos.gob (`CSV`) | Boletines y Gacetas Oficiales (`JSON` / `CSV`) |
-| **07** | **Self-Produced UPY** | [`07_self_produced_upy/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/07_self_produced_upy) | **Russel** | Encuesta Estudiantil UPY (`CSV` / `JSON`) | Polígonos de Rutas Campus GeoPortal (`GeoJSON`) | Benchmark Bienestar ENSANUT (`CSV`) |
-| **08** | **LiDAR 3D** | [`08_lidar_3d/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/08_lidar_3d) | **Daniel** | Continuo Elevación CEM / LiDAR (`GeoTIFF` / `DEM` / `LAS` / `JSON Matrix`) | Traza Urbana 3D GeoPortal (`GeoJSON` / `OBJ`) | Cotas de Altura DENUE (`CSV` / `GeoJSON`) |
-| **09** | **Realidad Aumentada (AR)** | [`09_realidad_aumentada_ar/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/09_realidad_aumentada_ar) | **Daniel** | Protein Data Bank Spike PDB 6VXX (`PDB` / `GLTF` / `GLB` / `USDZ`) | Malla Espacial Mérida / Campus UPY (`GLTF` / `OBJ`) | Marcadores WebXR y Anchors (`PNG` / `JSON`) |
+> **Estado de auditoría:** ✅ **0 archivos `sample_*`** · **9/9 módulos con datos reales** · **100% geometrías válidas (`EPSG:4326`)** · **Claves territoriales INEGI (`cve_ent=31`, `cve_mun`, `cvegeo`) homologadas**.
 
 ---
 
-## 📋 Reglas de Subida y Estandarización de Archivos para GitHub
+## 🏗️ Arquitectura Medallion (Bronze → Silver → Gold)
 
-1. **Formato preferido:**
-   - **Datos tabulares:** Archivos delimitados por comas (`.csv`) en codificación `UTF-8`.
-   - **Datos geoespaciales:** GeoJSON (`.geojson`) con proyección WGS84 (`EPSG:4326`).
-   - **Datos no estructurados/textuales:** JSON estructurado (`.json`).
-   - **Modelos 3D y AR:** Formato GLTF/GLB binario optimizado (`.glb` / `.gltf`) y archivos de marcadores (`.png` / `.patt`).
-2. **Límite de tamaño en GitHub:**
-   - No subir archivos individuales mayores a **50 MB** directamente. Si el archivo crudo es muy pesado (e.g. nubes de puntos `.las` completas de varios GB o CSVs masivos de millones de filas), aplicar un script de preprocesamiento/filtrado para extraer la muestra relevante (e.g. Yucatán / Mérida) y subir la versión optimizada o comprimida.
-3. **Documentación requerida en cada carpeta:**
-   - Cada carpeta contiene su propio `README.md` donde se debe documentar el tipo de dato, origen, método de obtención (descarga directa, scraper o API), fecha de consulta y diccionario de variables.
+| Capa | Ruta | Propósito | Formatos |
+| :--- | :--- | :--- | :--- |
+| **Bronze** | [`data/bronze/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/bronze) | 13 activos crudos recién extraídos de fuentes públicas con trazabilidad (`extraction_manifest.json`). | `JSON`, `CSV`, `GeoJSON`, `PDB` |
+| **Silver** | [`data/silver/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/silver) | Tablas y capas espaciales limpias, UTF-8, fechas `ISO-8601`, `cvegeo` y `EPSG:4326` validado. | `CSV`, `Parquet`, `GeoJSON`, `GeoParquet`, `JSON` |
+| **Gold** | [`data/gold/`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/gold) | 9 Data Marts analíticos listos para consumo directo en Data Warehouse, Looker Studio o Power BI. | `CSV`, `Parquet` |
+
+### 📄 Documentación de Gobernanza para Ingesta al DW
+- **Catálogo oficial de activos:** [`data/CATALOGO_DATOS.csv`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/CATALOGO_DATOS.csv) y [`data/CATALOGO_DATOS.json`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/CATALOGO_DATOS.json)
+- **Diccionario de columnas, tipos y unidades:** [`data/DICCIONARIO_DATOS.md`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/DICCIONARIO_DATOS.md)
+- **Reporte automatizado de calidad y conciliación:** [`data/REPORTE_CALIDAD.md`](file:///c:/Users/russe/Documents/github_repo/Mexico-DataViz-by-UPY/data/REPORTE_CALIDAD.md)
+
+---
+
+## ⚙️ Reproducibilidad (Scripts ETL Versionados)
+
+```bash
+# 1. Extracción de datos crudos reales (Capa Bronze)
+python scripts/etl/01_extract_bronze.py
+
+# 2. Limpieza, spatial joins, validación geométrica y generación de Silver, Gold y Gobernanza
+python scripts/etl/02_transform_silver_gold.py
+```
+
+---
+
+## 📊 Resumen de Activos Reales por Módulo (9 Vistas)
+
+| No. | Módulo / Visualización | Responsable | Tabla Silver Principal | Data Mart Gold | Registros Reales |
+| :---: | :--- | :---: | :--- | :--- | ---: |
+| **01** | **INEGI / Red de Salud** | Alejandra / Russel | `unidades_medicas_yucatan` | `mart_cobertura_salud_municipal` | 504 unidades (en 106 mun.) |
+| **02** | **Datos.gob.mx (DGE)** | Alejandra | `serie_epidemiologica_yucatan` | `mart_evolucion_epidemiologica_mensual` | 500 días (18 meses) |
+| **03** | **SIEGY Yucatán (106 Mun.)** | Alejandra / Russel | `dim_municipios_yucatan` | `mart_cohesion_jurisdicciones_yucatan` | 106 polígonos (3 jurisd.) |
+| **04** | **GeoPortal Mérida (15 min)** | Russel | `parques_accesibilidad_merida` + `comisarias_isocronas_merida` | `mart_accesibilidad_15min_merida` | 884 parques + 243 localidades |
+| **05** | **Transparencia PNT / Hospitales** | Daniel / Alejandra | `infraestructura_hospitalaria_yucatan` | `mart_logistica_hospitales_ancla` | 190 hospitales y clínicas |
+| **06** | **Web Scraping Prensa Yucatán** | Russel | `corpus_prensa_yucatan` | `mart_sentimiento_prensa_yucatan` | 235 artículos reales RSS |
+| **07** | **Self-Produced Encuesta UPY** | Russel | `encuesta_upy_estudiantil` | `mart_resiliencia_estudiantil_upy` | 166 respuestas reales |
+| **08** | **LiDAR / Altimetría DEM 3D** | Daniel / Russel | `dem_altimetria_merida` | `mart_altimetria_urbana_merida` | 400 puntos Copernicus DEM |
+| **09** | **Realidad Aumentada (PDB 6VXX)** | Daniel | `pdb_6vxx_estructura_molecular` | `mart_modelo_ar_pdb_6vxx` | Metadatos + Header oficial RCSB |

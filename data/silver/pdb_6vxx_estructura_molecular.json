@@ -1,0 +1,21 @@
+{
+  "pdb_id": "6VXX",
+  "title": "Structure of the SARS-CoV-2 spike glycoprotein (closed state)",
+  "experimental_method": "ELECTRON MICROSCOPY",
+  "resolution_angstroms": 2.8,
+  "molecular_weight_kda": 438.26,
+  "deposited_atom_count": 23694,
+  "deposited_polymer_monomer_count": 3843,
+  "polymer_entity_count": 1,
+  "chains": [
+    "A",
+    "B",
+    "C"
+  ],
+  "alpha_helices_count": 63,
+  "beta_sheets_count": 180,
+  "deposit_date": "2020-02-25",
+  "initial_release_date": "2020-03-11",
+  "source_url": "https://www.rcsb.org/structure/6VXX",
+  "license": "CC0 1.0 Public Domain"
+}

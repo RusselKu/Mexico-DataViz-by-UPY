@@ -1,0 +1,15 @@
+topico,sentimiento,total_articulos,polaridad_promedio
+comisarias_merida,neutro,44,0.049
+comisarias_merida,positivo,5,1.0
+hospitales_merida,negativo,1,-1.0
+hospitales_merida,neutro,16,0.05
+hospitales_merida,positivo,11,1.0
+resiliencia_yucatan,negativo,11,-1.0
+resiliencia_yucatan,neutro,24,0.042
+resiliencia_yucatan,positivo,7,1.0
+upy_universidad,negativo,2,-1.0
+upy_universidad,neutro,38,0.05
+upy_universidad,positivo,3,1.0
+vacunacion_yucatan,negativo,5,-1.0
+vacunacion_yucatan,neutro,27,0.044
+vacunacion_yucatan,positivo,41,1.0

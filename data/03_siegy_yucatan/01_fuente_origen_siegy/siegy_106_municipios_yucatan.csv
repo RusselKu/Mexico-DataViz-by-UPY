@@ -1,0 +1,107 @@
+cvegeo,cve_ent,cve_mun,nom_ent,nom_mun,jurisdiccion_sanitaria,area_km2,perimetro_km,centroide_lat,centroide_lon
+31001,31,001,Yucatán,Abalá,Jurisdicción 1 - Mérida (Centro/Metropolitana),293.161,121.538,20.655274,-89.650412
+31002,31,002,Yucatán,Acanceh,Jurisdicción 1 - Mérida (Centro/Metropolitana),137.24,110.501,20.824596,-89.447466
+31003,31,003,Yucatán,Akil,Jurisdicción 3 - Ticul (Sur),76.356,51.443,20.262051,-89.348312
+31004,31,004,Yucatán,Baca,Jurisdicción 1 - Mérida (Centro/Metropolitana),108.484,80.305,21.134604,-89.399439
+31005,31,005,Yucatán,Bokobá,Jurisdicción 1 - Mérida (Centro/Metropolitana),71.669,54.266,21.000564,-89.175669
+31006,31,006,Yucatán,Buctzotz,Jurisdicción 1 - Mérida (Centro/Metropolitana),654.246,159.851,21.221718,-88.649627
+31007,31,007,Yucatán,Cacalchén,Jurisdicción 1 - Mérida (Centro/Metropolitana),101.291,76.704,20.980226,-89.251269
+31008,31,008,Yucatán,Calotmul,Jurisdicción 1 - Mérida (Centro/Metropolitana),290.698,117.897,21.014058,-88.124441
+31009,31,009,Yucatán,Cansahcab,Jurisdicción 2 - Valladolid (Oriente),129.004,80.376,21.165733,-89.073292
+31010,31,010,Yucatán,Cantamayec,Jurisdicción 1 - Mérida (Centro/Metropolitana),357.019,121.497,20.425309,-89.049283
+31011,31,011,Yucatán,Celestún,Jurisdicción 2 - Valladolid (Oriente),597.659,143.94,20.888856,-90.280005
+31012,31,012,Yucatán,Cenotillo,Jurisdicción 1 - Mérida (Centro/Metropolitana),542.909,126.738,21.030609,-88.58087
+31013,31,013,Yucatán,Conkal,Jurisdicción 1 - Mérida (Centro/Metropolitana),63.241,52.536,21.082118,-89.513865
+31014,31,014,Yucatán,Cuncunul,Jurisdicción 2 - Valladolid (Oriente),135.379,94.289,20.623914,-88.348003
+31015,31,015,Yucatán,Cuzamá,Jurisdicción 3 - Ticul (Sur),93.759,82.454,20.719128,-89.345363
+31016,31,016,Yucatán,Chacsinkín,Jurisdicción 2 - Valladolid (Oriente),114.694,64.188,20.193926,-89.018203
+31017,31,017,Yucatán,Chankom,Jurisdicción 3 - Ticul (Sur),442.9,161.391,20.496468,-88.569286
+31018,31,018,Yucatán,Chapab,Jurisdicción 3 - Ticul (Sur),169.817,73.276,20.498579,-89.486084
+31019,31,019,Yucatán,Chemax,Jurisdicción 2 - Valladolid (Oriente),1397.223,219.935,20.760153,-87.824593
+31020,31,020,Yucatán,Chicxulub Pueblo,Jurisdicción 3 - Ticul (Sur),44.545,42.609,21.150885,-89.526816
+31021,31,021,Yucatán,Chichimilá,Jurisdicción 2 - Valladolid (Oriente),469.507,144.563,20.437079,-88.181484
+31022,31,022,Yucatán,Chikindzonot,Jurisdicción 2 - Valladolid (Oriente),473.798,135.84,20.273834,-88.526765
+31023,31,023,Yucatán,Chocholá,Jurisdicción 3 - Ticul (Sur),293.664,137.189,20.729921,-89.848793
+31024,31,024,Yucatán,Chumayel,Jurisdicción 2 - Valladolid (Oriente),83.855,46.863,20.471411,-89.280813
+31025,31,025,Yucatán,Dzán,Jurisdicción 3 - Ticul (Sur),79.67,78.065,20.402139,-89.444549
+31026,31,026,Yucatán,Dzemul,Jurisdicción 2 - Valladolid (Oriente),174.411,99.112,21.255932,-89.342312
+31027,31,027,Yucatán,Dzidzantún,Jurisdicción 2 - Valladolid (Oriente),207.55,89.502,21.291416,-89.025105
+31028,31,028,Yucatán,Dzilam de Bravo,Jurisdicción 1 - Mérida (Centro/Metropolitana),432.485,196.716,21.433695,-88.6684
+31029,31,029,Yucatán,Dzilam González,Jurisdicción 3 - Ticul (Sur),506.935,227.24,21.331852,-88.735444
+31030,31,030,Yucatán,Dzitás,Jurisdicción 3 - Ticul (Sur),309.466,148.491,20.83543,-88.533739
+31031,31,031,Yucatán,Dzoncauich,Jurisdicción 1 - Mérida (Centro/Metropolitana),133.287,82.807,21.084226,-88.839937
+31032,31,032,Yucatán,Espita,Jurisdicción 2 - Valladolid (Oriente),735.237,193.574,21.021079,-88.357047
+31033,31,033,Yucatán,Halachó,Jurisdicción 2 - Valladolid (Oriente),587.772,184.4,20.565318,-90.216725
+31034,31,034,Yucatán,Hocabá,Jurisdicción 1 - Mérida (Centro/Metropolitana),95.196,94.093,20.807413,-89.245115
+31035,31,035,Yucatán,Hoctún,Jurisdicción 3 - Ticul (Sur),120.908,94.76,20.875997,-89.158993
+31036,31,036,Yucatán,Homún,Jurisdicción 1 - Mérida (Centro/Metropolitana),199.563,168.177,20.681201,-89.252171
+31037,31,037,Yucatán,Huhí,Jurisdicción 3 - Ticul (Sur),197.651,85.807,20.695682,-89.13152
+31038,31,038,Yucatán,Hunucmá,Jurisdicción 1 - Mérida (Centro/Metropolitana),840.988,193.72,21.072344,-89.983154
+31039,31,039,Yucatán,Ixil,Jurisdicción 1 - Mérida (Centro/Metropolitana),136.58,70.939,21.237915,-89.473435
+31040,31,040,Yucatán,Izamal,Jurisdicción 1 - Mérida (Centro/Metropolitana),458.941,213.703,20.915772,-88.986671
+31041,31,041,Yucatán,Kanasín,Jurisdicción 1 - Mérida (Centro/Metropolitana),102.081,70.885,20.918554,-89.536934
+31042,31,042,Yucatán,Kantunil,Jurisdicción 1 - Mérida (Centro/Metropolitana),200.036,127.256,20.759775,-88.983582
+31043,31,043,Yucatán,Kaua,Jurisdicción 2 - Valladolid (Oriente),137.282,90.161,20.599831,-88.43726
+31044,31,044,Yucatán,Kinchil,Jurisdicción 3 - Ticul (Sur),356.485,144.228,20.851876,-90.050883
+31045,31,045,Yucatán,Kopomá,Jurisdicción 1 - Mérida (Centro/Metropolitana),157.68,81.03,20.641549,-89.898955
+31046,31,046,Yucatán,Mama,Jurisdicción 3 - Ticul (Sur),100.424,69.256,20.50271,-89.383396
+31047,31,047,Yucatán,Maní,Jurisdicción 3 - Ticul (Sur),126.921,79.653,20.383994,-89.369089
+31048,31,048,Yucatán,Maxcanú,Jurisdicción 3 - Ticul (Sur),912.793,286.435,20.621969,-90.06956
+31049,31,049,Yucatán,Mayapán,Jurisdicción 3 - Ticul (Sur),93.749,56.184,20.49104,-89.186052
+31050,31,050,Yucatán,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),884.464,300.569,20.983917,-89.63947
+31051,31,051,Yucatán,Mocochá,Jurisdicción 1 - Mérida (Centro/Metropolitana),47.386,56.389,21.132397,-89.454235
+31052,31,052,Yucatán,Motul,Jurisdicción 1 - Mérida (Centro/Metropolitana),321.206,211.849,21.143928,-89.277896
+31053,31,053,Yucatán,Muna,Jurisdicción 3 - Ticul (Sur),397.997,125.597,20.453247,-89.738232
+31054,31,054,Yucatán,Muxupip,Jurisdicción 3 - Ticul (Sur),71.763,71.224,21.050998,-89.323684
+31055,31,055,Yucatán,Opichén,Jurisdicción 3 - Ticul (Sur),259.449,94.679,20.551272,-89.84668
+31056,31,056,Yucatán,Oxkutzcab,Jurisdicción 3 - Ticul (Sur),863.581,237.627,20.147148,-89.522591
+31057,31,057,Yucatán,Panabá,Jurisdicción 2 - Valladolid (Oriente),665.703,240.115,21.353761,-88.308716
+31058,31,058,Yucatán,Peto,Jurisdicción 3 - Ticul (Sur),1055.56,237.505,20.077405,-88.828055
+31059,31,059,Yucatán,Progreso,Jurisdicción 1 - Mérida (Centro/Metropolitana),430.681,154.525,21.230397,-89.671107
+31060,31,060,Yucatán,Quintana Roo,Jurisdicción 3 - Ticul (Sur),103.335,67.139,20.842832,-88.63582
+31061,31,061,Yucatán,Río Lagartos,Jurisdicción 2 - Valladolid (Oriente),337.435,141.425,21.547299,-88.084653
+31062,31,062,Yucatán,Sacalum,Jurisdicción 2 - Valladolid (Oriente),198.914,131.938,20.528817,-89.619209
+31063,31,063,Yucatán,Samahil,Jurisdicción 1 - Mérida (Centro/Metropolitana),160.532,114.169,20.840852,-89.917731
+31064,31,064,Yucatán,Sanahcat,Jurisdicción 3 - Ticul (Sur),26.012,36.739,20.764261,-89.210248
+31065,31,065,Yucatán,San Felipe,Jurisdicción 2 - Valladolid (Oriente),451.72,148.34,21.493897,-88.314606
+31066,31,066,Yucatán,Santa Elena,Jurisdicción 3 - Ticul (Sur),514.383,151.373,20.268301,-89.72646
+31067,31,067,Yucatán,Seyé,Jurisdicción 1 - Mérida (Centro/Metropolitana),178.163,134.609,20.840943,-89.370719
+31068,31,068,Yucatán,Sinanché,Jurisdicción 2 - Valladolid (Oriente),134.483,83.45,21.270415,-89.198655
+31069,31,069,Yucatán,Sotuta,Jurisdicción 3 - Ticul (Sur),545.759,183.201,20.607434,-88.988105
+31070,31,070,Yucatán,Sucilá,Jurisdicción 1 - Mérida (Centro/Metropolitana),306.789,100.12,21.209528,-88.371905
+31071,31,071,Yucatán,Sudzal,Jurisdicción 3 - Ticul (Sur),221.676,152.716,20.804859,-88.88927
+31072,31,072,Yucatán,Suma,Jurisdicción 3 - Ticul (Sur),87.692,62.072,21.104078,-89.15127
+31073,31,073,Yucatán,Tahdziú,Jurisdicción 1 - Mérida (Centro/Metropolitana),241.381,86.822,20.247732,-88.904556
+31074,31,074,Yucatán,Tahmek,Jurisdicción 2 - Valladolid (Oriente),102.229,74.113,20.894624,-89.285674
+31075,31,075,Yucatán,Teabo,Jurisdicción 3 - Ticul (Sur),224.429,94.125,20.377307,-89.221503
+31076,31,076,Yucatán,Tecoh,Jurisdicción 1 - Mérida (Centro/Metropolitana),367.374,144.439,20.661773,-89.457326
+31077,31,077,Yucatán,Tekal de Venegas,Jurisdicción 3 - Ticul (Sur),199.346,120.275,21.021957,-88.848373
+31078,31,078,Yucatán,Tekantó,Jurisdicción 3 - Ticul (Sur),79.818,63.63,21.006137,-89.101972
+31079,31,079,Yucatán,Tekax,Jurisdicción 3 - Ticul (Sur),2753.052,399.968,19.934297,-89.30094
+31080,31,080,Yucatán,Tekit,Jurisdicción 3 - Ticul (Sur),281.296,104.213,20.570835,-89.273003
+31081,31,081,Yucatán,Tekom,Jurisdicción 3 - Ticul (Sur),273.383,131.873,20.493058,-88.395811
+31082,31,082,Yucatán,Telchac Pueblo,Jurisdicción 1 - Mérida (Centro/Metropolitana),57.912,62.01,21.217424,-89.25571
+31083,31,083,Yucatán,Telchac Puerto,Jurisdicción 1 - Mérida (Centro/Metropolitana),65.356,40.934,21.313069,-89.277331
+31084,31,084,Yucatán,Temax,Jurisdicción 2 - Valladolid (Oriente),338.222,188.825,21.167035,-88.873615
+31085,31,085,Yucatán,Temozón,Jurisdicción 2 - Valladolid (Oriente),705.707,196.457,20.898606,-88.064487
+31086,31,086,Yucatán,Tepakán,Jurisdicción 3 - Ticul (Sur),108.554,75.414,21.067994,-89.002544
+31087,31,087,Yucatán,Tetiz,Jurisdicción 3 - Ticul (Sur),337.033,126.558,20.956213,-90.058159
+31088,31,088,Yucatán,Teya,Jurisdicción 3 - Ticul (Sur),77.777,77.204,21.06574,-89.066242
+31089,31,089,Yucatán,Ticul,Jurisdicción 3 - Ticul (Sur),340.073,169.977,20.360378,-89.561198
+31090,31,090,Yucatán,Timucuy,Jurisdicción 1 - Mérida (Centro/Metropolitana),134.794,131.981,20.765975,-89.535626
+31091,31,091,Yucatán,Tinum,Jurisdicción 2 - Valladolid (Oriente),470.963,194.078,20.726568,-88.508515
+31092,31,092,Yucatán,Tixcacalcupul,Jurisdicción 2 - Valladolid (Oriente),502.439,150.299,20.391462,-88.323191
+31093,31,093,Yucatán,Tixkokob,Jurisdicción 1 - Mérida (Centro/Metropolitana),172.928,132.982,20.978694,-89.376009
+31094,31,094,Yucatán,Tixmehuac,Jurisdicción 3 - Ticul (Sur),230.222,96.444,20.246787,-89.087044
+31095,31,095,Yucatán,Tixpéhual,Jurisdicción 1 - Mérida (Centro/Metropolitana),71.059,77.645,20.96333,-89.46461
+31096,31,096,Yucatán,Tizimín,Jurisdicción 2 - Valladolid (Oriente),3883.093,352.646,21.25718,-87.847894
+31097,31,097,Yucatán,Tunkás,Jurisdicción 1 - Mérida (Centro/Metropolitana),412.777,118.222,20.886192,-88.746894
+31098,31,098,Yucatán,Tzucacab,Jurisdicción 3 - Ticul (Sur),766.038,200.409,19.937972,-89.046823
+31099,31,099,Yucatán,Uayma,Jurisdicción 2 - Valladolid (Oriente),187.555,151.807,20.780107,-88.362253
+31100,31,100,Yucatán,Ucú,Jurisdicción 1 - Mérida (Centro/Metropolitana),130.837,84.264,21.063147,-89.779891
+31101,31,101,Yucatán,Umán,Jurisdicción 1 - Mérida (Centro/Metropolitana),350.133,144.675,20.852518,-89.765447
+31102,31,102,Yucatán,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1077.831,296.348,20.638365,-88.108287
+31103,31,103,Yucatán,Xocchel,Jurisdicción 1 - Mérida (Centro/Metropolitana),110.421,84.806,20.805299,-89.123919
+31104,31,104,Yucatán,Yaxcabá,Jurisdicción 2 - Valladolid (Oriente),1474.177,274.194,20.480629,-88.769717
+31105,31,105,Yucatán,Yaxkukul,Jurisdicción 1 - Mérida (Centro/Metropolitana),49.812,46.992,21.057318,-89.443799
+31106,31,106,Yucatán,Yobaín,Jurisdicción 1 - Mérida (Centro/Metropolitana),131.599,74.982,21.288438,-89.120403

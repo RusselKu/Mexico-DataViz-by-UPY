@@ -1,0 +1,191 @@
+id_unidad,nombre_establecimiento,categoria_salud,operador_institucion,calle,colonia,codigo_postal,latitud,longitud,cvegeo,cve_ent,cve_mun,nom_mun,jurisdiccion_sanitaria,nivel_atencion
+OSM-N-885196054,Clínica de Merida,hospital,No especificado,,,,20.986428,-89.638427,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-1581861009,Centro de Salud IMSS,hospital,No especificado,,,,21.09724,-89.300876,31052,31,052,Motul,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-1704148930,Cruz Roja (Oriente),hospital,No especificado,,,,20.95954,-89.580249,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-1778656594,Unidad Médica Familiar #59 (IMSS),hospital,No especificado,,,,20.969485,-89.58828,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-1903268517,Centro de Salud,hospital,No especificado,,,,20.666489,-88.939782,31069,31,069,Sotuta,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital)
+OSM-N-2018592263,Unidad de Medicina Familiar #49 (IMSS),hospital,No especificado,,,,21.001436,-89.385846,31093,31,093,Tixkokob,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-2085903398,Centro de Salud,hospital,No especificado,,,,20.857997,-87.669129,31019,31,019,Chemax,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-2085922031,Centro de Salud,hospital,No especificado,,,,20.993514,-87.561272,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-2086217825,Centro Unidad,hospital,No especificado,,,,21.197874,-87.719217,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-2086553105,Centro de Salud,hospital,No especificado,,,,20.991531,-87.787074,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-2192829133,Centro de Salud,hospital,No especificado,,,,20.195202,-89.345486,31079,31,079,Tekax,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital)
+OSM-N-2192845099,Centro de Salud,hospital,No especificado,,,,20.227954,-89.467749,31056,31,056,Oxkutzcab,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital)
+OSM-N-2201876337,Unidad Básica de Rehabilitación,hospital,No especificado,,,,21.234169,-89.116708,31106,31,106,Yobaín,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-2247426403,Clínica IMSS,hospital,No especificado,,,,21.225592,-89.183316,31068,31,068,Sinanché,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-2303139615,MEDYTEC,hospital,No especificado,,,,20.983644,-89.615751,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-2305738816,IMSS,hospital,No especificado,,,,20.932646,-89.552762,31041,31,041,Kanasín,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-2336704194,UMF Izamal (ISSSTE),hospital,No especificado,,,,20.935977,-89.019634,31040,31,040,Izamal,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-2336725336,IMSS,hospital,Instituto Mexicano del Seguro Social,,,,20.927968,-89.015178,31040,31,040,Izamal,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-2593136093,Centro de salud de Yaxcabá,hospital,No especificado,,,,20.549555,-88.82742,31104,31,104,Yaxcabá,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-2593136097,IMSS Unidad Médica Rural #130,hospital,No especificado,,,,20.509099,-88.711313,31104,31,104,Yaxcabá,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-2613486325,Casa de salud,hospital,No especificado,,,,20.344798,-88.48617,31022,31,022,Chikindzonot,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-2613530445,Centro de Salud de Chikindzonot,hospital,No especificado,,,,20.333833,-88.486728,31022,31,022,Chikindzonot,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-2613714756,Centro de Salud de Mahas,hospital,No especificado,,,,20.310879,-88.332641,31092,31,092,Tixcacalcupul,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-2614130170,Centro de Salud de Carolina,hospital,No especificado,,,,20.358466,-88.3029,31092,31,092,Tixcacalcupul,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-2616400434,Hospital Regional #63 Maxcanú,hospital,No especificado,,,,20.583942,-89.997417,31048,31,048,Maxcanú,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital)
+OSM-N-3169568665,Dispensario Médico,clinic,No especificado,,,,20.511528,-88.521452,31017,31,017,Chankom,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica
+OSM-N-3174144200,"Centro de Salud ""El Cuyo""",hospital,No especificado,,,,21.516862,-87.681005,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-3174157228,"Centro de Salud ""Sucopo""",hospital,No especificado,,,,21.161539,-88.048847,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-3174181164,Hospital General de Chemax,hospital,No especificado,,,,20.660564,-87.943553,31019,31,019,Chemax,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-3174832070,Consultorio Homeopatico,hospital,No especificado,,,,20.662401,-87.927585,31019,31,019,Chemax,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-3290882430,Clinica San Juan,hospital,No especificado,Calle 40,,,20.684896,-88.200453,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-3315679721,Piste,hospital,No especificado,,,,20.699886,-88.590104,31091,31,091,Tinum,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-3331238970,Centro de Salud Piste,hospital,No especificado,,,,20.697964,-88.588041,31091,31,091,Tinum,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-3331284592,Centro Comunitario de Desarrollo Humano Piste,hospital,No especificado,,,,20.692622,-88.582526,31091,31,091,Tinum,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-3633732938,ISSSTE Valladolid,hospital,Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado,Calle 60,,97780,20.693664,-88.215766,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-3671195508,Clinica Materno Infantil,clinic,No especificado,,,,20.689606,-88.205971,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-N-3678251395,Unidad Médica Rural IMSS,hospital,No especificado,,,,20.852074,-88.090766,31085,31,085,Temozón,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-3722248352,Casa de Salud de San Andrés Xbac,clinic,No especificado,,,,20.717641,-88.067255,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-N-3731200466,Centro Anticanceroso,hospital,No especificado,,,,20.972841,-89.64143,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-3731200467,Hospital General O'Horan,hospital,No especificado,,,,20.974725,-89.641755,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-3750056729,Grupo Médico del Valle,hospital,No especificado,,,,20.802245,-88.20069,31085,31,085,Temozón,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-3750087123,Centro de Salud Ek Balam,clinic,No especificado,,,,20.892161,-88.14546,31085,31,085,Temozón,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-N-3753342600,Centro de Salud de Dzitás,clinic,Servicios de Salud de Yucatán,,,,20.839622,-88.527597,31030,31,030,Dzitás,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica
+OSM-N-3761039683,Unidad de Salud (Clinic) OSM-3761039683,clinic,No especificado,,,,20.131814,-88.915334,31058,31,058,Peto,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica
+OSM-N-3789762358,Clinica Santa Anita,hospital,No especificado,Calle 40,,,20.685561,-88.200822,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-3962079234,Unidad Médica de Atención Ambulatoria,hospital,No especificado,,,,20.996874,-89.65309,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-3962079235,IMSS La Ceiba (UMF 57),hospital,Instituto Mexicano del Seguro Social,Avenida Alfredo Barrera,Pensiones,97219,20.996008,-89.64541,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-4206183620,Centro de Salud Tikuch,clinic,No especificado,,,,20.702387,-88.110561,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-N-4216433302,"Clínica de Maternidad ""Guadalupe""",clinic,No especificado,,,,21.144928,-88.148501,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-N-4232915990,HGSZ / MF No.3 (IMSS).,hospital,No especificado,,,,21.107394,-89.282437,31052,31,052,Motul,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-4301363892,"Clínica ""Santa María""",clinic,No especificado,,,,21.149349,-88.148472,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-N-4310234890,Centro de Especialidades Médicas del Sureste,hospital,No especificado,Calle 60,,,20.985342,-89.620256,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-4353038090,Hospital siquiatría,clinic,No especificado,,,,20.973606,-89.656571,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-4353058590,Siquiatra,clinic,No especificado,,,,20.973679,-89.656617,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-4356183589,Oftalmérida,clinic,No especificado,Calle 18,,97100,20.989293,-89.610878,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-4356193791,CEDIMMONT,clinic,No especificado,Calle 50,,97203,21.035899,-89.644301,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-4369583606,Balance Total,clinic,D.C. Mitzi Quezada,Avenida Colón,,97000,20.986528,-89.624148,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-4382641497,Centro de Salud de Celtún,clinic,No especificado,,,,20.460041,-88.211986,31021,31,021,Chichimilá,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-N-4394512572,Laboratorio,hospital,No especificado,,,,20.395553,-89.532687,31089,31,089,Ticul,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital)
+OSM-N-4578248194,Central Pediátrica,clinic,No especificado,,,,20.969122,-89.618906,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-4754863925,Análisis Clínicos Valladolid,clinic,No especificado,,,,20.688832,-88.203392,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-N-5112149434,Módulo Médico,clinic,No especificado,,,,20.999974,-89.658273,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-5306617123,IMSS,clinic,IMSS,,,,20.963429,-89.614045,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-5658986772,ISSSTE Pensiones,hospital,Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado,,,,20.99548,-89.640052,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-5999698499,Centro de Salud de Espita,hospital,No especificado,,,,21.0119,-88.307043,31032,31,032,Espita,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-N-6244955662,Centro de Endoscopía del Sureste,clinic,No especificado,,,,21.015273,-89.584832,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-6247538597,Centro de Fisioterapia y Rehabilitación Deportiva,clinic,No especificado,,,,21.002371,-89.575745,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-6254059862,Clínica Yucatán,clinic,No especificado,,,,20.965394,-89.627338,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-6254711263,IMSS Unidad de Medicina Familiar No. 52,clinic,Instituto Mexicano del Seguro Social,,,,20.969032,-89.625649,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-7696190207,ISSSTE,clinic,No especificado,,,,21.013882,-89.584968,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-7766283389,Hospital Militar,hospital,No especificado,Calle 61A,,97000,20.970724,-89.643722,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-7844885286,Servicios Ópticos de Merica,clinic,No especificado,Calle 54,,97000,20.972099,-89.617964,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-8420880717,Alma,clinic,No especificado,Calle 53,,97314,20.99892,-89.706365,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-8442844732,Unidad de Salud (Clinic) OSM-8442844732,clinic,No especificado,,,,20.436692,-89.301279,31024,31,024,Chumayel,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-N-8827930017,Medicentro,clinic,No especificado,Calle 68,,,20.964598,-89.628878,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-8827930117,Cruz roja,hospital,Cruz Roja,Calle 68,,,20.964583,-89.628987,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-8933582917,"Centro de Salud San José, Kanasín",clinic,No especificado,,,,20.918873,-89.54282,31041,31,041,Kanasín,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-9098567817,Salud Digna,clinic,Salud Digna,Calle 64,,97000,20.968323,-89.625736,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-9121438796,IMSS UMR Homún,clinic,IMSS,Calle 19,,97580,20.740142,-89.293268,31036,31,036,Homún,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-9121438798,Clínica Homún,clinic,No especificado,Calle 21,,97580,20.738254,-89.289271,31036,31,036,Homún,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-9990677750,Clínica Valla Med,clinic,No especificado,,,,20.698904,-88.201231,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-N-10961957465,Clínica de Diálisis y Hemodiálisis CAMER,clinic,No especificado,,,,20.69597,-88.205588,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-N-10975558242,"AUDIOSFERA, Centro de Bienestar Auditivo.",hospital,Aud. Alejandra Rivas.,Avenida Alfredo Barrera,,97219,20.995551,-89.644021,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-12337179620,Enfermería ENES-Mérida,clinic,ENES Mérida,,,,20.988775,-89.73517,31100,31,100,Ucú,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-12465504301,Clínica de mama IMSS bienestar,clinic,No especificado,Calle 13,,,20.995891,-89.653546,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-12580513006,Hospital MAC Mérida,hospital,No especificado,Avenida Correa Rachó,,97133,21.012128,-89.582564,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-N-12586059603,Centro de Salud de Holca,clinic,No especificado,,,,20.755712,-88.92602,31042,31,042,Kantunil,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-12586276458,Casa del Corazón,clinic,No especificado,,,,21.015351,-89.585046,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-12586276459,Centro de Vacunación del Sureste,clinic,No especificado,,,,21.015384,-89.585087,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-12666785054,Centro Médico Valladolid,clinic,No especificado,,,,20.688374,-88.195858,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-N-13443682661,Centro de Salud de Ticimul,clinic,No especificado,,,,20.596984,-88.552736,31017,31,017,Chankom,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica
+OSM-N-13680430817,Clinica Dentista del Dr. Alfredo Schirp,clinic,No especificado,,,,20.68527,-88.200811,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-N-13836714155,Centro de salud de Santa María Aznar,clinic,No especificado,,,,20.82373,-88.319333,31099,31,099,Uayma,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-N-14244126901,Unidad Médica García Gineres,clinic,No especificado,Calle 27,,97000,20.984755,-89.629794,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-N-14307752572,Servicios de Salud de Yucatán (Clínica Yobain),clinic,Servicios de Salud de Yucatán (SSY),Calle 21 x Calle 26,,97425,21.23335,-89.120219,31106,31,106,Yobaín,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-W-358423857,"Centro Médico San Lucas (Otorrino, Pediatría)",hospital,No especificado,Calle 33,,,20.700395,-88.222583,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-358454594,Centro de Salud Urbano de Valladolid,clinic,No especificado,Calle 37,,97780,20.694654,-88.214763,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-359673311,Hospital Juárez,hospital,IMSS,Calle 21,,97070,20.987944,-89.639917,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-360925519,"Centro de Salud ""La oaxaqueña""",clinic,SSY,Calle 47,,97780,20.684461,-88.189149,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-366979704,"Centro de Salud ""Fernando Novelo""",clinic,No especificado,,,,20.70125,-88.189552,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-367688605,Centro de Salud de Popola,clinic,No especificado,,,,20.732668,-88.238463,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-368184159,Centro de Salud,hospital,No especificado,,,,20.664903,-88.258883,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-368205023,Centro de Salud de Pixoy,clinic,SSY,,,,20.715447,-88.262416,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-368216350,Casa de Salud de Yalcón,clinic,No especificado,,,,20.679551,-88.157525,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-368222926,Centro de Salud Tahmuy,clinic,No especificado,,,,20.759476,-88.144287,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-369319783,Hospital Regional Militar,hospital,No especificado,,,,20.970527,-89.643359,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-369444965,Centro Integral de Salud Mental de Yucatan,hospital,CISAMEY,,,,20.698679,-88.186306,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-371289751,Centro de Salud de Tesoco,clinic,No especificado,,,,20.723932,-88.153506,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-371431409,Centro de Salud Temozón,hospital,No especificado,,,,20.810602,-88.202217,31085,31,085,Temozón,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-371482434,Unidad Médica Rural # 31,clinic,IMSS,,,,21.017867,-88.177304,31008,31,008,Calotmul,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-W-371543152,Centro de Salud de Cenotillo,clinic,No especificado,,,,20.970695,-88.599222,31012,31,012,Cenotillo,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-W-371632626,Centro de Salud de Uayma,clinic,No especificado,,,,20.717902,-88.316471,31099,31,099,Uayma,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-371658715,Centro de Salud de Tinum,clinic,No especificado,,,,20.767702,-88.39112,31091,31,091,Tinum,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-371671272,Centro de Salud de Xocempich,clinic,No especificado,,,,20.770794,-88.572057,31030,31,030,Dzitás,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica
+OSM-W-371671278,Sanatorio Bethesda,hospital,No especificado,,,,20.772573,-88.571947,31030,31,030,Dzitás,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital)
+OSM-W-371824697,IMSS Oportunidades,clinic,IMSS,,,,20.870424,-88.630044,31060,31,060,Quintana Roo,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica
+OSM-W-371920265,Centro de Salud de Tunkás,clinic,No especificado,,,,20.902483,-88.750734,31097,31,097,Tunkás,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-W-371961899,Centro de Salud de Sitilpech,clinic,No especificado,,,,20.941052,-88.955979,31040,31,040,Izamal,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-W-371989522,Centro de Salud de Libre Unión,clinic,No especificado,,,,20.707287,-88.804774,31104,31,104,Yaxcabá,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-372148388,Instituto Mexicano del Seguro Social UMR 81 Hoctún,hospital,IMSS,,,,20.863236,-89.207766,31035,31,035,Hoctún,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital)
+OSM-W-372657964,"Centro de Salud ""Emiliano Zapata""",clinic,No especificado,,,,20.694235,-88.222401,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-372737257,IMSS,hospital,Instituto Mexicano del Seguro Social,,,,20.689704,-88.211885,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-372737258,Unidad de Salud (Clinic) OSM-372737258,clinic,Instituto Mexicano del Seguro Social,,,,20.68978,-88.211853,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-372769045,Clinica Sinaí,clinic,No especificado,Calle 43,Centro,97780,20.688294,-88.19847,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-373555788,Centro de Salud Colonia San Francisco,clinic,No especificado,Calle 49,,97783,20.679006,-88.183206,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-373555796,Quiropractico,clinic,No especificado,,,,20.684095,-88.177732,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-385449975,Hospital de La Amistad Corea México,hospital,No especificado,,,,20.902475,-89.640244,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-392811177,Hospital General de Valladolid,hospital,No especificado,Avenida Víctor Cervera Pacheco.,,97780,20.70888,-88.189599,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-406510712,Unidad de Salud (Hospital) OSM-406510712,hospital,No especificado,,,,21.011958,-88.307162,31032,31,032,Espita,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-408008772,IMSS UMF N. 13 Chuburna,clinic,Instituto Mexicano del Seguro Social,,,,21.013566,-89.633773,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-W-438054315,Unidad Médica Rural # 27,clinic,No especificado,Carretera Chikindzonot-X-thobil,,,20.303591,-88.268452,31092,31,092,Tixcacalcupul,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-544589130,Unidad de Salud (Hospital) OSM-544589130,hospital,No especificado,,,,20.996826,-89.652983,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-548616689,Casa de salud,clinic,No especificado,,,,20.657075,-88.735901,31104,31,104,Yaxcabá,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-585273220,UMF 20,hospital,No especificado,,,,20.997691,-89.698416,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-586534868,Hospital Materno Infantil,hospital,No especificado,,,,20.962485,-89.617182,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-601154442,Clínica del Seguro Popular,hospital,No especificado,,,,21.029318,-89.708127,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-614624113,Modulo Medico Emiliano Zapata Ote.,hospital,No especificado,"Calle 41, x38 y 36",,97144,20.983303,-89.5812,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-619016572,Hospital Regional de Alta Especialidad de Yucatán,hospital,No especificado,,,,21.0204,-89.582396,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-637343828,Unidad de Salud (Clinic) OSM-637343828,clinic,No especificado,,,,20.758673,-89.368991,31015,31,015,Cuzamá,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica
+OSM-W-666380946,Centro Médico de Las Américas,hospital,No especificado,,,,20.984361,-89.615887,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-729758292,Centro de Salud Sisal,clinic,No especificado,,,,21.163339,-90.042566,31038,31,038,Hunucmá,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-W-794596103,Unidad de Salud (Hospital) OSM-794596103,hospital,No especificado,,,,20.932638,-89.552764,31041,31,041,Kanasín,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-804071787,Centro de Atención temporal Covid-19 Valladolid,hospital,SSA Yucatán,,,,20.709383,-88.189062,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-882314862,Star Médica,hospital,Hospital Star Médica Mérida,,,,21.016017,-89.584729,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-887755204,Cruz Roja,hospital,Cruz Roja,,,,20.677694,-88.201484,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-888014438,Centro de salud de ucu,hospital,municipal,Calle 14,,97357,21.033181,-89.740102,31100,31,100,Ucú,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-889575446,Unidad Médica Rural IMSS Kopomá,clinic,No especificado,,,,20.647411,-89.899316,31045,31,045,Kopomá,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-W-891105874,Unidad Médica Familiar IMSS 19,hospital,No especificado,,,,21.020979,-89.889225,31038,31,038,Hunucmá,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-891105886,Centro de Salud Hunucmá,clinic,No especificado,,,,21.02478,-89.859739,31038,31,038,Hunucmá,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-W-891110356,Centro de Salud IMSS,clinic,No especificado,,,,20.967217,-89.9305,31087,31,087,Tetiz,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica
+OSM-W-891726859,Clínica General IMSS Kinchil,hospital,No especificado,,,,20.917525,-89.946572,31044,31,044,Kinchil,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital)
+OSM-W-948546705,Centro de Salud,hospital,No especificado,,,,20.834986,-89.975709,31063,31,063,Samahil,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-957374416,ISSSTE,hospital,Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado,,,,21.0122,-89.657095,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1040244589,Casa de Salud de Santa Rita,clinic,No especificado,,,,20.861983,-88.146387,31085,31,085,Temozón,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-1076994914,Unidad de Salud (Hospital) OSM-1076994914,hospital,No especificado,,,,21.134238,-88.15068,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-1078354446,Unidad de Salud (Hospital) OSM-1078354446,hospital,No especificado,,,,21.134802,-88.153788,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-1078355642,Unidad de Salud (Hospital) OSM-1078355642,hospital,Instituto Mexicano del Seguro Social,,,,21.145571,-88.145321,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-1078355643,IMSS Hospital General de Sub Zona con Medicina Familiar No. 5,clinic,IMSS,,,,21.145584,-88.145383,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-1078674708,Unidad de Salud (Hospital) OSM-1078674708,hospital,Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado,,,,21.154528,-88.14516,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-1078674711,Cruz Roja,hospital,Cruz Roja,,,,21.154639,-88.14551,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-1078677724,Unidad de Salud (Hospital) OSM-1078677724,hospital,No especificado,,,,21.133428,-88.150273,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),2do / 3er Nivel (Hospital)
+OSM-W-1078677725,Grupo Médico San Luis,clinic,No especificado,,,,21.133381,-88.150278,31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-1168571791,IMSS Bienestar 43,clinic,IMSS,,,,20.417921,-88.02936,31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-1173561345,Centro de Salud de Chichimilá,clinic,No especificado,,,,20.631291,-88.211817,31021,31,021,Chichimilá,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-1264858575,Clínica de Mérida,hospital,No especificado,,,,20.986399,-89.638341,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1264858576,Hospital Militar,hospital,No especificado,,,,20.970527,-89.643359,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1269126168,Unidad de Salud (Hospital) OSM-1269126168,hospital,No especificado,,,,20.986408,-89.638354,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1270401853,Hospital General O'Horan,hospital,No especificado,,,,20.974848,-89.641559,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1272284170,Centro de Especialidades Médicas del Sureste,hospital,No especificado,,,,20.985319,-89.620324,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1279184138,IMSS U.M.F. 61 Los Héroes,hospital,Instituto Mexicano del Seguro Social,Calle 149,,,20.990348,-89.538993,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1291195569,"Unidad Médica Familiar #61 ""Los Héroes"" IMSS",clinic,Instituto Mexicano del Seguro Social,,,,20.990277,-89.538986,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-W-1316330762,Unidad de Salud (Hospital) OSM-1316330762,hospital,No especificado,,,,20.973629,-89.691554,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1318027611,Hospital Ignacio García Téllez (IMSS T1),hospital,Instituto Mexicano del Seguro Social,,,,20.978971,-89.603725,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1359777283,Clínica Univeritaria Anáhuac Mayab,clinic,No especificado,,,,21.012942,-89.589568,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-W-1359949053,CEDIMMONT,clinic,No especificado,,,,21.015591,-89.583007,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-W-1359949067,PET CT SURESTE,hospital,No especificado,,,,21.01331,-89.572353,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1363684155,Centro Médico Dr. Elías Martínez,clinic,No especificado,,,,20.792895,-88.20245,31085,31,085,Temozón,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-1372355177,Unidad de Salud (Hospital) OSM-1372355177,hospital,No especificado,,,,20.969669,-89.677894,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1375737205,Hospital Psiquiátrico “Yucatán”,hospital,No especificado,,,,20.972963,-89.657258,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1376020345,Centro de Salud de Nahbalam,clinic,No especificado,,,,20.935102,-88.009245,31085,31,085,Temozón,Jurisdicción 2 - Valladolid (Oriente),1er Nivel / Clínica
+OSM-W-1392254316,Hospital O'Horan Sur,hospital,No especificado,,,,20.901443,-89.643641,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1392254317,Hospital Materno Infantil,hospital,No especificado,,,,20.903102,-89.643562,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1393452398,Unidad Médica IMSS Bienestar Xocchel,clinic,Instituto Mexicano del Seguro Social,,,,20.833262,-89.182302,31103,31,103,Xocchel,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-W-1412093926,Unidad de Salud (Hospital) OSM-1412093926,hospital,No especificado,,,,20.399604,-89.559512,31089,31,089,Ticul,Jurisdicción 3 - Ticul (Sur),2do / 3er Nivel (Hospital)
+OSM-W-1416786137,IMSS UMF 58 Serapio Rendón,hospital,Instituto Mexicano del Seguro Social,Calle 42,Serapio Rendón,,20.928271,-89.608361,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1420630782,IMSS UMán,hospital,No especificado,,,,20.874069,-89.747913,31101,31,101,Umán,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1420635899,IMSS Bienestar  UMR 12,clinic,Instituto Mexicano del Seguro Social,,,,20.267598,-89.346492,31003,31,003,Akil,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica
+OSM-W-1422221235,Centro Medico Pensiones,clinic,No especificado,,,,20.995632,-89.638256,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),1er Nivel / Clínica
+OSM-W-1432574703,cruz roja,hospital,Cruz Roja,,,,20.964654,-89.629407,31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),2do / 3er Nivel (Hospital)
+OSM-W-1562933011,IMSS Xcopteil No. 33,clinic,Instituto Mexicano del Seguro Social,,,,20.513573,-88.582286,31017,31,017,Chankom,Jurisdicción 3 - Ticul (Sur),1er Nivel / Clínica
