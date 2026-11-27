@@ -19,10 +19,10 @@ El capítulo asignado al Equipo 3 (**Acto 5 · Cuidarnos: «¿Qué tan lejos que
 
 | Escena | Archivo CSV | Hallazgo Verificado | Fuente y Corte |
 | :---: | :--- | :--- | :--- |
-| **1** | [`booklet/datos/escena-1.csv`](./booklet/datos/escena-1.csv) | Mérida concentra **49.6 %** de las unidades de salud mapeadas en Yucatán (**239 de 482**); **56 de 106 municipios** tienen 0 registros en la cartografía abierta. | OpenStreetMap (Overpass) + INEGI Censo 2020 (ITER) · Corte: nov 2026 |
+| **1** | [`booklet/datos/escena-1.csv`](./booklet/datos/escena-1.csv) | Mérida concentra **42.3 %** de las unidades médicas en operación (**284 de 672**, sin farmacias) y **55.7 %** de los hospitales (**34 de 61**); **93 de 106 municipios** no tienen hospital. | Secretaría de Salud (DGIS CLUES oct 2026) + INEGI Censo 2020 (ITER) |
 | **2** | [`booklet/datos/escena-2.csv`](./booklet/datos/escena-2.csv) | **211,556 habitantes** en las 515 AGEB urbanas de Mérida (**22.1 %**) carecen de afiliación a servicios de salud; **61 AGEB** superan el 30 %. | INEGI Censo de Población y Vivienda 2020 (AGEB urbanas) · Corte: 2020 |
-| **3** | [`booklet/datos/escena-3.csv`](./booklet/datos/escena-3.csv) | **54.6 %** de las 185 localidades dentro de Mérida (`CVEGEO 31050`) queda a más de 15 minutos a pie al médico: mediana de **56.6 min** en 44 comisarías contra **11.0 min** en 136 colonias y barrios. | OpenStreetMap + Límite municipal INEGI `31050` (UTM 16N) · Corte: nov 2026 |
-| **4** | [`booklet/datos/escena-4.csv`](./booklet/datos/escena-4.csv) | Yucatán acumuló **41,179 casos confirmados** y **4,078 defunciones** entre enero de 2020 y junio de 2021 (pico mensual: julio 2020 con 5,280 casos). | DGE Secretaría de Salud (vía espejo `mariorz/covid19-mx-time-series`) · Corte: jun 2021 |
+| **3** | [`booklet/datos/escena-3.csv`](./booklet/datos/escena-3.csv) | **87.3 %** de las 165 comisarías y subcomisarías oficiales de Mérida (**32,959 hab.**) queda a más de 15 minutos a pie de la unidad médica CLUES más cercana (mediana **43.6 min** contra **1.3 min** en comisarías ≥ 2,500 hab.). | INEGI ITER 2020 (`MUN = 050`) + DGIS CLUES oct 2026 (UTM 16N) |
+| **4** | [`booklet/datos/escena-4.csv`](./booklet/datos/escena-4.csv) | Yucatán acumuló exactamente **41,179 casos confirmados** y **4,078 defunciones** entre enero de 2020 y junio de 2021 (pico: julio 2020 con 5,280 casos y 460 defunciones). | DGE Secretaría de Salud (vía espejo `mariorz/covid19-mx-time-series`) · Corte: jun 2021 |
 
 ---
 

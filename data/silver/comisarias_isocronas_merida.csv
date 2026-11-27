@@ -1,186 +1,167 @@
-id_localidad,nombre_localidad,tipo_asentamiento,cvegeo,municipio,latitud,longitud,parque_mas_cercano,dist_parque_m,min_caminata_parque,salud_mas_cercana,dist_salud_m,min_caminata_salud,cumple_ciudad_15min_parque,cumple_ciudad_15min_salud
-LOC-302232439,San Pedro Chimay,village,31050,Mérida,20.865749,-89.578652,Parque principal de Tahdzibichén,3113.0,38.9,IMSS UMF 58 Serapio Rendón,7584.7,94.8,False,False
-LOC-302510070,Sotuta de Peón,village,31050,Mérida,20.742245,-89.576554,Parque principal de Sotuta de Peón,57.5,0.7,Hospital de La Amistad Corea México,18947.8,236.8,True,False
-LOC-303033581,Sierra Papacal,village,31050,Mérida,21.124414,-89.729974,Parque principal de Sierra Papacal,278.0,3.5,Farmacia AILEEN,7121.8,89.0,True,False
-LOC-330537681,Cholul,town,31050,Mérida,21.04225,-89.557249,Parque Vecinal Mérida 1359972393,16.6,0.2,Farmacias YZA,99.6,1.2,True,True
-LOC-330538717,Sitpach,village,31050,Mérida,21.027323,-89.520579,Parque principal de Sitpach,24.5,0.3,Farmacias Similares,3983.3,49.8,True,False
-LOC-330538987,Santa María Chi,village,31050,Mérida,21.03307,-89.481661,Parque principal de Santa María Chi,53.8,0.7,IMSS U.M.F. 61 Los Héroes,7612.5,95.2,True,False
-LOC-330539641,Chablekal,town,31050,Mérida,21.096039,-89.576981,Plaza principal de Chablekal,57.3,0.7,Farmacias Yza,5295.7,66.2,True,False
-LOC-330539924,Sac-Nicté,village,31050,Mérida,21.142123,-89.583719,Parque principal de Sac-Nicté,51.4,0.6,Farmacia AILEEN,9367.4,117.1,True,False
-LOC-330540257,Oncán,village,31050,Mérida,20.963946,-89.483069,Parque principal de Oncán,248.8,3.1,"Unidad Médica Familiar #61 ""Los Héroes"" IMSS",6507.4,81.3,True,False
-LOC-350557286,Caucel,town,31050,Mérida,21.01682,-89.70636,Parque Central de Caucel,71.1,0.9,Clínica del Seguro Popular,1396.7,17.5,True,False
-LOC-653943840,San José Tzal,town,31050,Mérida,20.823298,-89.660963,Parque principal de San José Tzal,191.6,2.4,Hospital O'Horan Sur,8842.4,110.5,True,False
-LOC-654254488,Dzityá,village,31050,Mérida,21.050556,-89.678993,Nuevo parque,65.7,0.8,Centro de Salud de Dzitya,48.8,0.6,True,True
-LOC-654254560,Komchén,town,31050,Mérida,21.104435,-89.662065,Parque principal de Komchén,95.0,1.2,Farmacia AILEEN,277.4,3.5,True,True
-LOC-654254584,Dzibilchaltún,hamlet,31050,Mérida,21.098242,-89.598704,Parque principal de Dzibichaltún,52.4,0.7,Farmacias Yza,4321.2,54.0,True,False
-LOC-1447506031,Molas,village,31050,Mérida,20.817281,-89.629205,Parque principal de Molas,274.2,3.4,Hospital O'Horan Sur,9443.3,118.0,True,False
-LOC-1447508188,San Ignacio Tesip,village,31050,Mérida,20.841628,-89.612685,Parque principal de Xmatkuil,2433.8,30.4,Hospital de La Amistad Corea México,7325.5,91.6,False,False
-LOC-1604298356,Tixcuytún,village,31050,Mérida,21.068678,-89.569559,Parque El Roble,230.0,2.9,OM dental,2900.8,36.3,True,False
-LOC-1604298357,Suytunchén,hamlet,31050,Mérida,21.102158,-89.73105,Parque principal de Sierra Papacal,2287.0,28.6,Farmacia AILEEN,6907.3,86.3,False,False
-LOC-1604298359,Cheumán,village,31050,Mérida,21.06643,-89.705891,Campo deportivo Dzityá,3044.5,38.1,Centro de Salud de Dzitya,3276.8,41.0,False,False
-LOC-1604298360,Yaxché Casares,hamlet,31050,Mérida,21.033973,-89.498809,Parque Vecinal Mérida 209694761,25.9,0.3,Farmacias YZA,6241.8,78.0,True,False
-LOC-1604298363,Noc Ac,village,31050,Mérida,21.078976,-89.716839,Parque principal de Cosgaya,2405.7,30.1,Centro de Salud de Dzitya,5017.4,62.7,False,False
-LOC-1604298366,San Matías Cosgaya,village,31050,Mérida,21.098156,-89.704952,Parque principal de Cosgaya,68.4,0.9,Farmacia AILEEN,4254.6,53.2,True,False
-LOC-1604298368,Santa María Yaxché,hamlet,31050,Mérida,21.117491,-89.635692,Parque principal de Santa María Yaxché,84.6,1.1,Farmacia AILEEN,3317.0,41.5,True,False
-LOC-1604298369,Temozón Norte,neighbourhood,31050,Mérida,21.0648,-89.625343,Parque de Xcanatún,1157.4,14.5,Farmacias Yza,1448.9,18.1,True,False
-LOC-1604298371,Xcunyá,village,31050,Mérida,21.132745,-89.613628,Parque de Xcunya,35.1,0.4,Farmacia AILEEN,6133.9,76.7,True,False
-LOC-1604302671,San Antonio Hool,village,31050,Mérida,21.06508,-89.675168,Parque principal de San Antonio Hool,91.3,1.1,Centro de Salud de Dzitya,1687.6,21.1,True,False
-LOC-1604302672,Kikteil,village,31050,Mérida,21.129786,-89.693129,Jardines,3200.1,40.0,Farmacia AILEEN,4038.8,50.5,False,False
-LOC-1604302674,Dzidzilché,village,31050,Mérida,21.152836,-89.689964,Parque principal de San Ignacio,3773.3,47.2,Farmacia AILEEN,5919.3,74.0,False,False
-LOC-1617223857,Chichí Suárez,village,31050,Mérida,20.998044,-89.555362,Parque principal de Chichí Suárez,1.1,0.0,IMSS U.M.F. 61 Los Héroes,1904.2,23.8,True,False
-LOC-1618081383,Chalmuch,village,31050,Mérida,20.972777,-89.727117,Parque Vecinal Mérida 1364206833,1998.0,25.0,Alma,3612.4,45.2,False,False
-LOC-1738747393,Tixcacal,village,31050,Mérida,20.944297,-89.713981,Parque Colibrí,434.2,5.4,Farmacia Guadalajara,2778.0,34.7,True,False
-LOC-1738763343,Susulá,village,31050,Mérida,20.972953,-89.696851,Parque principal de Susulá,3.5,0.0,Unidad de Salud (Hospital) OSM-1316330762,556.2,7.0,True,True
-LOC-1745627173,Santa Cruz Palomeque,village,31050,Mérida,20.880518,-89.653852,Parque San Luis Dzununcan,868.6,10.9,Hospital O'Horan Sur,2550.1,31.9,True,False
-LOC-1745627235,Dzununcán,village,31050,Mérida,20.865911,-89.654082,Parque principal de Dzununcán,62.5,0.8,Hospital O'Horan Sur,4083.4,51.0,True,False
-LOC-1745672618,San Antonio Tzacalá,village,31050,Mérida,20.750708,-89.653368,Parque Vecinal Mérida 1176414885,172.4,2.2,Hospital O'Horan Sur,16728.3,209.1,True,False
-LOC-1745672719,Texán Cámara,village,31050,Mérida,20.789859,-89.666544,Parque principal de Texán Cámara,107.2,1.3,Hospital O'Horan Sur,12588.7,157.4,True,False
-LOC-1745672745,Petac,village,31050,Mérida,20.769814,-89.659323,Parque principal de Petac,291.3,3.6,Hospital O'Horan Sur,14672.3,183.4,True,False
-LOC-1745713494,Tahdzibichén,village,31050,Mérida,20.886577,-89.598008,Parque principal de Tahdzibichén,86.0,1.1,Hospital de La Amistad Corea México,4736.2,59.2,True,False
-LOC-1745717489,Hunxectamán,village,31050,Mérida,20.883189,-89.557852,Parque principal de Subincancab,3236.9,40.5,IMSS UMF 58 Serapio Rendón,7251.0,90.6,False,False
-LOC-1745723241,Xmatkuil,village,31050,Mérida,20.860477,-89.625057,Parque principal de Xmatkuil,22.0,0.3,Hospital de La Amistad Corea México,4913.6,61.4,True,False
-LOC-1745735452,Yaxnic,village,31050,Mérida,20.788748,-89.620206,Parque principal de Yaxnic,230.0,2.9,Hospital O'Horan Sur,12719.9,159.0,True,False
-LOC-1745745489,Dzoyaxché,village,31050,Mérida,20.787684,-89.589907,Parque principal de Yaxnic,3123.7,39.0,Hospital de La Amistad Corea México,13753.6,171.9,False,False
-LOC-1919481389,Tamanché,village,31050,Mérida,21.137734,-89.642263,Parque A1,2212.5,27.7,Farmacia AILEEN,4313.6,53.9,False,False
-LOC-1944761462,Colonia Leona Vicario,neighbourhood,31050,Mérida,20.910556,-89.602754,Parque Cielo Alto,845.2,10.6,IMSS UMF 58 Serapio Rendón,2047.3,25.6,True,False
-LOC-2056491062,Opichén,village,31050,Mérida,20.949215,-89.679925,Parque Hda. Opichen,12.4,0.2,Farmacia Guadalajara,814.0,10.2,True,True
-LOC-2124635975,Plan de Ayala Sur II,neighbourhood,31050,Mérida,20.888689,-89.621314,Parque Nueva San Jose Tecoh 3,1759.2,22.0,Hospital de La Amistad Corea México,2493.0,31.2,False,False
-LOC-2128380253,Xcanatún,village,31050,Mérida,21.075534,-89.629066,Parque de Xcanatún,94.6,1.2,Farmacias Yza,2382.3,29.8,True,False
-LOC-2732981315,Colonia Sodzil Norte,neighbourhood,31050,Mérida,21.043803,-89.622537,Parque principal de Sodzil Norte,64.9,0.8,Consultorio Médico Similares,754.3,9.4,True,True
-LOC-3183160767,Nuevo Yucatán,neighbourhood,31050,Mérida,20.99801,-89.58255,Parque Fraccionamiento Nuevo Yucatán,329.6,4.1,Farmacia Guadalajara,601.9,7.5,True,True
-LOC-3793714486,Fraccionamiento Rinconada de Chuburná,neighbourhood,31050,Mérida,21.021813,-89.634204,Parque Rinconada Chuburna,65.4,0.8,IMSS UMF N. 13 Chuburna,914.7,11.4,True,True
-LOC-4187343689,Villas Cholul,neighbourhood,31050,Mérida,21.044607,-89.539586,Parque Vecinal Mérida 377491900,546.0,6.8,OM dental,1890.8,23.6,True,False
-LOC-4839274030,Yucalpetén,neighbourhood,31050,Mérida,20.980935,-89.661193,Parque Los Cantaritos,3.9,0.0,Farmacia Similares,222.8,2.8,True,True
-LOC-5593523367,Fraccionamiento La Ciudadela,neighbourhood,31050,Mérida,20.996988,-89.686282,Parque Central Ciudadela,164.3,2.1,Farmacias Yza,432.7,5.4,True,True
-LOC-5603483652,Fraccionamiento Sian Ka'an II,neighbourhood,31050,Mérida,20.98321,-89.707296,Parque Arbolada I,73.0,0.9,Alma,1743.1,21.8,True,False
-LOC-5703668012,Fraccionamiento Sian Ka'an,neighbourhood,31050,Mérida,20.987171,-89.705101,Parque Paraíso I,84.7,1.1,Alma,1308.2,16.4,True,False
-LOC-5854420838,San Esteban,neighbourhood,31050,Mérida,20.995232,-89.593315,Parque La Amistad,353.4,4.4,Farmacias del Ahorro,699.5,8.7,True,True
-LOC-5981826372,Gran Herradura Norte,neighbourhood,31050,Mérida,20.985292,-89.700386,Parque Gran Herradura Norte,164.3,2.1,UMF 20,1388.8,17.4,True,False
-LOC-7341697942,San José Tzal,neighbourhood,31050,Mérida,20.929695,-89.594811,Parque Salvador Alvarado Sur,600.0,7.5,IMSS UMF 58 Serapio Rendón,1419.0,17.7,True,False
-LOC-7700842327,Yucatán Country Club,village,31050,Mérida,21.119737,-89.600235,Parque de Xcunya,1971.7,24.6,Farmacias Yza,6590.8,82.4,False,False
-LOC-8185144497,Cecilio Chí,neighbourhood,31050,Mérida,20.923175,-89.595834,Parque de Cecilio Chi,450.4,5.6,IMSS UMF 58 Serapio Rendón,1420.7,17.8,True,False
-LOC-8185150732,Andres Quintana Roo,neighbourhood,31050,Mérida,20.916736,-89.595771,Parque de Cecilio Chi,295.1,3.7,IMSS UMF 58 Serapio Rendón,1830.2,22.9,True,False
-LOC-8907588512,Salvador Alvarado Sur,neighbourhood,31050,Mérida,20.935629,-89.598935,Parque Salvador Alvarado Sur,234.0,2.9,Farmacias Similares,1254.0,15.7,True,False
-LOC-9170394202,Villa Magna,neighbourhood,31050,Mérida,20.956043,-89.679603,Parque Arqueológico Villa Magna I,107.6,1.3,Similares,514.6,6.4,True,True
-LOC-11327815758,Temozón Norte,village,31050,Mérida,21.064595,-89.59623,Parque de Temozón Norte,57.0,0.7,Farmacias Yza,1673.7,20.9,True,False
-LOC-11327854085,Jardines de Tahdzibichén,neighbourhood,31050,Mérida,20.900502,-89.600879,Parque Cielo Alto,1227.9,15.3,IMSS UMF 58 Serapio Rendón,3173.1,39.7,False,False
-LOC-11327870752,La Rejoyada,village,31050,Mérida,21.122315,-89.682271,jardines,2245.8,28.1,Farmacia AILEEN,2653.6,33.2,False,False
-LOC-11327870753,Altosano,village,31050,Mérida,21.127817,-89.63729,Parque principal de Santa María Yaxché,1091.2,13.6,Farmacia AILEEN,3809.6,47.6,True,False
-LOC-12070533860,Fraccionamiento Solana Residencial,neighbourhood,31050,Mérida,20.940937,-89.710028,Parque Colibrí,95.2,1.2,Farmacia Guadalajara,2450.5,30.6,True,False
-LOC-12777023779,Montes de Amé,neighbourhood,31050,Mérida,21.032739,-89.617511,Parque Montes de Amé,228.1,2.9,Farmacia LAGO Campestre,1016.2,12.7,True,True
-LOC-12777350343,Colonia Dzitya,neighbourhood,31050,Mérida,21.062382,-89.657409,Parque Vecinal Mérida 584988903,855.0,10.7,Unidad de Salud (Pharmacy) OSM-8085644170,772.7,9.7,True,True
-LOC-12777354477,Fraccionamiento Las Américas Mérida,neighbourhood,31050,Mérida,21.069227,-89.655764,Parque Vecinal Mérida 585968946,158.7,2.0,Unidad de Salud (Pharmacy) OSM-8085644170,83.7,1.0,True,True
-LOC-12777354478,Fraccionamiento Las Américas III,neighbourhood,31050,Mérida,21.074457,-89.66638,Parque Vecinal Mérida 586445380,541.7,6.8,Smile Republic,490.9,6.1,True,True
-LOC-12777354479,Fraccionamiento Las Américas II,neighbourhood,31050,Mérida,21.08042,-89.658186,Parque Vecinal Mérida 584977710,59.3,0.7,Unidad de Salud (Doctors) OSM-8085680716,273.4,3.4,True,True
-LOC-12777354481,Fraccionamiento Las Américas VI,neighbourhood,31050,Mérida,21.088514,-89.668853,Parque Vecinal Mérida 985633286,351.2,4.4,Unidad de Salud (Doctors) OSM-8085680716,1373.6,17.2,True,False
-LOC-12777354486,Fraccionamiento Las Américas IV,neighbourhood,31050,Mérida,21.090897,-89.661742,Parque de Las Américas IV,431.4,5.4,Unidad de Salud (Doctors) OSM-8085680716,1024.2,12.8,True,True
-LOC-12777354488,Fraccionamiento Real de Dzitya,neighbourhood,31050,Mérida,21.05414,-89.668598,Parque Principal Kiiwk Dzityá,1077.1,13.5,Centro de Salud de Dzitya,1200.3,15.0,True,True
-LOC-12777354489,Real Montejo,neighbourhood,31050,Mérida,21.036343,-89.671099,Parque Vecinal Mérida 586516446,431.3,5.4,Farmacia Yza,368.7,4.6,True,True
-LOC-12777404823,Fraccionamiento San Antonio Residencial,neighbourhood,31050,Mérida,21.07298,-89.670933,Parque Vecinal Mérida 586445380,94.3,1.2,Smile Republic,970.4,12.1,True,True
-LOC-12779187312,Fraccionamiento Xo´tik,neighbourhood,31050,Mérida,21.06006,-89.644327,Parque Vecinal Mérida 584992545,207.7,2.6,Cubiculo Sociedad de Alumnos,1317.2,16.5,True,False
-LOC-12779716702,San Ramón Norte,neighbourhood,31050,Mérida,21.031947,-89.606805,Parque Vecinal Mérida 932899484,815.1,10.2,Farmacias del Ahorro,472.7,5.9,True,True
-LOC-12779820039,Fraccionamiento Xaman-Kab,neighbourhood,31050,Mérida,21.034371,-89.604714,Parque Santa Gertrudis Copó,1037.2,13.0,Farmacias Yza,466.0,5.8,True,True
-LOC-12779820040,Fraccionamiento Villareal,neighbourhood,31050,Mérida,21.035739,-89.604346,Parque Santa Gertrudis Copó,922.9,11.5,Farmacias Yza,318.4,4.0,True,True
-LOC-12779820044,Fraccionamiento Xaman-Tan,neighbourhood,31050,Mérida,21.033204,-89.602553,Parque Santa Gertrudis Copó,960.2,12.0,Farmacias Yza,533.1,6.7,True,True
-LOC-12779820055,Fraccionamiento Montebello II,neighbourhood,31050,Mérida,21.030655,-89.588224,Parque Montecarlo,675.4,8.4,RetimediQ,805.0,10.1,True,True
-LOC-12779820062,Fraccionamiento Montebello,neighbourhood,31050,Mérida,21.030473,-89.596359,Parque Monterreal Colonial,821.9,10.3,Farmacias del Ahorro,848.2,10.6,True,True
-LOC-12779820071,Ampliación Sodzil,neighbourhood,31050,Mérida,21.038618,-89.621162,Parque Vecinal Mérida 533097448,413.5,5.2,Consultorio Médico Similares,744.3,9.3,True,True
-LOC-12779820072,Ampliación Revolución,neighbourhood,31050,Mérida,21.044295,-89.628319,Parque del Maestro,403.9,5.0,Consultorio Médico Similares,520.4,6.5,True,True
-LOC-12779820074,Colonia Revolución,neighbourhood,31050,Mérida,21.036778,-89.628205,Parque Vecinal Mérida 533097448,377.0,4.7,Farmacias Similares,311.7,3.9,True,True
-LOC-12779820075,Fraccionamiento Gonzalo Guerrero,neighbourhood,31050,Mérida,21.027615,-89.623813,Parque Vecinal Mérida 1426859807,21.6,0.3,Farmacia LAGO Campestre,185.1,2.3,True,True
-LOC-12780021137,Benito Juárez Norte,neighbourhood,31050,Mérida,21.024034,-89.615497,Parque Vecinal Mérida 932899484,597.1,7.5,Farmacias Bazar,593.2,7.4,True,True
-LOC-12780021141,Colonia Gonzalo Guerrero,neighbourhood,31050,Mérida,21.023525,-89.624262,Parque El Triángulo,207.0,2.6,Farmacia LAGO Campestre,270.9,3.4,True,True
-LOC-12780021142,Ampliación Plan de Ayala,neighbourhood,31050,Mérida,21.017984,-89.622877,Parque Villas del Sol,101.9,1.3,Dental Merida,224.3,2.8,True,True
-LOC-12780021143,Plan de Ayala,neighbourhood,31050,Mérida,21.013433,-89.622167,Parque Villas del Sol,565.0,7.1,Odymed,586.1,7.3,True,True
-LOC-12780021144,Fraccionamiento Tecnológico,neighbourhood,31050,Mérida,21.010655,-89.622457,Parque Fraccionameinto del Norte,297.1,3.7,Odymed,815.7,10.2,True,True
-LOC-12780021145,Fraccionamiento San Ramón,neighbourhood,31050,Mérida,21.019799,-89.608224,Parque Villas la Hacienda,416.3,5.2,Farmacia Guadalajara,536.8,6.7,True,True
-LOC-12780021157,Fraccionamiento Villas La Hacienda,neighbourhood,31050,Mérida,21.019237,-89.612401,Parque Villas la Hacienda,94.3,1.2,Farmacias Bazar,578.0,7.2,True,True
-LOC-12780021160,Fraccionamiento Villas del Rey,neighbourhood,31050,Mérida,21.018718,-89.616482,Parque Villas la Hacienda,469.6,5.9,Farmacias Bazar,162.6,2.0,True,True
-LOC-12780021172,Fraccionamiento del Norte,neighbourhood,31050,Mérida,21.009314,-89.621399,Parque Fraccionameinto del Norte,112.3,1.4,Farmacias del Ahorro,798.4,10.0,True,True
-LOC-12780021178,Fraccionamiento Campestre,neighbourhood,31050,Mérida,21.011009,-89.6172,Parque Vecinal Mérida 545411651,156.9,2.0,Odymed,588.4,7.4,True,True
-LOC-12780021179,Buenavista,neighbourhood,31050,Mérida,21.000144,-89.618672,Parque Kiuik Che,442.1,5.5,Farmacias del Ahorro,378.6,4.7,True,True
-LOC-12780021181,Emiliano Zapata Norte,neighbourhood,31050,Mérida,21.011709,-89.611676,Parque Emiliano Zapata Norte,519.3,6.5,Punto Químico Laboratorios,746.4,9.3,True,True
-LOC-12780021194,México Norte,neighbourhood,31050,Mérida,21.012924,-89.606229,Parque Residensial Colonia México,443.1,5.5,Punto Químico Laboratorios,337.9,4.2,True,True
-LOC-12780021197,Colonia San Antonio Cinta,neighbourhood,31050,Mérida,21.011668,-89.602818,Parque de la Juventud,392.9,4.9,Punto Químico Laboratorios,248.9,3.1,True,True
-LOC-12780065306,Fraccionamiento Montealban,neighbourhood,31050,Mérida,21.019191,-89.601387,Parque Kalia,443.9,5.5,Yza,261.2,3.3,True,True
-LOC-12780065309,San Antonio Cucul,neighbourhood,31050,Mérida,21.022591,-89.604116,Parque Sol Campestre,360.7,4.5,Farmacia Guadalajara,63.6,0.8,True,True
-LOC-12780065318,Fraccionamiento Residencial Sol Campestre,neighbourhood,31050,Mérida,21.023623,-89.600777,Parque Sol Campestre,18.5,0.2,Yza,302.9,3.8,True,True
-LOC-12780133889,Fraccionamiento Residencial Andria,neighbourhood,31050,Mérida,21.020232,-89.5369,Parque Vecinal Mérida 1279544742,241.6,3.0,Farmacias Similares,2454.0,30.7,True,False
-LOC-12780176031,Fraccionamiento San Pedro Cholul,neighbourhood,31050,Mérida,21.024715,-89.548156,Parque El Supiro,284.1,3.6,Farmacias Similares,1183.4,14.8,True,True
-LOC-12780176053,Fraccionamiento Floresta Residencial,neighbourhood,31050,Mérida,21.013478,-89.551354,Parque Vecinal Mérida 585584812,914.8,11.4,Farmacias Similares,1820.7,22.8,True,False
-LOC-12780176057,Fraccionamiento Mallorca,neighbourhood,31050,Mérida,21.016872,-89.554928,Parque Vecinal Mérida 585584812,795.7,9.9,Farmacias Similares,1333.1,16.7,True,False
-LOC-12780176097,Santa María Chí,neighbourhood,31050,Mérida,21.002402,-89.557927,Parque principal de Chichí Suárez,552.0,6.9,Farmacias del Ahorro,1739.4,21.7,True,False
-LOC-12780176107,Fraccionamiento Punta Esmeralda,neighbourhood,31050,Mérida,20.986587,-89.549472,Parque Privado Esmeralda Residencial 2,26.6,0.3,"Unidad Médica Familiar #61 ""Los Héroes"" IMSS",1164.9,14.6,True,True
-LOC-12780176114,Fraccionamiento Los Heroes,neighbourhood,31050,Mérida,20.991414,-89.533169,Parque Los Achiotes,441.6,5.5,IMSS U.M.F. 61 Los Héroes,617.2,7.7,True,True
-LOC-12780176117,San Ángel,neighbourhood,31050,Mérida,20.987627,-89.558866,Parque Vecinal Mérida 1112326424,485.6,6.1,Consultorio de Ortopedia,1783.8,22.3,True,False
-LOC-12780176122,Fraccionamiento Cloverleaf,neighbourhood,31050,Mérida,21.035042,-89.548275,Parque Colonia Guadalupe,773.1,9.7,Farmacias YZA,1324.3,16.6,True,False
-LOC-12780176133,Leandro Valle,neighbourhood,31050,Mérida,20.994735,-89.562861,Parque Vecinal Mérida 585075215,408.0,5.1,Farmacias del Ahorro,1176.5,14.7,True,True
-LOC-12780193626,Centro (Chichí Suárez),neighbourhood,31050,Mérida,21.00009,-89.547913,Parque principal de Chichí Suárez,808.3,10.1,IMSS U.M.F. 61 Los Héroes,1423.2,17.8,True,False
-LOC-12781965839,Vía Montejo,neighbourhood,31050,Mérida,21.044595,-89.63199,Parque Central,95.9,1.2,Farmacia Guadalajara,428.7,5.4,True,True
-LOC-12781965846,Fraccionamiento Residencial Galerías,neighbourhood,31050,Mérida,21.03467,-89.63442,Parque Xcumpich,268.0,3.4,Farmacia Guadalajara,555.3,6.9,True,True
-LOC-12781965850,Fraccionamiento Residencial Piedrasul,neighbourhood,31050,Mérida,21.031855,-89.637648,Parque Xcumpich,182.7,2.3,Farmacia Guadalajara,146.0,1.8,True,True
-LOC-12781965867,Fraccionamiento Áurea Residencial,neighbourhood,31050,Mérida,21.037965,-89.636267,Parque Vecinal Mérida 1425691758,19.1,0.2,Farmacia Guadalajara,533.7,6.7,True,True
-LOC-12781965880,Fraccionamiento La Castellana,neighbourhood,31050,Mérida,21.041373,-89.635972,Parque Vecinal Mérida 532065309,17.9,0.2,Farmacia Guadalajara,412.9,5.2,True,True
-LOC-12781965900,Colonia Xcumpich,neighbourhood,31050,Mérida,21.03669,-89.634931,Parque Vecinal Mérida 1425691758,179.2,2.2,Farmacia Guadalajara,537.5,6.7,True,True
-LOC-12782043306,Fraccionamiento Hacienda Xcumpich,neighbourhood,31050,Mérida,21.032994,-89.640244,Parque Privada Hacienda Xcumpich,52.1,0.7,Farmacias Similares,312.1,3.9,True,True
-LOC-12783570670,Núcleo Sodzil,neighbourhood,31050,Mérida,21.055203,-89.628443,Parque Central,1320.7,16.5,Farmacia Guadalajara,1647.3,20.6,False,False
-LOC-12783570675,Fraccionamiento Residencial Andalucía,neighbourhood,31050,Mérida,21.058228,-89.625728,Parque principal de Sodzil Norte,1658.1,20.7,Farmacias Yza,1473.6,18.4,False,False
-LOC-12783570676,Dzitya Poligono Chuburna,neighbourhood,31050,Mérida,21.052916,-89.638467,Parque Vecinal Mérida 368527141,550.5,6.9,Cubiculo Sociedad de Alumnos,819.7,10.2,True,True
-LOC-12783570687,Fraccionamiento Royal del Parque,neighbourhood,31050,Mérida,21.060636,-89.638343,Parque Vecinal Mérida 584992545,740.5,9.3,Cubiculo Sociedad de Alumnos,1522.7,19.0,True,False
-LOC-12783570689,Fraccionamiento Parque Industrial,neighbourhood,31050,Mérida,21.069948,-89.639505,Parque Vecinal Mérida 584985660,862.5,10.8,Unidad de Salud (Pharmacy) OSM-8085644170,1775.2,22.2,True,False
-LOC-12783627011,Fraccionamiento Residencial Xcanatun,neighbourhood,31050,Mérida,21.0835,-89.640693,Xcanatún,421.8,5.3,Unidad de Salud (Doctors) OSM-8085692288,1180.3,14.8,True,True
-LOC-12783627020,Fraccionamiento Residencial Quinta Real,neighbourhood,31050,Mérida,21.100182,-89.622424,Parque principal de Santa María Yaxché,2397.3,30.0,Unidad de Salud (Doctors) OSM-8085692288,3508.8,43.9,False,False
-LOC-12783627027,Fraccionamiento Ceiba II,neighbourhood,31050,Mérida,21.103146,-89.599046,Parque principal de Dzibichaltún,496.2,6.2,Farmacias Yza,4829.3,60.4,True,False
-LOC-12783627033,Fraccionamiento Misnebalam,neighbourhood,31050,Mérida,21.151587,-89.598978,Parque principal de Sac-Nicté,1852.0,23.2,Farmacia AILEEN,8561.6,107.0,False,False
-LOC-12784079965,Fraccionamiento Algarrobos Residencial,neighbourhood,31050,Mérida,21.050778,-89.59396,Parque Santa Gertrudis Copó,1241.5,15.5,Farmacias Yza,1668.2,20.9,False,False
-LOC-12786898352,Fraccionamiento Reyes del Sur,neighbourhood,31050,Mérida,20.91248,-89.604221,Parque Cielo Alto,1034.5,12.9,IMSS UMF 58 Serapio Rendón,1801.5,22.5,True,False
-LOC-12786898359,Fraccionamiento Villa Bonita III,neighbourhood,31050,Mérida,20.913736,-89.607812,Parque Álamos del Sur,1282.2,16.0,IMSS UMF 58 Serapio Rendón,1611.1,20.1,False,False
-LOC-12786898362,Fraccionamiento Villa Bonita,neighbourhood,31050,Mérida,20.912998,-89.610358,Parque Álamos del Sur,1174.6,14.7,IMSS UMF 58 Serapio Rendón,1704.5,21.3,True,False
-LOC-12786898364,Fraccionamiento Bellavista,neighbourhood,31050,Mérida,20.911669,-89.614391,Parque Álamos del Sur,1146.8,14.3,IMSS UMF 58 Serapio Rendón,1943.2,24.3,True,False
-LOC-12786898365,Colonia San José Tzal,neighbourhood,31050,Mérida,20.909286,-89.615813,Parque Nueva San Jose Tecoh 3,1256.2,15.7,IMSS UMF 58 Serapio Rendón,2241.5,28.0,False,False
-LOC-12786898366,Fraccionamiento San José Tzal,neighbourhood,31050,Mérida,20.909801,-89.611999,Parque Álamos del Sur,1414.7,17.7,IMSS UMF 58 Serapio Rendón,2080.7,26.0,False,False
-LOC-12786898380,Plan de Ayala Sur,neighbourhood,31050,Mérida,20.901297,-89.622095,Parque Nueva San Jose Tecoh 3,528.7,6.6,Hospital de La Amistad Corea México,1893.7,23.7,True,False
-LOC-12786898384,Colonia Jacinto Canek,neighbourhood,31050,Mérida,20.891567,-89.617544,Parque Nueva San Jose Tecoh 3,1641.9,20.5,Hospital de La Amistad Corea México,2654.0,33.2,False,False
-LOC-12786898386,Plan de Ayala Sur III,neighbourhood,31050,Mérida,20.885567,-89.621436,Parque Nueva San Jose Tecoh 3,2088.4,26.1,Hospital de La Amistad Corea México,2709.5,33.9,False,False
-LOC-12786898391,Nueva San Jose Tecoh,neighbourhood,31050,Mérida,20.904617,-89.628681,Parque Nueva San Jose Tecoh 3,253.1,3.2,Hospital de La Amistad Corea México,1226.8,15.3,True,False
-LOC-12787315496,Colonia Guadalupana,neighbourhood,31050,Mérida,20.897818,-89.639421,C173B #423 Int. 4,1068.4,13.4,Hospital de La Amistad Corea México,522.9,6.5,True,True
-LOC-12787318202,Fraccionamiento Dzununcan,neighbourhood,31050,Mérida,20.893826,-89.643334,Parque Alborada,1018.2,12.7,Hospital O'Horan Sur,844.4,10.6,True,True
-LOC-12787318216,Dzununcan,neighbourhood,31050,Mérida,20.892005,-89.654412,Parque San Luis Dzununcan,409.9,5.1,Hospital O'Horan Sur,1533.0,19.2,True,False
-LOC-12787318226,Fraccionamiento Santa Cruz II,neighbourhood,31050,Mérida,20.894458,-89.671508,Parque Santa Cruz,186.6,2.3,Hospital O'Horan Sur,3002.3,37.5,True,False
-LOC-12787318239,Fraccionamiento Santa Cruz Segunda Etapa,neighbourhood,31050,Mérida,20.892721,-89.673469,Parque Santa Cruz,311.1,3.9,Hospital O'Horan Sur,3251.9,40.6,True,False
-LOC-12787318246,Fraccionamiento Santa Cruz,neighbourhood,31050,Mérida,20.891889,-89.670611,Parque Santa Cruz,130.5,1.6,Hospital O'Horan Sur,3000.4,37.5,True,False
-LOC-12787318252,Fraccionamiento Santa Cruz Norte,neighbourhood,31050,Mérida,20.881395,-89.671958,Parque Gran Santa Cruz,1041.3,13.0,Hospital O'Horan Sur,3690.8,46.1,True,False
-LOC-12792035471,Fraccionamiento Gran Santa Fe,neighbourhood,31050,Mérida,21.007128,-89.685029,Parque Vecinal Mérida 584817914,96.1,1.2,Farmacias del Ahorro,1319.1,16.5,True,False
-LOC-12792035472,Fraccionamiento Paraíso Santa Fe,neighbourhood,31050,Mérida,21.011245,-89.683064,Parque Vecinal Mérida 584802993,348.7,4.4,Farmacia Yza,1590.9,19.9,True,False
-LOC-12792048304,Fraccionamiento Gran Santa Fe II,neighbourhood,31050,Mérida,21.017867,-89.689069,Parque de Los Mangos,75.3,0.9,Farmacia Yza,761.6,9.5,True,True
-LOC-12792048305,Fraccionamiento Cerradas de Gran Santa Fe,neighbourhood,31050,Mérida,21.012796,-89.69151,Parque Sablonké,37.1,0.5,Farmacia Yza,1359.5,17.0,True,False
-LOC-12792048312,Fraccionamiento Gran Santa Fe Norte,neighbourhood,31050,Mérida,21.0283,-89.688781,Parque Jazmines,68.2,0.9,Farmacia Yza,399.8,5.0,True,True
-LOC-12792048316,Fraccionamiento Gran Santa Fe Norte II,neighbourhood,31050,Mérida,21.025493,-89.694698,Parque Vecinal Mérida 666349846,252.1,3.2,Farmacia Yza,662.8,8.3,True,True
-LOC-12792048322,Fraccionamiento Gran Santa Fe Norte III,neighbourhood,31050,Mérida,21.032847,-89.70164,Parque Vecinal Mérida 666350175,654.4,8.2,Clínica del Seguro Popular,779.8,9.7,True,True
-LOC-12792048349,Fraccionamiento Ciudad Caucel,neighbourhood,31050,Mérida,20.996968,-89.700871,Parque Ciudad Caucel,211.9,2.6,UMF 20,267.7,3.3,True,True
-LOC-12792048350,Fraccionamiento Caucel II,neighbourhood,31050,Mérida,20.997779,-89.721236,Parque Vecinal Mérida 1085399719,499.6,6.2,Alma,1552.2,19.4,True,False
-LOC-12792048361,Fraccionamiento Sian Kaan V,neighbourhood,31050,Mérida,20.983175,-89.720523,Parque Vecinal Mérida 1364206833,890.3,11.1,Alma,2283.0,28.5,True,False
-LOC-12792048364,Fraccionamiento Sian Ka'an III,neighbourhood,31050,Mérida,20.984923,-89.7106,Parque Vecinal Mérida 786101817,67.7,0.8,Alma,1612.0,20.2,True,False
-LOC-12792048386,Fraccionamiento Sian Kaan IV,neighbourhood,31050,Mérida,20.978972,-89.704707,Parque Oasis I,374.4,4.7,Unidad de Salud (Hospital) OSM-1316330762,1491.0,18.6,True,False
-LOC-12798861597,Fraccionamiento Residencial Puerta de Piedra Dzityá,neighbourhood,31050,Mérida,21.045229,-89.663179,Kai Luum,888.6,11.1,CRIT Yucatán,1085.6,13.6,True,True
-LOC-12798990808,Colonia Tamarindos,neighbourhood,31050,Mérida,21.047411,-89.653294,Kai Luum,523.9,6.5,CRIT Yucatán,776.8,9.7,True,True
-LOC-12998405810,Cerrada Veneto,neighbourhood,31050,Mérida,21.022296,-89.53745,Parque Vecinal Mérida 1279544742,9.0,0.1,Farmacias Similares,2325.2,29.1,True,False
-LOC-13020079045,Colonia Nueva Reforma Agraria,neighbourhood,31050,Mérida,20.953004,-89.682658,Parque Nueva Reforma Agraria,98.7,1.2,Farmacia Guadalajara,805.9,10.1,True,True
-LOC-13357969515,Fracionamiento Residencial San Antonio,neighbourhood,31050,Mérida,21.022358,-89.599922,Parque Sol Campestre,184.5,2.3,Yza,146.6,1.8,True,True
-LOC-13357971640,Fraccionamiento Montereal,neighbourhood,31050,Mérida,21.020038,-89.597471,Parque Kalia,101.5,1.3,Farmacias del Ahorro,139.6,1.7,True,True
-LOC-13358030739,Fraccionamiento Montecristo,neighbourhood,31050,Mérida,21.014875,-89.595858,Parque Residencial Montecristo,17.2,0.2,Farmacias del Ahorro,499.8,6.2,True,True
-LOC-13358035263,Fraccionamiento Residencial Montecristo,neighbourhood,31050,Mérida,21.010542,-89.59363,Parque VIFAC,231.2,2.9,Clínica Univeritaria Anáhuac Mayab,499.2,6.2,True,True
-LOC-13358318018,Fraccionamiento Montevideo,neighbourhood,31050,Mérida,21.014141,-89.589295,Parque Vecinal Mérida 533098371,126.0,1.6,Clínica Univeritaria Anáhuac Mayab,135.8,1.7,True,True
-LOC-13358390000,Fraccionamiento Altabrisa,neighbourhood,31050,Mérida,21.022574,-89.585655,Parque de Altabrisa,88.7,1.1,RetimediQ,177.5,2.2,True,True
-LOC-13358479922,México Oriente,neighbourhood,31050,Mérida,21.001026,-89.603064,Parque Prado Norte,448.9,5.6,Farmacia Guadalajara,44.0,0.6,True,True
-LOC-13358479923,Colonia México,neighbourhood,31050,Mérida,21.002291,-89.610683,Parque de la Colonia México,451.5,5.6,Farmacias del Ahorro,563.4,7.0,True,True
-LOC-13366267903,Santa Gertrudis Copó,neighbourhood,31050,Mérida,21.039375,-89.594521,Parque Santa Gertrudis Copó,225.7,2.8,Farmacias Yza,841.0,10.5,True,True
-LOC-13367069224,Fraccionamiento Santa Gertrudis,neighbourhood,31050,Mérida,21.042389,-89.600787,Parque Santa Gertrudis Copó,515.5,6.4,Farmacias Yza,515.3,6.4,True,True
-LOC-13367069528,Fraccionamiento Residencial Cámara de Comercio Norte,neighbourhood,31050,Mérida,21.01581,-89.589702,Parque Vecinal Mérida 533098371,80.7,1.0,Clínica Univeritaria Anáhuac Mayab,318.0,4.0,True,True
-LOC-13367077815,Fraccionamiento Montecarlo,neighbourhood,31050,Mérida,21.028168,-89.581558,Parque Montecarlo,122.5,1.5,RetimediQ,579.3,7.2,True,True
-LOC-13367100794,Fraccionamiento Vista Alegre Norte,neighbourhood,31050,Mérida,21.026297,-89.575542,Parque Vista Alegre Norte,44.1,0.6,Farmacias Yza,933.6,11.7,True,True
-LOC-13367334446,Fraccionamiento San Antonio Norte,neighbourhood,31050,Mérida,21.070507,-89.672957,Parque Vecinal Mérida 586445379,231.3,2.9,Smile Republic,1238.4,15.5,True,False
-LOC-13978205761,Cerrada Piemonte,neighbourhood,31050,Mérida,21.021706,-89.54042,Parque Vecinal Mérida 1279544754,70.6,0.9,Farmacias Similares,2053.6,25.7,True,False
-LOC-13978205762,Cerrada Lombardia,neighbourhood,31050,Mérida,21.023348,-89.539202,Parque Vecinal Mérida 1279544746,45.9,0.6,Farmacias Similares,2118.0,26.5,True,False
-LOC-14029740688,Privada Las Acacias,neighbourhood,31050,Mérida,21.003854,-89.540893,Parque Los Achiotes,1232.9,15.4,IMSS U.M.F. 61 Los Héroes,1509.0,18.9,False,False
-LOC-14282053186,Residencial Blanca,village,31050,Mérida,21.125622,-89.69548,Parque principal de Cosgaya,3259.0,40.7,Farmacia AILEEN,3936.1,49.2,False,False
+cve_loc,clave_loc,localidad,tipo_localidad,poblacion,latitud,longitud,clues_cercana,unidad_medica_cercana,institucion_cercana,sector_cercano,distancia_medica_m,minutos_pie_medico,en_umbral_15min,unidad_publica_cercana,distancia_publica_m,minutos_pie_publico,cvegeo
+310501081,1081,Papacal,Subcomisaría / localidad < 500 hab.,2,21.1304,-89.735997,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,8200.4,102.5,False,UMF 16 KOMCHEN,8670.9,108.4,31050
+310500133,0133,San Antonio Tzacalá,"Comisaría / localidad 500–2,499 hab.",715,20.750233,-89.654195,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,8076.7,101.0,False,SAN JOSÉ TZAL,8076.7,101.0,31050
+310500089,0089,Dzoyaxché,"Comisaría / localidad 500–2,499 hab.",533,20.789369,-89.590389,YNSMP003501,F-7413 TIMUCUY TM,SERVICIOS MEDICOS PRIVADOS,Privado,7990.9,99.9,False,SAN JOSÉ TZAL,8219.5,102.7,31050
+310501017,1017,Yóok'sojol,Subcomisaría / localidad < 500 hab.,1,20.783711,-89.585137,YNSMP003501,F-7413 TIMUCUY TM,SERVICIOS MEDICOS PRIVADOS,Privado,7703.4,96.3,False,TIMUCUY,8176.2,102.2,31050
+310501036,1036,Los Cocos,Subcomisaría / localidad < 500 hab.,1,20.792456,-89.587983,YNSMP003501,F-7413 TIMUCUY TM,SERVICIOS MEDICOS PRIVADOS,Privado,7650.5,95.6,False,TIMUCUY,8139.9,101.7,31050
+310501045,1045,El Papayal,Subcomisaría / localidad < 500 hab.,1,20.793314,-89.596706,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,7435.6,92.9,False,SAN JOSÉ TZAL,7435.6,92.9,31050
+310500120,0120,Sierra Papacal,"Comisaría / localidad 500–2,499 hab.",1556,21.122595,-89.728589,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,7191.9,89.9,False,UMF 16 KOMCHEN,7665.3,95.8,31050
+310500124,0124,Suytunchén,Subcomisaría / localidad < 500 hab.,150,21.101141,-89.731233,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,7169.9,89.6,False,CENTRO DE SALUD DE UCÚ,7578.5,94.7,31050
+310501012,1012,Cuatrocientos Once [Invernadero],Subcomisaría / localidad < 500 hab.,1,20.749044,-89.631814,YNIMS000392,UAYALCEH,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,7046.3,88.1,False,UAYALCEH,7046.3,88.1,31050
+310500768,0768,Los Farahones,Subcomisaría / localidad < 500 hab.,3,20.853678,-89.568189,YNSMP003501,F-7413 TIMUCUY TM,SERVICIOS MEDICOS PRIVADOS,Privado,7035.6,87.9,False,TIMUCUY,7392.2,92.4,31050
+310500973,0973,Gema [Rancho],Subcomisaría / localidad < 500 hab.,1,20.857832,-89.570965,YNSMP003146,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,7034.8,87.9,False,CENTRO DE SALUD URBANO DE KANASÍN SAN JOSE,7390.7,92.4,31050
+310500974,0974,El Forrajero [Rancho],Subcomisaría / localidad < 500 hab.,3,20.858552,-89.570622,YNSMP003146,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,6981.0,87.3,False,CENTRO DE SALUD URBANO DE KANASÍN SAN JOSE,7303.4,91.3,31050
+310500870,0870,Av-Breu [Constructora],Subcomisaría / localidad < 500 hab.,1,20.852753,-89.568334,YNSMP003501,F-7413 TIMUCUY TM,SERVICIOS MEDICOS PRIVADOS,Privado,6979.9,87.2,False,TIMUCUY,7340.7,91.8,31050
+310500745,0745,Pastor [Rancho],Subcomisaría / localidad < 500 hab.,2,21.103743,-89.729362,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,6968.7,87.1,False,UMF 16 KOMCHEN,7429.6,92.9,31050
+310500971,0971,Familia Góngora Mendoza,Subcomisaría / localidad < 500 hab.,1,20.859239,-89.570422,YNSMP003146,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,6924.0,86.6,False,CENTRO DE SALUD URBANO DE KANASÍN SAN JOSE,7225.2,90.3,31050
+310500986,0986,Mulsay,Subcomisaría / localidad < 500 hab.,3,20.797916,-89.603108,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,6614.4,82.7,False,SAN JOSÉ TZAL,6614.4,82.7,31050
+310501144,1144,Zua Zua,Subcomisaría / localidad < 500 hab.,4,20.851008,-89.564969,YNSMP003501,F-7413 TIMUCUY TM,SERVICIOS MEDICOS PRIVADOS,Privado,6588.6,82.4,False,TIMUCUY,6945.7,86.8,31050
+310500970,0970,El Encuentro [Rancho],Subcomisaría / localidad < 500 hab.,4,20.861981,-89.572207,YNSMP003146,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,6568.4,82.1,False,CENTRO DE SALUD URBANO DE KANASÍN SAN JOSE,7024.5,87.8,31050
+310501143,1143,Otoch,Subcomisaría / localidad < 500 hab.,3,20.847625,-89.565861,YNSMP003501,F-7413 TIMUCUY TM,SERVICIOS MEDICOS PRIVADOS,Privado,6420.1,80.3,False,TIMUCUY,6795.1,84.9,31050
+310500959,0959,Alfonso Mena,Subcomisaría / localidad < 500 hab.,4,21.118719,-89.721417,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,6357.4,79.5,False,UMF 16 KOMCHEN,6831.3,85.4,31050
+310500968,0968,Humberto González Morales,Subcomisaría / localidad < 500 hab.,3,20.864054,-89.57262,YNSMP003146,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,6346.4,79.3,False,CENTRO DE SALUD URBANO DE KANASÍN SAN JOSE,6837.0,85.5,31050
+310500759,0759,San Miguel,Subcomisaría / localidad < 500 hab.,1,21.151682,-89.599073,YNIMB000502,CENTRO DE SALUD SAN IGNACIO,SERVICIOS DE SALUD IMSS BIENESTAR,Público,6181.3,77.3,False,CENTRO DE SALUD SAN IGNACIO,6181.3,77.3,31050
+310500835,0835,Quinta Teresita,Subcomisaría / localidad < 500 hab.,4,21.152492,-89.601377,YNIMB000502,CENTRO DE SALUD SAN IGNACIO,SERVICIOS DE SALUD IMSS BIENESTAR,Público,5931.3,74.1,False,CENTRO DE SALUD SAN IGNACIO,5931.3,74.1,31050
+310500757,0757,Campo Bravo,Subcomisaría / localidad < 500 hab.,2,21.106021,-89.718934,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,5889.2,73.6,False,UMF 16 KOMCHEN,6354.3,79.4,31050
+310500758,0758,Cango,Subcomisaría / localidad < 500 hab.,3,21.151926,-89.601996,YNIMB000502,CENTRO DE SALUD SAN IGNACIO,SERVICIOS DE SALUD IMSS BIENESTAR,Público,5877.1,73.5,False,CENTRO DE SALUD SAN IGNACIO,5877.1,73.5,31050
+310501099,1099,Misnebalam Dos,Subcomisaría / localidad < 500 hab.,2,21.148456,-89.589674,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,5874.2,73.4,False,CENTRO DE SALUD SAN IGNACIO,7204.0,90.0,31050
+310500100,0100,Petac,Subcomisaría / localidad < 500 hab.,234,20.769955,-89.657908,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,5870.4,73.4,False,SAN JOSÉ TZAL,5870.4,73.4,31050
+310500116,0116,San Pedro Chimay,"Comisaría / localidad 500–2,499 hab.",1578,20.865545,-89.579737,YNSMP003146,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,5868.9,73.4,False,CENTRO DE SALUD URBANO DE KANASÍN SAN JOSE,7059.3,88.2,31050
+310501140,1140,San Ramón,Subcomisaría / localidad < 500 hab.,1,20.842992,-89.562161,YNSMP003501,F-7413 TIMUCUY TM,SERVICIOS MEDICOS PRIVADOS,Privado,5802.2,72.5,False,TIMUCUY,6186.9,77.3,31050
+310500305,0305,Los Capomos,Subcomisaría / localidad < 500 hab.,1,20.856199,-89.597073,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,5729.8,71.6,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",6504.5,81.3,31050
+310500141,0141,Yaxnic,"Comisaría / localidad 500–2,499 hab.",907,20.790744,-89.619249,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,5603.6,70.0,False,SAN JOSÉ TZAL,5603.6,70.0,31050
+310500108,0108,San Ignacio Tesip,Subcomisaría / localidad < 500 hab.,405,20.842355,-89.611837,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,5536.4,69.2,False,SAN JOSÉ TZAL,5536.4,69.2,31050
+310500688,0688,José Luis Puc,Subcomisaría / localidad < 500 hab.,6,20.844698,-89.613327,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,5502.7,68.8,False,SAN JOSÉ TZAL,5502.7,68.8,31050
+310500144,0144,Xcunyá,"Comisaría / localidad 500–2,499 hab.",994,21.132644,-89.613314,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,5442.4,68.0,False,CENTRO DE SALUD SAN IGNACIO,5543.5,69.3,31050
+310500306,0306,Los Tres Reyes,Subcomisaría / localidad < 500 hab.,6,20.86015,-89.597661,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,5305.0,66.3,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",6126.7,76.6,31050
+310500893,0893,Francisco,Subcomisaría / localidad < 500 hab.,2,20.86709,-89.58712,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,5231.0,65.4,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",6390.1,79.9,31050
+310500224,0224,California [Rancho],Subcomisaría / localidad < 500 hab.,2,20.859628,-89.603564,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,5135.1,64.2,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",5795.8,72.4,31050
+310500190,0190,Caney [Establo Lechero],Subcomisaría / localidad < 500 hab.,1,20.862271,-89.597484,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,5100.3,63.8,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",5961.6,74.5,31050
+310500097,0097,Noc Ac,"Comisaría / localidad 500–2,499 hab.",532,21.078889,-89.717284,YNIMB000386,CENTRO DE SALUD DZITYÁ,SERVICIOS DE SALUD IMSS BIENESTAR,Público,5025.8,62.8,False,CENTRO DE SALUD DZITYÁ,5025.8,62.8,31050
+310500102,0102,Sac-Nicté,Subcomisaría / localidad < 500 hab.,387,21.141459,-89.584617,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,5017.5,62.7,False,CHICXULUB PUEBLO,7033.9,87.9,31050
+310500969,0969,José Yamá,Subcomisaría / localidad < 500 hab.,5,20.833081,-89.614433,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,4959.0,62.0,False,SAN JOSÉ TZAL,4959.0,62.0,31050
+310500696,0696,Santa Bárbara,Subcomisaría / localidad < 500 hab.,2,20.832675,-89.614469,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,4945.3,61.8,False,SAN JOSÉ TZAL,4945.3,61.8,31050
+310500921,0921,Renacimiento,Subcomisaría / localidad < 500 hab.,4,20.870611,-89.58802,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4872.6,60.9,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",6082.7,76.0,31050
+310500868,0868,Roberto Pérez Ortiz,Subcomisaría / localidad < 500 hab.,4,20.868832,-89.590703,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4848.7,60.6,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",5977.4,74.7,31050
+310501142,1142,El Solar del Húngaro,Subcomisaría / localidad < 500 hab.,2,20.877961,-89.557631,YNIMB001226,CENTRO DE SALUD URBANO DE KANASÍN SAN JOSE,SERVICIOS DE SALUD IMSS BIENESTAR,Público,4813.2,60.2,False,CENTRO DE SALUD URBANO DE KANASÍN SAN JOSE,4813.2,60.2,31050
+310501111,1111,Las Palmeras,Subcomisaría / localidad < 500 hab.,4,21.129033,-89.6199,YNIMB001436,CENTRO DE SALUD DE KOMCHÉN,SERVICIOS DE SALUD IMSS BIENESTAR,Público,4797.2,60.0,False,CENTRO DE SALUD DE KOMCHÉN,4797.2,60.0,31050
+310500869,0869,Coppsa,Subcomisaría / localidad < 500 hab.,18,20.870443,-89.590281,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4735.3,59.2,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",5903.3,73.8,31050
+310500496,0496,Monte Alto,Subcomisaría / localidad < 500 hab.,2,20.872888,-89.588434,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4656.3,58.2,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",5904.5,73.8,31050
+310500249,0249,Xcauaka,Subcomisaría / localidad < 500 hab.,3,20.863367,-89.607477,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4622.3,57.8,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",5223.3,65.3,31050
+310500756,0756,Tío Gato [Cabaña],Subcomisaría / localidad < 500 hab.,7,20.868526,-89.595149,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4612.4,57.7,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",5644.5,70.6,31050
+310500901,0901,Martha,Subcomisaría / localidad < 500 hab.,7,20.87234,-89.5904,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4565.6,57.1,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",5769.8,72.1,31050
+310500268,0268,Oncán,"Comisaría / localidad 500–2,499 hab.",774,20.964976,-89.483489,YNIST000281,TIXPEHUAL,INSTITUTO DE SEGURIDAD Y SERVICIOS SOCIALES DE LOS TRABAJADORES DEL ESTADO,Público,4533.6,56.7,False,TIXPEHUAL,4533.6,56.7,31050
+310500138,0138,Xmatkuil,"Comisaría / localidad 500–2,499 hab.",1293,20.861589,-89.625032,YNSMP002924,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4533.4,56.7,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",4650.1,58.1,31050
+310500669,0669,Santa Isabel,Subcomisaría / localidad < 500 hab.,1,20.859391,-89.637892,YNSMP002924,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4517.0,56.5,False,SAN JOSÉ TZAL,4695.5,58.7,31050
+310501006,1006,San Miguel,Subcomisaría / localidad < 500 hab.,2,20.806348,-89.621312,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,4501.8,56.3,False,SAN JOSÉ TZAL,4501.8,56.3,31050
+310500561,0561,Villa Paraíso,Subcomisaría / localidad < 500 hab.,28,20.870297,-89.594289,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4498.2,56.2,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",5585.0,69.8,31050
+310500999,0999,Los Cedros,Subcomisaría / localidad < 500 hab.,5,20.824241,-89.617916,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,4468.5,55.9,False,SAN JOSÉ TZAL,4468.5,55.9,31050
+310500445,0445,Santa Elena,Subcomisaría / localidad < 500 hab.,4,20.860289,-89.633259,YNSMP002924,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4463.8,55.8,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",4666.5,58.3,31050
+310500076,0076,Cosgaya,"Comisaría / localidad 500–2,499 hab.",809,21.097905,-89.704761,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,4461.3,55.8,False,UMF 16 KOMCHEN,4902.9,61.3,31050
+310501008,1008,La Brecha [Calle 6],Subcomisaría / localidad < 500 hab.,2,20.814357,-89.618942,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,4460.3,55.8,False,SAN JOSÉ TZAL,4460.3,55.8,31050
+310501108,1108,El Jabín  Dos,Subcomisaría / localidad < 500 hab.,6,21.134759,-89.624745,YNIMB000502,CENTRO DE SALUD SAN IGNACIO,SERVICIOS DE SALUD IMSS BIENESTAR,Público,4446.1,55.6,False,CENTRO DE SALUD SAN IGNACIO,4446.1,55.6,31050
+310500733,0733,Santos Galo Chalé Cauich,Subcomisaría / localidad < 500 hab.,2,21.134487,-89.625119,YNIMB000502,CENTRO DE SALUD SAN IGNACIO,SERVICIOS DE SALUD IMSS BIENESTAR,Público,4435.3,55.4,False,CENTRO DE SALUD SAN IGNACIO,4435.3,55.4,31050
+310501109,1109,El Jabín,Subcomisaría / localidad < 500 hab.,6,21.134645,-89.625224,YNIMB000502,CENTRO DE SALUD SAN IGNACIO,SERVICIOS DE SALUD IMSS BIENESTAR,Público,4415.7,55.2,False,CENTRO DE SALUD SAN IGNACIO,4415.7,55.2,31050
+310500606,0606,Paseos Country,Subcomisaría / localidad < 500 hab.,4,21.113802,-89.615549,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,4370.3,54.6,False,CENTRO DE SALUD DE KOMCHÉN,4459.7,55.7,31050
+310500222,0222,Santa Rosa [Unidad Ovina],Subcomisaría / localidad < 500 hab.,5,20.861133,-89.636411,YNSMP002924,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4333.5,54.2,False,HOSPITAL DE LA AMISTAD (COREA-MÉXICO),4548.3,56.9,31050
+310500092,0092,Kikteil,Subcomisaría / localidad < 500 hab.,243,21.129691,-89.693569,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,4323.9,54.0,False,UMF 16 KOMCHEN,4749.3,59.4,31050
+310501113,1113,San Antonio,Subcomisaría / localidad < 500 hab.,6,21.12274,-89.620951,YNIMB001436,CENTRO DE SALUD DE KOMCHÉN,SERVICIOS DE SALUD IMSS BIENESTAR,Público,4322.0,54.0,False,CENTRO DE SALUD DE KOMCHÉN,4322.0,54.0,31050
+310500336,0336,Hunxectamán,Subcomisaría / localidad < 500 hab.,177,20.883176,-89.558629,YNIMB001226,CENTRO DE SALUD URBANO DE KANASÍN SAN JOSE,SERVICIOS DE SALUD IMSS BIENESTAR,Público,4305.6,53.8,False,CENTRO DE SALUD URBANO DE KANASÍN SAN JOSE,4305.6,53.8,31050
+310500898,0898,Hernández,Subcomisaría / localidad < 500 hab.,4,20.82512,-89.619624,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,4295.2,53.7,False,SAN JOSÉ TZAL,4295.2,53.7,31050
+310501034,1034,Bethel,Subcomisaría / localidad < 500 hab.,2,20.811472,-89.621511,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,4282.4,53.5,False,SAN JOSÉ TZAL,4282.4,53.5,31050
+310500742,0742,Las Nubes,Subcomisaría / localidad < 500 hab.,8,20.873133,-89.595125,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4191.6,52.4,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",5321.4,66.5,31050
+310501076,1076,Dzidzil-Há,Subcomisaría / localidad < 500 hab.,2,21.160683,-89.698008,YNIMB000502,CENTRO DE SALUD SAN IGNACIO,SERVICIOS DE SALUD IMSS BIENESTAR,Público,4171.8,52.1,False,CENTRO DE SALUD SAN IGNACIO,4171.8,52.1,31050
+310500090,0090,Dzununcán,"Comisaría / localidad 500–2,499 hab.",2388,20.865709,-89.653478,YNSMP002924,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4075.3,50.9,False,HOSPITAL DE ALTA ESPECIALIDAD AGUSTÍN O´HORÁN,4183.2,52.3,31050
+310500693,0693,Galdino (San Felipe),Subcomisaría / localidad < 500 hab.,5,20.875177,-89.595279,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,4001.1,50.0,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",5173.7,64.7,31050
+310501074,1074,Komchén [Santuario],Subcomisaría / localidad < 500 hab.,3,21.135306,-89.685394,YNIMB000502,CENTRO DE SALUD SAN IGNACIO,SERVICIOS DE SALUD IMSS BIENESTAR,Público,3970.9,49.6,False,CENTRO DE SALUD SAN IGNACIO,3970.9,49.6,31050
+310500940,0940,El Borreo Alux,Subcomisaría / localidad < 500 hab.,2,20.864867,-89.633276,YNSMP002924,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,3962.9,49.5,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",4160.1,52.0,31050
+310500920,0920,El Potrillo,Subcomisaría / localidad < 500 hab.,8,21.098666,-89.69974,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,3932.6,49.2,False,UMF 16 KOMCHEN,4374.8,54.7,31050
+310501137,1137,La Chichí,Subcomisaría / localidad < 500 hab.,4,20.876444,-89.596697,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,3799.8,47.5,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",4972.1,62.2,31050
+310501019,1019,Chaactún,Subcomisaría / localidad < 500 hab.,53,21.112743,-89.622076,YNIMB001436,CENTRO DE SALUD DE KOMCHÉN,SERVICIOS DE SALUD IMSS BIENESTAR,Público,3774.8,47.2,False,CENTRO DE SALUD DE KOMCHÉN,3774.8,47.2,31050
+310500129,0129,Texán Cámara,"Comisaría / localidad 500–2,499 hab.",664,20.78945,-89.66575,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,3738.9,46.7,False,SAN JOSÉ TZAL,3738.9,46.7,31050
+310500158,0158,La Ceiba,"Comisaría / localidad 500–2,499 hab.",1638,21.094262,-89.621977,YNSMP003443,F-7200 MERIDA 144 TM,SERVICIOS MEDICOS PRIVADOS,Privado,3602.1,45.0,False,CENTRO DE SALUD DE KOMCHÉN,3766.3,47.1,31050
+310500872,0872,Los Corceles,Subcomisaría / localidad < 500 hab.,8,20.892718,-89.562427,YNIMB001226,CENTRO DE SALUD URBANO DE KANASÍN SAN JOSE,SERVICIOS DE SALUD IMSS BIENESTAR,Público,3554.1,44.4,False,CENTRO DE SALUD URBANO DE KANASÍN SAN JOSE,3554.1,44.4,31050
+310500945,0945,Yucatán Country Club,"Comisaría / localidad 500–2,499 hab.",2141,21.120726,-89.599282,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,3486.8,43.6,False,CENTRO DE SALUD DE KOMCHÉN,6299.7,78.7,31050
+310501023,1023,Altosano,Subcomisaría / localidad < 500 hab.,273,21.128494,-89.637264,YNIMB001436,CENTRO DE SALUD DE KOMCHÉN,SERVICIOS DE SALUD IMSS BIENESTAR,Público,3469.4,43.4,False,CENTRO DE SALUD DE KOMCHÉN,3469.4,43.4,31050
+310500121,0121,Sitpach,"Comisaría / localidad 500–2,499 hab.",2226,21.026751,-89.521155,YNSMP003390,"F-6749 SAN PEDRO CHOLUL, YUC TV",SERVICIOS MEDICOS PRIVADOS,Privado,3427.1,42.8,False,CENTRO DE SALUD X´CUYUM,4168.8,52.1,31050
+310500087,0087,Dzidzilché,Subcomisaría / localidad < 500 hab.,267,21.152365,-89.689657,YNIMB000502,CENTRO DE SALUD SAN IGNACIO,SERVICIOS DE SALUD IMSS BIENESTAR,Público,3414.8,42.7,False,CENTRO DE SALUD SAN IGNACIO,3414.8,42.7,31050
+310500081,0081,Cheumán,Subcomisaría / localidad < 500 hab.,218,21.067079,-89.706533,YNIMB000386,CENTRO DE SALUD DZITYÁ,SERVICIOS DE SALUD IMSS BIENESTAR,Público,3350.5,41.9,False,CENTRO DE SALUD DZITYÁ,3350.5,41.9,31050
+310500225,0225,San Diego Texán,Subcomisaría / localidad < 500 hab.,14,21.156617,-89.626365,YNIMB000502,CENTRO DE SALUD SAN IGNACIO,SERVICIOS DE SALUD IMSS BIENESTAR,Público,3296.9,41.2,False,CENTRO DE SALUD SAN IGNACIO,3296.9,41.2,31050
+310500079,0079,Chalmuch,"Comisaría / localidad 500–2,499 hab.",591,20.972688,-89.728967,YNSMP002673,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,3181.0,39.8,False,SERVICIO MÉDICO DE LA SECRETARIA DE SEGURIDAD PÚBLICA,3440.0,43.0,31050
+310500735,0735,Claudia Lach,Subcomisaría / localidad < 500 hab.,4,21.103427,-89.606847,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,3122.3,39.0,False,CENTRO DE SALUD DE KOMCHÉN,5206.8,65.1,31050
+310500095,0095,Molas,"Comisaría / localidad 500–2,499 hab.",2401,20.816407,-89.632107,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,3072.9,38.4,False,SAN JOSÉ TZAL,3072.9,38.4,31050
+310501024,1024,Blue Cedar [Privada Residencial],Subcomisaría / localidad < 500 hab.,106,21.131172,-89.662186,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,3019.0,37.7,False,CENTRO DE SALUD DE KOMCHÉN,3147.3,39.3,31050
+310500125,0125,Tahdzibichén,"Comisaría / localidad 500–2,499 hab.",855,20.885015,-89.598043,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,2996.6,37.5,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",4365.1,54.6,31050
+310500953,0953,Yucatán Polo Club,Subcomisaría / localidad < 500 hab.,5,21.124092,-89.681134,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,2969.0,37.1,False,UMF 16 KOMCHEN,3368.1,42.1,31050
+310500414,0414,Los Castellanos,Subcomisaría / localidad < 500 hab.,93,21.090606,-89.632235,YNIMB001436,CENTRO DE SALUD DE KOMCHÉN,SERVICIOS DE SALUD IMSS BIENESTAR,Público,2921.8,36.5,False,CENTRO DE SALUD DE KOMCHÉN,2921.8,36.5,31050
+310500955,0955,La Ceiba [Villas],Subcomisaría / localidad < 500 hab.,15,21.091382,-89.631844,YNIMB001436,CENTRO DE SALUD DE KOMCHÉN,SERVICIOS DE SALUD IMSS BIENESTAR,Público,2918.0,36.5,False,CENTRO DE SALUD DE KOMCHÉN,2918.0,36.5,31050
+310500238,0238,Tamanché,"Comisaría / localidad 500–2,499 hab.",649,21.138915,-89.641408,YNIMB000502,CENTRO DE SALUD SAN IGNACIO,SERVICIOS DE SALUD IMSS BIENESTAR,Público,2909.7,36.4,False,CENTRO DE SALUD SAN IGNACIO,2909.7,36.4,31050
+310500132,0132,Tixcuytún,"Comisaría / localidad 500–2,499 hab.",578,21.06632,-89.570235,YNSMP002055,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,2864.0,35.8,False,UMF 50 CONKAL,4801.3,60.0,31050
+310500965,0965,Tirzo Fernando Suárez Nuñez,Subcomisaría / localidad < 500 hab.,3,21.09963,-89.604805,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,2837.5,35.5,False,CENTRO DE SALUD DE KOMCHÉN,5433.4,67.9,31050
+310500145,0145,Santa María Yaxché,Subcomisaría / localidad < 500 hab.,70,21.118328,-89.635371,YNIMB001436,CENTRO DE SALUD DE KOMCHÉN,SERVICIOS DE SALUD IMSS BIENESTAR,Público,2799.2,35.0,False,CENTRO DE SALUD DE KOMCHÉN,2799.2,35.0,31050
+310500119,0119,Santa María Chí,Subcomisaría / localidad < 500 hab.,385,21.033857,-89.482191,YNIMB000082,CENTRO DE SALUD X´CUYUM,SERVICIOS DE SALUD IMSS BIENESTAR,Público,2766.2,34.6,False,CENTRO DE SALUD X´CUYUM,2766.2,34.6,31050
+310500117,0117,Santa Cruz Palomeque,"Comisaría / localidad 500–2,499 hab.",1237,20.879297,-89.653759,YNSMP003110,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,2734.1,34.2,False,HOSPITAL DE ALTA ESPECIALIDAD AGUSTÍN O´HORÁN,2787.5,34.8,31050
+310500944,0944,La Rejoyada,Subcomisaría / localidad < 500 hab.,428,21.11996,-89.680478,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,2591.7,32.4,False,UMF 16 KOMCHEN,3013.3,37.7,31050
+310501130,1130,Los Moreno,Subcomisaría / localidad < 500 hab.,3,21.094761,-89.553639,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,2509.5,31.4,False,UMF 50 CONKAL,4252.9,53.2,31050
+310500753,0753,Villas Xcanatún,Subcomisaría / localidad < 500 hab.,30,21.115617,-89.637756,YNIMB001436,CENTRO DE SALUD DE KOMCHÉN,SERVICIOS DE SALUD IMSS BIENESTAR,Público,2422.6,30.3,False,CENTRO DE SALUD DE KOMCHÉN,2422.6,30.3,31050
+310500159,0159,La Ceiba Dos,Subcomisaría / localidad < 500 hab.,58,21.100883,-89.600046,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,2370.5,29.6,False,CENTRO DE SALUD DE KOMCHÉN,5919.3,74.0,31050
+310500660,0660,Soluna,Subcomisaría / localidad < 500 hab.,5,21.076311,-89.584659,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,2364.4,29.6,False,UNIDAD MÉDICA MÓVIL (TIPO II) ITZÁMNÁ,6082.3,76.0,31050
+310500140,0140,Yaxché Casares,Subcomisaría / localidad < 500 hab.,123,21.034585,-89.498922,YNIMB000082,CENTRO DE SALUD X´CUYUM,SERVICIOS DE SALUD IMSS BIENESTAR,Público,2352.5,29.4,False,CENTRO DE SALUD X´CUYUM,2352.5,29.4,31050
+310501129,1129,El Jabín,Subcomisaría / localidad < 500 hab.,2,21.093392,-89.556558,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,2226.6,27.8,False,UMF 50 CONKAL,4378.8,54.7,31050
+310501016,1016,El Xux,Subcomisaría / localidad < 500 hab.,2,20.842811,-89.661687,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,2209.9,27.6,False,SAN JOSÉ TZAL,2209.9,27.6,31050
+310500254,0254,Francisco Villa,Subcomisaría / localidad < 500 hab.,4,21.101109,-89.683367,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,2209.2,27.6,False,UMF 16 KOMCHEN,2654.9,33.2,31050
+310501022,1022,La Casita del Sabor,Subcomisaría / localidad < 500 hab.,5,21.050411,-89.538017,YNSMP002055,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,2207.7,27.6,False,UMF 50 CONKAL,2444.7,30.6,31050
+310500086,0086,Dzibilchaltún,Subcomisaría / localidad < 500 hab.,152,21.098456,-89.598536,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,2175.7,27.2,False,CENTRO DE SALUD DE KOMCHÉN,6093.4,76.2,31050
+310500741,0741,Almendros,Subcomisaría / localidad < 500 hab.,6,21.058841,-89.570086,YNSMP002055,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,2147.7,26.8,False,HOSPITAL REGIONAL DE ALTA ESPECIALIDAD DE LA PENÍNSULA DE YUCATÁN,4544.7,56.8,31050
+310501069,1069,Komchén [Privada],Subcomisaría / localidad < 500 hab.,6,21.121233,-89.671575,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,2145.3,26.8,False,UMF 16 KOMCHEN,2479.0,31.0,31050
+310500862,0862,Las Ranas,Subcomisaría / localidad < 500 hab.,1,20.951357,-89.717382,YNSME000026,SERVICIO MÉDICO DE LA SECRETARIA DE SEGURIDAD PÚBLICA,SERVICIOS MEDICOS ESTATALES,Público,2130.2,26.6,False,SERVICIO MÉDICO DE LA SECRETARIA DE SEGURIDAD PÚBLICA,2130.2,26.6,31050
+310500881,0881,San José,Subcomisaría / localidad < 500 hab.,1,20.893109,-89.602644,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,2055.6,25.7,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",3590.0,44.9,31050
+310500908,0908,El Caribeño [Paradero],Subcomisaría / localidad < 500 hab.,2,20.840795,-89.658209,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,2002.8,25.0,False,SAN JOSÉ TZAL,2002.8,25.0,31050
+310500346,0346,Itzamatul,Subcomisaría / localidad < 500 hab.,3,21.055185,-89.571128,YNSMP002055,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,1914.4,23.9,False,HOSPITAL REGIONAL DE ALTA ESPECIALIDAD DE LA PENÍNSULA DE YUCATÁN,4125.5,51.6,31050
+310500228,0228,San José Kuché,Subcomisaría / localidad < 500 hab.,1,21.100736,-89.560279,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,1866.9,23.3,False,UMF 50 CONKAL,5209.1,65.1,31050
+310500915,0915,Puertas del Mayab,Subcomisaría / localidad < 500 hab.,34,21.105841,-89.592421,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,1839.4,23.0,False,CENTRO DE SALUD DE KOMCHÉN,6712.7,83.9,31050
+310501115,1115,La Casa Azul,Subcomisaría / localidad < 500 hab.,4,21.104526,-89.593137,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,1827.8,22.8,False,CENTRO DE SALUD DE KOMCHÉN,6633.5,82.9,31050
+310500994,0994,Coqueluche,Subcomisaría / localidad < 500 hab.,1,20.80814,-89.653186,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,1815.0,22.7,False,SAN JOSÉ TZAL,1815.0,22.7,31050
+310501015,1015,Terreno Apá,Subcomisaría / localidad < 500 hab.,4,20.88915,-89.610967,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,1809.1,22.6,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",2960.9,37.0,31050
+310500528,0528,Jardines de Tahdzibichén,Subcomisaría / localidad < 500 hab.,259,20.898667,-89.599621,YNSMP003146,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,1731.9,21.6,False,"CENTRO DE REHABILITACIÓN INFANTIL MÉRIDA, YUC.",3113.2,38.9,31050
+310501039,1039,El Jabín,Subcomisaría / localidad < 500 hab.,4,20.809228,-89.652819,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,1725.5,21.6,False,SAN JOSÉ TZAL,1725.5,21.6,31050
+310501047,1047,El Picacho,Subcomisaría / localidad < 500 hab.,1,20.837681,-89.665608,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,1714.5,21.4,False,SAN JOSÉ TZAL,1714.5,21.4,31050
+310500809,0809,Yaxché de Peón,Subcomisaría / localidad < 500 hab.,5,21.058288,-89.56112,YNSMP002055,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,1701.9,21.3,False,UMF 50 CONKAL,4002.7,50.0,31050
+310500666,0666,Villas Cholul,Subcomisaría / localidad < 500 hab.,332,21.044307,-89.539808,YNSMP003390,"F-6749 SAN PEDRO CHOLUL, YUC TV",SERVICIOS MEDICOS PRIVADOS,Privado,1678.7,21.0,False,UMF 50 CONKAL,3110.0,38.9,31050
+310500695,0695,Don Juan,Subcomisaría / localidad < 500 hab.,8,20.837277,-89.6571,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,1640.7,20.5,False,SAN JOSÉ TZAL,1640.7,20.5,31050
+310500323,0323,Kampepén,Subcomisaría / localidad < 500 hab.,6,20.834479,-89.651516,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,1607.9,20.1,False,SAN JOSÉ TZAL,1607.9,20.1,31050
+310500885,0885,González Canto,Subcomisaría / localidad < 500 hab.,3,20.894703,-89.606927,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,1592.5,19.9,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",3112.6,38.9,31050
+310500886,0886,El Tzalam,Subcomisaría / localidad < 500 hab.,5,20.893626,-89.608998,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,1516.3,19.0,False,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",2942.8,36.8,31050
+310500438,0438,La Guadalupana,Subcomisaría / localidad < 500 hab.,3,20.900332,-89.604858,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,1504.5,18.8,False,"CENTRO DE REHABILITACIÓN INFANTIL MÉRIDA, YUC.",2935.9,36.7,31050
+310500135,0135,Xcanatún,"Comisaría / localidad 500–2,499 hab.",1733,21.075549,-89.628052,YNSMP003443,F-7200 MERIDA 144 TM,SERVICIOS MEDICOS PRIVADOS,Privado,1495.2,18.7,False,UNIDAD MÉDICA MÓVIL (TIPO II) ITZÁMNÁ,2910.5,36.4,31050
+310500775,0775,Guadalupe,Subcomisaría / localidad < 500 hab.,1,20.898904,-89.605624,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,1476.6,18.5,False,"CENTRO DE REHABILITACIÓN INFANTIL MÉRIDA, YUC.",3102.2,38.8,31050
+310500749,0749,San Pedro,Subcomisaría / localidad < 500 hab.,1,21.062738,-89.610972,YNSMP003496,BENAMEDIC SUCURSAL N800 SKYWORK,SERVICIOS MEDICOS PRIVADOS,Privado,1465.1,18.3,False,UNIDAD MÉDICA MÓVIL (TIPO II) ITZÁMNÁ,2960.9,37.0,31050
+310500131,0131,Tixcacal,"Comisaría / localidad 500–2,499 hab.",1119,20.944156,-89.715726,YNSMP003245,F-6813 TIXCACAL TV,SERVICIOS MEDICOS PRIVADOS,Privado,1445.4,18.1,False,SERVICIO MÉDICO DE LA SECRETARIA DE SEGURIDAD PÚBLICA,2453.0,30.7,31050
+310500875,0875,Santiago Kuri,Subcomisaría / localidad < 500 hab.,6,20.901387,-89.605314,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,1433.1,17.9,False,"CENTRO DE REHABILITACIÓN INFANTIL MÉRIDA, YUC.",2825.3,35.3,31050
+310500929,0929,San Lorenzo,Subcomisaría / localidad < 500 hab.,1,21.102514,-89.565971,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,1382.2,17.3,False,UMF 50 CONKAL,5778.8,72.2,31050
+310501035,1035,La Brea,Subcomisaría / localidad < 500 hab.,2,20.835217,-89.662419,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,1377.1,17.2,False,SAN JOSÉ TZAL,1377.1,17.2,31050
+310500103,0103,San Antonio Hool,Subcomisaría / localidad < 500 hab.,180,21.065398,-89.674582,YNSMP002830,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,1339.2,16.7,False,CENTRO DE SALUD DZITYÁ,1731.8,21.6,31050
+310500888,0888,San Ermilo,Subcomisaría / localidad < 500 hab.,1,20.901384,-89.606409,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,1321.2,16.5,False,"CENTRO DE REHABILITACIÓN INFANTIL MÉRIDA, YUC.",2842.2,35.5,31050
+310500805,0805,María Cen Pech,Subcomisaría / localidad < 500 hab.,9,21.041319,-89.569628,YNSMP002055,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,1245.7,15.6,False,HOSPITAL REGIONAL DE ALTA ESPECIALIDAD DE LA PENÍNSULA DE YUCATÁN,2748.8,34.4,31050
+310500345,0345,Gelsy Guadalupe,Subcomisaría / localidad < 500 hab.,4,21.064425,-89.589321,YNSMP003496,BENAMEDIC SUCURSAL N800 SKYWORK,SERVICIOS MEDICOS PRIVADOS,Privado,1159.4,14.5,True,HOSPITAL REGIONAL DE ALTA ESPECIALIDAD DE LA PENÍNSULA DE YUCATÁN,5053.2,63.2,31050
+310500804,0804,Rubí Cocom,Subcomisaría / localidad < 500 hab.,4,21.039054,-89.567847,YNSMP002055,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,1140.6,14.3,True,HOSPITAL REGIONAL DE ALTA ESPECIALIDAD DE LA PENÍNSULA DE YUCATÁN,2627.7,32.8,31050
+310500812,0812,Doña Reyna,Subcomisaría / localidad < 500 hab.,1,21.106338,-89.580801,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,1122.6,14.0,True,UMF 50 CONKAL,7252.1,90.7,31050
+310500813,0813,Lol-Bé,Subcomisaría / localidad < 500 hab.,9,21.101291,-89.568344,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,1100.8,13.8,True,UMF 50 CONKAL,5881.5,73.5,31050
+310500130,0130,Opichén,"Comisaría / localidad 500–2,499 hab.",724,20.950173,-89.679302,YNSMP002422,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,1082.3,13.5,True,UMF 60 PONIENTE,2151.1,26.9,31050
+310500858,0858,Las Adelaidas,Subcomisaría / localidad < 500 hab.,3,21.052655,-89.688885,YNIMB000386,CENTRO DE SALUD DZITYÁ,SERVICIOS DE SALUD IMSS BIENESTAR,Público,995.6,12.4,True,CENTRO DE SALUD DZITYÁ,995.6,12.4,31050
+310500914,0914,Las Palmas,Subcomisaría / localidad < 500 hab.,4,20.899098,-89.610911,YNSMP003040,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,971.9,12.1,True,"CENTROS DE INTEGRACIÓN JUVENIL, A.C. UNIDAD OPERATIVA YUCATÁN",2605.3,32.6,31050
+310501055,1055,Terra Nova,Subcomisaría / localidad < 500 hab.,3,20.816158,-89.65485,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,968.5,12.1,True,SAN JOSÉ TZAL,968.5,12.1,31050
+310500876,0876,Reina Rivas,Subcomisaría / localidad < 500 hab.,7,20.906452,-89.606268,YNSMP003146,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,942.0,11.8,True,"CENTRO DE REHABILITACIÓN INFANTIL MÉRIDA, YUC.",2287.4,28.6,31050
+310501116,1116,Los Rosales,Subcomisaría / localidad < 500 hab.,7,21.089904,-89.58203,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,870.7,10.9,True,UMF 50 CONKAL,6484.8,81.1,31050
+310501117,1117,Santa Ana,Subcomisaría / localidad < 500 hab.,3,21.10203,-89.57268,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,793.5,9.9,True,UMF 50 CONKAL,6288.8,78.6,31050
+310500128,0128,Temozón Norte,"Comisaría / localidad 500–2,499 hab.",1094,21.064547,-89.596887,YNSMP003496,BENAMEDIC SUCURSAL N800 SKYWORK,SERVICIOS MEDICOS PRIVADOS,Privado,759.4,9.5,True,UNIDAD MÉDICA MÓVIL (TIPO II) ITZÁMNÁ,4381.4,54.8,31050
+310501133,1133,Santa Julia,Subcomisaría / localidad < 500 hab.,6,20.910186,-89.606656,YNSMP003146,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,626.7,7.8,True,"CENTRO DE REHABILITACIÓN INFANTIL MÉRIDA, YUC.",1894.0,23.7,31050
+310500123,0123,Susulá,"Comisaría / localidad 500–2,499 hab.",530,20.972905,-89.697077,YNIST000170,CH MÉRIDA,INSTITUTO DE SEGURIDAD Y SERVICIOS SOCIALES DE LOS TRABAJADORES DEL ESTADO,Público,615.3,7.7,True,CH MÉRIDA,615.3,7.7,31050
+310501148,1148,La Roca,Subcomisaría / localidad < 500 hab.,3,21.045333,-89.66865,YNSMP003344,F-7323 MERIDA 146 TM,SERVICIOS MEDICOS PRIVADOS,Privado,376.5,4.7,True,CENTRO DE SALUD DZITYÁ,1273.3,15.9,31050
+310500111,0111,San José Tzal,"Comisaría / localidad ≥ 2,500 hab.",4428,20.82527,-89.66133,YNIMS000771,SAN JOSÉ TZAL,INSTITUTO MEXICANO DEL SEGURO SOCIAL,Público,270.6,3.4,True,SAN JOSÉ TZAL,270.6,3.4,31050
+310500077,0077,Chablekal,"Comisaría / localidad ≥ 2,500 hab.",5034,21.096041,-89.576666,YNSMP003414,FC-0131 CHABLEKAL TM,SERVICIOS MEDICOS PRIVADOS,Privado,125.5,1.6,True,UMF 50 CONKAL,6275.0,78.4,31050
+310500075,0075,Caucel,"Comisaría / localidad ≥ 2,500 hab.",8823,21.015664,-89.706033,YNSMP003460,F-6883 CAUCEL TM,SERVICIOS MEDICOS PRIVADOS,Privado,106.4,1.3,True,UMF 20 CAUCEL,192.5,2.4,31050
+310500001,0001,Mérida,Cabecera municipal (Mérida),921771,20.967537,-89.624392,YNSMP001792,PARQUE CENTRAL,SERVICIOS MEDICOS PRIVADOS,Privado,95.9,1.2,True,UMF 52 MÉRIDA,214.0,2.7,31050
+310500084,0084,Cholul,"Comisaría / localidad ≥ 2,500 hab.",11745,21.042942,-89.556996,YNSMP002055,FUNDACION BEST A.C.,SERVICIOS MEDICOS PRIVADOS,Privado,92.2,1.2,True,HOSPITAL REGIONAL DE ALTA ESPECIALIDAD DE LA PENÍNSULA DE YUCATÁN,3680.2,46.0,31050
+310500093,0093,Komchén,"Comisaría / localidad ≥ 2,500 hab.",5598,21.103517,-89.661738,YNSMP003402,F-6910 KOMCHEN TM,SERVICIOS MEDICOS PRIVADOS,Privado,75.9,0.9,True,UMF 16 KOMCHEN,404.8,5.1,31050
+310500088,0088,Dzityá,"Comisaría / localidad 500–2,499 hab.",2369,21.050233,-89.679217,YNIMB000386,CENTRO DE SALUD DZITYÁ,SERVICIOS DE SALUD IMSS BIENESTAR,Público,48.3,0.6,True,CENTRO DE SALUD DZITYÁ,48.3,0.6,31050

@@ -58,36 +58,38 @@ window.DataStoryApp.goldLoader = (function() {
       safeJson("./data/silver/pdb_6vxx_estructura_molecular.json")
     ]);
 
-    // Vista 1: Unidades de salud por municipio (data/gold/mart_cobertura_salud_municipal.csv)
+    // Vista 1: Unidades médicas CLUES por municipio (data/gold/mart_cobertura_salud_municipal.csv)
     if (mSaludMun && mSaludMun.length && views[1]) {
-      const totalUnidades = d3.sum(mSaludMun, d => +d.total_unidades_salud);
+      const totalUnidades = d3.sum(mSaludMun, d => +d.unidades_medicas);
+      const totalHosp = d3.sum(mSaludMun, d => +d.hospitales);
       const merida = mSaludMun.find(d => String(d.cvegeo).padStart(5, "0") === "31050");
-      const meridaUn = merida ? +merida.total_unidades_salud : 0;
+      const meridaUn = merida ? +merida.unidades_medicas : 0;
+      const meridaHosp = merida ? +merida.hospitales : 0;
       const pctMerida = totalUnidades ? (100 * meridaUn) / totalUnidades : 0;
-      const munCero = mSaludMun.filter(d => +d.total_unidades_salud === 0).length;
+      const munSinHosp = mSaludMun.filter(d => +d.hospitales === 0).length;
       const top9 = mSaludMun.slice(0, 9);
 
       views[1].chartData = {
-        labels: top9.map(d => d.municipio || d.nom_mun),
+        labels: top9.map(d => d.municipio),
         datasets: [
           {
-            label: "Farmacias y consultorios",
-            data: top9.map(d => (+d.farmacias || +d.pharmacy || 0) + (+d.consultorios || +d.doctors || 0)),
-            backgroundColor: "rgba(96, 13, 139, 0.8)"
+            label: "Unidades públicas (CLUES)",
+            data: top9.map(d => +d.unidades_publicas || 0),
+            backgroundColor: "rgba(96, 13, 139, 0.82)"
           },
           {
-            label: "Hospitales y clínicas",
-            data: top9.map(d => (+d.hospitales || +d.hospital || 0) + (+d.clinicas || +d.clinic || 0)),
+            label: "Unidades privadas (CLUES)",
+            data: top9.map(d => +d.unidades_privadas || 0),
             backgroundColor: "rgba(237, 159, 34, 0.85)"
           }
         ]
       };
       views[1].kpis = [
-        { icon: "fa-hospital", label: "Unidades mapeadas (Yucatán)", value: fmtInt(totalUnidades), delta: "OpenStreetMap + INEGI", color: "var(--accent-cyan)" },
-        { icon: "fa-city", label: "Concentración en Mérida", value: `${fmtDec(pctMerida)} %`, delta: `${fmtInt(meridaUn)} unidades en 31050`, color: "var(--accent-blue)" },
-        { icon: "fa-map-location-dot", label: "Municipios sin registro", value: `${munCero} / ${mSaludMun.length}`, delta: "Brecha en cartografía abierta", color: "var(--accent-amber)" }
+        { icon: "fa-hospital", label: "Unidades médicas CLUES", value: fmtInt(totalUnidades), delta: `${fmtInt(totalHosp)} hospitales · sin farmacias`, color: "var(--accent-cyan)" },
+        { icon: "fa-city", label: "Concentración en Mérida", value: `${fmtDec(pctMerida)} %`, delta: `${fmtInt(meridaUn)} unid. · ${meridaHosp} hospitales`, color: "var(--accent-blue)" },
+        { icon: "fa-map-location-dot", label: "Municipios sin hospital", value: `${munSinHosp} / ${mSaludMun.length}`, delta: "Dependencia de cabeceras", color: "var(--accent-amber)" }
       ];
-      views[1].insight = `<strong>Hallazgo verificado (mart_cobertura_salud_municipal.csv):</strong> Mérida concentra ${fmtInt(meridaUn)} de las ${fmtInt(totalUnidades)} unidades médicas registradas en Yucatán (${fmtDec(pctMerida)} %), mientras ${munCero} de los ${mSaludMun.length} municipios no registran unidades en OpenStreetMap.`;
+      views[1].insight = `<strong>Hallazgo verificado (CLUES octubre 2026):</strong> Mérida concentra ${fmtInt(meridaUn)} de las ${fmtInt(totalUnidades)} unidades médicas en operación de Yucatán (${fmtDec(pctMerida)} %) y ${meridaHosp} de ${totalHosp} hospitales, mientras ${munSinHosp} de 106 municipios no cuentan con hospital.`;
     }
 
     // Vista 2: Serie epidemiológica mensual DGE (data/gold/mart_evolucion_epidemiologica_mensual.csv)
@@ -129,18 +131,18 @@ window.DataStoryApp.goldLoader = (function() {
     // Vista 3: Jurisdicciones Sanitarias (data/gold/mart_cohesion_jurisdicciones_yucatan.csv)
     if (mJuris && mJuris.length && views[3]) {
       const totMun = d3.sum(mJuris, d => +d.total_municipios);
-      const totCon = d3.sum(mJuris, d => +d.municipios_con_unidades);
+      const totConHosp = d3.sum(mJuris, d => +d.municipios_con_hospital);
       views[3].chartData = {
         labels: mJuris.map(d => d.jurisdiccion_sanitaria),
         datasets: [
           {
-            label: "Total de unidades de salud",
-            data: mJuris.map(d => +d.total_unidades_salud),
+            label: "Unidades médicas CLUES",
+            data: mJuris.map(d => +d.unidades_medicas),
             backgroundColor: "rgba(96, 13, 139, 0.8)"
           },
           {
-            label: "Municipios con registro",
-            data: mJuris.map(d => +d.municipios_con_unidades),
+            label: "Hospitales",
+            data: mJuris.map(d => +d.hospitales),
             backgroundColor: "rgba(237, 159, 34, 0.85)"
           }
         ]
@@ -148,43 +150,36 @@ window.DataStoryApp.goldLoader = (function() {
       views[3].kpis = [
         { icon: "fa-landmark", label: "Municipios analizados", value: fmtInt(totMun), delta: "100 % de Yucatán (INEGI)", color: "var(--accent-cyan)" },
         { icon: "fa-diagram-project", label: "Jurisdicciones sanitarias", value: fmtInt(mJuris.length), delta: "Mérida, Valladolid y Ticul", color: "var(--accent-blue)" },
-        { icon: "fa-check-double", label: "Municipios con registro", value: `${totCon} / ${totMun}`, delta: `${fmtDec((100 * totCon) / totMun)} % con cobertura mapeada`, color: "var(--accent-green)" }
+        { icon: "fa-hospital", label: "Municipios con hospital", value: `${totConHosp} / ${totMun}`, delta: `${fmtDec((100 * totConHosp) / totMun)} % con hospital CLUES`, color: "var(--accent-green)" }
       ];
     }
 
-    // Vista 4: Accesibilidad 15 minutos en Mérida (data/silver/comisarias_isocronas_merida.csv)
+    // Vista 4: Accesibilidad 15 minutos en Mérida (ITER 2020 + CLUES)
     if (sComisarias && sComisarias.length && views[4]) {
-      const nLoc = sComisarias.length;
-      const fuera15 = sComisarias.filter(d => String(d.cumple_ciudad_15min_salud).toLowerCase() !== "true").length;
-      const pctFuera = (100 * fuera15) / nLoc;
-      const comis = sComisarias.filter(d => d.tipo_asentamiento === "village" || d.tipo_asentamiento === "hamlet");
-      const urbanas = sComisarias.filter(d => d.tipo_asentamiento === "suburb" || d.tipo_asentamiento === "neighbourhood");
-      const medComis = d3.median(comis, d => +d.min_caminata_salud) || 0;
-      const medUrb = d3.median(urbanas, d => +d.min_caminata_salud) || 0;
+      const fueraCab = sComisarias.filter(d => String(d.clave_loc).padStart(4, "0") !== "0001");
+      const fuera15 = fueraCab.filter(d => String(d.en_umbral_15min).toLowerCase() !== "true");
+      const pctFuera = fueraCab.length ? (100 * fuera15.length) / fueraCab.length : 0;
+      const pobFuera = d3.sum(fuera15, d => +d.poblacion);
+      const medComis = d3.median(fueraCab, d => +d.minutos_pie_medico) || 0;
 
       if (mAcces15 && mAcces15.length) {
         views[4].chartData = {
           labels: mAcces15.map(d => d.tipo_localidad),
           datasets: [
             {
-              label: "Minutos promedio a unidad médica",
-              data: mAcces15.map(d => +d.minutos_pie_salud_prom),
+              label: "Mediana de minutos a pie a unidad CLUES",
+              data: mAcces15.map(d => +d.mediana_min_medico),
               backgroundColor: "rgba(96, 13, 139, 0.82)"
-            },
-            {
-              label: "Minutos promedio a parque",
-              data: mAcces15.map(d => +d.minutos_pie_parque_prom),
-              backgroundColor: "rgba(237, 159, 34, 0.85)"
             }
           ]
         };
       }
       views[4].kpis = [
-        { icon: "fa-map-pin", label: "Localidades en Mérida", value: fmtInt(nLoc), delta: "Recorte polígono CVEGEO 31050", color: "var(--accent-cyan)" },
-        { icon: "fa-person-walking", label: "Fuera del umbral de 15 min", value: `${fmtDec(pctFuera)} %`, delta: `${fuera15} de ${nLoc} localidades`, color: "var(--accent-amber)" },
-        { icon: "fa-clock", label: "Mediana en comisarías", value: `${fmtDec(medComis)} min`, delta: `Contra ${fmtDec(medUrb)} min en colonias`, color: "var(--accent-green)" }
+        { icon: "fa-map-pin", label: "Localidades oficiales Mérida", value: fmtInt(sComisarias.length), delta: "INEGI ITER 2020 (MUN 050)", color: "var(--accent-cyan)" },
+        { icon: "fa-person-walking", label: "Comisarías > 15 min al médico", value: `${fmtDec(pctFuera)} %`, delta: `${fuera15.length} de ${fueraCab.length} (${fmtInt(pobFuera)} hab.)`, color: "var(--accent-amber)" },
+        { icon: "fa-clock", label: "Mediana en comisarías", value: `${fmtDec(medComis)} min`, delta: "A unidad médica CLUES (sin farmacias)", color: "var(--accent-green)" }
       ];
-      views[4].insight = `<strong>Hallazgo verificado (comisarias_isocronas_merida.csv):</strong> ${fmtDec(pctFuera)} % de las ${nLoc} localidades dentro de Mérida rebasa los 15 minutos caminando al médico; en las ${comis.length} comisarías la mediana es de ${fmtDec(medComis)} min frente a ${fmtDec(medUrb)} min en colonias urbanas.`;
+      views[4].insight = `<strong>Hallazgo verificado (INEGI ITER + CLUES):</strong> ${fmtDec(pctFuera)} % de las ${fueraCab.length} comisarías y subcomisarías de Mérida (${fmtInt(pobFuera)} habitantes) queda a más de 15 minutos a pie de la unidad médica CLUES más cercana (mediana de ${fmtDec(medComis)} min).`;
     }
 
     // Vista 5: Infraestructura hospitalaria (data/gold/mart_logistica_hospitales_ancla.csv)

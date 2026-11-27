@@ -1,4 +1,4 @@
-jurisdiccion_sanitaria,total_municipios,area_total_km2,hospitales,clinicas,consultorios,farmacias,total_unidades_salud,municipios_con_unidades,pct_municipios_con_cobertura_osm
-Jurisdicción 1 - Mérida (Centro/Metropolitana),40,10002.4,53,40,15,166,297,20,50.0
-Jurisdicción 2 - Valladolid (Oriente),27,15773.84,39,39,14,56,159,15,55.56
-Jurisdicción 3 - Ticul (Sur),39,13744.27,9,10,2,5,26,15,38.46
+jurisdiccion_sanitaria,total_municipios,unidades_medicas,hospitales,unidades_publicas,unidades_privadas,municipios_con_hospital
+Jurisdicción 1 - Mérida (Centro/Metropolitana),40,414,42,139,275,6
+Jurisdicción 2 - Valladolid (Oriente),27,142,13,112,30,2
+Jurisdicción 3 - Ticul (Sur),39,116,6,96,20,5

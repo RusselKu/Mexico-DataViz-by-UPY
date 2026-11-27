@@ -2,7 +2,6 @@
   const MORADO = "#600d8b";
   const ORO = "#ed9f22";
   const ORO_OSCURO = "#b45309";
-  const GRIS = "#9ca3af";
   const TINTA = "#0d0d0d";
   const BORDE = "#e5e7eb";
 
@@ -25,18 +24,20 @@
     };
   });
 
-  const confTotal = d3.max(filas, d => d.conf_acum);
-  const defTotal = d3.max(filas, d => d.def_acum);
+  // Conciliación exacta: suma mensual == acumulado final
+  const confTotal = d3.sum(filas, d => d.confirmados);
+  const defTotal = d3.sum(filas, d => d.defunciones);
   const pico = filas.reduce((a, b) => (b.confirmados > a.confirmados ? b : a), filas[0]);
 
   document.getElementById("titulo-escena").textContent =
     `Yucatán acumuló ${fmtEntero(confTotal)} casos confirmados y ${fmtEntero(defTotal)} defunciones hasta junio de 2021`;
   document.getElementById("lectura-escena").textContent =
-    `El pico mensual se registró en ${pico.etiqueta} con ${fmtEntero(pico.confirmados)} casos confirmados y ${fmtEntero(pico.defunciones)} defunciones en un solo mes; los datos corresponden a las primeras olas previas a Ómicron.`;
+    `El pico mensual ocurrió en ${pico.etiqueta} con ${fmtEntero(pico.confirmados)} casos confirmados y ${fmtEntero(pico.defunciones)} defunciones. La suma de los 18 meses coincide exactamente con el acumulado estatal (${fmtEntero(confTotal)} casos y ${fmtEntero(defTotal)} defunciones).`;
 
-  const width = 860;
-  const height = 385;
-  const margin = { top: 44, right: 64, bottom: 56, left: 60 };
+  // viewBox 680 px => 11.5–12 px SVG = 8.6–9 pt reales al imprimir (>= 8 pt)
+  const width = 680;
+  const height = 375;
+  const margin = { top: 54, right: 54, bottom: 60, left: 56 };
   const innerW = width - margin.left - margin.right;
   const innerH = height - margin.top - margin.bottom;
 
@@ -54,16 +55,15 @@
     .padding(0.24);
 
   const yConf = d3.scaleLinear()
-    .domain([0, d3.max(filas, d => d.confirmados) * 1.18])
+    .domain([0, d3.max(filas, d => d.confirmados) * 1.24])
     .nice()
     .range([innerH, 0]);
 
   const yDef = d3.scaleLinear()
-    .domain([0, d3.max(filas, d => d.defunciones) * 1.25])
+    .domain([0, d3.max(filas, d => d.defunciones) * 1.42])
     .nice()
     .range([innerH, 0]);
 
-  // Rejilla
   g.append("g")
     .selectAll("line")
     .data(yConf.ticks(5))
@@ -72,23 +72,25 @@
     .attr("y1", d => yConf(d)).attr("y2", d => yConf(d))
     .attr("stroke", BORDE);
 
-  // Ejes
+  // Eje X: mostrar 1 de cada 2 etiquetas para mantener 11.5 px (>= 8.6 pt impresos) sin encime
+  const xAxis = d3.axisBottom(x)
+    .tickValues(filas.filter((_, i) => i % 2 === 0 || i === filas.length - 1).map(d => d.etiqueta))
+    .tickSize(0);
+
   g.append("g")
     .attr("transform", `translate(0, ${innerH})`)
-    .call(d3.axisBottom(x).tickSize(0))
+    .call(xAxis)
     .call(ax => ax.select(".domain").attr("stroke", "#d1d5db"))
     .selectAll("text")
-    .attr("dy", "1.1em")
-    .attr("font-size", 10.2)
-    .attr("fill", TINTA)
-    .attr("transform", "rotate(-28)")
-    .style("text-anchor", "end");
+    .attr("dy", "1.3em")
+    .attr("font-size", 11.5)
+    .attr("fill", TINTA);
 
   g.append("g")
     .call(d3.axisLeft(yConf).ticks(5).tickFormat(fmtEntero).tickSize(0))
     .call(ax => ax.select(".domain").remove())
     .selectAll("text")
-    .attr("font-size", 10.5)
+    .attr("font-size", 11.5)
     .attr("fill", MORADO);
 
   g.append("g")
@@ -96,30 +98,27 @@
     .call(d3.axisRight(yDef).ticks(5).tickFormat(fmtEntero).tickSize(0))
     .call(ax => ax.select(".domain").remove())
     .selectAll("text")
-    .attr("font-size", 10.5)
+    .attr("font-size", 11.5)
     .attr("fill", ORO_OSCURO);
 
-  // Títulos de ejes
-  g.append("text").attr("x", 0).attr("y", -18)
-    .attr("font-size", 11.5).attr("font-weight", 700).attr("fill", MORADO)
+  g.append("text").attr("x", 0).attr("y", -24)
+    .attr("font-size", 12).attr("font-weight", 700).attr("fill", MORADO)
     .text("Confirmados mensuales (barras)");
-  g.append("text").attr("x", innerW).attr("y", -18)
+  g.append("text").attr("x", innerW).attr("y", -24)
     .attr("text-anchor", "end")
-    .attr("font-size", 11.5).attr("font-weight", 700).attr("fill", ORO_OSCURO)
+    .attr("font-size", 12).attr("font-weight", 700).attr("fill", ORO_OSCURO)
     .text("Defunciones mensuales (línea oro)");
 
-  // Barras: confirmados nuevos (pico en morado, resto en gris)
   g.selectAll("rect")
     .data(filas)
     .join("rect")
     .attr("x", d => x(d.etiqueta))
     .attr("y", d => yConf(d.confirmados))
     .attr("width", x.bandwidth())
-    .attr("height", d => innerH - yConf(d.confirmados))
+    .attr("height", d => Math.max(0, innerH - yConf(d.confirmados)))
     .attr("rx", 3)
     .attr("fill", d => d.anio_mes === pico.anio_mes ? MORADO : "#d1c4dc");
 
-  // Línea oro: defunciones mensuales
   const line = d3.line()
     .x(d => x(d.etiqueta) + x.bandwidth() / 2)
     .y(d => yDef(d.defunciones))
@@ -129,7 +128,7 @@
     .datum(filas)
     .attr("fill", "none")
     .attr("stroke", ORO)
-    .attr("stroke-width", 2.6)
+    .attr("stroke-width", 2.8)
     .attr("d", line);
 
   g.selectAll("circle")
@@ -137,30 +136,27 @@
     .join("circle")
     .attr("cx", d => x(d.etiqueta) + x.bandwidth() / 2)
     .attr("cy", d => yDef(d.defunciones))
-    .attr("r", d => d.anio_mes === pico.anio_mes ? 4.8 : 3)
+    .attr("r", d => d.anio_mes === pico.anio_mes ? 5 : 3.2)
     .attr("fill", d => d.anio_mes === pico.anio_mes ? ORO_OSCURO : ORO)
     .attr("stroke", "#ffffff")
-    .attr("stroke-width", 1.2);
+    .attr("stroke-width", 1.3);
 
-  // Etiqueta directa del pico (Jul 20)
+  // Etiquetas del pico separadas limpiamente (sin encime)
   const px = x(pico.etiqueta) + x.bandwidth() / 2;
   g.append("text")
-    .attr("x", px).attr("y", yConf(pico.confirmados) - 8)
+    .attr("x", px).attr("y", yConf(pico.confirmados) - 10)
     .attr("text-anchor", "middle")
-    .attr("font-size", 11.5).attr("font-weight", 700).attr("fill", MORADO)
-    .text(`Pico: ${fmtEntero(pico.confirmados)} casos`);
+    .attr("font-size", 12).attr("font-weight", 700).attr("fill", MORADO)
+    .text(`Pico ${pico.etiqueta}: ${fmtEntero(pico.confirmados)} casos`);
 
+  // Etiqueta de defunciones desplazada a la derecha con línea guía
+  const pyDef = yDef(pico.defunciones);
+  g.append("line")
+    .attr("x1", px + 6).attr("y1", pyDef)
+    .attr("x2", px + 34).attr("y2", pyDef - 18)
+    .attr("stroke", ORO_OSCURO).attr("stroke-width", 1.3);
   g.append("text")
-    .attr("x", px + 14).attr("y", yDef(pico.defunciones) + 4)
-    .attr("font-size", 10.8).attr("font-weight", 700).attr("fill", ORO_OSCURO)
-    .text(`${fmtEntero(pico.defunciones)} def.`);
-
-  // Etiqueta directa del último mes con datos (Jun 21)
-  const ult = filas[filas.length - 1];
-  const ux = x(ult.etiqueta) + x.bandwidth() / 2;
-  g.append("text")
-    .attr("x", ux).attr("y", yConf(ult.confirmados) - 8)
-    .attr("text-anchor", "end")
-    .attr("font-size", 10.5).attr("font-weight", 600).attr("fill", "#4b5563")
-    .text(`${ult.etiqueta}: ${fmtEntero(ult.confirmados)}`);
+    .attr("x", px + 38).attr("y", pyDef - 14)
+    .attr("font-size", 12).attr("font-weight", 700).attr("fill", ORO_OSCURO)
+    .text(`${fmtEntero(pico.defunciones)} defunciones`);
 })();

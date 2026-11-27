@@ -10,60 +10,60 @@
   <link rel="stylesheet" href="./graficas/estilo-booklet.css">
   <style>
     .portada-cap {
-      max-width: 920px;
+      max-width: 760px;
       margin: 0 auto 24px;
-      padding: 28px 32px;
+      padding: 24px 28px;
       border-top: 5px solid var(--morado);
       border-bottom: 1px solid var(--borde);
       background: #ffffff;
     }
     .kpis-10s {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
-      margin: 20px 0 8px;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 14px;
+      margin: 18px 0 6px;
     }
     .kpi-card {
       border: 1px solid var(--borde);
       border-left: 4px solid var(--morado);
       border-radius: 8px;
-      padding: 14px 16px;
+      padding: 12px 14px;
     }
     .kpi-card:nth-child(2) { border-left-color: var(--oro); }
     .kpi-num {
-      font-size: 28px;
+      font-size: 22pt;
       font-weight: 800;
       color: var(--morado);
       line-height: 1.1;
       margin-bottom: 4px;
     }
     .kpi-card:nth-child(2) .kpi-num { color: var(--oro-oscuro); }
-    .kpi-desc { font-size: 13px; color: var(--tinta); }
-    .kpi-src { font-size: 11px; color: var(--gris-texto); margin-top: 6px; }
+    .kpi-desc { font-size: 10pt; color: var(--tinta); }
+    .kpi-src { font-size: 8.5pt; color: var(--gris-texto); margin-top: 6px; }
     .marco-escena {
-      max-width: 920px;
-      margin: 0 auto 24px;
+      max-width: 760px;
+      margin: 0 auto 22px;
     }
     .marco-escena iframe {
       width: 100%;
-      height: 585px;
+      height: 640px;
       border: 0;
       display: block;
     }
     .cierre-cap {
-      max-width: 920px;
+      max-width: 760px;
       margin: 0 auto 32px;
-      padding: 20px 28px;
+      padding: 18px 24px;
       background: #fafafa;
       border: 1px solid var(--borde);
       border-radius: 10px;
     }
     .puente-box {
-      margin-top: 14px;
-      padding: 14px 18px;
+      margin-top: 12px;
+      padding: 12px 16px;
       border-left: 4px solid var(--oro);
       background: #fffbeb;
-      font-size: 14px;
+      font-size: 10.5pt;
       font-weight: 600;
     }
   </style>
@@ -71,15 +71,15 @@
 <body>
   <header class="portada-cap">
     <div class="rotulo-escena">CAPÍTULO 09 · ACCESO A LA SALUD · ACTO 5: CUIDARNOS · EQUIPO 3</div>
-    <h1 class="titulo-hallazgo" style="font-size: 28px;">En Mérida, 1 de cada 5 personas no tiene afiliación médica y las comisarías caminan 56.6 minutos al centro de salud</h1>
-    <p class="subtitulo-grafica" style="font-size: 15px; margin-top: 8px;">
-      <strong>¿Qué tan lejos queda el médico en una ciudad que crece hacia afuera?</strong> Aunque Mérida concentra casi la mitad de las unidades médicas mapeadas en todo Yucatán (49.6 %), el acceso no se reparte igual entre colonias consolidadas y comisarías.
+    <h1 class="titulo-hallazgo" style="font-size: 21pt;">Mérida concentra 55.7 % de los hospitales de Yucatán, pero 87.3 % de sus comisarías camina más de 15 minutos al médico</h1>
+    <p class="subtitulo-grafica" style="margin-top: 8px;">
+      <strong>¿Qué tan lejos queda el médico en una ciudad que crece hacia afuera?</strong> Según el catálogo oficial CLUES de la Secretaría de Salud (octubre 2026, sin farmacias), Mérida concentra 42.3 % de las unidades médicas en operación y 55.7 % de los hospitales del estado, pero 22.1 % de la población en sus AGEB urbanas no tiene afiliación y 144 de sus 165 comisarías y subcomisarías rebasan los 15 minutos a pie.
     </p>
     <div class="kpis-10s">
       <div class="kpi-card">
-        <div class="kpi-num">49.6 %</div>
-        <div class="kpi-desc">239 de 482 unidades de salud mapeadas en Yucatán se concentran en Mérida.</div>
-        <div class="kpi-src">OSM + INEGI · escena-1.csv · Corte: nov 2026</div>
+        <div class="kpi-num">42.3 %</div>
+        <div class="kpi-desc">284 de 672 unidades médicas CLUES (y 34 de 61 hospitales) están en Mérida; 93 municipios no tienen hospital.</div>
+        <div class="kpi-src">DGIS CLUES · escena-1.csv · Corte: oct 2026</div>
       </div>
       <div class="kpi-card">
         <div class="kpi-num">22.1 %</div>
@@ -87,25 +87,25 @@
         <div class="kpi-src">INEGI Censo 2020 · escena-2.csv · Corte: 2020</div>
       </div>
       <div class="kpi-card">
-        <div class="kpi-num">56.6 min</div>
-        <div class="kpi-desc">Mediana a pie al médico en 44 comisarías de Mérida, contra 11.0 min en colonias urbanas.</div>
-        <div class="kpi-src">OSM + UTM 16N · escena-3.csv · Corte: nov 2026</div>
+        <div class="kpi-num">87.3 %</div>
+        <div class="kpi-desc">144 de 165 comisarías y subcomisarías de Mérida (32,959 hab.) a más de 15 min a pie (mediana 43.6 min).</div>
+        <div class="kpi-src">INEGI ITER + CLUES · escena-3.csv · oct 2026</div>
       </div>
     </div>
   </header>
 
-  <section class="marco-escena"><iframe src="./graficas/escena-1.html" title="Escena 1: Unidades de salud por municipio"></iframe></section>
+  <section class="marco-escena"><iframe src="./graficas/escena-1.html" title="Escena 1: Unidades médicas CLUES por municipio"></iframe></section>
   <section class="marco-escena"><iframe src="./graficas/escena-2.html" title="Escena 2: Población sin afiliación por AGEB"></iframe></section>
-  <section class="marco-escena"><iframe src="./graficas/escena-3.html" title="Escena 3: Distancia a pie a unidad de salud"></iframe></section>
+  <section class="marco-escena"><iframe src="./graficas/escena-3.html" title="Escena 3: Distancia a pie a unidad médica CLUES"></iframe></section>
   <section class="marco-escena"><iframe src="./graficas/escena-4.html" title="Escena 4: Evolución epidemiológica Yucatán"></iframe></section>
 
   <footer class="cierre-cap">
-    <h2 style="font-size: 16px; margin-bottom: 8px; color: var(--morado);">Lo que estos datos no dicen</h2>
-    <p style="font-size: 13px; color: var(--gris-texto);">
-      OpenStreetMap puede subregistrar consultorios rurales frente al directorio DENUE/CLUES; las distancias a pie se miden en línea recta (UTM 16N, 80 m/min) sin obstáculos de banqueta ni calor; el Censo 2020 precede a los cambios de IMSS-Bienestar y la serie DGE cubre hasta junio de 2021. La encuesta estudiantil UPY quedó excluida del booklet por transparencia metodológica. Ver detalle completo en <code>booklet/ficha.md</code> y <code>booklet/datos/FUENTES.md</code>.
+    <h2 style="font-size: 13pt; margin-bottom: 8px; color: var(--morado);">Lo que estos datos no dicen</h2>
+    <p style="font-size: 10pt; color: var(--gris-texto);">
+      CLUES excluye farmacias y consultorios sin clave oficial; las distancias a pie se calculan en línea recta (UTM 16N, 80 m/min) desde el centroide oficial de cada localidad ITER; el Censo 2020 precede a los cambios de IMSS-Bienestar y la serie DGE cubre hasta junio de 2021. La encuesta estudiantil UPY quedó excluida del booklet por transparencia metodológica. Ver detalle en <code>booklet/ficha.md</code> y <code>booklet/datos/FUENTES.md</code>.
     </p>
     <div class="puente-box">
-      Puente al cierre: Cuando el suelo se encarece en el centro, el transporte no alcanza, el agua se estanca y el médico queda a casi una hora de camino en las comisarías, el mapa de síntesis del cierre muestra en qué AGEB de Mérida se juntan todas estas presiones al mismo tiempo.
+      Puente al cierre: Cuando el suelo se encarece en el centro, el transporte no alcanza, el agua se estanca y el médico queda a más de 40 minutos a pie en la mayoría de las comisarías, el mapa de síntesis del cierre muestra en qué AGEB de Mérida se juntan todas estas presiones al mismo tiempo.
     </div>
   </footer>
 </body>

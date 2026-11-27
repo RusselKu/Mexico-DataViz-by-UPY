@@ -13,154 +13,154 @@
     d3.csv("../datos/escena-1.csv", d => ({
       cvegeo: String(d.cvegeo).padStart(5, "0"),
       municipio: d.municipio,
-      jurisdiccion: d.jurisdiccion_sanitaria,
       poblacion: +d.poblacion_total,
+      unidades: +d.unidades_medicas,
       hospitales: +d.hospitales,
-      clinicas: +d.clinicas,
-      farmacias: +d.farmacias,
-      total: +d.total_unidades_salud,
+      publicas: +d.unidades_publicas,
+      privadas: +d.unidades_privadas,
       tasa10k: +d.unidades_por_10mil_hab
     })),
     d3.json("../datos/yucatan_municipios.geojson")
   ]);
 
-  const totalUnidades = d3.sum(filas, d => d.total);
+  const totalUnidades = d3.sum(filas, d => d.unidades);
+  const totalHosp = d3.sum(filas, d => d.hospitales);
   const merida = filas.find(d => d.cvegeo === "31050");
-  const pctMerida = (100 * merida.total) / totalUnidades;
-  const munCero = filas.filter(d => d.total === 0).length;
+  const pctMerida = (100 * merida.unidades) / totalUnidades;
+  const pctHospMerida = (100 * merida.hospitales) / totalHosp;
+  const munSinHosp = filas.filter(d => d.hospitales === 0).length;
 
   document.getElementById("titulo-escena").textContent =
-    `Mérida concentra ${fmtDec(pctMerida)} % de las unidades de salud de Yucatán: ${fmtEntero(merida.total)} de ${fmtEntero(totalUnidades)}`;
+    `Mérida concentra ${fmtDec(pctMerida)} % de las unidades médicas de Yucatán (${fmtEntero(merida.unidades)} de ${fmtEntero(totalUnidades)}) y ${fmtDec(pctHospMerida)} % de los hospitales`;
   document.getElementById("lectura-escena").textContent =
-    `El mapa estatal evidencia la centralización en Mérida (${fmtEntero(merida.total)} unidades), seguida por Valladolid (${fmtEntero(filas[1].total)}) y Tizimín (${fmtEntero(filas[2].total)}); en contraste, ${munCero} de los ${filas.length} municipios no registran ninguna unidad en la cartografía abierta.`;
+    `Aunque los 106 municipios tienen al menos una unidad de consulta externa en CLUES, ${munSinHosp} de 106 no cuentan con hospital; además, en Mérida ${fmtEntero(merida.privadas)} de sus ${fmtEntero(merida.unidades)} unidades son privadas y solo ${fmtEntero(merida.publicas)} son públicas.`;
 
   const mapaDatos = new Map(filas.map(d => [d.cvegeo, d]));
-  const width = 860;
-  const height = 400;
+  // viewBox 680 px => en hoja carta (~510 pt) 12 px SVG = 9 pt reales (>= 8 pt exigido)
+  const width = 680;
+  const height = 430;
 
   const svg = d3.select("#grafica-escena-1")
     .append("svg")
     .attr("viewBox", `0 0 ${width} ${height}`)
     .attr("role", "img")
-    .attr("aria-label", "Mapa coroplético de unidades de salud por municipio en Yucatán y barras de los municipios con más registros");
+    .attr("aria-label", "Mapa coroplético de unidades médicas CLUES por municipio en Yucatán y barras de los 7 municipios con más unidades");
 
-  // Panel izquierdo: Mapa coroplético de los 106 municipios (blanco -> morado)
-  const mapG = svg.append("g").attr("transform", "translate(10, 12)");
-  const projection = d3.geoMercator().fitSize([430, 320], geo);
+  // Panel izquierdo: Mapa coroplético (0..340)
+  const mapG = svg.append("g").attr("transform", "translate(8, 34)");
+  const projection = d3.geoMercator().fitSize([325, 290], geo);
   const path = d3.geoPath(projection);
 
   const colorScale = d3.scaleSqrt()
-    .domain([0, merida.total])
-    .range(["#ffffff", MORADO]);
+    .domain([1, merida.unidades])
+    .range(["#f5eef8", MORADO]);
 
   mapG.selectAll("path")
     .data(geo.features)
     .join("path")
     .attr("d", path)
     .attr("fill", d => {
-      const cve = String(d.properties.cvegeo).padStart(5, "0");
-      const rec = mapaDatos.get(cve);
-      return rec && rec.total > 0 ? colorScale(rec.total) : "#f9fafb";
+      const rec = mapaDatos.get(String(d.properties.cvegeo).padStart(5, "0"));
+      return rec && rec.unidades > 0 ? colorScale(rec.unidades) : "#ffffff";
     })
     .attr("stroke", d => String(d.properties.cvegeo).padStart(5, "0") === "31050" ? ORO_OSCURO : "#d1d5db")
     .attr("stroke-width", d => String(d.properties.cvegeo).padStart(5, "0") === "31050" ? 1.8 : 0.6);
 
-  // Etiqueta directa sobre Mérida en el mapa
+  // Etiqueta directa sobre Mérida dentro de márgenes seguros
   const meridaFeat = geo.features.find(f => String(f.properties.cvegeo).padStart(5, "0") === "31050");
   if (meridaFeat) {
     const [mx, my] = path.centroid(meridaFeat);
     mapG.append("line")
       .attr("x1", mx).attr("y1", my)
-      .attr("x2", mx - 48).attr("y2", my - 42)
-      .attr("stroke", ORO_OSCURO).attr("stroke-width", 1.3);
+      .attr("x2", mx).attr("y2", 8)
+      .attr("stroke", ORO_OSCURO).attr("stroke-width", 1.4);
     mapG.append("text")
-      .attr("x", mx - 52).attr("y", my - 46)
-      .attr("text-anchor", "end")
-      .attr("font-size", 11.5).attr("font-weight", 700).attr("fill", MORADO)
-      .text(`Mérida: ${fmtEntero(merida.total)} (${fmtDec(pctMerida)} %)`);
+      .attr("x", 6).attr("y", -6)
+      .attr("font-size", 12).attr("font-weight", 700).attr("fill", MORADO)
+      .text(`Mérida: ${fmtEntero(merida.unidades)} unid. (${fmtDec(pctMerida)} %)`);
   }
 
   // Leyenda continua del mapa (blanco a morado)
   const defs = svg.append("defs");
   const grad = defs.append("linearGradient").attr("id", "grad-morado-e1");
-  grad.append("stop").attr("offset", "0%").attr("stop-color", "#ffffff");
+  grad.append("stop").attr("offset", "0%").attr("stop-color", "#f5eef8");
   grad.append("stop").attr("offset", "100%").attr("stop-color", MORADO);
 
-  const legG = mapG.append("g").attr("transform", "translate(16, 336)");
-  legG.append("text").attr("y", -6).attr("font-size", 10.5).attr("font-weight", 600).attr("fill", TINTA)
-    .text("Unidades de salud por municipio");
-  legG.append("rect").attr("width", 180).attr("height", 10).attr("rx", 2)
+  const legG = mapG.append("g").attr("transform", "translate(8, 314)");
+  legG.append("text").attr("y", 0).attr("font-size", 11.5).attr("font-weight", 600).attr("fill", TINTA)
+    .text("Unidades médicas CLUES por municipio");
+  legG.append("rect").attr("y", 8).attr("width", 190).attr("height", 11).attr("rx", 2)
     .attr("fill", "url(#grad-morado-e1)").attr("stroke", "#d1d5db");
-  legG.append("text").attr("x", 0).attr("y", 23).attr("font-size", 10).attr("fill", "#4b5563").text("0");
-  legG.append("text").attr("x", 180).attr("y", 23).attr("text-anchor", "end").attr("font-size", 10).attr("fill", "#4b5563")
-    .text(fmtEntero(merida.total));
-  legG.append("text").attr("x", 200).attr("y", 10).attr("font-size", 10.5).attr("fill", ORO_OSCURO).attr("font-weight", 600)
-    .text(`${munCero} municipios con 0 registros`);
+  legG.append("text").attr("x", 0).attr("y", 34).attr("font-size", 11.5).attr("fill", "#4b5563").text("1");
+  legG.append("text").attr("x", 190).attr("y", 34).attr("text-anchor", "end").attr("font-size", 11.5).attr("fill", "#4b5563")
+    .text(fmtEntero(merida.unidades));
+  legG.append("text").attr("x", 0).attr("y", 54).attr("font-size", 11.5).attr("fill", ORO_OSCURO).attr("font-weight", 700)
+    .text(`${munSinHosp} de 106 municipios no tienen hospital`);
 
-  // Panel derecho: Top 8 municipios (barras horizontales con etiquetas directas)
-  const top8 = filas.slice(0, 8);
-  const barG = svg.append("g").attr("transform", "translate(475, 28)");
-  const barW = 345;
-  const barH = 310;
+  // Panel derecho: Top 7 municipios (355..672) con amplio margen para etiquetas sin cortes
+  const top7 = filas.slice(0, 7);
+  const barG = svg.append("g").attr("transform", "translate(352, 34)");
+  const labelW = 78;
+  const barAreaW = 242;
+  const barH = 305;
 
   barG.append("text")
-    .attr("x", 0).attr("y", -10)
+    .attr("x", 0).attr("y", -6)
     .attr("font-size", 12.5).attr("font-weight", 700).attr("fill", TINTA)
-    .text("Municipios con más unidades registradas");
+    .text("Top 7 municipios (CLUES en operación)");
 
   const y = d3.scaleBand()
-    .domain(top8.map(d => d.municipio))
-    .range([8, barH])
+    .domain(top7.map(d => d.municipio))
+    .range([14, barH])
     .padding(0.28);
 
   const x = d3.scaleLinear()
-    .domain([0, merida.total * 1.18])
-    .range([0, barW - 95]);
+    .domain([0, merida.unidades * 1.55])
+    .range([0, barAreaW]);
 
   barG.append("g")
     .selectAll("line")
-    .data(x.ticks(4))
+    .data(x.ticks(3))
     .join("line")
-    .attr("x1", d => 95 + x(d)).attr("x2", d => 95 + x(d))
-    .attr("y1", 8).attr("y2", barH)
+    .attr("x1", d => labelW + x(d)).attr("x2", d => labelW + x(d))
+    .attr("y1", 14).attr("y2", barH)
     .attr("stroke", BORDE);
 
   barG.selectAll("rect")
-    .data(top8)
+    .data(top7)
     .join("rect")
-    .attr("x", 95)
+    .attr("x", labelW)
     .attr("y", d => y(d.municipio))
-    .attr("width", d => Math.max(3, x(d.total)))
+    .attr("width", d => Math.max(4, x(d.unidades)))
     .attr("height", y.bandwidth())
     .attr("rx", 3)
     .attr("fill", (d, i) => d.cvegeo === "31050" ? MORADO : (i === 1 ? ORO : GRIS));
 
   barG.selectAll("text.mun-label")
-    .data(top8)
+    .data(top7)
     .join("text")
     .attr("class", "mun-label")
-    .attr("x", 88)
+    .attr("x", labelW - 6)
     .attr("y", d => y(d.municipio) + y.bandwidth() / 2 + 4)
     .attr("text-anchor", "end")
-    .attr("font-size", 11.5)
+    .attr("font-size", 12)
     .attr("font-weight", d => d.cvegeo === "31050" ? 700 : 500)
     .attr("fill", TINTA)
     .text(d => d.municipio);
 
   barG.selectAll("text.val-label")
-    .data(top8)
+    .data(top7)
     .join("text")
     .attr("class", "val-label")
-    .attr("x", d => 95 + x(d.total) + 6)
+    .attr("x", d => labelW + x(d.unidades) + 6)
     .attr("y", d => y(d.municipio) + y.bandwidth() / 2 + 4)
-    .attr("font-size", 11)
+    .attr("font-size", 11.5)
     .attr("font-weight", d => d.cvegeo === "31050" ? 700 : 600)
     .attr("fill", (d, i) => d.cvegeo === "31050" ? MORADO : (i === 1 ? ORO_OSCURO : "#4b5563"))
-    .text(d => `${fmtEntero(d.total)} (${fmtDec(d.tasa10k)} / 10 mil hab.)`);
+    .text(d => `${fmtEntero(d.unidades)} (${d.hospitales} hosp.)`);
 
-  // Nota de color fijo
   barG.append("text")
-    .attr("x", 95).attr("y", barH + 28)
-    .attr("font-size", 10.5).attr("fill", "#4b5563")
-    .text("Morado: Mérida (foco) · Oro: 2.º polo estatal (Valladolid) · Gris: resto");
+    .attr("x", 0).attr("y", barH + 34)
+    .attr("font-size", 11.5).attr("fill", "#4b5563")
+    .text("Morado: Mérida · Oro: 2.º polo · Gris: resto");
 })();

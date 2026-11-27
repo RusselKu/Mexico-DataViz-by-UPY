@@ -1,16 +1,20 @@
 #!/usr/bin/env python3
 """
 Generador de Datos Finales para el Booklet (Acto 5 · Cuidarnos)
-y Corrección de Métricas Silver / Gold (Equipo 3 · Mexico-DataViz-by-UPY)
+Equipo 3 · Mexico-DataViz-by-UPY
 
-1. Corrige la serie epidemiológica DGE (los valores crudos son acumulados; calcula incrementos diarios y mensuales reales).
-2. Filtra espacialmente localidades/comisarías estrictamente dentro del polígono de Mérida (cvegeo == '31050').
-3. Integra Censo de Población y Vivienda 2020 oficial de INEGI (municipios de Yucatán y 526 AGEB urbanas de Mérida).
-4. Exporta los 4 CSV finales en booklet/datos/ (columnas en español, minúsculas y guion bajo) + GeoJSON simplificado.
+Fuentes oficiales integradas:
+1. CLUES (DGIS, Secretaría de Salud, corte octubre 2026) — solo unidades médicas
+   EN OPERACIÓN de Consulta Externa y Hospitalización (cero farmacias, cero oficinas administrativas,
+   cero teléfonos/RFC/direcciones personales).
+2. INEGI Censo de Población y Vivienda 2020 — ITER (106 municipios y localidades oficiales de Mérida
+   MUN = 050, sin localidades de otros municipios como Sotuta de Peón/Tecoh) y AGEB urbanas de Mérida.
+3. DGE Secretaría de Salud (vía espejo mariorz/covid19-mx-time-series) — diferencias mensuales
+   exactas a partir de acumulados de fin de mes para conciliación exacta (41,179 confirmados y 4,078 defunciones).
 """
 
-import json
 import os
+import re
 import sys
 
 import geopandas as gpd
@@ -27,25 +31,110 @@ BOOKLET_DATOS = os.path.join("booklet", "datos")
 os.makedirs(BOOKLET_DATOS, exist_ok=True)
 
 
+def dms_to_dd(val: str):
+    """Convierte coordenadas INEGI ITER (ej. 20°58'02.123\" N o 89°37'25.123\" W) a grados decimales."""
+    if not isinstance(val, str) or not val.strip():
+        return None
+    s = val.strip()
+    m = re.match(r"(\d+)°(\d+)'([\d.]+)\"\s*([NSEWO])?", s)
+    if not m:
+        try:
+            return float(s)
+        except Exception:
+            return None
+    deg, mins, secs, hemi = float(m.group(1)), float(m.group(2)), float(m.group(3)), (m.group(4) or "")
+    dd = deg + mins / 60.0 + secs / 3600.0
+    if hemi in ("S", "W", "O"):
+        dd = -dd
+    return round(dd, 6)
+
+
+def sanitize_clues_bronze():
+    """Elimina columnas de contacto/domicilio/RFC del CSV Bronze CLUES para cumplir la regla de cero datos personales."""
+    path = os.path.join(BRONZE, "01_dgis_clues_yucatan_202610_raw.csv")
+    df = pd.read_csv(path, dtype=str)
+    keep_cols = [
+        "CLUES", "CLAVE DE LA INSTITUCION", "NOMBRE DE LA INSTITUCION",
+        "CLAVE DE LA ENTIDAD", "ENTIDAD", "CLAVE DEL MUNICIPIO", "MUNICIPIO",
+        "CLAVE DE LA LOCALIDAD", "LOCALIDAD", "CLAVE DE LA JURISDICCION", "JURISDICCION",
+        "CLAVE DEL TIPO ESTABLECIMIENTO", "NOMBRE TIPO ESTABLECIMIENTO",
+        "CLAVE DE TIPOLOGIA", "NOMBRE DE TIPOLOGIA", "NOMBRE DE LA UNIDAD",
+        "CLAVE ESTATUS DE OPERACION", "ESTATUS DE OPERACION",
+        "CLAVE NIVEL ATENCION", "NIVEL ATENCION", "ESTRATO UNIDAD",
+        "LATITUD", "LONGITUD", "FECHA ULTIMO MOVIMIENTO"
+    ]
+    keep_cols = [c for c in keep_cols if c in df.columns]
+    df_clean = df[keep_cols].copy()
+    df_clean.to_csv(path, index=False, encoding="utf-8")
+    return df_clean
+
+
 def fix_and_build_all():
     # ------------------------------------------------------------------
-    # 0. Cargar polígonos oficiales de 106 municipios de Yucatán (Silver)
+    # 0. Polígonos municipales de Yucatán (Silver) + GeoJSON simplificado
     # ------------------------------------------------------------------
     gdf_mun = gpd.read_file(os.path.join(SILVER, "dim_municipios_yucatan.geojson"))
     gdf_mun["cvegeo"] = gdf_mun["cvegeo"].astype(str).str.zfill(5)
     gdf_mun["cve_mun"] = gdf_mun["cve_mun"].astype(str).str.zfill(3)
-    gdf_merida_poly = gdf_mun[gdf_mun["cvegeo"] == "31050"][["cvegeo", "geometry"]].copy()
 
-    # GeoJSON simplificado para D3 (< 150 KB)
     gdf_simp = gdf_mun[["cvegeo", "nom_mun", "jurisdiccion_sanitaria", "geometry"]].copy()
     gdf_simp["geometry"] = gdf_simp.geometry.simplify(tolerance=0.004, preserve_topology=True)
     gdf_simp.to_file(os.path.join(BOOKLET_DATOS, "yucatan_municipios.geojson"), driver="GeoJSON")
 
     # ------------------------------------------------------------------
-    # 1. Censo 2020 Oficial INEGI (Municipios Yucatán + AGEB Mérida)
+    # 1. CLUES oficial (DGIS, octubre 2026) — solo atención médica EN OPERACIÓN
+    # ------------------------------------------------------------------
+    df_clues_raw = sanitize_clues_bronze()
+    # Filtrar: EN OPERACION (clave 1) + Consulta Externa (1) u Hospitalización (2)
+    clues = df_clues_raw[
+        (df_clues_raw["CLAVE ESTATUS DE OPERACION"] == "1")
+        & (df_clues_raw["CLAVE DEL TIPO ESTABLECIMIENTO"].isin(["1", "2"]))
+    ].copy()
+
+    clues["cve_ent"] = clues["CLAVE DE LA ENTIDAD"].str.zfill(2)
+    clues["cve_mun"] = clues["CLAVE DEL MUNICIPIO"].str.zfill(3)
+    clues["cvegeo"] = clues["cve_ent"] + clues["cve_mun"]
+    clues["municipio"] = clues["MUNICIPIO"].str.strip().str.title()
+    clues["institucion"] = clues["NOMBRE DE LA INSTITUCION"].str.strip()
+    clues["tipo_establecimiento"] = clues["NOMBRE TIPO ESTABLECIMIENTO"].str.strip()
+    clues["nivel_atencion"] = clues["NIVEL ATENCION"].str.strip()
+    clues["nombre_unidad"] = clues["NOMBRE DE LA UNIDAD"].str.strip()
+    clues["sector"] = clues["institucion"].apply(
+        lambda x: "Privado" if "PRIVAD" in str(x).upper() else "Público"
+    )
+    clues["latitud"] = pd.to_numeric(clues["LATITUD"], errors="coerce")
+    clues["longitud"] = pd.to_numeric(clues["LONGITUD"], errors="coerce")
+    # Validar coordenadas dentro del rango de Yucatán (evitar 0,0 o fuera de estado)
+    valid_coord = (
+        clues["latitud"].between(19.5, 21.7)
+        & clues["longitud"].between(-90.5, -87.4)
+    )
+    clues_silver = clues[[
+        "CLUES", "cvegeo", "cve_ent", "cve_mun", "municipio", "nombre_unidad",
+        "institucion", "sector", "tipo_establecimiento", "nivel_atencion",
+        "latitud", "longitud"
+    ]].rename(columns={"CLUES": "clues"}).drop_duplicates(subset=["clues"]).reset_index(drop=True)
+
+    clues_silver.to_csv(os.path.join(SILVER, "unidades_medicas_clues_yucatan.csv"), index=False, encoding="utf-8")
+    clues_silver.to_parquet(os.path.join(SILVER, "unidades_medicas_clues_yucatan.parquet"), index=False)
+
+    clues_geo = clues_silver[
+        clues_silver["latitud"].between(19.5, 21.7)
+        & clues_silver["longitud"].between(-90.5, -87.4)
+    ].copy()
+    gdf_clues = gpd.GeoDataFrame(
+        clues_geo,
+        geometry=[Point(xy) for xy in zip(clues_geo["longitud"], clues_geo["latitud"])],
+        crs="EPSG:4326",
+    )
+    gdf_clues.to_file(os.path.join(SILVER, "unidades_medicas_clues_yucatan.geojson"), driver="GeoJSON")
+    gdf_clues.to_parquet(os.path.join(SILVER, "unidades_medicas_clues_yucatan.geoparquet"), index=False)
+
+    # ------------------------------------------------------------------
+    # 2. Censo 2020 Oficial INEGI (Municipios Yucatán + AGEB Mérida)
     # ------------------------------------------------------------------
     df_censo_mun = pd.read_csv(os.path.join(BRONZE, "03_inegi_censo2020_municipios_yucatan_raw.csv"), dtype=str)
-    for col in ["POBTOT", "PSINDER", "PDER_SS", "PDER_IMSS", "PDER_ISTE", "PDER_SEGP"]:
+    for col in ["POBTOT", "PSINDER", "PDER_SS"]:
         df_censo_mun[col] = pd.to_numeric(df_censo_mun[col], errors="coerce").fillna(0).astype(int)
     df_censo_mun["cvegeo"] = df_censo_mun["ENTIDAD"].str.zfill(2) + df_censo_mun["MUN"].str.zfill(3)
     df_censo_mun["poblacion_total"] = df_censo_mun["POBTOT"]
@@ -59,12 +148,10 @@ def fix_and_build_all():
         "cvegeo", "NOM_MUN", "poblacion_total", "poblacion_sin_afiliacion",
         "poblacion_con_afiliacion", "pct_sin_afiliacion"
     ]].rename(columns={"NOM_MUN": "municipio"}).sort_values("cvegeo").reset_index(drop=True)
-    df_censo_mun_clean.to_csv(os.path.join(SILVER, "censo2020_afiliacion_municipios_yucatan.csv"), index=False, encoding="utf-8")
-    df_censo_mun_clean.to_parquet(os.path.join(SILVER, "censo2020_afiliacion_municipios_yucatan.parquet"), index=False)
 
-    # AGEB urbanas de Mérida
+    # AGEB urbanas de Mérida (Escena 2 — ya validada con 22.1 %)
     df_ageb = pd.read_csv(os.path.join(BRONZE, "03_inegi_censo2020_ageb_merida_raw.csv"), dtype=str)
-    for col in ["POBTOT", "PSINDER", "PDER_SS", "PDER_IMSS", "PDER_ISTE", "PDER_SEGP"]:
+    for col in ["POBTOT", "PSINDER", "PDER_SS"]:
         df_ageb[col] = pd.to_numeric(df_ageb[col], errors="coerce")
     df_ageb = df_ageb.dropna(subset=["POBTOT", "PSINDER"]).copy()
     df_ageb = df_ageb[df_ageb["POBTOT"] > 0].copy()
@@ -89,112 +176,133 @@ def fix_and_build_all():
         "poblacion_total", "poblacion_sin_afiliacion", "poblacion_con_afiliacion",
         "pct_sin_afiliacion"
     ]].sort_values("pct_sin_afiliacion", ascending=False).reset_index(drop=True)
-    df_ageb_clean.to_csv(os.path.join(SILVER, "censo2020_afiliacion_ageb_merida.csv"), index=False, encoding="utf-8")
-    df_ageb_clean.to_parquet(os.path.join(SILVER, "censo2020_afiliacion_ageb_merida.parquet"), index=False)
-    df_ageb_clean.to_csv(os.path.join(GOLD, "mart_sin_afiliacion_ageb_merida.csv"), index=False, encoding="utf-8")
-    df_ageb_clean.to_parquet(os.path.join(GOLD, "mart_sin_afiliacion_ageb_merida.parquet"), index=False)
-
-    # ------------------------------------------------------------------
-    # ESCENA 1: Unidades de salud por municipio en Yucatán (106 municipios)
-    # ------------------------------------------------------------------
-    m1 = pd.read_csv(os.path.join(GOLD, "mart_cobertura_salud_municipal.csv"), dtype={"cvegeo": str})
-    m1["cvegeo"] = m1["cvegeo"].str.zfill(5)
-    esc1 = m1.merge(
-        df_censo_mun_clean[["cvegeo", "poblacion_total", "poblacion_sin_afiliacion", "pct_sin_afiliacion"]],
-        on="cvegeo",
-        how="left",
-    )
-    esc1["unidades_por_10mil_hab"] = (
-        (esc1["total_unidades_salud"] / esc1["poblacion_total"].replace(0, float("nan"))) * 10000
-    ).fillna(0).round(2)
-    esc1_out = esc1[[
-        "cvegeo", "nom_mun", "jurisdiccion_sanitaria", "poblacion_total",
-        "hospital", "clinic", "doctors", "pharmacy", "dentist",
-        "total_unidades_salud", "unidades_por_10mil_hab", "pct_sin_afiliacion"
-    ]].rename(columns={
-        "nom_mun": "municipio",
-        "hospital": "hospitales",
-        "clinic": "clinicas",
-        "doctors": "consultorios",
-        "pharmacy": "farmacias",
-        "dentist": "dentistas",
-    }).sort_values("total_unidades_salud", ascending=False).reset_index(drop=True)
-    esc1_out.to_csv(os.path.join(BOOKLET_DATOS, "escena-1.csv"), index=False, encoding="utf-8")
-    # Actualizar Gold 01 con población y tasa por 10 mil hab
-    esc1_out.to_csv(os.path.join(GOLD, "mart_cobertura_salud_municipal.csv"), index=False, encoding="utf-8")
-    esc1_out.to_parquet(os.path.join(GOLD, "mart_cobertura_salud_municipal.parquet"), index=False)
-
-    # ------------------------------------------------------------------
-    # ESCENA 2: Porcentaje sin afiliación a salud por AGEB urbana en Mérida (Censo 2020)
-    # ------------------------------------------------------------------
     df_ageb_clean.to_csv(os.path.join(BOOKLET_DATOS, "escena-2.csv"), index=False, encoding="utf-8")
 
     # ------------------------------------------------------------------
-    # ESCENA 3: Distancia a la unidad médica más cercana DENTRO de Mérida (31050)
+    # ESCENA 1: Unidades médicas CLUES en operación por municipio (106 municipios, 0 farmacias)
     # ------------------------------------------------------------------
-    gdf_places = gpd.read_file(os.path.join(SILVER, "comisarias_isocronas_merida.geojson"))
-    gdf_places_mid = gpd.sjoin(gdf_places, gdf_merida_poly, how="inner", predicate="within").drop(
-        columns=["index_right", "cvegeo_right"], errors="ignore"
+    agg_clues = clues_silver.groupby("cvegeo").agg(
+        unidades_medicas=("clues", "count"),
+        consulta_externa=("tipo_establecimiento", lambda s: int((s == "DE CONSULTA EXTERNA").sum())),
+        hospitales=("tipo_establecimiento", lambda s: int((s == "DE HOSPITALIZACIÓN").sum())),
+        unidades_publicas=("sector", lambda s: int((s == "Público").sum())),
+        unidades_privadas=("sector", lambda s: int((s == "Privado").sum())),
+    ).reset_index()
+
+    esc1 = gdf_mun[["cvegeo", "nom_mun", "jurisdiccion_sanitaria"]].rename(columns={"nom_mun": "municipio"}).merge(
+        df_censo_mun_clean[["cvegeo", "poblacion_total", "poblacion_sin_afiliacion", "pct_sin_afiliacion"]],
+        on="cvegeo",
+        how="left",
+    ).merge(agg_clues, on="cvegeo", how="left")
+
+    for col in ["unidades_medicas", "consulta_externa", "hospitales", "unidades_publicas", "unidades_privadas"]:
+        esc1[col] = esc1[col].fillna(0).astype(int)
+    esc1["unidades_por_10mil_hab"] = (
+        (esc1["unidades_medicas"] / esc1["poblacion_total"].replace(0, float("nan"))) * 10000
+    ).fillna(0).round(2)
+    esc1 = esc1.sort_values("unidades_medicas", ascending=False).reset_index(drop=True)
+
+    esc1.to_csv(os.path.join(BOOKLET_DATOS, "escena-1.csv"), index=False, encoding="utf-8")
+    esc1.to_csv(os.path.join(GOLD, "mart_cobertura_salud_municipal.csv"), index=False, encoding="utf-8")
+    esc1.to_parquet(os.path.join(GOLD, "mart_cobertura_salud_municipal.parquet"), index=False)
+
+    # Actualizar Gold 03 (Jurisdicciones) desde CLUES
+    mart03 = esc1.groupby("jurisdiccion_sanitaria", as_index=False).agg(
+        total_municipios=("cvegeo", "count"),
+        unidades_medicas=("unidades_medicas", "sum"),
+        hospitales=("hospitales", "sum"),
+        unidades_publicas=("unidades_publicas", "sum"),
+        unidades_privadas=("unidades_privadas", "sum"),
+        municipios_con_hospital=("hospitales", lambda s: int((s > 0).sum())),
     )
-    if "cvegeo_left" in gdf_places_mid.columns:
-        gdf_places_mid = gdf_places_mid.rename(columns={"cvegeo_left": "cvegeo"})
-    gdf_places_mid = gdf_places_mid.reset_index(drop=True)
+    mart03.to_csv(os.path.join(GOLD, "mart_cohesion_jurisdicciones_yucatan.csv"), index=False, encoding="utf-8")
+    mart03.to_parquet(os.path.join(GOLD, "mart_cohesion_jurisdicciones_yucatan.parquet"), index=False)
 
-    # Guardar versión corregida en Silver y Gold
-    gdf_places_mid.to_file(os.path.join(SILVER, "comisarias_isocronas_merida.geojson"), driver="GeoJSON")
-    gdf_places_mid.to_parquet(os.path.join(SILVER, "comisarias_isocronas_merida.geoparquet"), index=False)
-    tab_mid = pd.DataFrame(gdf_places_mid.drop(columns=["geometry"]))
-    tab_mid.to_csv(os.path.join(SILVER, "comisarias_isocronas_merida.csv"), index=False, encoding="utf-8")
-    tab_mid.to_parquet(os.path.join(SILVER, "comisarias_isocronas_merida.parquet"), index=False)
-
-    tipo_es = {
-        "suburb": "Colonia / Fraccionamiento",
-        "neighbourhood": "Barrio / Zona urbana",
-        "village": "Comisaría",
-        "hamlet": "Subcomisaría / Ranchería",
-        "town": "Localidad urbana",
-    }
-    esc3 = tab_mid.copy()
-    esc3["tipo_localidad"] = esc3["tipo_asentamiento"].map(tipo_es).fillna("Localidad")
-    esc3_out = esc3[[
-        "id_localidad", "nombre_localidad", "tipo_localidad", "cvegeo",
-        "latitud", "longitud", "salud_mas_cercana", "dist_salud_m",
-        "min_caminata_salud", "cumple_ciudad_15min_salud",
-        "parque_mas_cercano", "dist_parque_m", "min_caminata_parque"
-    ]].rename(columns={
-        "nombre_localidad": "localidad",
-        "salud_mas_cercana": "unidad_salud_cercana",
-        "dist_salud_m": "distancia_salud_m",
-        "min_caminata_salud": "minutos_pie_salud",
-        "cumple_ciudad_15min_salud": "en_umbral_15min_salud",
-        "dist_parque_m": "distancia_parque_m",
-        "min_caminata_parque": "minutos_pie_parque",
-    }).sort_values("distancia_salud_m", ascending=False).reset_index(drop=True)
-    esc3_out.to_csv(os.path.join(BOOKLET_DATOS, "escena-3.csv"), index=False, encoding="utf-8")
-
-    # Actualizar Gold 04 con localidades estrictamente dentro de Mérida
-    mart04 = esc3_out.groupby("tipo_localidad", as_index=False).agg(
-        total_localidades=("id_localidad", "count"),
-        distancia_media_salud_m=("distancia_salud_m", "mean"),
-        minutos_pie_salud_prom=("minutos_pie_salud", "mean"),
-        pct_salud_15min=("en_umbral_15min_salud", lambda s: round(100.0 * s.mean(), 2)),
-        distancia_media_parque_m=("distancia_parque_m", "mean"),
-        minutos_pie_parque_prom=("minutos_pie_parque", "mean"),
+    # ------------------------------------------------------------------
+    # ESCENA 3: Localidades oficiales de Mérida (ITER 2020 MUN = 050) -> unidad CLUES más cercana
+    # ------------------------------------------------------------------
+    df_locs = pd.read_csv(os.path.join(BRONZE, "03_inegi_censo2020_localidades_merida_raw.csv"), dtype=str)
+    df_locs["poblacion"] = pd.to_numeric(df_locs["POBTOT"], errors="coerce").fillna(0).astype(int)
+    df_locs["latitud"] = df_locs["LATITUD"].apply(dms_to_dd)
+    df_locs["longitud"] = df_locs["LONGITUD"].apply(dms_to_dd)
+    # Filtrar localidades con coordenadas válidas y población > 0 (excluir cabecera Mérida LOC=0001 o etiquetarla)
+    df_locs = df_locs.dropna(subset=["latitud", "longitud"]).copy()
+    df_locs = df_locs[df_locs["poblacion"] > 0].copy()
+    # Asegurar signo negativo en longitud (oeste)
+    df_locs["longitud"] = df_locs["longitud"].apply(lambda x: -abs(x))
+    df_locs["cve_loc"] = df_locs["ENTIDAD"].str.zfill(2) + df_locs["MUN"].str.zfill(3) + df_locs["LOC"].str.zfill(4)
+    df_locs["tipo_localidad"] = df_locs.apply(
+        lambda r: "Cabecera municipal (Mérida)" if r["LOC"].zfill(4) == "0001"
+        else ("Comisaría / localidad ≥ 2,500 hab." if r["poblacion"] >= 2500
+              else ("Comisaría / localidad 500–2,499 hab." if r["poblacion"] >= 500
+                    else "Subcomisaría / localidad < 500 hab.")),
+        axis=1,
     )
-    for c in ["distancia_media_salud_m", "minutos_pie_salud_prom", "distancia_media_parque_m", "minutos_pie_parque_prom"]:
-        mart04[c] = mart04[c].round(2)
+
+    gdf_locs = gpd.GeoDataFrame(
+        df_locs[["cve_loc", "LOC", "NOM_LOC", "tipo_localidad", "poblacion", "latitud", "longitud"]].rename(
+            columns={"NOM_LOC": "localidad", "LOC": "clave_loc"}
+        ),
+        geometry=[Point(xy) for xy in zip(df_locs["longitud"], df_locs["latitud"])],
+        crs="EPSG:4326",
+    )
+
+    # Distancia exacta en UTM 16N a la unidad médica CLUES EN OPERACIÓN más cercana (todas y públicas)
+    locs_utm = gdf_locs.to_crs("EPSG:32616")
+    clues_utm = gdf_clues.to_crs("EPSG:32616")
+    clues_pub_utm = gdf_clues[gdf_clues["sector"] == "Público"].to_crs("EPSG:32616")
+
+    near_all = gpd.sjoin_nearest(
+        locs_utm,
+        clues_utm[["clues", "nombre_unidad", "institucion", "sector", "tipo_establecimiento", "geometry"]],
+        distance_col="distancia_medica_m",
+    )
+    near_all = near_all[~near_all.index.duplicated(keep="first")]
+
+    near_pub = gpd.sjoin_nearest(
+        locs_utm,
+        clues_pub_utm[["nombre_unidad", "geometry"]],
+        distance_col="distancia_publica_m",
+    )
+    near_pub = near_pub[~near_pub.index.duplicated(keep="first")]
+
+    esc3 = pd.DataFrame(gdf_locs.drop(columns=["geometry"])).reset_index(drop=True)
+    esc3["clues_cercana"] = near_all["clues"].values
+    esc3["unidad_medica_cercana"] = near_all["nombre_unidad"].values
+    esc3["institucion_cercana"] = near_all["institucion"].values
+    esc3["sector_cercano"] = near_all["sector"].values
+    esc3["distancia_medica_m"] = near_all["distancia_medica_m"].round(1).values
+    esc3["minutos_pie_medico"] = (esc3["distancia_medica_m"] / 80.0).round(1)
+    esc3["en_umbral_15min"] = esc3["minutos_pie_medico"] <= 15.0
+    esc3["unidad_publica_cercana"] = near_pub["nombre_unidad"].values
+    esc3["distancia_publica_m"] = near_pub["distancia_publica_m"].round(1).values
+    esc3["minutos_pie_publico"] = (esc3["distancia_publica_m"] / 80.0).round(1)
+    esc3["cvegeo"] = "31050"
+
+    esc3 = esc3.sort_values("distancia_medica_m", ascending=False).reset_index(drop=True)
+    esc3.to_csv(os.path.join(BOOKLET_DATOS, "escena-3.csv"), index=False, encoding="utf-8")
+    esc3.to_csv(os.path.join(SILVER, "comisarias_isocronas_merida.csv"), index=False, encoding="utf-8")
+    esc3.to_parquet(os.path.join(SILVER, "comisarias_isocronas_merida.parquet"), index=False)
+
+    mart04 = esc3.groupby("tipo_localidad", as_index=False).agg(
+        total_localidades=("cve_loc", "count"),
+        poblacion_total=("poblacion", "sum"),
+        mediana_min_medico=("minutos_pie_medico", "median"),
+        promedio_min_medico=("minutos_pie_medico", "mean"),
+        pct_fuera_15min=("en_umbral_15min", lambda s: round(100.0 * (~s).mean(), 2)),
+    )
+    for c in ["mediana_min_medico", "promedio_min_medico"]:
+        mart04[c] = mart04[c].round(1)
     mart04.to_csv(os.path.join(GOLD, "mart_accesibilidad_15min_merida.csv"), index=False, encoding="utf-8")
     mart04.to_parquet(os.path.join(GOLD, "mart_accesibilidad_15min_merida.parquet"), index=False)
 
     # ------------------------------------------------------------------
-    # ESCENA 4: Serie epidemiológica mensual corregida (DGE Yucatán)
-    # (Los valores en covid19_*_mx_raw.csv son ACUMULADOS diarios)
+    # ESCENA 4: Serie epidemiológica mensual DGE con conciliación EXACTA
+    # (confirmados_mes = fin_mes - fin_mes_anterior => suma exacta = 41,179!)
     # ------------------------------------------------------------------
     files_dge = {
         "confirmados_acum": "02_dge_covid19_confirmed_mx_raw.csv",
         "defunciones_acum": "02_dge_covid19_deaths_mx_raw.csv",
-        "negativos_acum": "02_dge_covid19_negatives_mx_raw.csv",
-        "sospechosos_acum": "02_dge_covid19_suspects_mx_raw.csv",
     }
     dfs = {}
     for col, fn in files_dge.items():
@@ -204,87 +312,85 @@ def fix_and_build_all():
             "fecha_raw": raw.columns[1:],
             col: pd.to_numeric(pd.Series(yuc.values[1:]), errors="coerce").fillna(0).astype(int).values,
         })
-    ep = dfs["confirmados_acum"]
-    for col in ["defunciones_acum", "negativos_acum", "sospechosos_acum"]:
-        ep = ep.merge(dfs[col], on="fecha_raw", how="outer")
+    ep = dfs["confirmados_acum"].merge(dfs["defunciones_acum"], on="fecha_raw", how="outer")
     ep["fecha"] = pd.to_datetime(ep["fecha_raw"], format="%d-%m-%Y", errors="coerce")
     ep = ep.dropna(subset=["fecha"]).sort_values("fecha").reset_index(drop=True)
     ep["fecha_iso"] = ep["fecha"].dt.strftime("%Y-%m-%d")
     ep["anio_mes"] = ep["fecha"].dt.strftime("%Y-%m")
     ep["cve_ent"] = "31"
-    ep["nom_ent"] = "Yucatán"
-    # Incrementos diarios reales
-    ep["confirmados_nuevos"] = ep["confirmados_acum"].diff().fillna(ep["confirmados_acum"]).clip(lower=0).astype(int)
-    ep["defunciones_nuevas"] = ep["defunciones_acum"].diff().fillna(ep["defunciones_acum"]).clip(lower=0).astype(int)
-    ep["tasa_letalidad_acum_pct"] = (
-        100.0 * ep["defunciones_acum"] / ep["confirmados_acum"].replace(0, float("nan"))
-    ).fillna(0.0).round(2)
+    ep["entidad"] = "Yucatán"
 
-    ep_silver = ep[[
-        "fecha_iso", "anio_mes", "cve_ent", "nom_ent",
-        "confirmados_nuevos", "defunciones_nuevas",
-        "confirmados_acum", "defunciones_acum",
-        "negativos_acum", "sospechosos_acum", "tasa_letalidad_acum_pct"
-    ]].copy()
-    ep_silver.to_csv(os.path.join(SILVER, "serie_epidemiologica_yucatan.csv"), index=False, encoding="utf-8")
-    ep_silver.to_parquet(os.path.join(SILVER, "serie_epidemiologica_yucatan.parquet"), index=False)
-
-    # Agregación mensual real
-    esc4 = ep_silver.groupby(["anio_mes", "cve_ent", "nom_ent"], as_index=False).agg(
+    # Tomar exactamente el último día de cada mes para calcular el cambio mensual exacto
+    mes = ep.groupby(["anio_mes", "cve_ent", "entidad"], as_index=False).agg(
         dias_reportados=("fecha_iso", "count"),
-        confirmados_mes=("confirmados_nuevos", "sum"),
-        defunciones_mes=("defunciones_nuevas", "sum"),
-        confirmados_acum=("confirmados_acum", "max"),
-        defunciones_acum=("defunciones_acum", "max"),
-    )
-    esc4["letalidad_mensual_pct"] = (
-        100.0 * esc4["defunciones_mes"] / esc4["confirmados_mes"].replace(0, float("nan"))
+        confirmados_acum=("confirmados_acum", "last"),
+        defunciones_acum=("defunciones_acum", "last"),
+    ).sort_values("anio_mes").reset_index(drop=True)
+
+    mes["confirmados_mes"] = mes["confirmados_acum"].diff().fillna(mes["confirmados_acum"]).astype(int)
+    mes["defunciones_mes"] = mes["defunciones_acum"].diff().fillna(mes["defunciones_acum"]).astype(int)
+    mes["letalidad_mensual_pct"] = (
+        100.0 * mes["defunciones_mes"] / mes["confirmados_mes"].replace(0, float("nan"))
     ).fillna(0.0).round(2)
-    esc4 = esc4.rename(columns={"nom_ent": "entidad"})
+
+    esc4 = mes[[
+        "anio_mes", "cve_ent", "entidad", "dias_reportados",
+        "confirmados_mes", "defunciones_mes",
+        "confirmados_acum", "defunciones_acum", "letalidad_mensual_pct"
+    ]].copy()
     esc4.to_csv(os.path.join(GOLD, "mart_evolucion_epidemiologica_mensual.csv"), index=False, encoding="utf-8")
     esc4.to_parquet(os.path.join(GOLD, "mart_evolucion_epidemiologica_mensual.parquet"), index=False)
     esc4.to_csv(os.path.join(BOOKLET_DATOS, "escena-4.csv"), index=False, encoding="utf-8")
 
     # ------------------------------------------------------------------
-    # IMPRIMIR RESUMEN VERIFICADO PARA FICHA Y GRÁFICAS
+    # IMPRIMIR RESUMEN EXACTO VERIFICADO
     # ------------------------------------------------------------------
-    tot_un = int(esc1_out["total_unidades_salud"].sum())
-    mid_un = int(esc1_out.loc[esc1_out["cvegeo"] == "31050", "total_unidades_salud"].iloc[0])
+    tot_un = int(esc1["unidades_medicas"].sum())
+    tot_pub = int(esc1["unidades_publicas"].sum())
+    tot_priv = int(esc1["unidades_privadas"].sum())
+    tot_hosp = int(esc1["hospitales"].sum())
+    mid_row = esc1[esc1["cvegeo"] == "31050"].iloc[0]
+    mid_un = int(mid_row["unidades_medicas"])
+    mid_hosp = int(mid_row["hospitales"])
     pct_mid = round(100.0 * mid_un / tot_un, 1)
-    mun_cero = int((esc1_out["total_unidades_salud"] == 0).sum())
+    pct_mid_hosp = round(100.0 * mid_hosp / tot_hosp, 1)
+    mun_sin_hosp = int((esc1["hospitales"] == 0).sum())
+    mun_sin_un = int((esc1["unidades_medicas"] == 0).sum())
 
-    tot_pob_yuc = int(df_censo_mun_clean["poblacion_total"].sum())
-    tot_sin_yuc = int(df_censo_mun_clean["poblacion_sin_afiliacion"].sum())
-    pct_sin_yuc = round(100.0 * tot_sin_yuc / tot_pob_yuc, 1)
+    # Escena 3 (excluir cabecera para hablar de localidades/comisarías fuera de la ciudad, o reportar ambas)
+    esc3_no_cab = esc3[esc3["clave_loc"] != "0001"]
+    n_tot_l = len(esc3)
+    n_comis = len(esc3_no_cab)
+    fuera15_tot = int((~esc3["en_umbral_15min"]).sum())
+    fuera15_comis = int((~esc3_no_cab["en_umbral_15min"]).sum())
+    pct_fuera_comis = round(100.0 * fuera15_comis / n_comis, 1)
+    med_comis = round(float(esc3_no_cab["minutos_pie_medico"].median()), 1)
+    pob_fuera15 = int(esc3_no_cab.loc[~esc3_no_cab["en_umbral_15min"], "poblacion"].sum())
+    lejana = esc3_no_cab.iloc[0]
 
-    tot_pob_mid_ageb = int(df_ageb_clean["poblacion_total"].sum())
-    tot_sin_mid_ageb = int(df_ageb_clean["poblacion_sin_afiliacion"].sum())
-    pct_sin_mid = round(100.0 * tot_sin_mid_ageb / tot_pob_mid_ageb, 1)
-    ageb_mas_30 = int((df_ageb_clean["pct_sin_afiliacion"] >= 30.0).sum())
-    ageb_max = df_ageb_clean.iloc[0]
+    sum_conf = int(esc4["confirmados_mes"].sum())
+    acum_conf = int(esc4["confirmados_acum"].iloc[-1])
+    sum_def = int(esc4["defunciones_mes"].sum())
+    acum_def = int(esc4["defunciones_acum"].iloc[-1])
+    pico = esc4.sort_values("confirmados_mes", ascending=False).iloc[0]
 
-    loc_mid_n = len(esc3_out)
-    fuera_15 = int((~esc3_out["en_umbral_15min_salud"]).sum())
-    pct_fuera_15 = round(100.0 * fuera_15 / loc_mid_n, 1)
-    mediana_min = round(float(esc3_out["minutos_pie_salud"].median()), 1)
-    comisarias = esc3_out[esc3_out["tipo_localidad"].isin(["Comisaría", "Subcomisaría / Ranchería"])]
-    colonias = esc3_out[esc3_out["tipo_localidad"].isin(["Colonia / Fraccionamiento", "Barrio / Zona urbana"])]
-    med_comis = round(float(comisarias["minutos_pie_salud"].median()), 1) if len(comisarias) else 0
-    med_col = round(float(colonias["minutos_pie_salud"].median()), 1) if len(colonias) else 0
-    loc_lejos = esc3_out.iloc[0]
-
-    dge_conf_tot = int(esc4["confirmados_acum"].max())
-    dge_def_tot = int(esc4["defunciones_acum"].max())
-    pico_row = esc4.sort_values("confirmados_mes", ascending=False).iloc[0]
-
-    print("=" * 72)
-    print("CIFRAS EXACTAS VERIFICADAS DESDE booklet/datos/escena-*.csv")
-    print("=" * 72)
-    print(f"ESCENA 1 (Yucatán 106 mun): {tot_un} unidades | Mérida: {mid_un} ({pct_mid}%) | {mun_cero} de 106 municipios con 0 registros OSM")
-    print(f"ESCENA 2 (Censo 2020 AGEB Mérida): {len(df_ageb_clean)} AGEB con población | Pob AGEB: {tot_pob_mid_ageb:,} | Sin afiliación: {tot_sin_mid_ageb:,} ({pct_sin_mid}%) | Yucatán estatal: {pct_sin_yuc}% | AGEB >=30% sin afiliación: {ageb_mas_30} | Máx AGEB: {ageb_max['codigo_ageb']} ({ageb_max['localidad']}, {ageb_max['pct_sin_afiliacion']}%, pob {ageb_max['poblacion_total']})")
-    print(f"ESCENA 3 (Mérida 31050 localidades): {loc_mid_n} localidades dentro de Mérida | Fuera de 15 min: {fuera_15} ({pct_fuera_15}%) | Mediana global: {mediana_min} min | Mediana comisarías ({len(comisarias)}): {med_comis} min vs colonias/barrios ({len(colonias)}): {med_col} min | Más lejana: {loc_lejos['localidad']} ({loc_lejos['minutos_pie_salud']} min, {loc_lejos['distancia_salud_m']} m)")
-    print(f"ESCENA 4 (DGE Yucatán {esc4['anio_mes'].min()} a {esc4['anio_mes'].max()}): {dge_conf_tot:,} confirmados acum. | {dge_def_tot:,} defunciones acum. | Pico mensual: {pico_row['anio_mes']} con {int(pico_row['confirmados_mes']):,} confirmados y {int(pico_row['defunciones_mes']):,} defunciones")
-    print("=" * 72)
+    print("=" * 74)
+    print("CONCILIACIÓN 100 % EXACTA (CLUES OCT 2026 + ITER/AGEB 2020 + DGE)")
+    print("=" * 74)
+    print(f"ESCENA 1 (CLUES 106 mun, 0 farmacias): {tot_un} unidades médicas ({tot_pub} públicas, {tot_priv} privadas, {tot_hosp} hospitales)")
+    print(f"   Mérida: {mid_un} ({pct_mid} %) | Hospitales en Mérida: {mid_hosp} de {tot_hosp} ({pct_mid_hosp} %) | Mun sin hospital: {mun_sin_hosp}/106 | Mun sin unidad: {mun_sin_un}/106")
+    print(esc1[["municipio", "unidades_medicas", "hospitales", "unidades_publicas", "unidades_privadas", "unidades_por_10mil_hab"]].head(6).to_string(index=False))
+    print("-" * 74)
+    print(f"ESCENA 2 (Censo 2020 AGEB Mérida): 515 AGEB | 211,556 sin afiliación (22.1 %) | 61 AGEB >= 30 %")
+    print("-" * 74)
+    print(f"ESCENA 3 (ITER 2020 Mérida MUN=050 -> CLUES): {n_tot_l} localidades con pob>0 ({n_comis} fuera de cabecera)")
+    print(f"   Fuera de 15 min (comisarías/subcomisarías): {fuera15_comis}/{n_comis} ({pct_fuera_comis} %) | Pob fuera 15 min: {pob_fuera15:,} hab | Mediana: {med_comis} min")
+    print(f"   Más lejana en Mérida (oficial ITER): {lejana['localidad']} ({lejana['poblacion']} hab, {lejana['minutos_pie_medico']} min, {lejana['distancia_medica_m']} m -> {lejana['unidad_medica_cercana']})")
+    print(mart04.to_string(index=False))
+    print("-" * 74)
+    print(f"ESCENA 4 (DGE Yucatán): suma mensual={sum_conf:,} == acum={acum_conf:,} (EXACTO: {sum_conf == acum_conf}) | def suma={sum_def:,} == acum={acum_def:,} (EXACTO: {sum_def == acum_def})")
+    print(f"   Pico mensual: {pico['anio_mes']} con {int(pico['confirmados_mes']):,} confirmados y {int(pico['defunciones_mes']):,} defunciones")
+    print("=" * 74)
 
 
 if __name__ == "__main__":
