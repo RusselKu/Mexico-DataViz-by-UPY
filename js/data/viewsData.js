@@ -1,7 +1,7 @@
 /**
- * Base de Datos Estructurada de las 9 Vistas de Data Storytelling
- * Plataforma de Data Storytelling: El Viaje de la Resiliencia (UPY)
- * Con datos verificados y enriquecidos multiescalares
+ * Estructura base de las 9 vistas de Narrativa con Datos (Equipo 3 · UPY)
+ * Los indicadores, series y hallazgos se hidratan dinámicamente desde data/gold/ y data/silver/
+ * mediante js/data/goldLoader.js.
  */
 window.DataStoryApp = window.DataStoryApp || {};
 
@@ -152,11 +152,11 @@ window.DataStoryApp.viewsData = {
       ]
     },
     kpis: [
-      { icon: "fa-heart-circle-check", label: "Tasa Global de Altas", value: "89.4%", delta: "+24.9 pts post-vacuna", color: "var(--accent-green)" },
-      { icon: "fa-syringe", label: "Dosis Aplicadas en Yucatán", value: "2.14 M", delta: "94.2% cobertura adulta", color: "var(--accent-cyan)" },
-      { icon: "fa-bed-pulse", label: "Estancia Media Resolutiva", value: "4.2 días", delta: "-65% tiempo en cama", color: "var(--accent-amber)" }
+      { icon: "fa-virus", label: "Confirmados acumulados", value: "41,179", delta: "DGE Yucatán (ene 2020–jun 2021)", color: "var(--accent-cyan)" },
+      { icon: "fa-heart-pulse", label: "Defunciones acumuladas", value: "4,078", delta: "Serie histórica verificada", color: "var(--accent-amber)" },
+      { icon: "fa-chart-line", label: "Pico mensual (confirmados)", value: "5,280", delta: "Mes pico: 2020-07", color: "var(--accent-green)" }
     ],
-    insight: "💡 <strong>Descubrimiento Clave:</strong> La velocidad de recuperación hospitalaria se triplicó a partir del primer refuerzo de vacunación en el estado de Yucatán, reduciendo la estancia media de 12.4 a 4.2 días."
+    insight: "<strong>Hallazgo verificado (mart_evolucion_epidemiologica_mensual.csv):</strong> Entre enero de 2020 y junio de 2021 Yucatán acumuló 41,179 casos confirmados y 4,078 defunciones, con el mayor pico mensual en julio de 2020 (5,280 casos)."
   },
 
   3: {
@@ -352,8 +352,8 @@ window.DataStoryApp.viewsData = {
     arc: "Fase 2: Escala Urbana & Operativa",
     arcIcon: "fa-city",
     tag: "CAPÍTULO 6 • VOZ PÚBLICA & SENTIMIENTO",
-    tabName: "Web Scraping",
-    primarySource: "Web Scraping de Prensa Local (Diario de Yucatán, Por Esto!, La Jornada Maya, Gacetas)",
+    tabName: "Prensa Regional",
+    primarySource: "Prensa Regional de Yucatán (Extracción RSS: Diario de Yucatán, Por Esto!, La Jornada Maya)",
     secondarySources: ["Datos.gob.mx"],
     vizTitle: "Red Semántica de Co-ocurrencia (D3 Force) & Sentimiento Colectivo en Medios",
     vizType: "custom_force",
@@ -424,14 +424,14 @@ window.DataStoryApp.viewsData = {
     arc: "Fase 3: Comunidad Universitaria",
     arcIcon: "fa-graduation-cap",
     tag: "CAPÍTULO 7 • COMUNIDAD UNIVERSITARIA",
-    tabName: "Self-Produced UPY",
-    primarySource: "Encuesta Comunitaria y Estudiantil UPY (Levantamiento Propio n=480)",
-    secondarySources: ["GeoPortal Mérida", "Datos.gob.mx"],
-    vizTitle: "Dashboard Demoscópico: Escalas Likert y Resiliencia Estudiantil UPY",
+    tabName: "Afiliación Censo 2020",
+    primarySource: "INEGI, Censo de Población y Vivienda 2020 (515 AGEB urbanas de Mérida)",
+    secondarySources: ["Marco Geoestadístico INEGI", "OpenStreetMap"],
+    vizTitle: "Brecha de afiliación a servicios de salud por AGEB urbana en Mérida (Censo 2020)",
     vizType: "bar",
-    storyTitle: "Voces Universitarias: Nuestra UPY",
-    storyLead: "¿Cómo vivió, se adaptó y floreció la comunidad estudiantil de la UPY?",
-    storyDesc: "El levantamiento propio entre los estudiantes de la Universidad Politécnica de Yucatán (UPY) demuestra su notable resiliencia: no solo adoptaron herramientas digitales y computación avanzada, sino que forjaron una sólida cultura de colaboración y entusiasmo por el regreso a los laboratorios.",
+    storyTitle: "Quién queda sin afiliación médica en Mérida",
+    storyLead: "¿Cuántas personas en las AGEB urbanas de Mérida carecen de afiliación a servicios de salud?",
+    storyDesc: "Con datos oficiales directos del Censo de Población y Vivienda 2020 del INEGI, 211,556 habitantes de las 515 AGEB urbanas de Mérida (22.1 %) no cuentan con afiliación médica y 61 AGEB superan el 30 %. La encuesta estudiantil UPY previa quedó excluida del booklet por transparencia metodológica.",
     storyBeats: [
       {
         id: "beat7_1",

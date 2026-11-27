@@ -1,107 +1,107 @@
-cvegeo,cve_ent,cve_mun,nom_mun,jurisdiccion_sanitaria,area_km2,hospital,clinic,doctors,pharmacy,dentist,total_unidades_salud,densidad_unidades_100km2
-31050,31,050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),884.464,41,26,12,140,20,239,27.02
-31102,31,102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),1077.831,10,22,9,35,10,86,7.98
-31096,31,096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),3883.093,11,4,1,7,0,23,0.59
-31040,31,040,Izamal,Jurisdicción 1 - Mérida (Centro/Metropolitana),458.941,2,1,3,8,2,16,3.49
-31085,31,085,Temozón,Jurisdicción 2 - Valladolid (Oriente),705.707,3,4,0,2,0,9,1.28
-31091,31,091,Tinum,Jurisdicción 2 - Valladolid (Oriente),470.963,3,1,1,3,0,8,1.7
-31041,31,041,Kanasín,Jurisdicción 1 - Mérida (Centro/Metropolitana),102.081,2,1,0,3,0,6,5.88
-31032,31,032,Espita,Jurisdicción 2 - Valladolid (Oriente),735.237,2,0,0,3,0,5,0.68
-31038,31,038,Hunucmá,Jurisdicción 1 - Mérida (Centro/Metropolitana),840.988,1,2,0,2,0,5,0.59
-31019,31,019,Chemax,Jurisdicción 2 - Valladolid (Oriente),1397.223,3,0,0,1,0,4,0.29
-31092,31,092,Tixcacalcupul,Jurisdicción 2 - Valladolid (Oriente),502.439,2,1,0,1,0,4,0.8
-31104,31,104,Yaxcabá,Jurisdicción 2 - Valladolid (Oriente),1474.177,2,2,0,0,0,4,0.27
-31061,31,061,Río Lagartos,Jurisdicción 2 - Valladolid (Oriente),337.435,0,0,1,2,1,4,1.19
-31024,31,024,Chumayel,Jurisdicción 2 - Valladolid (Oriente),83.855,0,1,2,1,0,4,4.77
-31036,31,036,Homún,Jurisdicción 1 - Mérida (Centro/Metropolitana),199.563,0,2,0,2,0,4,2.0
-31042,31,042,Kantunil,Jurisdicción 1 - Mérida (Centro/Metropolitana),200.036,0,1,0,3,0,4,2.0
-31002,31,002,Acanceh,Jurisdicción 1 - Mérida (Centro/Metropolitana),137.24,0,0,0,3,0,3,2.19
-31059,31,059,Progreso,Jurisdicción 1 - Mérida (Centro/Metropolitana),430.681,0,0,0,2,1,3,0.7
-31017,31,017,Chankom,Jurisdicción 3 - Ticul (Sur),442.9,0,3,0,0,0,3,0.68
-31030,31,030,Dzitás,Jurisdicción 3 - Ticul (Sur),309.466,1,2,0,0,0,3,0.97
-31003,31,003,Akil,Jurisdicción 3 - Ticul (Sur),76.356,0,1,1,1,0,3,3.93
-31035,31,035,Hoctún,Jurisdicción 3 - Ticul (Sur),120.908,1,0,0,1,0,2,1.65
-31021,31,021,Chichimilá,Jurisdicción 2 - Valladolid (Oriente),469.507,0,2,0,0,0,2,0.43
-31079,31,079,Tekax,Jurisdicción 3 - Ticul (Sur),2753.052,1,0,0,1,0,2,0.07
-31087,31,087,Tetiz,Jurisdicción 3 - Ticul (Sur),337.033,0,1,0,1,0,2,0.59
-31022,31,022,Chikindzonot,Jurisdicción 2 - Valladolid (Oriente),473.798,2,0,0,0,0,2,0.42
-31093,31,093,Tixkokob,Jurisdicción 1 - Mérida (Centro/Metropolitana),172.928,1,0,0,1,0,2,1.16
-31099,31,099,Uayma,Jurisdicción 2 - Valladolid (Oriente),187.555,0,2,0,0,0,2,1.07
-31100,31,100,Ucú,Jurisdicción 1 - Mérida (Centro/Metropolitana),130.837,1,1,0,0,0,2,1.53
-31058,31,058,Peto,Jurisdicción 3 - Ticul (Sur),1055.56,0,1,0,1,0,2,0.19
-31052,31,052,Motul,Jurisdicción 1 - Mérida (Centro/Metropolitana),321.206,2,0,0,0,0,2,0.62
-31101,31,101,Umán,Jurisdicción 1 - Mérida (Centro/Metropolitana),350.133,1,0,0,1,0,2,0.57
-31106,31,106,Yobaín,Jurisdicción 1 - Mérida (Centro/Metropolitana),131.599,1,1,0,0,0,2,1.52
-31089,31,089,Ticul,Jurisdicción 3 - Ticul (Sur),340.073,2,0,0,0,0,2,0.59
-31028,31,028,Dzilam de Bravo,Jurisdicción 1 - Mérida (Centro/Metropolitana),432.485,0,0,0,1,0,1,0.23
-31012,31,012,Cenotillo,Jurisdicción 1 - Mérida (Centro/Metropolitana),542.909,0,1,0,0,0,1,0.18
-31056,31,056,Oxkutzcab,Jurisdicción 3 - Ticul (Sur),863.581,1,0,0,0,0,1,0.12
-31103,31,103,Xocchel,Jurisdicción 1 - Mérida (Centro/Metropolitana),110.421,0,1,0,0,0,1,0.91
-31081,31,081,Tekom,Jurisdicción 3 - Ticul (Sur),273.383,0,0,1,0,0,1,0.37
-31011,31,011,Celestún,Jurisdicción 2 - Valladolid (Oriente),597.659,0,0,0,1,0,1,0.17
-31015,31,015,Cuzamá,Jurisdicción 3 - Ticul (Sur),93.759,0,1,0,0,0,1,1.07
-31008,31,008,Calotmul,Jurisdicción 1 - Mérida (Centro/Metropolitana),290.698,0,1,0,0,0,1,0.34
-31063,31,063,Samahil,Jurisdicción 1 - Mérida (Centro/Metropolitana),160.532,1,0,0,0,0,1,0.62
-31060,31,060,Quintana Roo,Jurisdicción 3 - Ticul (Sur),103.335,0,1,0,0,0,1,0.97
-31068,31,068,Sinanché,Jurisdicción 2 - Valladolid (Oriente),134.483,1,0,0,0,0,1,0.74
-31069,31,069,Sotuta,Jurisdicción 3 - Ticul (Sur),545.759,1,0,0,0,0,1,0.18
-31045,31,045,Kopomá,Jurisdicción 1 - Mérida (Centro/Metropolitana),157.68,0,1,0,0,0,1,0.63
-31097,31,097,Tunkás,Jurisdicción 1 - Mérida (Centro/Metropolitana),412.777,0,1,0,0,0,1,0.24
-31048,31,048,Maxcanú,Jurisdicción 3 - Ticul (Sur),912.793,1,0,0,0,0,1,0.11
-31044,31,044,Kinchil,Jurisdicción 3 - Ticul (Sur),356.485,1,0,0,0,0,1,0.28
-31039,31,039,Ixil,Jurisdicción 1 - Mérida (Centro/Metropolitana),136.58,0,0,0,0,0,0,0.0
-31037,31,037,Huhí,Jurisdicción 3 - Ticul (Sur),197.651,0,0,0,0,0,0,0.0
-31033,31,033,Halachó,Jurisdicción 2 - Valladolid (Oriente),587.772,0,0,0,0,0,0,0.0
-31027,31,027,Dzidzantún,Jurisdicción 2 - Valladolid (Oriente),207.55,0,0,0,0,0,0,0.0
-31029,31,029,Dzilam González,Jurisdicción 3 - Ticul (Sur),506.935,0,0,0,0,0,0,0.0
-31031,31,031,Dzoncauich,Jurisdicción 1 - Mérida (Centro/Metropolitana),133.287,0,0,0,0,0,0,0.0
-31025,31,025,Dzán,Jurisdicción 3 - Ticul (Sur),79.67,0,0,0,0,0,0,0.0
-31010,31,010,Cantamayec,Jurisdicción 1 - Mérida (Centro/Metropolitana),357.019,0,0,0,0,0,0,0.0
-31006,31,006,Buctzotz,Jurisdicción 1 - Mérida (Centro/Metropolitana),654.246,0,0,0,0,0,0,0.0
-31001,31,001,Abalá,Jurisdicción 1 - Mérida (Centro/Metropolitana),293.161,0,0,0,0,0,0,0.0
-31005,31,005,Bokobá,Jurisdicción 1 - Mérida (Centro/Metropolitana),71.669,0,0,0,0,0,0,0.0
-31004,31,004,Baca,Jurisdicción 1 - Mérida (Centro/Metropolitana),108.484,0,0,0,0,0,0,0.0
-31009,31,009,Cansahcab,Jurisdicción 2 - Valladolid (Oriente),129.004,0,0,0,0,0,0,0.0
-31007,31,007,Cacalchén,Jurisdicción 1 - Mérida (Centro/Metropolitana),101.291,0,0,0,0,0,0,0.0
-31034,31,034,Hocabá,Jurisdicción 1 - Mérida (Centro/Metropolitana),95.196,0,0,0,0,0,0,0.0
-31026,31,026,Dzemul,Jurisdicción 2 - Valladolid (Oriente),174.411,0,0,0,0,0,0,0.0
-31018,31,018,Chapab,Jurisdicción 3 - Ticul (Sur),169.817,0,0,0,0,0,0,0.0
-31016,31,016,Chacsinkín,Jurisdicción 2 - Valladolid (Oriente),114.694,0,0,0,0,0,0,0.0
-31013,31,013,Conkal,Jurisdicción 1 - Mérida (Centro/Metropolitana),63.241,0,0,0,0,0,0,0.0
-31014,31,014,Cuncunul,Jurisdicción 2 - Valladolid (Oriente),135.379,0,0,0,0,0,0,0.0
-31020,31,020,Chicxulub Pueblo,Jurisdicción 3 - Ticul (Sur),44.545,0,0,0,0,0,0,0.0
-31023,31,023,Chocholá,Jurisdicción 3 - Ticul (Sur),293.664,0,0,0,0,0,0,0.0
-31049,31,049,Mayapán,Jurisdicción 3 - Ticul (Sur),93.749,0,0,0,0,0,0,0.0
-31047,31,047,Maní,Jurisdicción 3 - Ticul (Sur),126.921,0,0,0,0,0,0,0.0
-31074,31,074,Tahmek,Jurisdicción 2 - Valladolid (Oriente),102.229,0,0,0,0,0,0,0.0
-31073,31,073,Tahdziú,Jurisdicción 1 - Mérida (Centro/Metropolitana),241.381,0,0,0,0,0,0,0.0
-31072,31,072,Suma,Jurisdicción 3 - Ticul (Sur),87.692,0,0,0,0,0,0,0.0
-31071,31,071,Sudzal,Jurisdicción 3 - Ticul (Sur),221.676,0,0,0,0,0,0,0.0
-31070,31,070,Sucilá,Jurisdicción 1 - Mérida (Centro/Metropolitana),306.789,0,0,0,0,0,0,0.0
-31067,31,067,Seyé,Jurisdicción 1 - Mérida (Centro/Metropolitana),178.163,0,0,0,0,0,0,0.0
-31065,31,065,San Felipe,Jurisdicción 2 - Valladolid (Oriente),451.72,0,0,0,0,0,0,0.0
-31066,31,066,Santa Elena,Jurisdicción 3 - Ticul (Sur),514.383,0,0,0,0,0,0,0.0
-31064,31,064,Sanahcat,Jurisdicción 3 - Ticul (Sur),26.012,0,0,0,0,0,0,0.0
-31062,31,062,Sacalum,Jurisdicción 2 - Valladolid (Oriente),198.914,0,0,0,0,0,0,0.0
-31043,31,043,Kaua,Jurisdicción 2 - Valladolid (Oriente),137.282,0,0,0,0,0,0,0.0
-31051,31,051,Mocochá,Jurisdicción 1 - Mérida (Centro/Metropolitana),47.386,0,0,0,0,0,0,0.0
-31054,31,054,Muxupip,Jurisdicción 3 - Ticul (Sur),71.763,0,0,0,0,0,0,0.0
-31053,31,053,Muna,Jurisdicción 3 - Ticul (Sur),397.997,0,0,0,0,0,0,0.0
-31055,31,055,Opichén,Jurisdicción 3 - Ticul (Sur),259.449,0,0,0,0,0,0,0.0
-31057,31,057,Panabá,Jurisdicción 2 - Valladolid (Oriente),665.703,0,0,0,0,0,0,0.0
-31046,31,046,Mama,Jurisdicción 3 - Ticul (Sur),100.424,0,0,0,0,0,0,0.0
-31090,31,090,Timucuy,Jurisdicción 1 - Mérida (Centro/Metropolitana),134.794,0,0,0,0,0,0,0.0
-31084,31,084,Temax,Jurisdicción 2 - Valladolid (Oriente),338.222,0,0,0,0,0,0,0.0
-31088,31,088,Teya,Jurisdicción 3 - Ticul (Sur),77.777,0,0,0,0,0,0,0.0
-31083,31,083,Telchac Puerto,Jurisdicción 1 - Mérida (Centro/Metropolitana),65.356,0,0,0,0,0,0,0.0
-31077,31,077,Tekal de Venegas,Jurisdicción 3 - Ticul (Sur),199.346,0,0,0,0,0,0,0.0
-31080,31,080,Tekit,Jurisdicción 3 - Ticul (Sur),281.296,0,0,0,0,0,0,0.0
-31082,31,082,Telchac Pueblo,Jurisdicción 1 - Mérida (Centro/Metropolitana),57.912,0,0,0,0,0,0,0.0
-31076,31,076,Tecoh,Jurisdicción 1 - Mérida (Centro/Metropolitana),367.374,0,0,0,0,0,0,0.0
-31075,31,075,Teabo,Jurisdicción 3 - Ticul (Sur),224.429,0,0,0,0,0,0,0.0
-31078,31,078,Tekantó,Jurisdicción 3 - Ticul (Sur),79.818,0,0,0,0,0,0,0.0
-31086,31,086,Tepakán,Jurisdicción 3 - Ticul (Sur),108.554,0,0,0,0,0,0,0.0
-31098,31,098,Tzucacab,Jurisdicción 3 - Ticul (Sur),766.038,0,0,0,0,0,0,0.0
-31095,31,095,Tixpéhual,Jurisdicción 1 - Mérida (Centro/Metropolitana),71.059,0,0,0,0,0,0,0.0
-31094,31,094,Tixmehuac,Jurisdicción 3 - Ticul (Sur),230.222,0,0,0,0,0,0,0.0
-31105,31,105,Yaxkukul,Jurisdicción 1 - Mérida (Centro/Metropolitana),49.812,0,0,0,0,0,0,0.0
+cvegeo,municipio,jurisdiccion_sanitaria,poblacion_total,hospitales,clinicas,consultorios,farmacias,dentistas,total_unidades_salud,unidades_por_10mil_hab,pct_sin_afiliacion
+31050,Mérida,Jurisdicción 1 - Mérida (Centro/Metropolitana),995129,41,26,12,140,20,239,2.4,22.16
+31102,Valladolid,Jurisdicción 2 - Valladolid (Oriente),85460,10,22,9,35,10,86,10.06,27.56
+31096,Tizimín,Jurisdicción 2 - Valladolid (Oriente),80672,11,4,1,7,0,23,2.85,22.57
+31040,Izamal,Jurisdicción 1 - Mérida (Centro/Metropolitana),28555,2,1,3,8,2,16,5.6,19.53
+31085,Temozón,Jurisdicción 2 - Valladolid (Oriente),16680,3,4,0,2,0,9,5.4,17.08
+31091,Tinum,Jurisdicción 2 - Valladolid (Oriente),12700,3,1,1,3,0,8,6.3,29.31
+31041,Kanasín,Jurisdicción 1 - Mérida (Centro/Metropolitana),141939,2,1,0,3,0,6,0.42,26.32
+31032,Espita,Jurisdicción 2 - Valladolid (Oriente),16779,2,0,0,3,0,5,2.98,17.08
+31038,Hunucmá,Jurisdicción 1 - Mérida (Centro/Metropolitana),35137,1,2,0,2,0,5,1.42,22.86
+31019,Chemax,Jurisdicción 2 - Valladolid (Oriente),38934,3,0,0,1,0,4,1.03,17.29
+31092,Tixcacalcupul,Jurisdicción 2 - Valladolid (Oriente),7888,2,1,0,1,0,4,5.07,14.03
+31104,Yaxcabá,Jurisdicción 2 - Valladolid (Oriente),16350,2,2,0,0,0,4,2.45,14.99
+31061,Río Lagartos,Jurisdicción 2 - Valladolid (Oriente),3974,0,0,1,2,1,4,10.07,14.87
+31024,Chumayel,Jurisdicción 2 - Valladolid (Oriente),3244,0,1,2,1,0,4,12.33,8.45
+31036,Homún,Jurisdicción 1 - Mérida (Centro/Metropolitana),8090,0,2,0,2,0,4,4.94,27.59
+31042,Kantunil,Jurisdicción 1 - Mérida (Centro/Metropolitana),5553,0,1,0,3,0,4,7.2,29.89
+31002,Acanceh,Jurisdicción 1 - Mérida (Centro/Metropolitana),16772,0,0,0,3,0,3,1.79,19.13
+31059,Progreso,Jurisdicción 1 - Mérida (Centro/Metropolitana),66008,0,0,0,2,1,3,0.45,30.62
+31017,Chankom,Jurisdicción 3 - Ticul (Sur),4686,0,3,0,0,0,3,6.4,8.56
+31030,Dzitás,Jurisdicción 3 - Ticul (Sur),4015,1,2,0,0,0,3,7.47,10.66
+31003,Akil,Jurisdicción 3 - Ticul (Sur),12285,0,1,1,1,0,3,2.44,21.04
+31035,Hoctún,Jurisdicción 3 - Ticul (Sur),6384,1,0,0,1,0,2,3.13,21.66
+31021,Chichimilá,Jurisdicción 2 - Valladolid (Oriente),9406,0,2,0,0,0,2,2.13,22.72
+31079,Tekax,Jurisdicción 3 - Ticul (Sur),45062,1,0,0,1,0,2,0.44,13.13
+31087,Tetiz,Jurisdicción 3 - Ticul (Sur),5464,0,1,0,1,0,2,3.66,17.95
+31022,Chikindzonot,Jurisdicción 2 - Valladolid (Oriente),4363,2,0,0,0,0,2,4.58,2.41
+31093,Tixkokob,Jurisdicción 1 - Mérida (Centro/Metropolitana),18420,1,0,0,1,0,2,1.09,22.37
+31099,Uayma,Jurisdicción 2 - Valladolid (Oriente),4191,0,2,0,0,0,2,4.77,22.55
+31100,Ucú,Jurisdicción 1 - Mérida (Centro/Metropolitana),4049,1,1,0,0,0,2,4.94,27.54
+31058,Peto,Jurisdicción 3 - Ticul (Sur),25954,0,1,0,1,0,2,0.77,13.57
+31052,Motul,Jurisdicción 1 - Mérida (Centro/Metropolitana),37804,2,0,0,0,0,2,0.53,25.84
+31101,Umán,Jurisdicción 1 - Mérida (Centro/Metropolitana),69147,1,0,0,1,0,2,0.29,19.49
+31106,Yobaín,Jurisdicción 1 - Mérida (Centro/Metropolitana),2215,1,1,0,0,0,2,9.03,11.15
+31089,Ticul,Jurisdicción 3 - Ticul (Sur),40495,2,0,0,0,0,2,0.49,21.22
+31028,Dzilam de Bravo,Jurisdicción 1 - Mérida (Centro/Metropolitana),2936,0,0,0,1,0,1,3.41,22.24
+31012,Cenotillo,Jurisdicción 1 - Mérida (Centro/Metropolitana),3736,0,1,0,0,0,1,2.68,12.29
+31056,Oxkutzcab,Jurisdicción 3 - Ticul (Sur),33854,1,0,0,0,0,1,0.3,25.78
+31103,Xocchel,Jurisdicción 1 - Mérida (Centro/Metropolitana),3451,0,1,0,0,0,1,2.9,31.35
+31081,Tekom,Jurisdicción 3 - Ticul (Sur),3355,0,0,1,0,0,1,2.98,13.89
+31011,Celestún,Jurisdicción 2 - Valladolid (Oriente),8389,0,0,0,1,0,1,1.19,29.82
+31015,Cuzamá,Jurisdicción 3 - Ticul (Sur),5560,0,1,0,0,0,1,1.8,20.13
+31008,Calotmul,Jurisdicción 1 - Mérida (Centro/Metropolitana),3949,0,1,0,0,0,1,2.53,16.41
+31063,Samahil,Jurisdicción 1 - Mérida (Centro/Metropolitana),5631,1,0,0,0,0,1,1.78,7.33
+31060,Quintana Roo,Jurisdicción 3 - Ticul (Sur),976,0,1,0,0,0,1,10.25,13.73
+31068,Sinanché,Jurisdicción 2 - Valladolid (Oriente),3206,1,0,0,0,0,1,3.12,12.07
+31069,Sotuta,Jurisdicción 3 - Ticul (Sur),8967,1,0,0,0,0,1,1.12,24.45
+31045,Kopomá,Jurisdicción 1 - Mérida (Centro/Metropolitana),2677,0,1,0,0,0,1,3.74,25.14
+31097,Tunkás,Jurisdicción 1 - Mérida (Centro/Metropolitana),3684,0,1,0,0,0,1,2.71,16.31
+31048,Maxcanú,Jurisdicción 3 - Ticul (Sur),23991,1,0,0,0,0,1,0.42,19.23
+31044,Kinchil,Jurisdicción 3 - Ticul (Sur),7530,1,0,0,0,0,1,1.33,14.75
+31039,Ixil,Jurisdicción 1 - Mérida (Centro/Metropolitana),4186,0,0,0,0,0,0,0.0,29.93
+31037,Huhí,Jurisdicción 3 - Ticul (Sur),5250,0,0,0,0,0,0,0.0,15.81
+31033,Halachó,Jurisdicción 2 - Valladolid (Oriente),21255,0,0,0,0,0,0,0.0,23.96
+31027,Dzidzantún,Jurisdicción 2 - Valladolid (Oriente),8345,0,0,0,0,0,0,0.0,18.51
+31029,Dzilam González,Jurisdicción 3 - Ticul (Sur),6240,0,0,0,0,0,0,0.0,32.71
+31031,Dzoncauich,Jurisdicción 1 - Mérida (Centro/Metropolitana),2818,0,0,0,0,0,0,0.0,6.85
+31025,Dzán,Jurisdicción 3 - Ticul (Sur),6003,0,0,0,0,0,0,0.0,11.04
+31010,Cantamayec,Jurisdicción 1 - Mérida (Centro/Metropolitana),2755,0,0,0,0,0,0,0.0,9.98
+31006,Buctzotz,Jurisdicción 1 - Mérida (Centro/Metropolitana),9159,0,0,0,0,0,0,0.0,14.74
+31001,Abalá,Jurisdicción 1 - Mérida (Centro/Metropolitana),6550,0,0,0,0,0,0,0.0,18.21
+31005,Bokobá,Jurisdicción 1 - Mérida (Centro/Metropolitana),2167,0,0,0,0,0,0,0.0,7.25
+31004,Baca,Jurisdicción 1 - Mérida (Centro/Metropolitana),6195,0,0,0,0,0,0,0.0,19.29
+31009,Cansahcab,Jurisdicción 2 - Valladolid (Oriente),4466,0,0,0,0,0,0,0.0,18.25
+31007,Cacalchén,Jurisdicción 1 - Mérida (Centro/Metropolitana),7490,0,0,0,0,0,0,0.0,23.99
+31034,Hocabá,Jurisdicción 1 - Mérida (Centro/Metropolitana),6514,0,0,0,0,0,0,0.0,17.39
+31026,Dzemul,Jurisdicción 2 - Valladolid (Oriente),3622,0,0,0,0,0,0,0.0,18.11
+31018,Chapab,Jurisdicción 3 - Ticul (Sur),3385,0,0,0,0,0,0,0.0,12.23
+31016,Chacsinkín,Jurisdicción 2 - Valladolid (Oriente),3104,0,0,0,0,0,0,0.0,1.71
+31013,Conkal,Jurisdicción 1 - Mérida (Centro/Metropolitana),16671,0,0,0,0,0,0,0.0,23.62
+31014,Cuncunul,Jurisdicción 2 - Valladolid (Oriente),1714,0,0,0,0,0,0,0.0,14.53
+31020,Chicxulub Pueblo,Jurisdicción 3 - Ticul (Sur),4497,0,0,0,0,0,0,0.0,33.56
+31023,Chocholá,Jurisdicción 3 - Ticul (Sur),4863,0,0,0,0,0,0,0.0,18.22
+31049,Mayapán,Jurisdicción 3 - Ticul (Sur),3965,0,0,0,0,0,0,0.0,23.28
+31047,Maní,Jurisdicción 3 - Ticul (Sur),5968,0,0,0,0,0,0,0.0,9.32
+31074,Tahmek,Jurisdicción 2 - Valladolid (Oriente),3774,0,0,0,0,0,0,0.0,11.26
+31073,Tahdziú,Jurisdicción 1 - Mérida (Centro/Metropolitana),5854,0,0,0,0,0,0,0.0,6.27
+31072,Suma,Jurisdicción 3 - Ticul (Sur),1857,0,0,0,0,0,0,0.0,22.08
+31071,Sudzal,Jurisdicción 3 - Ticul (Sur),1949,0,0,0,0,0,0,0.0,12.67
+31070,Sucilá,Jurisdicción 1 - Mérida (Centro/Metropolitana),3971,0,0,0,0,0,0,0.0,14.86
+31067,Seyé,Jurisdicción 1 - Mérida (Centro/Metropolitana),10053,0,0,0,0,0,0,0.0,28.85
+31065,San Felipe,Jurisdicción 2 - Valladolid (Oriente),2118,0,0,0,0,0,0,0.0,10.34
+31066,Santa Elena,Jurisdicción 3 - Ticul (Sur),4220,0,0,0,0,0,0,0.0,10.71
+31064,Sanahcat,Jurisdicción 3 - Ticul (Sur),1701,0,0,0,0,0,0,0.0,6.17
+31062,Sacalum,Jurisdicción 2 - Valladolid (Oriente),4962,0,0,0,0,0,0,0.0,24.08
+31043,Kaua,Jurisdicción 2 - Valladolid (Oriente),3405,0,0,0,0,0,0,0.0,17.97
+31051,Mocochá,Jurisdicción 1 - Mérida (Centro/Metropolitana),3430,0,0,0,0,0,0,0.0,18.54
+31054,Muxupip,Jurisdicción 3 - Ticul (Sur),2990,0,0,0,0,0,0,0.0,10.54
+31053,Muna,Jurisdicción 3 - Ticul (Sur),13494,0,0,0,0,0,0,0.0,30.29
+31055,Opichén,Jurisdicción 3 - Ticul (Sur),7080,0,0,0,0,0,0,0.0,25.76
+31057,Panabá,Jurisdicción 2 - Valladolid (Oriente),7766,0,0,0,0,0,0,0.0,9.66
+31046,Mama,Jurisdicción 3 - Ticul (Sur),3296,0,0,0,0,0,0,0.0,21.48
+31090,Timucuy,Jurisdicción 1 - Mérida (Centro/Metropolitana),7503,0,0,0,0,0,0,0.0,24.79
+31084,Temax,Jurisdicción 2 - Valladolid (Oriente),7037,0,0,0,0,0,0,0.0,16.16
+31088,Teya,Jurisdicción 3 - Ticul (Sur),1917,0,0,0,0,0,0,0.0,4.8
+31083,Telchac Puerto,Jurisdicción 1 - Mérida (Centro/Metropolitana),1915,0,0,0,0,0,0,0.0,32.58
+31077,Tekal de Venegas,Jurisdicción 3 - Ticul (Sur),2683,0,0,0,0,0,0,0.0,15.43
+31080,Tekit,Jurisdicción 3 - Ticul (Sur),11020,0,0,0,0,0,0,0.0,22.7
+31082,Telchac Pueblo,Jurisdicción 1 - Mérida (Centro/Metropolitana),3512,0,0,0,0,0,0,0.0,36.02
+31076,Tecoh,Jurisdicción 1 - Mérida (Centro/Metropolitana),17939,0,0,0,0,0,0,0.0,21.23
+31075,Teabo,Jurisdicción 3 - Ticul (Sur),6921,0,0,0,0,0,0,0.0,15.17
+31078,Tekantó,Jurisdicción 3 - Ticul (Sur),3747,0,0,0,0,0,0,0.0,15.59
+31086,Tepakán,Jurisdicción 3 - Ticul (Sur),2133,0,0,0,0,0,0,0.0,7.83
+31098,Tzucacab,Jurisdicción 3 - Ticul (Sur),15346,0,0,0,0,0,0,0.0,14.19
+31095,Tixpéhual,Jurisdicción 1 - Mérida (Centro/Metropolitana),5690,0,0,0,0,0,0,0.0,18.37
+31094,Tixmehuac,Jurisdicción 3 - Ticul (Sur),5444,0,0,0,0,0,0,0.0,8.23
+31105,Yaxkukul,Jurisdicción 1 - Mérida (Centro/Metropolitana),3293,0,0,0,0,0,0,0.0,20.83

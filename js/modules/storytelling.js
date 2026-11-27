@@ -1,5 +1,5 @@
 /**
- * Módulo de Storytelling, Narración por Voz (Web Speech API), Auto-Tour y Notificaciones
+ * Módulo de Narrativa, Narración por Voz (Web Speech API), Recorrido Automático y Notificaciones
  */
 window.DataStoryApp = window.DataStoryApp || {};
 
@@ -68,18 +68,18 @@ window.DataStoryApp.storytelling = (function() {
     const btnIcon = document.getElementById('presIcon');
 
     if (isPresentationRunning) {
-      if (btnText) btnText.innerText = "Pausar Tour";
+      if (btnText) btnText.innerText = "Pausar recorrido";
       if (btnIcon) btnIcon.className = "fa-solid fa-pause";
-      showToast("Modo Auto-Tour iniciado (8s por capítulo)");
+      showToast("Recorrido automático iniciado (8 s por capítulo)");
       presentationTimer = setInterval(() => {
         if (typeof onNextStep === 'function') onNextStep();
       }, 8000);
     } else {
-      if (btnText) btnText.innerText = "Auto-Tour";
+      if (btnText) btnText.innerText = "Recorrido automático";
       if (btnIcon) btnIcon.className = "fa-solid fa-play";
       clearInterval(presentationTimer);
       presentationTimer = null;
-      showToast("Modo Auto-Tour pausado");
+      showToast("Recorrido automático pausado");
     }
   }
 

@@ -7,8 +7,11 @@ window.DataStoryApp = window.DataStoryApp || {};
 window.DataStoryApp.app = (function() {
   let currentStep = 1;
 
-  function init() {
+  async function init() {
     setupAppEvents();
+    if (window.DataStoryApp.goldLoader) {
+      await window.DataStoryApp.goldLoader.hydrateFromGold();
+    }
     switchView(1);
     setupKeyboardNavigation();
   }

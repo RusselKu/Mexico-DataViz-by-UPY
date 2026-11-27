@@ -1,6 +1,5 @@
-tipo_asentamiento,total_localidades,dist_media_parque_m,min_caminata_parque_prom,pct_parque_15min,dist_media_salud_m,min_caminata_salud_prom,pct_salud_15min
-hamlet,9,1745.59,21.82,33.33,9661.1,120.76,0.0
-neighbourhood,143,511.18,6.39,90.91,1308.09,16.35,55.24
-suburb,2,147.75,1.8,100.0,6262.35,78.3,0.0
-town,13,478.9,5.98,84.62,9919.45,123.99,15.38
-village,76,1048.9,13.11,69.74,8129.31,101.62,3.95
+tipo_localidad,total_localidades,distancia_media_salud_m,minutos_pie_salud_prom,pct_salud_15min,distancia_media_parque_m,minutos_pie_parque_prom
+Barrio / Zona urbana,136,1195.8,14.95,58.09,503.92,6.3
+Comisaría,40,6004.83,75.06,7.5,1025.77,12.82
+Localidad urbana,5,3182.36,39.78,40.0,86.32,1.08
+Subcomisaría / Ranchería,4,5196.82,64.95,0.0,612.48,7.68

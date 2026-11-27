@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escena 4 · Evolución epidemiológica mensual en Yucatán</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilo-booklet.css">
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+</head>
+<body>
+  <article class="escena-contenedor">
+    <div class="rotulo-escena">ACTO 5 · CUIDARNOS · ESCENA 4</div>
+    <h1 class="titulo-hallazgo" id="titulo-escena">Cargando hallazgo desde escena-4.csv…</h1>
+    <p class="subtitulo-grafica">Casos confirmados nuevos (barras moradas) y defunciones nuevas (línea oro) por mes en Yucatán (CVE_ENT = 31) · Enero 2020 a junio 2021</p>
+    <div class="lienzo-svg" id="grafica-escena-4"></div>
+    <p class="lectura-grafica" id="lectura-escena"></p>
+    <p class="pie-fuente">Fuente: Dirección General de Epidemiología (DGE, Secretaría de Salud), vía repositorio espejo de terceros (<code>mariorz/covid19-mx-time-series</code>) · Archivo: <code>booklet/datos/escena-4.csv</code> · Corte: 12 de junio de 2021.</p>
+  </article>
+  <script src="./escena-4.js"></script>
+</body>
+</html>

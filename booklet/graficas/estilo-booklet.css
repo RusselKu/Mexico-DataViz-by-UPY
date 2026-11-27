@@ -1,0 +1,101 @@
+/* Estilo unificado del Booklet — Paleta oficial Morado y Oro (Sección 3) */
+:root {
+  --morado: #600d8b;
+  --morado-suave: #f3e8f9;
+  --oro: #ed9f22;
+  --oro-oscuro: #b45309;
+  --gris: #9ca3af;
+  --gris-texto: #4b5563;
+  --tinta: #0d0d0d;
+  --borde: #e5e7eb;
+  --fondo: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--tinta);
+  background: var(--fondo);
+  line-height: 1.45;
+  padding: 24px;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.escena-contenedor {
+  max-width: 920px;
+  margin: 0 auto;
+  background: var(--fondo);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  padding: 24px 28px 20px;
+}
+
+.rotulo-escena {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--oro-oscuro);
+  margin-bottom: 6px;
+}
+
+.titulo-hallazgo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--tinta);
+  line-height: 1.22;
+  margin-bottom: 6px;
+}
+
+.subtitulo-grafica {
+  font-size: 13.5px;
+  color: var(--gris-texto);
+  margin-bottom: 16px;
+}
+
+.lienzo-svg {
+  width: 100%;
+  overflow: visible;
+}
+
+.lienzo-svg svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  font-family: 'Outfit', sans-serif;
+}
+
+.lectura-grafica {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--borde);
+  font-size: 13px;
+  color: var(--tinta);
+}
+
+.pie-fuente {
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--gris-texto);
+}
+
+.cifra-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@media print {
+  body {
+    padding: 0;
+  }
+  .escena-contenedor {
+    border: none;
+    padding: 8px 0;
+    page-break-inside: avoid;
+  }
+}

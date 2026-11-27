@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Storytelling: El Viaje de la Resiliencia | Plataforma Interactiva Multiescalar • UPY</title>
-  <meta name="description" content="Plataforma de Data Storytelling y Visualización Avanzada de Datos sobre la resiliencia comunitaria, cartografía de salud, modelos epidemiológicos, minería de prensa, LiDAR 3D y Realidad Aumentada en Yucatán y la UPY.">
-  <meta name="keywords" content="Data Storytelling, Visualización de Datos, INEGI, DENUE, DGE, SIEGY, GeoPortal Mérida, LiDAR, WebXR, AR, UPY">
+  <title>Narrativa con Datos: El Viaje de la Resiliencia | Plataforma Interactiva Multiescalar • UPY</title>
+  <meta name="description" content="Plataforma de narrativa con datos y visualización sobre acceso a la salud, cartografía médica, evolución epidemiológica, prensa regional, altimetría 3D y realidad aumentada en Yucatán y Mérida.">
+  <meta name="keywords" content="Narrativa con Datos, Visualización de Datos, INEGI, Censo 2020, DGE, SIEGY, Mérida, Altimetría 3D, WebXR, Realidad Aumentada, UPY">
 
   <!-- Google Fonts: Outfit, Inter, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,23 +47,26 @@
         <i class="fa-solid fa-chart-pie"></i>
       </div>
       <div>
-        <div class="brand-title">Data Storytelling: El Viaje de la Resiliencia</div>
+        <div class="brand-title">El Viaje de la Resiliencia: Acceso a la Salud en Yucatán</div>
         <div class="brand-subtitle">
           <span class="pulse-dot" style="width: 6px; height: 6px;"></span>
-          Plataforma Multiescalar • UPY 2024
+          Plataforma Multiescalar • Equipo 3 • UPY 2026
         </div>
       </div>
     </div>
 
     <div class="header-actions">
+      <a class="btn-ghost" href="./booklet/index.html" title="Abrir el capítulo del Booklet en D3 (Acto 5 · Cuidarnos)" style="text-decoration: none;">
+        <i class="fa-solid fa-book-open"></i> Ver Booklet (Acto 5)
+      </a>
       <button class="btn-ghost" id="presBtn" title="Reproducir recorrido guiado automático">
-        <i class="fa-solid fa-play" id="presIcon"></i> <span id="presText">Auto-Tour</span>
+        <i class="fa-solid fa-play" id="presIcon"></i> <span id="presText">Recorrido automático</span>
       </button>
-      <button class="btn-ghost" id="btnOpenMethodology" title="Ver Ficha Técnica y Metodología (Atajo: M)">
-        <i class="fa-solid fa-database"></i> Metodología & Datos
+      <button class="btn-ghost" id="btnOpenMethodology" title="Ver ficha técnica y metodología (Atajo: M)">
+        <i class="fa-solid fa-database"></i> Metodología y datos
       </button>
       <button class="btn-ghost" id="btnExportData" title="Descargar datos del capítulo en formato JSON">
-        <i class="fa-solid fa-download"></i> Exportar
+        <i class="fa-solid fa-download"></i> Descargar JSON
       </button>
       <span class="badge-pill badge-primary"><i class="fa-solid fa-layer-group"></i> 9 Capítulos</span>
     </div>
@@ -112,13 +115,13 @@
         <span class="tab-number">5</span> <i class="fa-solid fa-shield-halved"></i> Transparencia PNT
       </button>
       <button class="tab-btn">
-        <span class="tab-number">6</span> <i class="fa-solid fa-newspaper"></i> Web Scraping
+        <span class="tab-number">6</span> <i class="fa-solid fa-newspaper"></i> Prensa Regional
       </button>
       <button class="tab-btn">
-        <span class="tab-number">7</span> <i class="fa-solid fa-graduation-cap"></i> Self-Produced UPY
+        <span class="tab-number">7</span> <i class="fa-solid fa-users"></i> Afiliación Censo 2020
       </button>
       <button class="tab-btn tech-tab">
-        <span class="tab-number">8</span> <i class="fa-solid fa-cube"></i> LiDAR 3D
+        <span class="tab-number">8</span> <i class="fa-solid fa-cube"></i> Altimetría DEM 3D
       </button>
       <button class="tab-btn tech-tab">
         <span class="tab-number">9</span> <i class="fa-solid fa-vr-cardboard"></i> Realidad Aumentada (AR)
@@ -246,7 +249,7 @@
     </button>
     
     <div class="nav-controls-center">
-      <div class="progress-bar-container" title="Progreso del Data Storytelling">
+      <div class="progress-bar-container" title="Progreso del recorrido">
         <div class="progress-bar-fill" id="progressBarFill"></div>
       </div>
       <div style="font-size: 0.84rem; color: var(--text-muted); font-family: var(--font-heading);" id="stepIndicator">
@@ -269,18 +272,18 @@
     </div>
     <div style="display: flex; flex-direction: column; gap: 1rem; font-size: 0.88rem; line-height: 1.6; color: #cbd5e1; max-height: 60vh; overflow-y: auto; padding-right: 8px;">
       <p>
-        Este proyecto integra un pipeline de datos multiescalar con 7 fuentes de datos primarias estructuradas y 2 entornos volumétricos tecnológicos de última generación:
+        Este sitio carga dinámicamente los archivos reales de las capas <code>data/gold/</code> y <code>data/silver/</code> (generados mediante <code>scripts/etl/</code>) y alimenta el capítulo del Booklet en <code>booklet/</code>:
       </p>
       <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
-        <li><strong>1. INEGI DENUE:</strong> Extracción de 3,842 unidades económicas del Sector 62 (Servicios de Salud y Asistencia Social) cruzado con el Censo 2020.</li>
-        <li><strong>2. Datos.gob.mx (DGE):</strong> Registros abiertos de pacientes, tasas de recuperación y velocidad de egreso hospitalario durante 5 periodos clave.</li>
-        <li><strong>3. SIEGY Yucatán:</strong> Datos geoestadísticos y sociodemográficos de los 106 municipios agrupados en las 3 Jurisdicciones Sanitarias.</li>
-        <li><strong>4. GeoPortal Mérida:</strong> Capas vectoriales de equipamiento urbano, parques barriales y macro-centros de atención.</li>
-        <li><strong>5. Transparencia PNT:</strong> Solicitudes de información sobre abastecimiento de equipo de protección personal y logística hospitalaria en los 4 nosocomios ancla.</li>
-        <li><strong>6. Web Scraping:</strong> Minería de texto sobre más de 1,420 notas periodísticas locales y análisis de sentimiento con PLN.</li>
-        <li><strong>7. Self-Produced (UPY):</strong> Encuesta demoscópica de resiliencia estudiantil levantada en la comunidad universitaria (n=480).</li>
-        <li><strong>8. LiDAR 3D:</strong> Modelo digital de elevación y malla urbana generado a partir de densidades de puntos LiDAR e INEGI CEM.</li>
-        <li><strong>9. Realidad Aumentada (AR):</strong> Estructura cristalográfica de la espícula viral (PDB ID: 6VXX) renderizada en WebXR.</li>
+        <li><strong>1. Red de Salud (OpenStreetMap + INEGI):</strong> 482 unidades médicas mapeadas en Yucatán (239 en Mérida, 49.6 %) y 56 municipios sin registro abierto.</li>
+        <li><strong>2. Evolución Epidemiológica (DGE vía espejo mariorz):</strong> 41,179 casos confirmados acumulados y 4,078 defunciones en Yucatán (enero 2020 a junio 2021).</li>
+        <li><strong>3. SIEGY y 106 Municipios (INEGI):</strong> Polígonos municipales oficiales (vía espejo JuveCampos) agrupados en las 3 Jurisdicciones Sanitarias.</li>
+        <li><strong>4. Accesibilidad 15 minutos en Mérida:</strong> 185 localidades dentro del polígono oficial 31050 y 884 parques; 54.6 % rebasa los 15 minutos a pie a una unidad médica.</li>
+        <li><strong>5. Infraestructura Hospitalaria:</strong> 190 hospitales y clínicas georreferenciadas por municipio y nivel de atención.</li>
+        <li><strong>6. Prensa Regional (RSS):</strong> 235 titulares reales extraídos de medios regionales de Yucatán con análisis léxico.</li>
+        <li><strong>7. Afiliación a Salud (Censo 2020 INEGI):</strong> 515 AGEB urbanas de Mérida (211,556 habitantes sin afiliación, 22.1 %). La encuesta UPY previa quedó excluida del booklet por transparencia metodológica.</li>
+        <li><strong>8. Altimetría DEM 3D:</strong> Malla real 20×20 (400 puntos) de Copernicus DEM GLO-90 sobre Mérida.</li>
+        <li><strong>9. Realidad Aumentada (PDB 6VXX):</strong> Metadatos y cabecera oficial de RCSB Protein Data Bank (resolución 2.8 Å).</li>
       </ul>
       <div style="background: rgba(0, 242, 254, 0.08); padding: 10px 14px; border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
         📌 <strong>Universidad Politécnica de Yucatán (UPY)</strong> • Ingeniería en Datos & Computación Embebida
@@ -291,8 +294,9 @@
     </div>
   </dialog>
 
-  <!-- Modular Scripts Loaded in Order (Compatible with file:/// and http(s)://) -->
+  <!-- Scripts modulares cargados en orden (lectura dinámica de data/gold y data/silver) -->
   <script src="./js/data/viewsData.js"></script>
+  <script src="./js/data/goldLoader.js"></script>
   <script src="./js/modules/storytelling.js"></script>
   <script src="./js/modules/gisMap.js"></script>
   <script src="./js/modules/charts.js"></script>

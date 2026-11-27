@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escena 2 · Población sin afiliación médica por AGEB en Mérida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilo-booklet.css">
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+</head>
+<body>
+  <article class="escena-contenedor">
+    <div class="rotulo-escena">ACTO 5 · CUIDARNOS · ESCENA 2</div>
+    <h1 class="titulo-hallazgo" id="titulo-escena">Cargando hallazgo desde escena-2.csv…</h1>
+    <p class="subtitulo-grafica">Distribución de las 515 AGEB urbanas con población en Mérida según porcentaje sin afiliación a servicios de salud (PSINDER) · Censo de Población y Vivienda 2020</p>
+    <div class="lienzo-svg" id="grafica-escena-2"></div>
+    <p class="lectura-grafica" id="lectura-escena"></p>
+    <p class="pie-fuente">Fuente: INEGI, Censo de Población y Vivienda 2020, principales resultados por AGEB y manzana urbana de Yucatán (<code>ageb_mza_urbana_31_cpv2020</code>) · Archivo: <code>booklet/datos/escena-2.csv</code> · Corte: 2020.</p>
+  </article>
+  <script src="./escena-2.js"></script>
+</body>
+</html>

@@ -178,25 +178,31 @@ window.DataStoryApp.threeVisuals = (function() {
       }
     }
 
-    // 4. Dosel Vegetal y Parques (Partículas LiDAR de cobertura arbórea)
-    const particleCount = 2400;
+    // 4. Nube de elevación determinística basada en la matriz real Copernicus DEM
+    const demMat = window.DataStoryApp.demMatrix?.elevation_matrix_msnm;
+    const rows = Array.isArray(demMat) ? demMat.length : 20;
+    const cols = Array.isArray(demMat?.[0]) ? demMat[0].length : 20;
+    const particleCount = rows * cols;
     const particleGeom = new THREE.BufferGeometry();
     const posArray = new Float32Array(particleCount * 3);
-    for (let i = 0; i < particleCount * 3; i += 3) {
-      const px = (Math.random() - 0.5) * 18;
-      const pz = (Math.random() - 0.5) * 18;
-      if (Math.hypot(px, pz) < 10) {
-        posArray[i] = px;
-        posArray[i + 1] = 0.2 + Math.random() * 3.8;
-        posArray[i + 2] = pz;
+    let idxP = 0;
+    for (let r = 0; r < rows; r++) {
+      for (let c = 0; c < cols; c++) {
+        const px = -9 + (c / Math.max(1, cols - 1)) * 18;
+        const pz = -9 + (r / Math.max(1, rows - 1)) * 18;
+        const elev = Array.isArray(demMat) ? Number(demMat[r][c] || 9.0) : 9.0;
+        posArray[idxP] = px;
+        posArray[idxP + 1] = Math.max(0.2, (elev / 16.0) * 3.2);
+        posArray[idxP + 2] = pz;
+        idxP += 3;
       }
     }
     particleGeom.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
     const pMat = new THREE.PointsMaterial({
-      size: 0.09,
-      color: lidarColorMode === 'cyberpunk' ? 0x00ff88 : 0x10b981,
+      size: 0.16,
+      color: lidarColorMode === 'cyberpunk' ? 0xed9f22 : 0x600d8b,
       transparent: true,
-      opacity: 0.75
+      opacity: 0.85
     });
     const pSystem = new THREE.Points(particleGeom, pMat);
     parentGroup.add(pSystem);
@@ -262,13 +268,19 @@ window.DataStoryApp.threeVisuals = (function() {
       rbdMesh.position.copy(topPt);
       protomer.add(rbdMesh);
 
-      // Átomos de glicanos y residuos clave (N-glycan shield)
+      // Átomos de glicanos y residuos clave en distribución determinística
       for (let g = 0; g < 12; g++) {
         const glyGeom = new THREE.SphereGeometry(0.22, 12, 12);
         const glyMat = new THREE.MeshPhongMaterial({ color: 0xffffff, transparent: true, opacity: 0.8 });
         const gly = new THREE.Mesh(glyGeom, glyMat);
-        const pt = curvePts[Math.floor(Math.random() * curvePts.length)];
-        gly.position.set(pt.x + (Math.random() - 0.5) * 0.8, pt.y + (Math.random() - 0.5) * 0.8, pt.z + (Math.random() - 0.5) * 0.8);
+        const ptIdx = Math.min(curvePts.length - 1, Math.floor((g / 12) * curvePts.length));
+        const pt = curvePts[ptIdx];
+        const ang = (idx * 2.094) + (g * 0.5236);
+        gly.position.set(
+          pt.x + Math.cos(ang) * 0.35,
+          pt.y + Math.sin(ang * 0.7) * 0.25,
+          pt.z + Math.sin(ang) * 0.35
+        );
         protomer.add(gly);
       }
 

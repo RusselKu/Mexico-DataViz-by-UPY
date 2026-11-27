@@ -1,0 +1,186 @@
+id_localidad,localidad,tipo_localidad,cvegeo,latitud,longitud,unidad_salud_cercana,distancia_salud_m,minutos_pie_salud,en_umbral_15min_salud,parque_mas_cercano,distancia_parque_m,minutos_pie_parque
+LOC-302510070,Sotuta de Peón,Comisaría,31050,20.742245,-89.576554,Hospital de La Amistad Corea México,18947.8,236.8,False,Parque principal de Sotuta de Peón,57.5,0.7
+LOC-1745672618,San Antonio Tzacalá,Comisaría,31050,20.750708,-89.653368,Hospital O'Horan Sur,16728.3,209.1,False,Parque Vecinal Mérida 1176414885,172.4,2.2
+LOC-1745672745,Petac,Comisaría,31050,20.769814,-89.659323,Hospital O'Horan Sur,14672.3,183.4,False,Parque principal de Petac,291.3,3.6
+LOC-1745745489,Dzoyaxché,Comisaría,31050,20.787684,-89.589907,Hospital de La Amistad Corea México,13753.6,171.9,False,Parque principal de Yaxnic,3123.7,39.0
+LOC-1745735452,Yaxnic,Comisaría,31050,20.788748,-89.620206,Hospital O'Horan Sur,12719.9,159.0,False,Parque principal de Yaxnic,230.0,2.9
+LOC-1745672719,Texán Cámara,Comisaría,31050,20.789859,-89.666544,Hospital O'Horan Sur,12588.7,157.4,False,Parque principal de Texán Cámara,107.2,1.3
+LOC-1447506031,Molas,Comisaría,31050,20.817281,-89.629205,Hospital O'Horan Sur,9443.3,118.0,False,Parque principal de Molas,274.2,3.4
+LOC-330539924,Sac-Nicté,Comisaría,31050,21.142123,-89.583719,Farmacia AILEEN,9367.4,117.1,False,Parque principal de Sac-Nicté,51.4,0.6
+LOC-653943840,San José Tzal,Localidad urbana,31050,20.823298,-89.660963,Hospital O'Horan Sur,8842.4,110.5,False,Parque principal de San José Tzal,191.6,2.4
+LOC-12783627033,Fraccionamiento Misnebalam,Barrio / Zona urbana,31050,21.151587,-89.598978,Farmacia AILEEN,8561.6,107.0,False,Parque principal de Sac-Nicté,1852.0,23.2
+LOC-330538987,Santa María Chi,Comisaría,31050,21.03307,-89.481661,IMSS U.M.F. 61 Los Héroes,7612.5,95.2,False,Parque principal de Santa María Chi,53.8,0.7
+LOC-302232439,San Pedro Chimay,Comisaría,31050,20.865749,-89.578652,IMSS UMF 58 Serapio Rendón,7584.7,94.8,False,Parque principal de Tahdzibichén,3113.0,38.9
+LOC-1447508188,San Ignacio Tesip,Comisaría,31050,20.841628,-89.612685,Hospital de La Amistad Corea México,7325.5,91.6,False,Parque principal de Xmatkuil,2433.8,30.4
+LOC-1745717489,Hunxectamán,Comisaría,31050,20.883189,-89.557852,IMSS UMF 58 Serapio Rendón,7251.0,90.6,False,Parque principal de Subincancab,3236.9,40.5
+LOC-303033581,Sierra Papacal,Comisaría,31050,21.124414,-89.729974,Farmacia AILEEN,7121.8,89.0,False,Parque principal de Sierra Papacal,278.0,3.5
+LOC-1604298357,Suytunchén,Subcomisaría / Ranchería,31050,21.102158,-89.73105,Farmacia AILEEN,6907.3,86.3,False,Parque principal de Sierra Papacal,2287.0,28.6
+LOC-7700842327,Yucatán Country Club,Comisaría,31050,21.119737,-89.600235,Farmacias Yza,6590.8,82.4,False,Parque de Xcunya,1971.7,24.6
+LOC-330540257,Oncán,Comisaría,31050,20.963946,-89.483069,"Unidad Médica Familiar #61 ""Los Héroes"" IMSS",6507.4,81.3,False,Parque principal de Oncán,248.8,3.1
+LOC-1604298360,Yaxché Casares,Subcomisaría / Ranchería,31050,21.033973,-89.498809,Farmacias YZA,6241.8,78.0,False,Parque Vecinal Mérida 209694761,25.9,0.3
+LOC-1604298371,Xcunyá,Comisaría,31050,21.132745,-89.613628,Farmacia AILEEN,6133.9,76.7,False,Parque de Xcunya,35.1,0.4
+LOC-1604302674,Dzidzilché,Comisaría,31050,21.152836,-89.689964,Farmacia AILEEN,5919.3,74.0,False,Parque principal de San Ignacio,3773.3,47.2
+LOC-330539641,Chablekal,Localidad urbana,31050,21.096039,-89.576981,Farmacias Yza,5295.7,66.2,False,Plaza principal de Chablekal,57.3,0.7
+LOC-1604298363,Noc Ac,Comisaría,31050,21.078976,-89.716839,Centro de Salud de Dzitya,5017.4,62.7,False,Parque principal de Cosgaya,2405.7,30.1
+LOC-1745723241,Xmatkuil,Comisaría,31050,20.860477,-89.625057,Hospital de La Amistad Corea México,4913.6,61.4,False,Parque principal de Xmatkuil,22.0,0.3
+LOC-12783627027,Fraccionamiento Ceiba II,Barrio / Zona urbana,31050,21.103146,-89.599046,Farmacias Yza,4829.3,60.4,False,Parque principal de Dzibichaltún,496.2,6.2
+LOC-1745713494,Tahdzibichén,Comisaría,31050,20.886577,-89.598008,Hospital de La Amistad Corea México,4736.2,59.2,False,Parque principal de Tahdzibichén,86.0,1.1
+LOC-654254584,Dzibilchaltún,Subcomisaría / Ranchería,31050,21.098242,-89.598704,Farmacias Yza,4321.2,54.0,False,Parque principal de Dzibichaltún,52.4,0.7
+LOC-1919481389,Tamanché,Comisaría,31050,21.137734,-89.642263,Farmacia AILEEN,4313.6,53.9,False,Parque A1,2212.5,27.7
+LOC-1604298366,San Matías Cosgaya,Comisaría,31050,21.098156,-89.704952,Farmacia AILEEN,4254.6,53.2,False,Parque principal de Cosgaya,68.4,0.9
+LOC-1745627235,Dzununcán,Comisaría,31050,20.865911,-89.654082,Hospital O'Horan Sur,4083.4,51.0,False,Parque principal de Dzununcán,62.5,0.8
+LOC-1604302672,Kikteil,Comisaría,31050,21.129786,-89.693129,Farmacia AILEEN,4038.8,50.5,False,Jardines,3200.1,40.0
+LOC-330538717,Sitpach,Comisaría,31050,21.027323,-89.520579,Farmacias Similares,3983.3,49.8,False,Parque principal de Sitpach,24.5,0.3
+LOC-14282053186,Residencial Blanca,Comisaría,31050,21.125622,-89.69548,Farmacia AILEEN,3936.1,49.2,False,Parque principal de Cosgaya,3259.0,40.7
+LOC-11327870753,Altosano,Comisaría,31050,21.127817,-89.63729,Farmacia AILEEN,3809.6,47.6,False,Parque principal de Santa María Yaxché,1091.2,13.6
+LOC-12787318252,Fraccionamiento Santa Cruz Norte,Barrio / Zona urbana,31050,20.881395,-89.671958,Hospital O'Horan Sur,3690.8,46.1,False,Parque Gran Santa Cruz,1041.3,13.0
+LOC-1618081383,Chalmuch,Comisaría,31050,20.972777,-89.727117,Alma,3612.4,45.2,False,Parque Vecinal Mérida 1364206833,1998.0,25.0
+LOC-12783627020,Fraccionamiento Residencial Quinta Real,Barrio / Zona urbana,31050,21.100182,-89.622424,Unidad de Salud (Doctors) OSM-8085692288,3508.8,43.9,False,Parque principal de Santa María Yaxché,2397.3,30.0
+LOC-1604298368,Santa María Yaxché,Subcomisaría / Ranchería,31050,21.117491,-89.635692,Farmacia AILEEN,3317.0,41.5,False,Parque principal de Santa María Yaxché,84.6,1.1
+LOC-1604298359,Cheumán,Comisaría,31050,21.06643,-89.705891,Centro de Salud de Dzitya,3276.8,41.0,False,Campo deportivo Dzityá,3044.5,38.1
+LOC-12787318239,Fraccionamiento Santa Cruz Segunda Etapa,Barrio / Zona urbana,31050,20.892721,-89.673469,Hospital O'Horan Sur,3251.9,40.6,False,Parque Santa Cruz,311.1,3.9
+LOC-11327854085,Jardines de Tahdzibichén,Barrio / Zona urbana,31050,20.900502,-89.600879,IMSS UMF 58 Serapio Rendón,3173.1,39.7,False,Parque Cielo Alto,1227.9,15.3
+LOC-12787318226,Fraccionamiento Santa Cruz II,Barrio / Zona urbana,31050,20.894458,-89.671508,Hospital O'Horan Sur,3002.3,37.5,False,Parque Santa Cruz,186.6,2.3
+LOC-12787318246,Fraccionamiento Santa Cruz,Barrio / Zona urbana,31050,20.891889,-89.670611,Hospital O'Horan Sur,3000.4,37.5,False,Parque Santa Cruz,130.5,1.6
+LOC-1604298356,Tixcuytún,Comisaría,31050,21.068678,-89.569559,OM dental,2900.8,36.3,False,Parque El Roble,230.0,2.9
+LOC-1738747393,Tixcacal,Comisaría,31050,20.944297,-89.713981,Farmacia Guadalajara,2778.0,34.7,False,Parque Colibrí,434.2,5.4
+LOC-12786898386,Plan de Ayala Sur III,Barrio / Zona urbana,31050,20.885567,-89.621436,Hospital de La Amistad Corea México,2709.5,33.9,False,Parque Nueva San Jose Tecoh 3,2088.4,26.1
+LOC-12786898384,Colonia Jacinto Canek,Barrio / Zona urbana,31050,20.891567,-89.617544,Hospital de La Amistad Corea México,2654.0,33.2,False,Parque Nueva San Jose Tecoh 3,1641.9,20.5
+LOC-11327870752,La Rejoyada,Comisaría,31050,21.122315,-89.682271,Farmacia AILEEN,2653.6,33.2,False,jardines,2245.8,28.1
+LOC-1745627173,Santa Cruz Palomeque,Comisaría,31050,20.880518,-89.653852,Hospital O'Horan Sur,2550.1,31.9,False,Parque San Luis Dzununcan,868.6,10.9
+LOC-2124635975,Plan de Ayala Sur II,Barrio / Zona urbana,31050,20.888689,-89.621314,Hospital de La Amistad Corea México,2493.0,31.2,False,Parque Nueva San Jose Tecoh 3,1759.2,22.0
+LOC-12780133889,Fraccionamiento Residencial Andria,Barrio / Zona urbana,31050,21.020232,-89.5369,Farmacias Similares,2454.0,30.7,False,Parque Vecinal Mérida 1279544742,241.6,3.0
+LOC-12070533860,Fraccionamiento Solana Residencial,Barrio / Zona urbana,31050,20.940937,-89.710028,Farmacia Guadalajara,2450.5,30.6,False,Parque Colibrí,95.2,1.2
+LOC-2128380253,Xcanatún,Comisaría,31050,21.075534,-89.629066,Farmacias Yza,2382.3,29.8,False,Parque de Xcanatún,94.6,1.2
+LOC-12998405810,Cerrada Veneto,Barrio / Zona urbana,31050,21.022296,-89.53745,Farmacias Similares,2325.2,29.1,False,Parque Vecinal Mérida 1279544742,9.0,0.1
+LOC-12792048361,Fraccionamiento Sian Kaan V,Barrio / Zona urbana,31050,20.983175,-89.720523,Alma,2283.0,28.5,False,Parque Vecinal Mérida 1364206833,890.3,11.1
+LOC-12786898365,Colonia San José Tzal,Barrio / Zona urbana,31050,20.909286,-89.615813,IMSS UMF 58 Serapio Rendón,2241.5,28.0,False,Parque Nueva San Jose Tecoh 3,1256.2,15.7
+LOC-13978205762,Cerrada Lombardia,Barrio / Zona urbana,31050,21.023348,-89.539202,Farmacias Similares,2118.0,26.5,False,Parque Vecinal Mérida 1279544746,45.9,0.6
+LOC-12786898366,Fraccionamiento San José Tzal,Barrio / Zona urbana,31050,20.909801,-89.611999,IMSS UMF 58 Serapio Rendón,2080.7,26.0,False,Parque Álamos del Sur,1414.7,17.7
+LOC-13978205761,Cerrada Piemonte,Barrio / Zona urbana,31050,21.021706,-89.54042,Farmacias Similares,2053.6,25.7,False,Parque Vecinal Mérida 1279544754,70.6,0.9
+LOC-1944761462,Colonia Leona Vicario,Barrio / Zona urbana,31050,20.910556,-89.602754,IMSS UMF 58 Serapio Rendón,2047.3,25.6,False,Parque Cielo Alto,845.2,10.6
+LOC-12786898364,Fraccionamiento Bellavista,Barrio / Zona urbana,31050,20.911669,-89.614391,IMSS UMF 58 Serapio Rendón,1943.2,24.3,False,Parque Álamos del Sur,1146.8,14.3
+LOC-1617223857,Chichí Suárez,Comisaría,31050,20.998044,-89.555362,IMSS U.M.F. 61 Los Héroes,1904.2,23.8,False,Parque principal de Chichí Suárez,1.1,0.0
+LOC-12786898380,Plan de Ayala Sur,Barrio / Zona urbana,31050,20.901297,-89.622095,Hospital de La Amistad Corea México,1893.7,23.7,False,Parque Nueva San Jose Tecoh 3,528.7,6.6
+LOC-4187343689,Villas Cholul,Barrio / Zona urbana,31050,21.044607,-89.539586,OM dental,1890.8,23.6,False,Parque Vecinal Mérida 377491900,546.0,6.8
+LOC-8185150732,Andres Quintana Roo,Barrio / Zona urbana,31050,20.916736,-89.595771,IMSS UMF 58 Serapio Rendón,1830.2,22.9,False,Parque de Cecilio Chi,295.1,3.7
+LOC-12780176053,Fraccionamiento Floresta Residencial,Barrio / Zona urbana,31050,21.013478,-89.551354,Farmacias Similares,1820.7,22.8,False,Parque Vecinal Mérida 585584812,914.8,11.4
+LOC-12786898352,Fraccionamiento Reyes del Sur,Barrio / Zona urbana,31050,20.91248,-89.604221,IMSS UMF 58 Serapio Rendón,1801.5,22.5,False,Parque Cielo Alto,1034.5,12.9
+LOC-12780176117,San Ángel,Barrio / Zona urbana,31050,20.987627,-89.558866,Consultorio de Ortopedia,1783.8,22.3,False,Parque Vecinal Mérida 1112326424,485.6,6.1
+LOC-12783570689,Fraccionamiento Parque Industrial,Barrio / Zona urbana,31050,21.069948,-89.639505,Unidad de Salud (Pharmacy) OSM-8085644170,1775.2,22.2,False,Parque Vecinal Mérida 584985660,862.5,10.8
+LOC-5603483652,Fraccionamiento Sian Ka'an II,Barrio / Zona urbana,31050,20.98321,-89.707296,Alma,1743.1,21.8,False,Parque Arbolada I,73.0,0.9
+LOC-12780176097,Santa María Chí,Barrio / Zona urbana,31050,21.002402,-89.557927,Farmacias del Ahorro,1739.4,21.7,False,Parque principal de Chichí Suárez,552.0,6.9
+LOC-12786898362,Fraccionamiento Villa Bonita,Barrio / Zona urbana,31050,20.912998,-89.610358,IMSS UMF 58 Serapio Rendón,1704.5,21.3,False,Parque Álamos del Sur,1174.6,14.7
+LOC-1604302671,San Antonio Hool,Comisaría,31050,21.06508,-89.675168,Centro de Salud de Dzitya,1687.6,21.1,False,Parque principal de San Antonio Hool,91.3,1.1
+LOC-11327815758,Temozón Norte,Comisaría,31050,21.064595,-89.59623,Farmacias Yza,1673.7,20.9,False,Parque de Temozón Norte,57.0,0.7
+LOC-12784079965,Fraccionamiento Algarrobos Residencial,Barrio / Zona urbana,31050,21.050778,-89.59396,Farmacias Yza,1668.2,20.9,False,Parque Santa Gertrudis Copó,1241.5,15.5
+LOC-12783570670,Núcleo Sodzil,Barrio / Zona urbana,31050,21.055203,-89.628443,Farmacia Guadalajara,1647.3,20.6,False,Parque Central,1320.7,16.5
+LOC-12792048364,Fraccionamiento Sian Ka'an III,Barrio / Zona urbana,31050,20.984923,-89.7106,Alma,1612.0,20.2,False,Parque Vecinal Mérida 786101817,67.7,0.8
+LOC-12786898359,Fraccionamiento Villa Bonita III,Barrio / Zona urbana,31050,20.913736,-89.607812,IMSS UMF 58 Serapio Rendón,1611.1,20.1,False,Parque Álamos del Sur,1282.2,16.0
+LOC-12792035472,Fraccionamiento Paraíso Santa Fe,Barrio / Zona urbana,31050,21.011245,-89.683064,Farmacia Yza,1590.9,19.9,False,Parque Vecinal Mérida 584802993,348.7,4.4
+LOC-12792048350,Fraccionamiento Caucel II,Barrio / Zona urbana,31050,20.997779,-89.721236,Alma,1552.2,19.4,False,Parque Vecinal Mérida 1085399719,499.6,6.2
+LOC-12787318216,Dzununcan,Barrio / Zona urbana,31050,20.892005,-89.654412,Hospital O'Horan Sur,1533.0,19.2,False,Parque San Luis Dzununcan,409.9,5.1
+LOC-12783570687,Fraccionamiento Royal del Parque,Barrio / Zona urbana,31050,21.060636,-89.638343,Cubiculo Sociedad de Alumnos,1522.7,19.0,False,Parque Vecinal Mérida 584992545,740.5,9.3
+LOC-14029740688,Privada Las Acacias,Barrio / Zona urbana,31050,21.003854,-89.540893,IMSS U.M.F. 61 Los Héroes,1509.0,18.9,False,Parque Los Achiotes,1232.9,15.4
+LOC-12792048386,Fraccionamiento Sian Kaan IV,Barrio / Zona urbana,31050,20.978972,-89.704707,Unidad de Salud (Hospital) OSM-1316330762,1491.0,18.6,False,Parque Oasis I,374.4,4.7
+LOC-12783570675,Fraccionamiento Residencial Andalucía,Barrio / Zona urbana,31050,21.058228,-89.625728,Farmacias Yza,1473.6,18.4,False,Parque principal de Sodzil Norte,1658.1,20.7
+LOC-1604298369,Temozón Norte,Barrio / Zona urbana,31050,21.0648,-89.625343,Farmacias Yza,1448.9,18.1,False,Parque de Xcanatún,1157.4,14.5
+LOC-12780193626,Centro (Chichí Suárez),Barrio / Zona urbana,31050,21.00009,-89.547913,IMSS U.M.F. 61 Los Héroes,1423.2,17.8,False,Parque principal de Chichí Suárez,808.3,10.1
+LOC-8185144497,Cecilio Chí,Barrio / Zona urbana,31050,20.923175,-89.595834,IMSS UMF 58 Serapio Rendón,1420.7,17.8,False,Parque de Cecilio Chi,450.4,5.6
+LOC-7341697942,San José Tzal,Barrio / Zona urbana,31050,20.929695,-89.594811,IMSS UMF 58 Serapio Rendón,1419.0,17.7,False,Parque Salvador Alvarado Sur,600.0,7.5
+LOC-350557286,Caucel,Localidad urbana,31050,21.01682,-89.70636,Clínica del Seguro Popular,1396.7,17.5,False,Parque Central de Caucel,71.1,0.9
+LOC-5981826372,Gran Herradura Norte,Barrio / Zona urbana,31050,20.985292,-89.700386,UMF 20,1388.8,17.4,False,Parque Gran Herradura Norte,164.3,2.1
+LOC-12777354481,Fraccionamiento Las Américas VI,Barrio / Zona urbana,31050,21.088514,-89.668853,Unidad de Salud (Doctors) OSM-8085680716,1373.6,17.2,False,Parque Vecinal Mérida 985633286,351.2,4.4
+LOC-12792048305,Fraccionamiento Cerradas de Gran Santa Fe,Barrio / Zona urbana,31050,21.012796,-89.69151,Farmacia Yza,1359.5,17.0,False,Parque Sablonké,37.1,0.5
+LOC-12780176057,Fraccionamiento Mallorca,Barrio / Zona urbana,31050,21.016872,-89.554928,Farmacias Similares,1333.1,16.7,False,Parque Vecinal Mérida 585584812,795.7,9.9
+LOC-12780176122,Fraccionamiento Cloverleaf,Barrio / Zona urbana,31050,21.035042,-89.548275,Farmacias YZA,1324.3,16.6,False,Parque Colonia Guadalupe,773.1,9.7
+LOC-12792035471,Fraccionamiento Gran Santa Fe,Barrio / Zona urbana,31050,21.007128,-89.685029,Farmacias del Ahorro,1319.1,16.5,False,Parque Vecinal Mérida 584817914,96.1,1.2
+LOC-12779187312,Fraccionamiento Xo´tik,Barrio / Zona urbana,31050,21.06006,-89.644327,Cubiculo Sociedad de Alumnos,1317.2,16.5,False,Parque Vecinal Mérida 584992545,207.7,2.6
+LOC-5703668012,Fraccionamiento Sian Ka'an,Barrio / Zona urbana,31050,20.987171,-89.705101,Alma,1308.2,16.4,False,Parque Paraíso I,84.7,1.1
+LOC-8907588512,Salvador Alvarado Sur,Barrio / Zona urbana,31050,20.935629,-89.598935,Farmacias Similares,1254.0,15.7,False,Parque Salvador Alvarado Sur,234.0,2.9
+LOC-13367334446,Fraccionamiento San Antonio Norte,Barrio / Zona urbana,31050,21.070507,-89.672957,Smile Republic,1238.4,15.5,False,Parque Vecinal Mérida 586445379,231.3,2.9
+LOC-12786898391,Nueva San Jose Tecoh,Barrio / Zona urbana,31050,20.904617,-89.628681,Hospital de La Amistad Corea México,1226.8,15.3,False,Parque Nueva San Jose Tecoh 3,253.1,3.2
+LOC-12777354488,Fraccionamiento Real de Dzitya,Barrio / Zona urbana,31050,21.05414,-89.668598,Centro de Salud de Dzitya,1200.3,15.0,True,Parque Principal Kiiwk Dzityá,1077.1,13.5
+LOC-12780176031,Fraccionamiento San Pedro Cholul,Barrio / Zona urbana,31050,21.024715,-89.548156,Farmacias Similares,1183.4,14.8,True,Parque El Supiro,284.1,3.6
+LOC-12783627011,Fraccionamiento Residencial Xcanatun,Barrio / Zona urbana,31050,21.0835,-89.640693,Unidad de Salud (Doctors) OSM-8085692288,1180.3,14.8,True,Xcanatún,421.8,5.3
+LOC-12780176133,Leandro Valle,Barrio / Zona urbana,31050,20.994735,-89.562861,Farmacias del Ahorro,1176.5,14.7,True,Parque Vecinal Mérida 585075215,408.0,5.1
+LOC-12780176107,Fraccionamiento Punta Esmeralda,Barrio / Zona urbana,31050,20.986587,-89.549472,"Unidad Médica Familiar #61 ""Los Héroes"" IMSS",1164.9,14.6,True,Parque Privado Esmeralda Residencial 2,26.6,0.3
+LOC-12798861597,Fraccionamiento Residencial Puerta de Piedra Dzityá,Barrio / Zona urbana,31050,21.045229,-89.663179,CRIT Yucatán,1085.6,13.6,True,Kai Luum,888.6,11.1
+LOC-12777354486,Fraccionamiento Las Américas IV,Barrio / Zona urbana,31050,21.090897,-89.661742,Unidad de Salud (Doctors) OSM-8085680716,1024.2,12.8,True,Parque de Las Américas IV,431.4,5.4
+LOC-12777023779,Montes de Amé,Barrio / Zona urbana,31050,21.032739,-89.617511,Farmacia LAGO Campestre,1016.2,12.7,True,Parque Montes de Amé,228.1,2.9
+LOC-12777404823,Fraccionamiento San Antonio Residencial,Barrio / Zona urbana,31050,21.07298,-89.670933,Smile Republic,970.4,12.1,True,Parque Vecinal Mérida 586445380,94.3,1.2
+LOC-13367100794,Fraccionamiento Vista Alegre Norte,Barrio / Zona urbana,31050,21.026297,-89.575542,Farmacias Yza,933.6,11.7,True,Parque Vista Alegre Norte,44.1,0.6
+LOC-3793714486,Fraccionamiento Rinconada de Chuburná,Barrio / Zona urbana,31050,21.021813,-89.634204,IMSS UMF N. 13 Chuburna,914.7,11.4,True,Parque Rinconada Chuburna,65.4,0.8
+LOC-12779820062,Fraccionamiento Montebello,Barrio / Zona urbana,31050,21.030473,-89.596359,Farmacias del Ahorro,848.2,10.6,True,Parque Monterreal Colonial,821.9,10.3
+LOC-12787318202,Fraccionamiento Dzununcan,Barrio / Zona urbana,31050,20.893826,-89.643334,Hospital O'Horan Sur,844.4,10.6,True,Parque Alborada,1018.2,12.7
+LOC-13366267903,Santa Gertrudis Copó,Barrio / Zona urbana,31050,21.039375,-89.594521,Farmacias Yza,841.0,10.5,True,Parque Santa Gertrudis Copó,225.7,2.8
+LOC-12783570676,Dzitya Poligono Chuburna,Barrio / Zona urbana,31050,21.052916,-89.638467,Cubiculo Sociedad de Alumnos,819.7,10.2,True,Parque Vecinal Mérida 368527141,550.5,6.9
+LOC-12780021144,Fraccionamiento Tecnológico,Barrio / Zona urbana,31050,21.010655,-89.622457,Odymed,815.7,10.2,True,Parque Fraccionameinto del Norte,297.1,3.7
+LOC-2056491062,Opichén,Comisaría,31050,20.949215,-89.679925,Farmacia Guadalajara,814.0,10.2,True,Parque Hda. Opichen,12.4,0.2
+LOC-13020079045,Colonia Nueva Reforma Agraria,Barrio / Zona urbana,31050,20.953004,-89.682658,Farmacia Guadalajara,805.9,10.1,True,Parque Nueva Reforma Agraria,98.7,1.2
+LOC-12779820055,Fraccionamiento Montebello II,Barrio / Zona urbana,31050,21.030655,-89.588224,RetimediQ,805.0,10.1,True,Parque Montecarlo,675.4,8.4
+LOC-12780021172,Fraccionamiento del Norte,Barrio / Zona urbana,31050,21.009314,-89.621399,Farmacias del Ahorro,798.4,10.0,True,Parque Fraccionameinto del Norte,112.3,1.4
+LOC-12792048322,Fraccionamiento Gran Santa Fe Norte III,Barrio / Zona urbana,31050,21.032847,-89.70164,Clínica del Seguro Popular,779.8,9.7,True,Parque Vecinal Mérida 666350175,654.4,8.2
+LOC-12798990808,Colonia Tamarindos,Barrio / Zona urbana,31050,21.047411,-89.653294,CRIT Yucatán,776.8,9.7,True,Kai Luum,523.9,6.5
+LOC-12777350343,Colonia Dzitya,Barrio / Zona urbana,31050,21.062382,-89.657409,Unidad de Salud (Pharmacy) OSM-8085644170,772.7,9.7,True,Parque Vecinal Mérida 584988903,855.0,10.7
+LOC-12792048304,Fraccionamiento Gran Santa Fe II,Barrio / Zona urbana,31050,21.017867,-89.689069,Farmacia Yza,761.6,9.5,True,Parque de Los Mangos,75.3,0.9
+LOC-2732981315,Colonia Sodzil Norte,Barrio / Zona urbana,31050,21.043803,-89.622537,Consultorio Médico Similares,754.3,9.4,True,Parque principal de Sodzil Norte,64.9,0.8
+LOC-12780021181,Emiliano Zapata Norte,Barrio / Zona urbana,31050,21.011709,-89.611676,Punto Químico Laboratorios,746.4,9.3,True,Parque Emiliano Zapata Norte,519.3,6.5
+LOC-12779820071,Ampliación Sodzil,Barrio / Zona urbana,31050,21.038618,-89.621162,Consultorio Médico Similares,744.3,9.3,True,Parque Vecinal Mérida 533097448,413.5,5.2
+LOC-5854420838,San Esteban,Barrio / Zona urbana,31050,20.995232,-89.593315,Farmacias del Ahorro,699.5,8.7,True,Parque La Amistad,353.4,4.4
+LOC-12792048316,Fraccionamiento Gran Santa Fe Norte II,Barrio / Zona urbana,31050,21.025493,-89.694698,Farmacia Yza,662.8,8.3,True,Parque Vecinal Mérida 666349846,252.1,3.2
+LOC-12780176114,Fraccionamiento Los Heroes,Barrio / Zona urbana,31050,20.991414,-89.533169,IMSS U.M.F. 61 Los Héroes,617.2,7.7,True,Parque Los Achiotes,441.6,5.5
+LOC-3183160767,Nuevo Yucatán,Barrio / Zona urbana,31050,20.99801,-89.58255,Farmacia Guadalajara,601.9,7.5,True,Parque Fraccionamiento Nuevo Yucatán,329.6,4.1
+LOC-12780021137,Benito Juárez Norte,Barrio / Zona urbana,31050,21.024034,-89.615497,Farmacias Bazar,593.2,7.4,True,Parque Vecinal Mérida 932899484,597.1,7.5
+LOC-12780021178,Fraccionamiento Campestre,Barrio / Zona urbana,31050,21.011009,-89.6172,Odymed,588.4,7.4,True,Parque Vecinal Mérida 545411651,156.9,2.0
+LOC-12780021143,Plan de Ayala,Barrio / Zona urbana,31050,21.013433,-89.622167,Odymed,586.1,7.3,True,Parque Villas del Sol,565.0,7.1
+LOC-13367077815,Fraccionamiento Montecarlo,Barrio / Zona urbana,31050,21.028168,-89.581558,RetimediQ,579.3,7.2,True,Parque Montecarlo,122.5,1.5
+LOC-12780021157,Fraccionamiento Villas La Hacienda,Barrio / Zona urbana,31050,21.019237,-89.612401,Farmacias Bazar,578.0,7.2,True,Parque Villas la Hacienda,94.3,1.2
+LOC-13358479923,Colonia México,Barrio / Zona urbana,31050,21.002291,-89.610683,Farmacias del Ahorro,563.4,7.0,True,Parque de la Colonia México,451.5,5.6
+LOC-1738763343,Susulá,Comisaría,31050,20.972953,-89.696851,Unidad de Salud (Hospital) OSM-1316330762,556.2,7.0,True,Parque principal de Susulá,3.5,0.0
+LOC-12781965846,Fraccionamiento Residencial Galerías,Barrio / Zona urbana,31050,21.03467,-89.63442,Farmacia Guadalajara,555.3,6.9,True,Parque Xcumpich,268.0,3.4
+LOC-12781965900,Colonia Xcumpich,Barrio / Zona urbana,31050,21.03669,-89.634931,Farmacia Guadalajara,537.5,6.7,True,Parque Vecinal Mérida 1425691758,179.2,2.2
+LOC-12780021145,Fraccionamiento San Ramón,Barrio / Zona urbana,31050,21.019799,-89.608224,Farmacia Guadalajara,536.8,6.7,True,Parque Villas la Hacienda,416.3,5.2
+LOC-12781965867,Fraccionamiento Áurea Residencial,Barrio / Zona urbana,31050,21.037965,-89.636267,Farmacia Guadalajara,533.7,6.7,True,Parque Vecinal Mérida 1425691758,19.1,0.2
+LOC-12779820044,Fraccionamiento Xaman-Tan,Barrio / Zona urbana,31050,21.033204,-89.602553,Farmacias Yza,533.1,6.7,True,Parque Santa Gertrudis Copó,960.2,12.0
+LOC-12787315496,Colonia Guadalupana,Barrio / Zona urbana,31050,20.897818,-89.639421,Hospital de La Amistad Corea México,522.9,6.5,True,C173B #423 Int. 4,1068.4,13.4
+LOC-12779820072,Ampliación Revolución,Barrio / Zona urbana,31050,21.044295,-89.628319,Consultorio Médico Similares,520.4,6.5,True,Parque del Maestro,403.9,5.0
+LOC-13367069224,Fraccionamiento Santa Gertrudis,Barrio / Zona urbana,31050,21.042389,-89.600787,Farmacias Yza,515.3,6.4,True,Parque Santa Gertrudis Copó,515.5,6.4
+LOC-9170394202,Villa Magna,Barrio / Zona urbana,31050,20.956043,-89.679603,Similares,514.6,6.4,True,Parque Arqueológico Villa Magna I,107.6,1.3
+LOC-13358030739,Fraccionamiento Montecristo,Barrio / Zona urbana,31050,21.014875,-89.595858,Farmacias del Ahorro,499.8,6.2,True,Parque Residencial Montecristo,17.2,0.2
+LOC-13358035263,Fraccionamiento Residencial Montecristo,Barrio / Zona urbana,31050,21.010542,-89.59363,Clínica Univeritaria Anáhuac Mayab,499.2,6.2,True,Parque VIFAC,231.2,2.9
+LOC-12777354478,Fraccionamiento Las Américas III,Barrio / Zona urbana,31050,21.074457,-89.66638,Smile Republic,490.9,6.1,True,Parque Vecinal Mérida 586445380,541.7,6.8
+LOC-12779716702,San Ramón Norte,Barrio / Zona urbana,31050,21.031947,-89.606805,Farmacias del Ahorro,472.7,5.9,True,Parque Vecinal Mérida 932899484,815.1,10.2
+LOC-12779820039,Fraccionamiento Xaman-Kab,Barrio / Zona urbana,31050,21.034371,-89.604714,Farmacias Yza,466.0,5.8,True,Parque Santa Gertrudis Copó,1037.2,13.0
+LOC-5593523367,Fraccionamiento La Ciudadela,Barrio / Zona urbana,31050,20.996988,-89.686282,Farmacias Yza,432.7,5.4,True,Parque Central Ciudadela,164.3,2.1
+LOC-12781965839,Vía Montejo,Barrio / Zona urbana,31050,21.044595,-89.63199,Farmacia Guadalajara,428.7,5.4,True,Parque Central,95.9,1.2
+LOC-12781965880,Fraccionamiento La Castellana,Barrio / Zona urbana,31050,21.041373,-89.635972,Farmacia Guadalajara,412.9,5.2,True,Parque Vecinal Mérida 532065309,17.9,0.2
+LOC-12792048312,Fraccionamiento Gran Santa Fe Norte,Barrio / Zona urbana,31050,21.0283,-89.688781,Farmacia Yza,399.8,5.0,True,Parque Jazmines,68.2,0.9
+LOC-12780021179,Buenavista,Barrio / Zona urbana,31050,21.000144,-89.618672,Farmacias del Ahorro,378.6,4.7,True,Parque Kiuik Che,442.1,5.5
+LOC-12777354489,Real Montejo,Barrio / Zona urbana,31050,21.036343,-89.671099,Farmacia Yza,368.7,4.6,True,Parque Vecinal Mérida 586516446,431.3,5.4
+LOC-12780021194,México Norte,Barrio / Zona urbana,31050,21.012924,-89.606229,Punto Químico Laboratorios,337.9,4.2,True,Parque Residensial Colonia México,443.1,5.5
+LOC-12779820040,Fraccionamiento Villareal,Barrio / Zona urbana,31050,21.035739,-89.604346,Farmacias Yza,318.4,4.0,True,Parque Santa Gertrudis Copó,922.9,11.5
+LOC-13367069528,Fraccionamiento Residencial Cámara de Comercio Norte,Barrio / Zona urbana,31050,21.01581,-89.589702,Clínica Univeritaria Anáhuac Mayab,318.0,4.0,True,Parque Vecinal Mérida 533098371,80.7,1.0
+LOC-12782043306,Fraccionamiento Hacienda Xcumpich,Barrio / Zona urbana,31050,21.032994,-89.640244,Farmacias Similares,312.1,3.9,True,Parque Privada Hacienda Xcumpich,52.1,0.7
+LOC-12779820074,Colonia Revolución,Barrio / Zona urbana,31050,21.036778,-89.628205,Farmacias Similares,311.7,3.9,True,Parque Vecinal Mérida 533097448,377.0,4.7
+LOC-12780065318,Fraccionamiento Residencial Sol Campestre,Barrio / Zona urbana,31050,21.023623,-89.600777,Yza,302.9,3.8,True,Parque Sol Campestre,18.5,0.2
+LOC-654254560,Komchén,Localidad urbana,31050,21.104435,-89.662065,Farmacia AILEEN,277.4,3.5,True,Parque principal de Komchén,95.0,1.2
+LOC-12777354479,Fraccionamiento Las Américas II,Barrio / Zona urbana,31050,21.08042,-89.658186,Unidad de Salud (Doctors) OSM-8085680716,273.4,3.4,True,Parque Vecinal Mérida 584977710,59.3,0.7
+LOC-12780021141,Colonia Gonzalo Guerrero,Barrio / Zona urbana,31050,21.023525,-89.624262,Farmacia LAGO Campestre,270.9,3.4,True,Parque El Triángulo,207.0,2.6
+LOC-12792048349,Fraccionamiento Ciudad Caucel,Barrio / Zona urbana,31050,20.996968,-89.700871,UMF 20,267.7,3.3,True,Parque Ciudad Caucel,211.9,2.6
+LOC-12780065306,Fraccionamiento Montealban,Barrio / Zona urbana,31050,21.019191,-89.601387,Yza,261.2,3.3,True,Parque Kalia,443.9,5.5
+LOC-12780021197,Colonia San Antonio Cinta,Barrio / Zona urbana,31050,21.011668,-89.602818,Punto Químico Laboratorios,248.9,3.1,True,Parque de la Juventud,392.9,4.9
+LOC-12780021142,Ampliación Plan de Ayala,Barrio / Zona urbana,31050,21.017984,-89.622877,Dental Merida,224.3,2.8,True,Parque Villas del Sol,101.9,1.3
+LOC-4839274030,Yucalpetén,Barrio / Zona urbana,31050,20.980935,-89.661193,Farmacia Similares,222.8,2.8,True,Parque Los Cantaritos,3.9,0.0
+LOC-12779820075,Fraccionamiento Gonzalo Guerrero,Barrio / Zona urbana,31050,21.027615,-89.623813,Farmacia LAGO Campestre,185.1,2.3,True,Parque Vecinal Mérida 1426859807,21.6,0.3
+LOC-13358390000,Fraccionamiento Altabrisa,Barrio / Zona urbana,31050,21.022574,-89.585655,RetimediQ,177.5,2.2,True,Parque de Altabrisa,88.7,1.1
+LOC-12780021160,Fraccionamiento Villas del Rey,Barrio / Zona urbana,31050,21.018718,-89.616482,Farmacias Bazar,162.6,2.0,True,Parque Villas la Hacienda,469.6,5.9
+LOC-13357969515,Fracionamiento Residencial San Antonio,Barrio / Zona urbana,31050,21.022358,-89.599922,Yza,146.6,1.8,True,Parque Sol Campestre,184.5,2.3
+LOC-12781965850,Fraccionamiento Residencial Piedrasul,Barrio / Zona urbana,31050,21.031855,-89.637648,Farmacia Guadalajara,146.0,1.8,True,Parque Xcumpich,182.7,2.3
+LOC-13357971640,Fraccionamiento Montereal,Barrio / Zona urbana,31050,21.020038,-89.597471,Farmacias del Ahorro,139.6,1.7,True,Parque Kalia,101.5,1.3
+LOC-13358318018,Fraccionamiento Montevideo,Barrio / Zona urbana,31050,21.014141,-89.589295,Clínica Univeritaria Anáhuac Mayab,135.8,1.7,True,Parque Vecinal Mérida 533098371,126.0,1.6
+LOC-330537681,Cholul,Localidad urbana,31050,21.04225,-89.557249,Farmacias YZA,99.6,1.2,True,Parque Vecinal Mérida 1359972393,16.6,0.2
+LOC-12777354477,Fraccionamiento Las Américas Mérida,Barrio / Zona urbana,31050,21.069227,-89.655764,Unidad de Salud (Pharmacy) OSM-8085644170,83.7,1.0,True,Parque Vecinal Mérida 585968946,158.7,2.0
+LOC-12780065309,San Antonio Cucul,Barrio / Zona urbana,31050,21.022591,-89.604116,Farmacia Guadalajara,63.6,0.8,True,Parque Sol Campestre,360.7,4.5
+LOC-654254488,Dzityá,Comisaría,31050,21.050556,-89.678993,Centro de Salud de Dzitya,48.8,0.6,True,Nuevo parque,65.7,0.8
+LOC-13358479922,México Oriente,Barrio / Zona urbana,31050,21.001026,-89.603064,Farmacia Guadalajara,44.0,0.6,True,Parque Prado Norte,448.9,5.6
